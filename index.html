@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shopfront Sites — Websites for Tampa Bay auto shops</title>
+<meta name="description" content="Clean, fast websites for wrap shops, tint shops, detailers and mechanics across Tampa Bay — Tampa, St. Pete, Clearwater and surrounding areas. Built in days, with a working quote form and your real pricing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBFBF9; --bg-2:#FFFFFF; --ink:#16181D; --ink-2:#5B6069; --line:#E0E1DC;
+    --green:#17493D; --on-green:#F2F6F3; --on-green-2:#A8C5B8;
+    --lime:#CFE86B; --lime-ink:#16181D;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#16181D;--bg-2:#1F2229;--ink:#F2F3F1;--ink-2:#B4B8BF;--line:#2E323A}}
+  :root[data-theme="dark"]{--bg:#16181D;--bg-2:#1F2229;--ink:#F2F3F1;--ink-2:#B4B8BF;--line:#2E323A}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{margin:0;line-height:1.05;font-weight:800;letter-spacing:-.025em}
+  h1{font-size:clamp(2.6rem,8vw,4.5rem)}
+  h2{font-size:clamp(1.8rem,5vw,2.5rem)}
+  h3{font-size:1.2rem;font-weight:700}
+  p{margin:0}
+  .wrap{width:min(960px,100% - 2.5rem);margin-inline:auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.5rem;font-weight:700;font-size:1.05rem;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+  .btn-lime{background:var(--lime);color:var(--lime-ink)}
+  .btn-outline{background:transparent;color:var(--on-green);border-color:rgba(255,255,255,.3)}
+
+  header{background:var(--green);color:var(--on-green)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem}
+  .logo{font-weight:800;font-size:1.2rem;text-decoration:none;color:var(--on-green);letter-spacing:-.01em}
+  .logo span{color:var(--lime)}
+  nav a{text-decoration:none;color:var(--on-green-2);font-weight:500;margin-left:1.25rem}
+  @media (max-width:560px){nav{display:none}}
+
+  .hero{background:var(--green);color:var(--on-green);padding:3.5rem 0 4rem}
+  .hero .lede{color:var(--on-green-2);font-size:1.2rem;max-width:44ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+
+  section{padding:3.75rem 0}
+  .what .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:700px){.what .grid{grid-template-columns:repeat(3,1fr)}}
+  .item p{color:var(--ink-2);margin-top:.4rem}
+
+  .price{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .price .wrap{display:grid;gap:2rem}
+  @media (min-width:800px){.price .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .tag{display:inline-block;background:var(--lime);color:var(--lime-ink);font-weight:700;padding:.3rem .7rem;border-radius:999px;font-size:.9rem;margin-bottom:.9rem}
+  .big{font-size:2.6rem;font-weight:800;letter-spacing:-.03em;line-height:1}
+  .big small{font-size:1.05rem;font-weight:500;color:var(--ink-2);letter-spacing:0}
+  .price ul{margin:1rem 0 0;padding-left:1.1rem;color:var(--ink-2);display:grid;gap:.4rem}
+  .price p.sub{color:var(--ink-2);margin-top:.8rem}
+
+  .work .grid{display:grid;gap:1rem;margin-top:1.75rem}
+  @media (min-width:700px){.work .grid{grid-template-columns:repeat(2,1fr)}}
+  .card{display:block;background:var(--bg-2);border:1px solid var(--line);border-radius:.6rem;padding:1.2rem;text-decoration:none;color:inherit}
+  .card:hover{border-color:var(--green)}
+  .card:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+  .card p{color:var(--ink-2);margin-top:.3rem;font-size:1rem}
+  .work .note{color:var(--ink-2);margin-top:1rem;font-size:.95rem}
+
+  .cta{background:var(--green);color:var(--on-green)}
+  .cta p{color:var(--on-green-2);margin-top:.8rem;max-width:44ch}
+  .cta .hero-actions{margin-top:1.5rem}
+  footer{background:var(--green);color:var(--on-green-2);padding:1.5rem 0 2rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.1)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="/">Shopfront<span>.</span>Sites</a>
+    <nav aria-label="Sections">
+      <a href="#what">What you get</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#work">Previews</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Websites for auto shops that actually get the phone to ring.</h1>
+    <p class="lede">Wrap shops, tint shops, detailers and mechanics across Tampa Bay — Tampa, St. Pete, Clearwater, Brandon, Largo and everywhere in between. You've got the reviews. We build the site that turns a Google search into a text message, in days, not months.</p>
+    <div class="hero-actions">
+      <a class="btn btn-lime" href="mailto:kevin@shopfrontsites.org?subject=Website%20for%20my%20shop">Email Kevin</a>
+      <a class="btn btn-outline" href="#work">See example previews</a>
+    </div>
+  </div>
+</section>
+
+<section class="what" id="what">
+  <div class="wrap">
+    <h2>What you get</h2>
+    <div class="grid">
+      <div class="item"><h3>Built around texting</h3><p>Every page has a working quote form that opens a prefilled text to your phone. That's how your customers already book, so the site works the same way.</p></div>
+      <div class="item"><h3>Your real pricing and photos</h3><p>No stock images. Your work, your prices, your reviews, laid out so a first-time visitor trusts you in ten seconds.</p></div>
+      <div class="item"><h3>Fast on a phone</h3><p>Most of your traffic is someone sitting in a parking lot. The site loads instantly and the call button is always one tap away.</p></div>
+      <div class="item"><h3>Found on Google</h3><p>Set up so your shop shows for the searches that matter: your service plus your part of town.</p></div>
+      <div class="item"><h3>Your own domain</h3><p>yourshop.com, with email to match if you want it. You own it; we just run it.</p></div>
+      <div class="item"><h3>Changes when you need them</h3><p>New price, new photo, holiday hours. Text it over and it's updated, usually the same day.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="price" id="pricing">
+  <div class="wrap">
+    <div>
+      <span class="tag">One plan</span>
+      <div class="big">$900 <small>to build</small></div>
+      <div class="big" style="margin-top:.6rem">$75<small>/month after</small></div>
+      <p class="sub">No contract. Cancel any time and the domain stays yours.</p>
+    </div>
+    <ul>
+      <li>Full site, usually live within a week of your go-ahead</li>
+      <li>Hosting, domain setup and HTTPS included</li>
+      <li>Unlimited small changes each month</li>
+      <li>Google Business Profile linked and tidied up</li>
+      <li>You see a preview before you pay anything</li>
+    </ul>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <h2>Preview sites</h2>
+    <div class="grid">
+      <a class="card" href="/preview/lms/"><h3>LMS Wraps</h3><p>Vinyl wrap shop. Try the finish picker.</p></a>
+      <a class="card" href="/preview/kingoftint/"><h3>King of Tint</h3><p>Window tint. Slide the tint darkness and see what's legal.</p></a>
+      <a class="card" href="/preview/dimi/"><h3>Dimi's Mobile Mechanic</h3><p>Mobile repair. Tap a symptom to see what it usually costs.</p></a>
+      <a class="card" href="/preview/tropik/"><h3>Tropik Detailing</h3><p>Mobile detailing. Drag the before-and-after slider.</p></a>
+      <a class="card" href="/preview/autowrapshop/"><h3>The Auto Wrap Shop</h3><p>Wraps and PPF. Get a rough wrap estimate.</p></a>
+      <a class="card" href="/preview/bumperguy/"><h3>Bumper Guy</h3><p>Mobile bumper and dent repair. Photo-to-quote in three steps.</p></a>
+      <a class="card" href="/preview/carters/"><h3>Carter's Mobile Detailing</h3><p>Mobile detailing. Build your own package and see the price.</p></a>
+    </div>
+    <p class="note">Previews are built from each shop's public Google listing. Prices shown on previews are placeholders until the shop confirms them.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Want one for your shop?</h2>
+    <p>Send your shop name and we'll build a preview for free. If you like it, we finish it. If not, no hard feelings.</p>
+    <div class="hero-actions">
+      <a class="btn btn-lime" href="mailto:kevin@shopfrontsites.org?subject=Website%20for%20my%20shop">Email Kevin</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Shopfront Sites, Tampa Bay, FL</div>
+</footer>
+</body>
+</html>

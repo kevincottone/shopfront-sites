@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tropik Detailing — Mobile detailing and ceramic coating, South Tampa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F3EA; --bg-2:#FFFFFF; --ink:#0F2F2B; --ink-2:#4F6663; --line:#DDD6C6;
+    --teal:#0B4F4A; --teal-2:#0E6B63; --on-teal:#F3F7F5; --on-teal-2:#A9CBC5;
+    --sun:#F5C542; --sun-ink:#0F2F2B;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0F2420;--bg-2:#163430;--ink:#F3F7F5;--ink-2:#B5CBC6;--line:#25473F}}
+  :root[data-theme="dark"]{--bg:#0F2420;--bg-2:#163430;--ink:#F3F7F5;--ink-2:#B5CBC6;--line:#25473F}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Outfit,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{margin:0;line-height:1.05;font-weight:800;letter-spacing:-.02em}
+  h1{font-size:clamp(2.6rem,8.5vw,4.75rem)}
+  h2{font-size:clamp(1.9rem,5vw,2.75rem)}
+  h3{font-size:1.3rem;font-weight:600}
+  p{margin:0}
+  .wrap{width:min(1020px,100% - 2.5rem);margin-inline:auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:999px;font-weight:600;font-size:1.05rem;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+  .btn-sun{background:var(--sun);color:var(--sun-ink)}
+  .btn-outline{background:transparent;color:var(--on-teal);border-color:rgba(255,255,255,.35)}
+
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--teal);color:var(--on-teal)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem}
+  .logo{font-weight:800;font-size:1.3rem;text-decoration:none;color:var(--on-teal);letter-spacing:.01em}
+  .logo span{color:var(--sun)}
+  nav a{text-decoration:none;color:var(--on-teal-2);font-weight:500;margin-left:1.25rem}
+  @media (max-width:640px){nav{display:none}}
+  .call-pill{background:var(--sun);color:var(--sun-ink);text-decoration:none;font-weight:600;padding:.45rem .9rem;border-radius:999px;font-size:.95rem}
+
+  .hero{background:var(--teal);color:var(--on-teal);padding:3rem 0 3.5rem}
+  .hero .wrap{display:grid;gap:2.5rem}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1fr 1fr;align-items:center}}
+  .hero .lede{color:var(--on-teal-2);font-size:1.15rem;max-width:36ch;margin-top:1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+
+  .ba{position:relative;border-radius:1rem;overflow:hidden;aspect-ratio:4/3;background:#222;user-select:none;touch-action:none}
+  .ba .pane{position:absolute;inset:0}
+  .ba .after{background:
+      radial-gradient(ellipse 60% 40% at 30% 20%,rgba(255,255,255,.55),transparent 60%),
+      linear-gradient(160deg,#17395f 0%,#0b2743 45%,#06182b 100%)}
+  .ba .before{background:
+      repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 2px,transparent 2px 7px),
+      repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 1px,transparent 1px 5px),
+      radial-gradient(ellipse 60% 40% at 30% 20%,rgba(255,255,255,.18),transparent 60%),
+      linear-gradient(160deg,#2b4660 0%,#20364d 45%,#182a3c 100%);
+      clip-path:inset(0 calc(100% - var(--cut,50%)) 0 0)}
+  .ba .before::after{content:"";position:absolute;inset:0;background:
+      radial-gradient(circle at 70% 65%,rgba(120,100,70,.35) 0 3%,transparent 4%),
+      radial-gradient(circle at 20% 70%,rgba(120,100,70,.3) 0 2%,transparent 3%),
+      radial-gradient(circle at 55% 35%,rgba(255,255,255,.12) 0 1%,transparent 2%)}
+  .ba .handle{position:absolute;top:0;bottom:0;left:var(--cut,50%);width:3px;background:#fff;transform:translateX(-50%);pointer-events:none}
+  .ba .knob{position:absolute;top:50%;left:var(--cut,50%);transform:translate(-50%,-50%);width:2.75rem;height:2.75rem;border-radius:50%;background:var(--sun);color:var(--sun-ink);display:grid;place-items:center;font-weight:800;pointer-events:none;box-shadow:0 2px 10px rgba(0,0,0,.35)}
+  .ba .tag{position:absolute;top:.75rem;padding:.3rem .65rem;border-radius:999px;font-size:.85rem;font-weight:600;background:rgba(0,0,0,.45);color:#fff;pointer-events:none}
+  .ba .tag.l{left:.75rem}.ba .tag.r{right:.75rem}
+  .ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+  .ba-cap{color:var(--on-teal-2);font-size:.95rem;margin-top:.75rem;text-align:center}
+
+  section{padding:3.75rem 0}
+  .pk .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:800px){.pk .grid{grid-template-columns:repeat(3,1fr)}}
+  .pkg{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.4rem;display:flex;flex-direction:column}
+  .pkg.featured{border-color:var(--teal-2);border-width:2px}
+  .pkg .price{font-size:2rem;font-weight:800;margin:.5rem 0 .2rem}
+  .pkg .time{color:var(--ink-2);font-size:.95rem}
+  .pkg ul{margin:1rem 0 1.25rem;padding-left:1.1rem;color:var(--ink-2);font-size:1rem;display:grid;gap:.35rem}
+  .pkg .btn{margin-top:auto;background:var(--teal);color:var(--on-teal)}
+  .pk .note{color:var(--ink-2);margin-top:1rem;font-size:.95rem}
+
+  .mobile{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .mobile .wrap{display:grid;gap:2rem}
+  @media (min-width:800px){.mobile .wrap{grid-template-columns:1fr 1fr;align-items:center}}
+  .mobile p{color:var(--ink-2);margin-top:.8rem}
+  .mobile ul{margin:1rem 0 0;padding-left:1.1rem;color:var(--ink-2);display:grid;gap:.4rem}
+
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:700px){.reviews .grid{grid-template-columns:repeat(2,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.3rem}
+  .stars{color:var(--sun);letter-spacing:.1em;margin-bottom:.5rem}
+  .review cite{display:block;margin-top:.8rem;font-style:normal;color:var(--ink-2);font-size:.95rem}
+  .rating-line{color:var(--ink-2);margin-top:.5rem}
+
+  .book{background:var(--teal);color:var(--on-teal)}
+  .book .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.book .wrap{grid-template-columns:1fr 1fr}}
+  .book .sub{color:var(--on-teal-2);margin-top:.8rem;max-width:40ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.5rem}
+  .contact-list a{color:var(--on-teal);text-decoration-color:var(--sun)}
+  form{display:grid;gap:.9rem;background:rgba(255,255,255,.06);padding:1.4rem;border-radius:1rem;border:1px solid rgba(255,255,255,.12)}
+  label{display:grid;gap:.35rem;font-weight:500;font-size:.95rem;color:var(--on-teal-2)}
+  input:not([type=range]),select,textarea{font:inherit;color:#0F2F2B;background:#fff;border:1px solid var(--line);border-radius:.5rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:4.5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--sun);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-teal-2)}
+  footer{background:var(--teal);color:var(--on-teal-2);padding:1.5rem 0 2rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.1)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--sun);color:var(--sun-ink);font-size:.75rem;font-weight:600;padding:.3rem .6rem;border-radius:999px;z-index:20}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Tropik<span>.</span></a>
+    <nav aria-label="Sections">
+      <a href="#packages">Packages</a>
+      <a href="#mobile">We come to you</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Book</a>
+    </nav>
+    <a class="call-pill" href="tel:+12679840397">Book now</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>Showroom clean, in your own driveway.</h1>
+      <p class="lede">Mobile detailing, paint correction and ceramic coating across South Tampa. Mason and his team come to you, same day when the schedule allows.</p>
+      <div class="hero-actions">
+        <a class="btn btn-sun" href="#book">Book a detail</a>
+        <a class="btn btn-outline" href="#packages">See packages</a>
+      </div>
+    </div>
+    <div>
+      <div class="ba" id="ba" style="--cut:50%">
+        <div class="pane after"></div>
+        <div class="pane before"></div>
+        <div class="handle"></div>
+        <div class="knob" aria-hidden="true">⇔</div>
+        <span class="tag l">Before</span><span class="tag r">After</span>
+        <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after paint correction" id="baRange">
+      </div>
+      <p class="ba-cap">Drag to compare. Swirls and water spots on the left, corrected and coated on the right.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pk" id="packages">
+  <div class="wrap">
+    <h2>Packages</h2>
+    <div class="grid">
+      <div class="pkg">
+        <h3>Maintenance wash</h3>
+        <div class="price">$90</div>
+        <div class="time">About 1 hour</div>
+        <ul><li>Hand wash and dry</li><li>Wheels and tires dressed</li><li>Interior vacuum and wipe-down</li><li>Windows inside and out</li></ul>
+        <a class="btn" href="#book">Book this</a>
+      </div>
+      <div class="pkg featured">
+        <h3>Full interior and exterior</h3>
+        <div class="price">$220</div>
+        <div class="time">About 3 hours</div>
+        <ul><li>Everything in the wash</li><li>Shampooed seats and carpet</li><li>Pet hair and stain removal</li><li>Clay bar and sealant</li><li>Door jambs, trim, vents</li></ul>
+        <a class="btn" href="#book">Book this</a>
+      </div>
+      <div class="pkg">
+        <h3>Paint correction and ceramic</h3>
+        <div class="price">From $650</div>
+        <div class="time">1–2 days</div>
+        <ul><li>Single or two-stage polish</li><li>Swirl and scratch removal</li><li>Professional ceramic coating</li><li>Years of gloss and easy washing</li></ul>
+        <a class="btn" href="#book">Get a quote</a>
+      </div>
+    </div>
+    <p class="note">Trucks and large SUVs add $30 to wash and full packages. Weekly and biweekly maintenance plans available at a discount.</p>
+  </div>
+</section>
+
+<section class="mobile" id="mobile">
+  <div class="wrap">
+    <div>
+      <h2>We bring everything</h2>
+      <p>Water, power, lighting and every product. You don't move the car, you don't wait anywhere. Most customers book it for while they're at work.</p>
+    </div>
+    <div>
+      <h3>Serving</h3>
+      <ul><li>South Tampa, Hyde Park, Davis Islands, Westshore</li><li>Downtown, Channelside, Seminole Heights</li><li>St. Pete, Tierra Verde and the beaches by request</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <h2>Reviews</h2>
+    <p class="rating-line">5.0 on Google across 71 reviews.</p>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Came the same day, spent three hours on my wife's car and didn't skip a single spot. Went in looking for a good detailer and found a great one.</p><cite>Full detail, South Tampa</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Pet hair and stains I couldn't get out myself are gone. Exterior glossy, wheels spotless, even the trim and door edges.</p><cite>Interior and exterior</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>I'm picky about who touches my car. Mason took his time and the ceramic coat is flawless.</p><cite>Ceramic coating</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>They came to my office and I didn't even have to move the car. Now he comes by every week.</p><cite>Weekly maintenance</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Book a detail</h2>
+      <p class="sub">Pick a package, tell us where the car is, and it opens a text to Mason with everything filled in.</p>
+      <ul class="contact-list">
+        <li><a href="tel:+12679840397">(267) 984-0397</a></li>
+        <li>Mobile service, South Tampa</li>
+        <li>Open daily, 6am–10pm</li>
+      </ul>
+    </div>
+    <form id="bookForm">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Vehicle<input name="car" placeholder="BMW X3" required></label>
+      <label>Package
+        <select name="pkg"><option>Maintenance wash</option><option>Full interior and exterior</option><option>Paint correction and ceramic</option><option>Not sure, help me choose</option></select>
+      </label>
+      <label>Where and when<input name="when" placeholder="Hyde Park, Saturday morning"></label>
+      <button class="btn btn-sun" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Tropik Detailing Tampa</span>
+    <span>Site preview by Shopfront Sites</span>
+  </div>
+</footer>
+<span class="preview-tag">Website preview</span>
+
+<script>
+(function(){
+  var ba=document.getElementById('ba'),r=document.getElementById('baRange');
+  r.addEventListener('input',function(){ba.style.setProperty('--cut',r.value+'%')});
+  var f=document.getElementById('bookForm');
+  f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f);
+    var m='Hi Mason, this is '+d.get('name')+'. I\'d like the '+d.get('pkg')+' for my '+d.get('car')+'.';
+    if(d.get('when'))m+=' '+d.get('when')+'.';
+    m+=' What do you have open?';
+    window.location.href='sms:+12679840397?&body='+encodeURIComponent(m);});
+})();
+</script>
+</body>
+</html>

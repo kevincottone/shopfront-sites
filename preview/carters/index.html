@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carter's Mobile Detailing — Riverview, FL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF8F3; --bg-2:#FFFFFF; --ink:#1E2423; --ink-2:#5F6865; --line:#E2DED4;
+    --forest:#1F3D2B; --on-forest:#F3F5F1; --on-forest-2:#B4C4B5;
+    --amber:#E9A23B; --amber-ink:#1E2423;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#161C19;--bg-2:#1F2622;--ink:#F3F5F1;--ink-2:#B6C0BA;--line:#2F3934}}
+  :root[data-theme="dark"]{--bg:#161C19;--bg-2:#1F2622;--ink:#F3F5F1;--ink-2:#B6C0BA;--line:#2F3934}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Fraunces,Georgia,serif;margin:0;line-height:1.02;font-weight:800;letter-spacing:-.02em}
+  h1{font-size:clamp(2.6rem,8.5vw,4.6rem)}
+  h2{font-size:clamp(1.9rem,5.5vw,2.8rem)}
+  h3{font-size:1.3rem;font-weight:600}
+  p{margin:0}
+  .wrap{width:min(1000px,100% - 2.5rem);margin-inline:auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.4rem;font-weight:600;font-size:1.05rem;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+  .btn-amber{background:var(--amber);color:var(--amber-ink)}
+  .btn-outline{background:transparent;color:var(--on-forest);border-color:rgba(255,255,255,.3)}
+
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--forest);color:var(--on-forest)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem}
+  .logo{font-family:Fraunces,serif;font-weight:800;font-size:1.3rem;text-decoration:none;color:var(--on-forest)}
+  .logo span{color:var(--amber)}
+  nav a{text-decoration:none;color:var(--on-forest-2);font-weight:500;margin-left:1.25rem}
+  @media (max-width:640px){nav{display:none}}
+  .call-pill{background:var(--amber);color:var(--amber-ink);text-decoration:none;font-weight:600;padding:.45rem .9rem;border-radius:999px;font-size:.95rem}
+
+  .hero{background:var(--forest);color:var(--on-forest);padding:3rem 0 3.5rem}
+  .hero .wrap{display:grid;gap:2.5rem}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .hero .lede{color:var(--on-forest-2);font-size:1.15rem;max-width:36ch;margin-top:1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+  .one{margin-top:2rem;padding:1rem 1.2rem;border-left:3px solid var(--amber);color:var(--on-forest-2);font-size:1rem;max-width:40ch}
+  .one b{color:var(--on-forest);font-weight:600}
+
+  .builder{background:#28503A;border:1px solid rgba(255,255,255,.08);border-radius:.6rem;padding:1.25rem}
+  .builder h3{color:var(--on-forest);margin-bottom:.9rem}
+  .opt{display:flex;align-items:center;gap:.8rem;padding:.7rem 0;border-top:1px solid rgba(255,255,255,.1);cursor:pointer}
+  .opt:first-of-type{border-top:0}
+  .opt input{width:1.3rem;height:1.3rem;accent-color:var(--amber);flex:0 0 auto}
+  .opt .t{flex:1;color:var(--on-forest)}
+  .opt .t small{display:block;color:var(--on-forest-2);font-size:.9rem}
+  .opt .p{color:var(--on-forest);font-weight:600;white-space:nowrap}
+  .total{display:flex;justify-content:space-between;align-items:baseline;margin-top:1rem;padding-top:1rem;border-top:2px solid rgba(255,255,255,.2);color:var(--on-forest)}
+  .total .n{font-family:Fraunces,serif;font-size:2.2rem;font-weight:800}
+  .total small{display:block;color:var(--on-forest-2);font-size:.9rem}
+  .builder .btn{width:100%;margin-top:1rem}
+
+  section{padding:3.75rem 0}
+  .inc .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:700px){.inc .grid{grid-template-columns:repeat(3,1fr)}}
+  .inc p{color:var(--ink-2);margin-top:.4rem}
+
+  .area{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .area .wrap{display:grid;gap:2rem}
+  @media (min-width:800px){.area .wrap{grid-template-columns:1fr 1fr;align-items:center}}
+  .area p{color:var(--ink-2);margin-top:.8rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+  .towns span{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:.35rem .8rem;font-size:.95rem}
+
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:700px){.reviews .grid{grid-template-columns:repeat(2,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:.6rem;padding:1.3rem}
+  .stars{color:var(--amber);letter-spacing:.1em;margin-bottom:.5rem}
+  .review cite{display:block;margin-top:.8rem;font-style:normal;color:var(--ink-2);font-size:.95rem}
+  .rating-line{color:var(--ink-2);margin-top:.5rem}
+
+  .book{background:var(--forest);color:var(--on-forest)}
+  .book .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.book .wrap{grid-template-columns:1fr 1fr}}
+  .book .sub{color:var(--on-forest-2);margin-top:.8rem;max-width:40ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.5rem}
+  .contact-list a{color:var(--on-forest);text-decoration-color:var(--amber)}
+  form{display:grid;gap:.9rem;background:rgba(255,255,255,.06);padding:1.4rem;border-radius:.6rem;border:1px solid rgba(255,255,255,.12)}
+  label.f{display:grid;gap:.35rem;font-weight:500;font-size:.95rem;color:var(--on-forest-2)}
+  input:not([type=checkbox]),select,textarea{font:inherit;color:#1E2423;background:#fff;border:1px solid var(--line);border-radius:.4rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:4.5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--amber);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-forest-2)}
+  footer{background:var(--forest);color:var(--on-forest-2);padding:1.5rem 0 2rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.1)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--amber);color:var(--amber-ink);font-size:.75rem;font-weight:600;padding:.3rem .6rem;border-radius:999px;z-index:20}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Carter's<span>.</span></a>
+    <nav aria-label="Sections">
+      <a href="#included">What's included</a>
+      <a href="#area">Service area</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Book</a>
+    </nav>
+    <a class="call-pill" href="sms:+18134467061">Text Marcus</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>One guy. Every nook and cranny.</h1>
+      <p class="lede">Mobile detailing in Riverview and Brandon, done by Marcus personally. He brings the water, the power and the right product for every surface, and he doesn't leave until it's right.</p>
+      <div class="hero-actions">
+        <a class="btn btn-amber" href="#book">Book a detail</a>
+        <a class="btn btn-outline" href="#included">What's included</a>
+      </div>
+      <div class="one"><b>Owner-operated.</b> The person you text is the person who shows up and does the work. No crew, no shortcuts, no surprises.</div>
+    </div>
+
+    <div class="builder">
+      <h3>Build your detail</h3>
+      <label class="opt"><input type="checkbox" data-p="80" checked><span class="t">Exterior wash and wax<small>Hand wash, wheels, tires, windows, spray wax</small></span><span class="p">$80</span></label>
+      <label class="opt"><input type="checkbox" data-p="90" checked><span class="t">Interior deep clean<small>Vacuum, shampoo, leather and plastics, vents</small></span><span class="p">$90</span></label>
+      <label class="opt"><input type="checkbox" data-p="40"><span class="t">Engine bay<small>Degreased and dressed</small></span><span class="p">$40</span></label>
+      <label class="opt"><input type="checkbox" data-p="50"><span class="t">Pet hair and odor<small>For the dog-owner cars</small></span><span class="p">$50</span></label>
+      <label class="opt"><input type="checkbox" data-p="60"><span class="t">Headlight restoration<small>Both lenses, clear again</small></span><span class="p">$60</span></label>
+      <label class="opt"><input type="checkbox" data-p="30"><span class="t">Truck or large SUV<small>Size add-on</small></span><span class="p">+$30</span></label>
+      <div class="total"><div><small>Your estimate</small><span class="n" id="tot">$170</span></div><small>Final price confirmed by text</small></div>
+      <a class="btn btn-amber" id="bookBtn" href="sms:+18134467061">Book this by text</a>
+    </div>
+  </div>
+</section>
+
+<section class="inc" id="included">
+  <div class="wrap">
+    <h2>What's included</h2>
+    <div class="grid">
+      <div><h3>The right product for each surface</h3><p>Leather gets leather cleaner. Plastics get a matte dressing, not a greasy shine. Glass gets a streak-free finish inside and out.</p></div>
+      <div><h3>Everything brought to you</h3><p>Water tank, generator, extractor, lighting. You need a parking spot and nothing else.</p></div>
+      <div><h3>Done when it's actually done</h3><p>Booked for two hours but it needs three? It gets three. The job is the job.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <div>
+      <h2>Where Marcus goes</h2>
+      <p>Based in Riverview, serving the south-east side of Tampa Bay. Just outside this? Text anyway.</p>
+      <div class="towns"><span>Riverview</span><span>Brandon</span><span>Valrico</span><span>FishHawk</span><span>Apollo Beach</span><span>Gibsonton</span><span>Ruskin</span><span>Lithia</span></div>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <p>Mornings on weekdays, longer days Friday through Sunday. Weekend slots fill first, so book a few days ahead.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <h2>Reviews</h2>
+    <p class="rating-line">5.0 on Google across 85 reviews.</p>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Got into every corner and used the right product on every material. You can tell he has a real passion for clean cars.</p><cite>Full detail</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Did both our cars and they looked amazing after. On time, responsive, and a better person than he is a detailer, which is saying something.</p><cite>Two-car booking</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>My daily hadn't seen a wash in months. Engine bay, interior, exterior all brought back. Can't beat it at this price.</p><cite>Interior, exterior and engine bay</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Pollen, sand, sticks, all of it gone. Looks like the day I drove it off the lot. Having him come to me is unmatched.</p><cite>Interior and exterior</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Book a detail</h2>
+      <p class="sub">Fill this in and it opens a text to Marcus with your details. He'll reply with a time.</p>
+      <ul class="contact-list">
+        <li><a href="tel:+18134467061">(813) 446-7061</a></li>
+        <li>Mobile service, Riverview and surrounding</li>
+      </ul>
+    </div>
+    <form id="bookForm">
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Vehicle<input name="car" placeholder="2023 Nissan Altima" required></label>
+      <label class="f">Where and when<input name="when" placeholder="FishHawk, Saturday morning"></label>
+      <label class="f">Anything to know?<textarea name="notes" placeholder="Dog hair in the back seat"></textarea></label>
+      <button class="btn btn-amber" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Carter's Mobile Detailing, Riverview, FL</span>
+    <span>Site preview by Shopfront Sites</span>
+  </div>
+</footer>
+<span class="preview-tag">Website preview</span>
+
+<script>
+(function(){
+  var boxes=document.querySelectorAll('.opt input'),tot=document.getElementById('tot'),btn=document.getElementById('bookBtn');
+  function calc(){
+    var sum=0,items=[];
+    boxes.forEach(function(b){if(b.checked){sum+=+b.dataset.p;items.push(b.parentNode.querySelector('.t').childNodes[0].textContent.trim())}});
+    tot.textContent='$'+sum;
+    btn.href='sms:+18134467061?&body='+encodeURIComponent('Hi Marcus, I\'d like to book: '+(items.join(', ')||'a detail')+' (about $'+sum+'). What do you have open?');
+  }
+  boxes.forEach(function(b){b.addEventListener('change',calc)});calc();
+  var f=document.getElementById('bookForm');
+  f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f);
+    var m='Hi Marcus, this is '+d.get('name')+'. I\'d like a detail for my '+d.get('car')+'.';
+    if(d.get('when'))m+=' '+d.get('when')+'.';
+    if(d.get('notes'))m+=' '+d.get('notes');
+    m+=' What do you have open?';
+    window.location.href='sms:+18134467061?&body='+encodeURIComponent(m);});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LMS Wraps — Vinyl wraps in Tampa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EEF0F2; --bg-2:#FFFFFF; --ink:#141A22; --ink-2:#4B5563;
+    --navy:#0F2440; --navy-2:#173561; --on-navy:#F3F6FA; --on-navy-2:#A9B8CE;
+    --accent:#E8552F; --accent-ink:#FFFFFF; --line:#D5DAE0;
+    --finish:#1F6FB2;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#141A22; --bg-2:#1C232D; --ink:#F0F3F7; --ink-2:#B4BEC9; --line:#2C3542;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#141A22; --bg-2:#1C232D; --ink:#F0F3F7; --ink-2:#B4BEC9; --line:#2C3542;
+  }
+  html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Barlow,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:"Barlow Condensed",Impact,sans-serif;line-height:1;margin:0;letter-spacing:-.01em}
+  h1{font-size:clamp(3rem,10vw,5.75rem);font-weight:800}
+  h2{font-size:clamp(2.1rem,6vw,3.25rem);font-weight:700}
+  h3{font-size:1.5rem;font-weight:700}
+  p{margin:0}
+  a{color:inherit}
+  img,svg{max-width:100%}
+  .wrap{width:min(1080px,100% - 2.5rem);margin-inline:auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.4rem;border-radius:.35rem;font-family:"Barlow Condensed",sans-serif;font-size:1.35rem;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;letter-spacing:.01em}
+  .btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .btn-accent{background:var(--accent);color:var(--accent-ink)}
+  .btn-ghost{background:transparent;color:var(--on-navy);border-color:rgba(255,255,255,.35)}
+  .btn-ink{background:var(--ink);color:var(--bg)}
+
+  /* header */
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--navy);color:var(--on-navy);border-bottom:1px solid rgba(255,255,255,.08)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem}
+  .logo{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:.02em;text-decoration:none}
+  .logo span{color:var(--accent)}
+  nav a{text-decoration:none;color:var(--on-navy-2);font-weight:500;margin-left:1.25rem}
+  nav a:hover{color:var(--on-navy)}
+  @media (max-width:640px){nav{display:none}}
+  .call-pill{background:var(--accent);color:#fff;text-decoration:none;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.15rem;padding:.45rem .9rem;border-radius:999px}
+
+  /* hero */
+  .hero{background:var(--navy);color:var(--on-navy);padding:3rem 0 3.5rem;overflow:hidden}
+  .hero .wrap{display:grid;gap:2.5rem;grid-template-columns:1fr}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .hero p.lede{font-size:1.2rem;color:var(--on-navy-2);max-width:34ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .car-stage{background:linear-gradient(180deg,var(--navy-2),var(--navy));border-radius:.75rem;padding:1.25rem 1.25rem 1rem;border:1px solid rgba(255,255,255,.08)}
+  .car-stage svg{width:100%;height:auto;display:block}
+  .finish-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem;align-items:center}
+  .finish-row span.lbl{color:var(--on-navy-2);font-size:.95rem;margin-right:.25rem}
+  .chip{width:2.4rem;height:2.4rem;border-radius:50%;border:3px solid transparent;cursor:pointer;padding:0;box-shadow:inset 0 0 0 2px rgba(0,0,0,.25)}
+  .chip[aria-pressed="true"]{border-color:#fff}
+  .chip:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  .finish-name{font-family:"Barlow Condensed",sans-serif;font-size:1.3rem;font-weight:700;margin-top:.6rem}
+  .finish-name small{display:block;font-family:Barlow,sans-serif;font-weight:400;font-size:.95rem;color:var(--on-navy-2)}
+
+  /* sections */
+  section{padding:4rem 0}
+  .services{background:var(--bg)}
+  .grid{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:700px){.grid{grid-template-columns:repeat(2,1fr)}}
+  .svc{background:var(--bg-2);border-left:4px solid var(--accent);padding:1.25rem 1.4rem;border-radius:0 .5rem .5rem 0}
+  .svc p{color:var(--ink-2);margin-top:.5rem}
+  .svc .from{display:block;margin-top:.8rem;font-family:"Barlow Condensed",sans-serif;font-size:1.25rem;font-weight:700}
+
+  .process{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .steps{display:grid;gap:1.5rem;margin-top:2rem;counter-reset:step}
+  @media (min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{position:relative;padding-top:3.2rem}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;top:0;left:0;font-family:"Barlow Condensed",sans-serif;font-size:2.75rem;font-weight:800;color:var(--accent);line-height:1}
+  .step p{color:var(--ink-2);margin-top:.4rem}
+
+  .reviews{background:var(--bg)}
+  .review{background:var(--bg-2);padding:1.4rem;border-radius:.5rem;border:1px solid var(--line)}
+  .review p{font-size:1.1rem}
+  .review cite{display:block;margin-top:.9rem;font-style:normal;color:var(--ink-2);font-weight:500}
+  .stars{color:var(--accent);letter-spacing:.1em;font-size:1rem;margin-bottom:.6rem}
+  .rating-line{color:var(--ink-2);margin-top:.5rem}
+
+  .quote{background:var(--navy);color:var(--on-navy)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr}}
+  .quote p.sub{color:var(--on-navy-2);margin-top:.9rem;max-width:38ch}
+  .contact-list{list-style:none;padding:0;margin:1.75rem 0 0;display:grid;gap:.6rem;font-size:1.05rem}
+  .contact-list a{color:var(--on-navy);text-decoration-color:var(--accent)}
+  form{display:grid;gap:.9rem;background:rgba(255,255,255,.05);padding:1.4rem;border-radius:.6rem;border:1px solid rgba(255,255,255,.1)}
+  label{display:grid;gap:.35rem;font-weight:500;font-size:.95rem;color:var(--on-navy-2)}
+  input,select,textarea{font:inherit;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:.35rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-navy-2)}
+
+  footer{background:var(--navy);color:var(--on-navy-2);padding:1.5rem 0 2rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.08)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);font-size:.75rem;padding:.3rem .6rem;border-radius:999px;opacity:.85;z-index:20}
+  @media (prefers-reduced-motion:no-preference){
+    .car-body{transition:fill .35s ease}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">LMS<span>.</span>WRAPS</a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#process">How it works</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+18137818179">Call Luis</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>Your car.<br>A new color<br>by Friday.</h1>
+      <p class="lede">Full color-change wraps, chrome deletes, and accents installed in Tampa by Luis. Clean edges, finished on the day we promise.</p>
+      <div class="hero-actions">
+        <a class="btn btn-accent" href="#quote">Get a quote</a>
+        <a class="btn btn-ghost" href="sms:+18137818179?&body=Hi%20Luis%2C%20I%27d%20like%20a%20quote%20for%20a%20wrap%20on%20my%20">Text us a photo</a>
+      </div>
+    </div>
+
+    <div class="car-stage" aria-label="Finish preview">
+      <svg viewBox="0 0 520 220" role="img" aria-labelledby="carTitle">
+        <title id="carTitle">Car silhouette shown in the selected finish</title>
+        <defs>
+          <linearGradient id="sheen" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#fff" stop-opacity=".35"/>
+            <stop offset=".45" stop-color="#fff" stop-opacity="0"/>
+            <stop offset="1" stop-color="#000" stop-opacity=".25"/>
+          </linearGradient>
+        </defs>
+        <ellipse cx="260" cy="192" rx="230" ry="12" fill="#000" opacity=".35"/>
+        <path class="car-body" fill="var(--finish)" d="M62 160 C60 135 72 118 108 112 L150 106 C178 80 215 62 262 62 C318 62 356 80 392 110 L448 118 C470 122 482 136 480 160 L470 170 L58 170 Z"/>
+        <path fill="url(#sheen)" d="M62 160 C60 135 72 118 108 112 L150 106 C178 80 215 62 262 62 C318 62 356 80 392 110 L448 118 C470 122 482 136 480 160 L470 170 L58 170 Z"/>
+        <path fill="#0a1626" opacity=".85" d="M166 108 C190 86 222 72 262 72 C300 72 332 84 364 108 Z"/>
+        <path fill="#9fb3c8" opacity=".25" d="M172 106 C194 88 224 78 258 78 L258 106 Z"/>
+        <rect x="58" y="166" width="424" height="10" rx="4" fill="#0a1626"/>
+        <g fill="#0a1626">
+          <circle cx="140" cy="168" r="30"/><circle cx="400" cy="168" r="30"/>
+        </g>
+        <g fill="#8f99a6">
+          <circle cx="140" cy="168" r="16"/><circle cx="400" cy="168" r="16"/>
+        </g>
+        <g fill="#0a1626">
+          <circle cx="140" cy="168" r="6"/><circle cx="400" cy="168" r="6"/>
+        </g>
+        <rect x="454" y="134" width="22" height="9" rx="3" fill="#ffe9a8"/>
+        <rect x="62" y="136" width="18" height="8" rx="3" fill="#ff6b6b"/>
+      </svg>
+      <div class="finish-row" role="group" aria-label="Choose a finish">
+        <span class="lbl">Try a finish</span>
+        <button class="chip" type="button" aria-pressed="true" data-color="#1F6FB2" data-name="Gloss Ocean Blue" data-sub="Metallic, high gloss" style="background:#1F6FB2" aria-label="Gloss Ocean Blue"></button>
+        <button class="chip" type="button" aria-pressed="false" data-color="#2E3238" data-name="Satin Dark Grey" data-sub="Low sheen, hides swirls" style="background:#2E3238" aria-label="Satin Dark Grey"></button>
+        <button class="chip" type="button" aria-pressed="false" data-color="#B5342C" data-name="Gloss Carmine Red" data-sub="Deep, dealer-style red" style="background:#B5342C" aria-label="Gloss Carmine Red"></button>
+        <button class="chip" type="button" aria-pressed="false" data-color="#5E6B4B" data-name="Matte Military Green" data-sub="Flat, no reflections" style="background:#5E6B4B" aria-label="Matte Military Green"></button>
+        <button class="chip" type="button" aria-pressed="false" data-color="#E9E6DE" data-name="Satin Pearl White" data-sub="Soft pearl shift" style="background:#E9E6DE" aria-label="Satin Pearl White"></button>
+        <button class="chip" type="button" aria-pressed="false" data-color="#C98A2E" data-name="Gloss Bronze" data-sub="Warm metallic" style="background:#C98A2E" aria-label="Gloss Bronze"></button>
+      </div>
+      <div class="finish-name" id="finishName" aria-live="polite">Gloss Ocean Blue<small>Metallic, high gloss</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <h2>What we wrap</h2>
+    <div class="grid">
+      <div class="svc">
+        <h3>Full color change</h3>
+        <p>Every panel wrapped, door jambs optional. Paint stays protected underneath, so it comes off clean when you sell.</p>
+        <span class="from">From $2,800</span>
+      </div>
+      <div class="svc">
+        <h3>Roof, hood and accents</h3>
+        <p>Gloss black roof, racing stripes, mirror caps, spoilers. A one-day job that changes the whole stance of the car.</p>
+        <span class="from">From $250</span>
+      </div>
+      <div class="svc">
+        <h3>Chrome delete</h3>
+        <p>Window trim, grille, badges and bumper chrome blacked out in gloss or satin. The most-requested upgrade on newer German cars.</p>
+        <span class="from">From $350</span>
+      </div>
+      <div class="svc">
+        <h3>Commercial lettering and fleet</h3>
+        <p>Logos, phone numbers, and partial wraps for work trucks and vans. Design included, installed around your schedule.</p>
+        <span class="from">Quoted per vehicle</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>Text us photos</h3>
+        <p>Send a few pictures of your car and the finish you're thinking about. You'll hear back the same day.</p>
+      </div>
+      <div class="step">
+        <h3>Get a firm quote</h3>
+        <p>One price, with the material and the install date in writing. No surprises when you pick up.</p>
+      </div>
+      <div class="step">
+        <h3>Drop off, pick up</h3>
+        <p>Most full wraps take two to three days. Accents and chrome deletes are usually same-day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <h2>What customers say</h2>
+    <p class="rating-line">Rated 5.0 on Google across 28 reviews.</p>
+    <div class="grid">
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>Every detail was done right and the car was ready on the day Luis said it would be. Honest from the first message.</p>
+        <cite>Full wrap customer</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>Second car we've brought here. Clean work, fair price, and he kept us updated the whole way through.</p>
+        <cite>Repeat customer</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>Turned out better than what I pictured. The communication alone was worth it.</p>
+        <cite>Accent wrap customer</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>Professional, on time, and the finish looks factory. Already planning the next project.</p>
+        <cite>Chrome delete customer</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <h2>Get a quote</h2>
+      <p class="sub">Fill this in and it opens a text to Luis with your details already typed. Or just call.</p>
+      <ul class="contact-list">
+        <li><a href="tel:+18137818179">(813) 781-8179</a></li>
+        <li>7001 N Oregon Ave, Tampa, FL 33604</li>
+        <li>By appointment, seven days a week</li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Year, make and model<input name="car" placeholder="2019 BMW 340i" required></label>
+      <label>What are you after?
+        <select name="job">
+          <option>Full color change</option>
+          <option>Roof, hood or accents</option>
+          <option>Chrome delete</option>
+          <option>Commercial lettering</option>
+          <option>Not sure yet</option>
+        </select>
+      </label>
+      <label>Finish or color in mind<input name="finish" placeholder="Satin dark grey"></label>
+      <label>Anything else<textarea name="notes"></textarea></label>
+      <button class="btn btn-accent" type="submit">Send as a text</button>
+      <p class="form-note">Nothing is stored here. Your message opens in your phone's messaging app and you send it yourself.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>LMS Wraps, Tampa, FL</span>
+    <span>Vinyl wraps, chrome deletes and accents</span>
+    <span>Site preview by Shopfront Sites</span>
+  </div>
+</footer>
+
+<span class="preview-tag">Website preview</span>
+
+<script>
+(function(){
+  var chips=document.querySelectorAll('.chip');
+  var root=document.documentElement;
+  var nameEl=document.getElementById('finishName');
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      chips.forEach(function(x){x.setAttribute('aria-pressed','false')});
+      c.setAttribute('aria-pressed','true');
+      root.style.setProperty('--finish',c.dataset.color);
+      nameEl.innerHTML=c.dataset.name+'<small>'+c.dataset.sub+'</small>';
+    });
+  });
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Luis, this is '+f.get('name')+'. I have a '+f.get('car')+' and I\'m interested in: '+f.get('job')+'.';
+    if(f.get('finish'))msg+=' Finish: '+f.get('finish')+'.';
+    if(f.get('notes'))msg+=' '+f.get('notes');
+    window.location.href='sms:+18137818179?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bumper Guy — Mobile bumper, dent and scratch repair, Brandon FL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F3F1EC; --bg-2:#FFFFFF; --ink:#1A1A1A; --ink-2:#5C5C5C; --line:#DAD6CD;
+    --red:#B8261B; --red-ink:#FFFFFF; --dark:#1A1A1A; --on-dark:#F3F1EC; --on-dark-2:#A8A59E;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1A1A1A;--bg-2:#242424;--ink:#F3F1EC;--ink-2:#B5B2AB;--line:#363636}}
+  :root[data-theme="dark"]{--bg:#1A1A1A;--bg-2:#242424;--ink:#F3F1EC;--ink-2:#B5B2AB;--line:#363636}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{margin:0;line-height:1;font-weight:900;letter-spacing:-.03em;text-transform:uppercase}
+  h1{font-size:clamp(2.8rem,10vw,5.5rem)}
+  h2{font-size:clamp(1.9rem,6vw,3rem)}
+  h3{font-size:1.15rem;letter-spacing:-.01em}
+  p{margin:0}
+  .wrap{width:min(1000px,100% - 2.5rem);margin-inline:auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.25rem;font-weight:700;font-size:1.05rem;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+  .btn-red{background:var(--red);color:var(--red-ink)}
+  .btn-outline{background:transparent;color:var(--on-dark);border-color:rgba(255,255,255,.3)}
+
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--dark);color:var(--on-dark)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem}
+  .logo{font-weight:900;font-size:1.3rem;text-decoration:none;color:var(--on-dark);text-transform:uppercase;letter-spacing:-.02em}
+  .logo span{color:var(--red)}
+  nav a{text-decoration:none;color:var(--on-dark-2);font-weight:500;margin-left:1.25rem}
+  @media (max-width:640px){nav{display:none}}
+  .call-pill{background:var(--red);color:#fff;text-decoration:none;font-weight:700;padding:.45rem .9rem;border-radius:999px;font-size:.95rem}
+
+  .hero{background:var(--dark);color:var(--on-dark);padding:3rem 0 3.5rem}
+  .hero .wrap{display:grid;gap:2.5rem}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .hero .lede{color:var(--on-dark-2);font-size:1.15rem;max-width:38ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+  .trust{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;color:var(--on-dark-2);font-size:.95rem}
+  .trust strong{display:block;color:var(--on-dark);font-size:1.4rem;font-weight:900}
+
+  .quote-card{background:#262626;border:1px solid rgba(255,255,255,.08);border-radius:.5rem;padding:1.25rem}
+  .quote-card h3{color:var(--on-dark);margin-bottom:.25rem}
+  .quote-card .sub{color:var(--on-dark-2);font-size:.95rem;margin-bottom:1rem}
+  .steps3{display:grid;gap:.6rem;counter-reset:q}
+  .q{display:flex;gap:.8rem;align-items:flex-start;color:var(--on-dark)}
+  .q::before{counter-increment:q;content:counter(q);flex:0 0 1.8rem;height:1.8rem;border-radius:50%;background:var(--red);color:#fff;font-weight:900;display:grid;place-items:center;font-size:.95rem}
+  .q small{display:block;color:var(--on-dark-2);font-size:.9rem}
+  .quote-card .btn{width:100%;margin-top:1rem}
+
+  section{padding:3.75rem 0}
+  .fix .grid{display:grid;gap:1rem;margin-top:1.75rem}
+  @media (min-width:700px){.fix .grid{grid-template-columns:repeat(2,1fr)}}
+  .item{background:var(--bg-2);border:1px solid var(--line);border-left:5px solid var(--red);padding:1.2rem;border-radius:0 .4rem .4rem 0}
+  .item p{color:var(--ink-2);margin-top:.4rem}
+  .item .from{display:block;margin-top:.6rem;font-weight:900}
+
+  .vs{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .vs .wrap{display:grid;gap:1.5rem}
+  @media (min-width:800px){.vs .wrap{grid-template-columns:1fr 1fr}}
+  .vs .col{padding:1.3rem;border-radius:.4rem;border:1px solid var(--line)}
+  .vs .col.them{opacity:.75}
+  .vs .col.us{border-color:var(--red);border-width:2px}
+  .vs ul{margin:.8rem 0 0;padding-left:1.1rem;color:var(--ink-2);display:grid;gap:.4rem}
+
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:700px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:.4rem;padding:1.2rem}
+  .stars{color:var(--red);letter-spacing:.1em;margin-bottom:.5rem}
+  .review cite{display:block;margin-top:.7rem;font-style:normal;color:var(--ink-2);font-size:.95rem}
+  .rating-line{color:var(--ink-2);margin-top:.5rem}
+
+  .book{background:var(--dark);color:var(--on-dark)}
+  .book .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.book .wrap{grid-template-columns:1fr 1fr}}
+  .book .sub{color:var(--on-dark-2);margin-top:.8rem;max-width:40ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.5rem}
+  .contact-list a{color:var(--on-dark);text-decoration-color:var(--red)}
+  form{display:grid;gap:.9rem;background:rgba(255,255,255,.05);padding:1.4rem;border-radius:.5rem;border:1px solid rgba(255,255,255,.1)}
+  label{display:grid;gap:.35rem;font-weight:500;font-size:.95rem;color:var(--on-dark-2)}
+  input,select,textarea{font:inherit;color:#1A1A1A;background:#fff;border:1px solid var(--line);border-radius:.3rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:4.5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--red);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-dark-2)}
+  footer{background:var(--dark);color:var(--on-dark-2);padding:1.5rem 0 2rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.08)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--red);color:#fff;font-size:.75rem;font-weight:700;padding:.3rem .6rem;border-radius:999px;z-index:20}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Bumper<span>Guy</span></a>
+    <nav aria-label="Sections">
+      <a href="#fix">What we fix</a>
+      <a href="#vs">Why mobile</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Quote</a>
+    </nav>
+    <a class="call-pill" href="sms:+18135855311">Text a photo</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>Fixed in your driveway. Not in a body shop for a week.</h1>
+      <p class="lede">Mobile bumper repair, dents, scratches, rust spots and touch-up paint across Brandon, Riverview and Valrico. Text Miller a photo and get a price back today.</p>
+      <div class="hero-actions">
+        <a class="btn btn-red" href="sms:+18135855311?&body=Hi%20Miller%2C%20here%27s%20a%20photo%20of%20the%20damage%20on%20my%20">Text a photo for a quote</a>
+        <a class="btn btn-outline" href="tel:+18135855311">(813) 585-5311</a>
+      </div>
+      <div class="trust">
+        <div><strong>4.8</strong>159 Google reviews</div>
+        <div><strong>Same week</strong>Usually within days</div>
+        <div><strong>No deposit</strong>Pay when it's done</div>
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <h3>How a quote works</h3>
+      <p class="sub">No appointment needed to find out the price.</p>
+      <div class="steps3">
+        <div class="q"><div>Text a photo of the damage<small>Stand a few feet back so the whole panel shows. Add one close-up.</small></div></div>
+        <div class="q"><div>Get a price and a day<small>Most quotes come back within a couple of hours. If parts are needed, Miller orders them before he comes out.</small></div></div>
+        <div class="q"><div>He comes to you<small>Home, work, or a parking lot. Most jobs take two to three hours.</small></div></div>
+      </div>
+      <a class="btn btn-red" href="sms:+18135855311?&body=Hi%20Miller%2C%20here%27s%20a%20photo%20of%20the%20damage%20on%20my%20">Start a quote</a>
+    </div>
+  </div>
+</section>
+
+<section class="fix" id="fix">
+  <div class="wrap">
+    <h2>What we fix</h2>
+    <div class="grid">
+      <div class="item"><h3>Bumper scuffs and scrapes</h3><p>Parking-garage pillars, curbs, the car behind you. Sanded, filled, and painted to match in a few hours.</p><span class="from">From $150</span></div>
+      <div class="item"><h3>Dents</h3><p>Door dings, shopping-cart dents, hail. Paintless where possible, so the factory finish stays untouched.</p><span class="from">From $100</span></div>
+      <div class="item"><h3>Bumper replacement</h3><p>When it's cracked past saving. Parts ordered and painted ahead of time, then swapped in your driveway.</p><span class="from">From $450</span></div>
+      <div class="item"><h3>Rust spots and clear coat</h3><p>Peeling clear coat and surface rust stopped before it spreads. Florida sun is brutal on older paint.</p><span class="from">From $200</span></div>
+      <div class="item"><h3>Scratches and key marks</h3><p>From a buff-out to a full panel repaint, matched to your paint code.</p><span class="from">From $120</span></div>
+      <div class="item"><h3>Headlight restoration</h3><p>Yellowed, hazy lenses brought back to clear. Takes about an hour.</p><span class="from">$80 a pair</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="vs" id="vs">
+  <div class="wrap">
+    <div class="col them">
+      <h3>Body shop</h3>
+      <ul><li>Drop the car off and find a ride</li><li>Days or weeks without it</li><li>Estimate first, then the real number</li><li>Often priced above your deductible anyway</li></ul>
+    </div>
+    <div class="col us">
+      <h3>Bumper Guy</h3>
+      <ul><li>Miller comes to the car</li><li>Most jobs done in an afternoon</li><li>Price from a photo, before he shows up</li><li>Usually less than a deductible, no claim filed</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <h2>Reviews</h2>
+    <p class="rating-line">4.8 on Google across 159 reviews.</p>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Had a big dent I was sure needed a whole new panel. Miller came to the house with his dad and you cannot tell anything was ever there.</p><cite>Dent repair, Brandon</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Sent photos, parts came in about a week, and he had the rear bumper done in three hours in my driveway. Other shops wanted my car for days.</p><cite>Bumper replacement</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Rust and clear-coat issues taken care of, great communication, very fair for a mobile service. Keeping his number.</p><cite>Rust and paint</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Get a quote</h2>
+      <p class="sub">Fill this in and it opens a text to Miller. Attach a photo before you hit send and you'll have a price today.</p>
+      <ul class="contact-list">
+        <li><a href="tel:+18135855311">(813) 585-5311</a></li>
+        <li>Mobile service: Brandon, Riverview, Valrico, Seffner, Plant City</li>
+        <li>Seven days, by appointment</li>
+      </ul>
+    </div>
+    <form id="bookForm">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Year, make and model<input name="car" placeholder="2020 Honda CR-V" required></label>
+      <label>What happened?<textarea name="issue" placeholder="Scraped the rear bumper on a pole, about a foot wide" required></textarea></label>
+      <label>Where's the car?<input name="where" placeholder="Riverview, at home"></label>
+      <button class="btn btn-red" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Bumper Guy, Brandon, FL</span>
+    <span>Site preview by Shopfront Sites</span>
+  </div>
+</footer>
+<span class="preview-tag">Website preview</span>
+
+<script>
+(function(){
+  var f=document.getElementById('bookForm');
+  f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f);
+    var m='Hi Miller, this is '+d.get('name')+'. '+d.get('car')+': '+d.get('issue');
+    if(d.get('where'))m+=' Car is in '+d.get('where')+'.';
+    m+=' Photo attached. What would that run?';
+    window.location.href='sms:+18135855311?&body='+encodeURIComponent(m);});
+})();
+</script>
+</body>
+</html>

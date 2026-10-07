@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dimi's Mobile Mechanic — We come to you, Lutz and North Tampa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#E9EEF3; --bg-2:#FFFFFF; --ink:#141C26; --ink-2:#4F5B6B; --line:#CFD8E2;
+    --deep:#1B2B3D; --on-deep:#F2F5F8; --on-deep-2:#A7B5C6;
+    --orange:#F0702B; --orange-ink:#141C26;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141C26;--bg-2:#1C2735;--ink:#F2F5F8;--ink-2:#B2BECB;--line:#2E3B4B}}
+  :root[data-theme="dark"]{--bg:#141C26;--bg-2:#1C2735;--ink:#F2F5F8;--ink-2:#B2BECB;--line:#2E3B4B}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Rubik,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{margin:0;line-height:1.05;font-weight:800;letter-spacing:-.02em}
+  h1{font-size:clamp(2.5rem,8vw,4.5rem)}
+  h2{font-size:clamp(1.8rem,5vw,2.6rem)}
+  h3{font-size:1.25rem;font-weight:700}
+  p{margin:0}
+  .wrap{width:min(1020px,100% - 2.5rem);margin-inline:auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.25rem;padding:.75rem 1.4rem;border-radius:.5rem;font-weight:700;font-size:1.05rem;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+  .btn-orange{background:var(--orange);color:var(--orange-ink)}
+  .btn-outline{background:transparent;color:var(--on-deep);border-color:rgba(255,255,255,.3)}
+
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--deep);color:var(--on-deep)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem}
+  .logo{font-weight:800;font-size:1.25rem;text-decoration:none;color:var(--on-deep)}
+  .logo span{color:var(--orange)}
+  nav a{text-decoration:none;color:var(--on-deep-2);font-weight:500;margin-left:1.25rem}
+  @media (max-width:640px){nav{display:none}}
+  .call-pill{background:var(--orange);color:var(--orange-ink);text-decoration:none;font-weight:700;padding:.45rem .9rem;border-radius:999px;font-size:.95rem}
+
+  .hero{background:var(--deep);color:var(--on-deep);padding:3rem 0 3.5rem}
+  .hero .wrap{display:grid;gap:2.5rem}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .hero .lede{color:var(--on-deep-2);font-size:1.15rem;max-width:38ch;margin-top:1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+  .trust{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;color:var(--on-deep-2);font-size:.95rem}
+  .trust strong{display:block;color:var(--on-deep);font-size:1.4rem;font-weight:800}
+
+  .symptom{background:#223447;border:1px solid rgba(255,255,255,.08);border-radius:.75rem;padding:1.25rem}
+  .symptom h3{color:var(--on-deep);margin-bottom:.9rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.5rem}
+  .chip{background:transparent;color:var(--on-deep);border:1.5px solid rgba(255,255,255,.3);border-radius:999px;padding:.5rem .9rem;font:inherit;font-weight:500;cursor:pointer}
+  .chip[aria-pressed="true"]{background:var(--orange);border-color:var(--orange);color:var(--orange-ink)}
+  .chip:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+  .answer{margin-top:1rem;background:rgba(0,0,0,.25);border-radius:.5rem;padding:1rem;min-height:5.5rem}
+  .answer p{color:var(--on-deep-2)}
+  .answer strong{display:block;color:var(--on-deep);font-size:1.1rem;margin-bottom:.3rem}
+  .answer .cost{color:var(--orange);font-weight:700;margin-top:.4rem}
+  .answer a{display:inline-block;margin-top:.8rem;color:var(--on-deep);font-weight:700}
+
+  section{padding:3.75rem 0}
+  .services .grid{display:grid;gap:1rem;margin-top:1.75rem}
+  @media (min-width:700px){.services .grid{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:.6rem;padding:1.2rem}
+  .svc p{color:var(--ink-2);margin-top:.4rem;font-size:1rem}
+
+  .how{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .steps{display:grid;gap:1.5rem;margin-top:1.75rem;counter-reset:s}
+  @media (min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{padding-left:3rem;position:relative}
+  .step::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--orange);color:var(--orange-ink);font-weight:800;display:grid;place-items:center}
+  .step p{color:var(--ink-2);margin-top:.3rem}
+
+  .area .wrap{display:grid;gap:2rem}
+  @media (min-width:800px){.area .wrap{grid-template-columns:1fr 1fr;align-items:center}}
+  .area p{color:var(--ink-2);margin-top:.8rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .8rem;font-size:.95rem}
+
+  .reviews{background:var(--deep);color:var(--on-deep)}
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:700px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:.6rem;padding:1.2rem}
+  .stars{color:var(--orange);letter-spacing:.1em;margin-bottom:.5rem}
+  .review cite{display:block;margin-top:.7rem;font-style:normal;color:var(--on-deep-2);font-size:.95rem}
+  .rating-line{color:var(--on-deep-2);margin-top:.5rem}
+
+  .book .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.book .wrap{grid-template-columns:1fr 1fr}}
+  .book .sub{color:var(--ink-2);margin-top:.8rem;max-width:40ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.5rem}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--orange)}
+  form{display:grid;gap:.9rem;background:var(--bg-2);padding:1.4rem;border-radius:.6rem;border:1px solid var(--line)}
+  label{display:grid;gap:.35rem;font-weight:500;font-size:.95rem;color:var(--ink-2)}
+  input,select,textarea{font:inherit;color:#141C26;background:#fff;border:1px solid var(--line);border-radius:.4rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--orange);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--ink-2)}
+  footer{background:var(--deep);color:var(--on-deep-2);padding:1.5rem 0 2rem;font-size:.9rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--orange);color:var(--orange-ink);font-size:.75rem;font-weight:700;padding:.3rem .6rem;border-radius:999px;z-index:20}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Dimi's <span>Mobile</span> Mechanic</a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#area">Service area</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+    <a class="call-pill" href="tel:+18138961958">Call Dimi</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>The mechanic comes to your driveway.</h1>
+      <p class="lede">Diagnostics, brakes, starters, alternators, tune-ups and more, done at your home or office in Lutz and North Tampa. No tow truck, no waiting room.</p>
+      <div class="hero-actions">
+        <a class="btn btn-orange" href="#book">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+18138961958">(813) 896-1958</a>
+      </div>
+      <div class="trust">
+        <div><strong>5.0</strong>Google rating</div>
+        <div><strong>7 days</strong>Weekends included</div>
+        <div><strong>Same day</strong>Most repairs</div>
+      </div>
+    </div>
+
+    <div class="symptom">
+      <h3>What's your car doing?</h3>
+      <div class="chips" role="group" aria-label="Pick a symptom">
+        <button class="chip" type="button" aria-pressed="false" data-k="start">Won't start</button>
+        <button class="chip" type="button" aria-pressed="false" data-k="brakes">Grinding or squealing brakes</button>
+        <button class="chip" type="button" aria-pressed="false" data-k="cel">Check engine light</button>
+        <button class="chip" type="button" aria-pressed="false" data-k="ac">AC blowing warm</button>
+        <button class="chip" type="button" aria-pressed="false" data-k="heat">Running hot</button>
+        <button class="chip" type="button" aria-pressed="false" data-k="noise">New noise or vibration</button>
+      </div>
+      <div class="answer" id="answer" aria-live="polite">
+        <p>Tap a symptom to see what it usually is and what it typically costs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <h2>What Dimi handles on-site</h2>
+    <div class="grid">
+      <div class="svc"><h3>Diagnostics</h3><p>Full scan and a plain-English explanation of what's wrong before any work starts.</p></div>
+      <div class="svc"><h3>Brakes</h3><p>Pads, rotors and calipers. Usually done in under two hours in your driveway.</p></div>
+      <div class="svc"><h3>Starters and alternators</h3><p>The two most common reasons a car won't go. Parts sourced same day.</p></div>
+      <div class="svc"><h3>Tune-ups and maintenance</h3><p>Spark plugs, filters, fluids, belts. Keeps the car from becoming a bigger bill later.</p></div>
+      <div class="svc"><h3>Headlight restoration</h3><p>Cloudy, yellowed lenses brought back to clear so you can actually see at night.</p></div>
+      <div class="svc"><h3>Pre-purchase inspections</h3><p>Buying a used car? Dimi checks it before you hand over the money.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><h3>Text or call</h3><p>Tell Dimi what's going on and where the car is. You'll get a straight answer on price and timing.</p></div>
+      <div class="step"><h3>He comes to you</h3><p>Home, work or wherever the car stopped. He brings the tools and the parts.</p></div>
+      <div class="step"><h3>Pay when it's fixed</h3><p>You see the old parts, the car runs, then you pay. Card, cash or app.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <div>
+      <h2>Where he goes</h2>
+      <p>Based in Lutz, covering the north side of Tampa Bay. If you're a little outside this, text anyway. He'll let you know.</p>
+      <div class="towns">
+        <span>Lutz</span><span>Land O' Lakes</span><span>Wesley Chapel</span><span>Odessa</span><span>Carrollwood</span><span>New Tampa</span><span>Temple Terrace</span><span>Tampa Palms</span><span>Westchase</span>
+      </div>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <p>Mon–Fri 9am–8pm, Sat noon–6pm, Sun noon–4pm. Stranded outside those hours? Text and he'll do his best.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <h2>What customers say</h2>
+    <p class="rating-line">Rated 5.0 on Google.</p>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Swapped my starter on a Saturday, fast and affordable, and explained everything without making me feel dumb for asking.</p><cite>Starter replacement</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>I've been burned by mechanics before. He went through everything more than once to make sure the problem was actually fixed.</p><cite>Diagnostic and repair</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Came straight to my condo for the headlights. Fit me in the same week and they look new.</p><cite>Headlight restoration</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Get a quote</h2>
+      <p class="sub">Fill this in and it opens a text to Dimi with the details already typed. Or just call.</p>
+      <ul class="contact-list">
+        <li><a href="tel:+18138961958">(813) 896-1958</a></li>
+        <li>Lutz, FL, mobile service</li>
+      </ul>
+    </div>
+    <form id="bookForm">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Year, make and model<input name="car" placeholder="2015 Toyota Camry" required></label>
+      <label>What's going on?<textarea name="issue" placeholder="Won't start, clicks when I turn the key" required></textarea></label>
+      <label>Where's the car?<input name="where" placeholder="Wesley Chapel, at my house"></label>
+      <button class="btn btn-orange" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Dimi's Mobile Mechanic, Lutz, FL</span>
+    <span>Site preview by Shopfront Sites</span>
+  </div>
+</footer>
+<span class="preview-tag">Website preview</span>
+
+<script>
+(function(){
+  var data={
+    start:{t:"Usually the battery, starter or alternator.",d:"A click with no crank points to the battery or starter. Dim lights that fade while driving point to the alternator. Dimi tests all three on the spot.",c:"Typical: $150–$450 installed, depending on the part."},
+    brakes:{t:"Pads are worn, and maybe rotors too.",d:"Squealing is the wear indicator. Grinding means metal on metal and the rotors are probably scored. Either way it's a driveway job.",c:"Typical: $180–$400 per axle."},
+    cel:{t:"Could be small, could be big. A scan tells you which.",d:"Everything from a loose gas cap to a misfire sets the same light. Dimi reads the code and tells you what it actually means before you pay for anything.",c:"Typical: diagnostic $60–$90, applied to the repair."},
+    ac:{t:"Most often low refrigerant or a failed compressor clutch.",d:"In Florida this is the call nobody wants to make in July. A recharge is quick; a compressor is a bigger job but still doable on-site.",c:"Typical: $120 recharge, $500+ for a compressor."},
+    heat:{t:"Thermostat, water pump, radiator fan or a leak.",d:"Stop driving it. Overheating is how a $200 fix becomes a $2,000 head gasket. Dimi comes to where the car is.",c:"Typical: $150–$600 depending on the cause."},
+    noise:{t:"Depends on when it happens.",d:"Noise on bumps is suspension. Vibration at speed is tires or an axle. Noise when turning is often a CV joint. Describe it in a text and he'll narrow it down.",c:"Typical: diagnostic $60–$90, applied to the repair."}
+  };
+  var chips=document.querySelectorAll('.chip'),ans=document.getElementById('answer');
+  chips.forEach(function(c){c.addEventListener('click',function(){
+    chips.forEach(function(x){x.setAttribute('aria-pressed','false')});
+    c.setAttribute('aria-pressed','true');
+    var k=data[c.dataset.k];
+    var msg=encodeURIComponent('Hi Dimi, my car: '+c.textContent.trim()+'. Can you take a look? ');
+    ans.innerHTML='<strong>'+k.t+'</strong><p>'+k.d+'</p><p class="cost">'+k.c+'</p><a href="sms:+18138961958?&body='+msg+'">Text Dimi about this</a>';
+  })});
+  var f=document.getElementById('bookForm');
+  f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f);
+    var m='Hi Dimi, this is '+d.get('name')+'. '+d.get('car')+': '+d.get('issue');
+    if(d.get('where'))m+=' Car is in '+d.get('where')+'.';
+    m+=' When could you come out?';
+    window.location.href='sms:+18138961958?&body='+encodeURIComponent(m);});
+})();
+</script>
+</body>
+</html>

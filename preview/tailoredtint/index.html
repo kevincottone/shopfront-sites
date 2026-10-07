@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tailored Tint — Window tinting in Largo, FL</title>
+<meta name="description" content="Automotive window tinting in Largo, FL. Rated 4.9 on Google across 171 reviews. Call or text (727) 210-5346.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F1F4F1; --bg-2:#FFFFFF; --ink:#102B2E; --ink-2:#4F6467; --line:#D3DCDA;
+    --teal:#0B3A40; --teal-2:#11505A; --on-teal:#EEF6F5; --on-teal-2:#9DBFC2;
+    --aqua:#41C7C0; --aqua-ink:#06272B;
+    --glass:#A9D4E8;
+    --shade:0.5;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#0D1F22;--bg-2:#14292D;--ink:#EDF4F3;--ink-2:#A7BDBF;--line:#24393D}
+  }
+  :root[data-theme="dark"]{--bg:#0D1F22;--bg-2:#14292D;--ink:#EDF4F3;--ink-2:#A7BDBF;--line:#24393D}
+  html{scroll-padding-top:4.5rem;scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Space Grotesk",system-ui,sans-serif;margin:0;line-height:1.05;letter-spacing:-.02em}
+  h1{font-size:clamp(2.5rem,8.5vw,4.75rem);font-weight:700}
+  h2{font-size:clamp(1.9rem,5.5vw,2.9rem);font-weight:700}
+  h3{font-size:1.3rem;font-weight:600}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1060px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-block;font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--aqua);margin-bottom:.9rem}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:999px;font-family:"Space Grotesk",sans-serif;font-size:1.1rem;font-weight:600;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--aqua);outline-offset:3px}
+  .btn-aqua{background:var(--aqua);color:var(--aqua-ink)}
+  .btn-ghost{background:transparent;color:var(--on-teal);border-color:rgba(255,255,255,.3)}
+
+  /* preview banner */
+  .preview-bar{background:var(--aqua);color:var(--aqua-ink);font-size:.9rem;text-align:center;padding:.5rem 1rem;font-weight:500}
+  .preview-bar a{color:inherit;font-weight:600}
+
+  /* header */
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--teal);color:var(--on-teal);border-bottom:1px solid rgba(255,255,255,.08)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem;gap:1rem}
+  .logo{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:1.35rem;text-decoration:none;letter-spacing:-.01em;display:flex;align-items:center;gap:.5rem;white-space:nowrap}
+  .logo i{width:1.1rem;height:1.1rem;border-radius:.25rem;background:linear-gradient(135deg,var(--aqua),var(--teal-2));display:inline-block;flex:none}
+  nav a{text-decoration:none;color:var(--on-teal-2);font-weight:500;margin-left:1.25rem}
+  nav a:hover{color:var(--on-teal)}
+  @media (max-width:700px){nav{display:none}}
+  .call-pill{background:var(--aqua);color:var(--aqua-ink);text-decoration:none;font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:1rem;padding:.45rem .95rem;border-radius:999px;white-space:nowrap}
+
+  /* hero */
+  .hero{background:radial-gradient(900px 400px at 85% -10%,rgba(65,199,192,.22),transparent 60%),var(--teal);color:var(--on-teal);padding:3rem 0 3.5rem}
+  .hero .wrap{display:grid;gap:2.5rem}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1fr 1fr;align-items:center}}
+  .hero .lede{color:var(--on-teal-2);font-size:1.2rem;max-width:36ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;margin-top:1.75rem;color:var(--on-teal-2);font-size:.95rem}
+  .trust b{color:var(--on-teal);font-family:"Space Grotesk",sans-serif;font-weight:600}
+  .trust .stars{color:var(--aqua);letter-spacing:.08em}
+
+  .demo{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:1rem;padding:1.25rem}
+  .demo svg{width:100%;height:auto;display:block}
+  .demo-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.75rem}
+  .demo-head span{color:var(--on-teal-2);font-size:.95rem}
+  .demo-head output{font-family:"Space Grotesk",sans-serif;font-size:1.5rem;font-weight:700}
+  input[type=range]{width:100%;margin-top:.9rem;accent-color:var(--aqua)}
+  .legal{margin-top:.7rem;font-size:.92rem;color:var(--on-teal-2);min-height:2.8em}
+  .legal strong{color:var(--aqua);font-weight:600}
+  @media (prefers-reduced-motion:no-preference){.glass{transition:opacity .15s linear}}
+
+  /* sections */
+  section{padding:4rem 0}
+  .sub{color:var(--ink-2);margin-top:.8rem;max-width:52ch}
+
+  .services .grid{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:700px){.services .grid{grid-template-columns:repeat(2,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.4rem;display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
+  .svc .ic{width:2.75rem;height:2.75rem;border-radius:.75rem;background:var(--teal);display:grid;place-items:center;flex:none}
+  .svc .ic svg{width:1.4rem;height:1.4rem;stroke:var(--aqua);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);margin-top:.4rem}
+  .also{margin-top:1.5rem;color:var(--ink-2);background:var(--bg-2);border-left:4px solid var(--aqua);padding:.9rem 1.1rem;border-radius:0 .6rem .6rem 0}
+
+  .pricing{background:var(--teal);color:var(--on-teal)}
+  .pricing .sub{color:var(--on-teal-2)}
+  .tiers{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:800px){.tiers{grid-template-columns:repeat(3,1fr)}}
+  .tier{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:1rem;padding:1.5rem;display:flex;flex-direction:column}
+  .tier.feat{border-color:var(--aqua);background:rgba(65,199,192,.08)}
+  .tier .tag{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--aqua);font-weight:600}
+  .tier h3{margin-top:.4rem;font-size:1.5rem}
+  .tier .desc{color:var(--on-teal-2);margin-top:.5rem;font-size:.98rem;flex:1}
+  .tier .price{margin-top:1.25rem;font-family:"Space Grotesk",sans-serif;font-size:2rem;font-weight:700;line-height:1}
+  .tier .price small{display:block;font-family:"DM Sans",sans-serif;font-weight:400;font-size:.85rem;color:var(--on-teal-2);margin-top:.35rem}
+  .tier ul{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.45rem;color:var(--on-teal-2);font-size:.95rem}
+  .tier li::before{content:"";display:inline-block;width:.45rem;height:.45rem;border-radius:50%;background:var(--aqua);margin-right:.6rem;vertical-align:middle}
+  .addons{margin-top:2rem;display:grid;gap:.6rem}
+  @media (min-width:700px){.addons{grid-template-columns:repeat(3,1fr)}}
+  .addon{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid rgba(255,255,255,.12);padding:.7rem 0;color:var(--on-teal-2)}
+  .addon b{color:var(--on-teal);font-family:"Space Grotesk",sans-serif;font-weight:600;white-space:nowrap}
+  .pricing .note{margin-top:1.5rem;font-size:.9rem;color:var(--on-teal-2);border:1px dashed rgba(255,255,255,.25);border-radius:.6rem;padding:.7rem 1rem;display:inline-block}
+
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:800px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.4rem;display:flex;flex-direction:column}
+  .review .stars{color:var(--aqua);letter-spacing:.1em;margin-bottom:.6rem}
+  .review p{flex:1}
+  .review cite{display:block;margin-top:.9rem;font-style:normal;color:var(--ink-2);font-size:.95rem}
+  .rating-badge{display:inline-flex;align-items:center;gap:.75rem;margin-top:1.25rem;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.5rem 1rem .5rem .6rem}
+  .rating-badge .num{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:1.5rem;background:var(--teal);color:var(--aqua);border-radius:999px;padding:.2rem .7rem}
+  .rating-badge span{color:var(--ink-2);font-size:.95rem}
+
+  .about{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.about .wrap{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .about p{color:var(--ink-2);margin-top:.9rem}
+  .area{background:var(--bg);border:1px solid var(--line);border-radius:1rem;padding:1.4rem}
+  .area h3{margin-bottom:.75rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.5rem}
+  .chips span{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.3rem .8rem;font-size:.92rem}
+  .hours{list-style:none;padding:0;margin:1.25rem 0 0;display:grid;gap:.35rem;font-size:.95rem;color:var(--ink-2)}
+  .hours li{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:.3rem}
+  .hours b{color:var(--ink);font-weight:500}
+
+  .quote{background:var(--teal);color:var(--on-teal)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr}}
+  .quote .sub{color:var(--on-teal-2)}
+  .contact-list{list-style:none;padding:0;margin:1.75rem 0 0;display:grid;gap:.6rem;font-size:1.05rem}
+  .contact-list a{color:var(--on-teal);text-decoration-color:var(--aqua)}
+  form{display:grid;gap:.9rem;background:rgba(255,255,255,.05);padding:1.4rem;border-radius:1rem;border:1px solid rgba(255,255,255,.12)}
+  label.f{display:grid;gap:.35rem;font-weight:500;font-size:.95rem;color:var(--on-teal-2)}
+  input:not([type=range]),select,textarea{font:inherit;color:#102B2E;background:#fff;border:1px solid var(--line);border-radius:.5rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--aqua);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-teal-2)}
+
+  footer{background:#072A2F;color:var(--on-teal-2);padding:1.5rem 0 2rem;font-size:.9rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  footer a{color:var(--on-teal);text-decoration-color:var(--aqua)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--aqua);color:var(--aqua-ink);font-size:.75rem;font-weight:600;padding:.3rem .6rem;border-radius:999px;z-index:20}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Website preview built for Tailored Tint by <a href="https://shopfrontsites.org">Shopfront Sites</a>. Not live yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><i aria-hidden="true"></i>Tailored Tint</a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">Shop</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+17272105346">Call Parker</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Window tinting · Largo, FL</span>
+      <h1>Cooler cabin. Cleaner look. Tailored to your car.</h1>
+      <p class="lede">Automotive window tint installed by Parker in Largo. Factory-matched shades, edges you won't notice, and the price you were quoted is the price you pay.</p>
+      <div class="hero-actions">
+        <a class="btn btn-aqua" href="#quote">Get a quote</a>
+        <a class="btn btn-ghost" href="tel:+17272105346">(727) 210-5346</a>
+      </div>
+      <div class="trust">
+        <span><span class="stars" aria-hidden="true">★★★★★</span> <b>4.9</b> on Google</span>
+        <span><b>171</b> reviews</span>
+        <span>Mon–Sat</span>
+      </div>
+    </div>
+
+    <div class="demo">
+      <div class="demo-head">
+        <span>Try a shade</span>
+        <output id="shadeOut" for="shade">50%</output>
+      </div>
+      <svg viewBox="0 0 520 230" role="img" aria-labelledby="demoTitle">
+        <title id="demoTitle">Side view of a car showing the selected tint darkness</title>
+        <defs>
+          <linearGradient id="sun" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="#FFF1BF"/><stop offset="1" stop-color="#F7B267"/>
+          </linearGradient>
+          <linearGradient id="body" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#E4E8E6"/><stop offset="1" stop-color="#B9C2BF"/>
+          </linearGradient>
+          <clipPath id="winClip">
+            <path d="M176 112 C198 92 228 80 262 80 L262 112 Z"/>
+            <path d="M270 80 C304 80 334 90 358 112 L270 112 Z"/>
+          </clipPath>
+        </defs>
+        <rect width="520" height="230" rx="12" fill="#0A3238"/>
+        <circle cx="440" cy="56" r="30" fill="url(#sun)"/>
+        <g stroke="#F7B267" stroke-width="2" opacity=".5" stroke-linecap="round">
+          <line x1="440" y1="12" x2="440" y2="20"/><line x1="440" y1="92" x2="440" y2="100"/>
+          <line x1="396" y1="56" x2="404" y2="56"/><line x1="476" y1="56" x2="484" y2="56"/>
+          <line x1="409" y1="25" x2="415" y2="31"/><line x1="465" y1="81" x2="471" y2="87"/>
+          <line x1="471" y1="25" x2="465" y2="31"/><line x1="415" y1="81" x2="409" y2="87"/>
+        </g>
+        <ellipse cx="260" cy="206" rx="226" ry="10" fill="#000" opacity=".4"/>
+        <path fill="url(#body)" d="M64 176 C62 152 74 136 110 130 L152 124 C180 100 216 84 262 84 C318 84 356 102 390 130 L446 138 C468 142 480 156 478 176 L468 186 L60 186 Z"/>
+        <g clip-path="url(#winClip)">
+          <rect x="160" y="70" width="220" height="50" fill="var(--glass)"/>
+          <rect x="160" y="70" width="220" height="50" fill="url(#sun)" opacity=".3"/>
+          <rect class="glass" x="160" y="70" width="220" height="50" fill="#06181C" style="opacity:var(--shade)"/>
+        </g>
+        <path fill="none" stroke="#102B2E" stroke-width="3" d="M170 114 C194 94 226 78 262 78 C298 78 330 90 360 114"/>
+        <line x1="266" y1="78" x2="266" y2="114" stroke="#102B2E" stroke-width="3"/>
+        <rect x="60" y="182" width="420" height="10" rx="4" fill="#102B2E"/>
+        <g fill="#102B2E"><circle cx="142" cy="184" r="29"/><circle cx="398" cy="184" r="29"/></g>
+        <g fill="#7F8E92"><circle cx="142" cy="184" r="14"/><circle cx="398" cy="184" r="14"/></g>
+        <g fill="#102B2E"><circle cx="142" cy="184" r="5"/><circle cx="398" cy="184" r="5"/></g>
+        <rect x="452" y="152" width="22" height="9" rx="3" fill="#FFF1BF"/>
+        <rect x="64" y="154" width="18" height="8" rx="3" fill="#F26B6B"/>
+      </svg>
+      <input type="range" id="shade" min="5" max="70" step="5" value="50" aria-label="Tint darkness" aria-describedby="legal">
+      <p class="legal" id="legal"></p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <span class="eyebrow">What we do</span>
+    <h2>Window tint, done to fit</h2>
+    <p class="sub">Every job is measured and cut for your specific vehicle, so the film sits flush to the edge with no light gaps and no peeling corners.</p>
+    <div class="grid">
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 13l2-5a3 3 0 0 1 3-2h8a3 3 0 0 1 3 2l2 5v5H3z"/><circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/></svg></div>
+        <div>
+          <h3>Full vehicle tint</h3>
+          <p>All side windows plus the rear glass. Pick a shade on the slider above or let Parker recommend one for how you drive.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 12h18M12 5v14"/></svg></div>
+        <div>
+          <h3>Front windows to match factory</h3>
+          <p>Most newer cars come tinted in the back only. We match the two fronts to the factory rear so the whole car reads as one.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h16l-2 10H6z"/><path d="M12 2v4M8 3l1 3M16 3l-1 3"/></svg></div>
+        <div>
+          <h3>Windshield heat film</h3>
+          <p>A light, Florida-legal film across the windshield that cuts heat and glare without darkening your view of the road.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20L20 4"/><path d="M4 4l6 6M14 14l6 6"/></svg></div>
+        <div>
+          <h3>Old tint removal</h3>
+          <p>Purple, bubbled, or peeling film stripped clean, adhesive and all, before new film goes on.</p>
+        </div>
+      </div>
+    </div>
+    <p class="also">Customers also come to Parker for vinyl stripes and accents. Ask when you reach out.</p>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <span class="eyebrow">Pricing</span>
+    <h2>Straightforward pricing</h2>
+    <p class="sub">Prices depend on film type and how many windows your vehicle has. Here is where each option starts for a standard sedan.</p>
+    <div class="tiers">
+      <div class="tier">
+        <span class="tag">Good</span>
+        <h3>Carbon film</h3>
+        <p class="desc">Solid heat reduction and a true black look that won't fade to purple. No metal, so no signal interference.</p>
+        <div class="price">Starting at $229<small>full sedan, all sides and rear</small></div>
+        <ul><li>Color-stable</li><li>Glare reduction</li><li>UV protection</li></ul>
+      </div>
+      <div class="tier feat">
+        <span class="tag">Most popular</span>
+        <h3>Ceramic film</h3>
+        <p class="desc">Blocks infrared heat, not just light. The cabin stays cooler even at a lighter, legal shade on the fronts.</p>
+        <div class="price">Starting at $349<small>full sedan, all sides and rear</small></div>
+        <ul><li>Highest heat rejection</li><li>Clear visibility at night</li><li>No signal interference</li></ul>
+      </div>
+      <div class="tier">
+        <span class="tag">Match</span>
+        <h3>Two fronts only</h3>
+        <p class="desc">Already tinted from the factory in back? Match the two front windows and be in and out fast.</p>
+        <div class="price">Starting at $119<small>carbon · ceramic from $169</small></div>
+        <ul><li>Factory shade matched</li><li>Usually under an hour</li></ul>
+      </div>
+    </div>
+    <div class="addons">
+      <div class="addon"><span>Windshield heat film</span><b>From $199</b></div>
+      <div class="addon"><span>Sun strip (eyebrow)</span><b>From $59</b></div>
+      <div class="addon"><span>Old tint removal</span><b>From $79</b></div>
+    </div>
+    <p class="note">Example pricing — we'll put in your real numbers. Trucks, SUVs and vans quoted on arrival.</p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <span class="eyebrow">Reviews</span>
+    <h2>What Largo drivers say</h2>
+    <div class="rating-badge"><span class="num">4.9</span><span>on Google across 171 reviews</span></div>
+    <div class="grid">
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Finished on time, matched my factory tint on the rear windows, and charged exactly what we agreed on. Now my glare is gone."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Parker does great work and the quality of the product he uses is top-notch. I highly recommend using Tailored Tint for your auto tint needs."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"From the best tint jobs in the Bay Area to wraps, vinyl work and everything in between. He is a turn key shop you can trust your vehicle with."</p>
+        <cite>Google review</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">The shop</span>
+      <h2>One installer. Your car, start to finish.</h2>
+      <p>Tailored Tint is Parker's shop on S Belcher Road in Largo. When you book, Parker is the one who measures, cuts and installs your film, and the one who texts you when it's ready. Customers mention the same things again and again: appointments kept, updates along the way, and a finished car that looks better than they pictured.</p>
+      <p>Serving Largo and the rest of Pinellas County, plus drivers who make the trip from across Tampa Bay.</p>
+    </div>
+    <div class="area">
+      <h3>Service area</h3>
+      <div class="chips">
+        <span>Largo</span><span>Clearwater</span><span>Seminole</span><span>Pinellas Park</span><span>St. Petersburg</span><span>Dunedin</span><span>Palm Harbor</span><span>Tampa Bay</span>
+      </div>
+      <ul class="hours" aria-label="Hours">
+        <li><b>Mon – Fri</b><span>10:00 AM – 6:00 PM</span></li>
+        <li><b>Saturday</b><span>10:00 AM – 5:00 PM</span></li>
+        <li><b>Sunday</b><span>Closed</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Text Parker your car</h2>
+      <p class="sub">Fill this in and it opens a text to the shop with your details already typed. Or just call during open hours.</p>
+      <ul class="contact-list">
+        <li><a href="tel:+17272105346">(727) 210-5346</a></li>
+        <li>13201 S Belcher Rd, Unit 2, Largo, FL 33773</li>
+        <li><a href="https://www.facebook.com/TailoredTint/" rel="noopener">Tailored Tint on Facebook</a></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(727) 555-0100" required></label>
+      <label class="f">Vehicle (year, make, model)<input name="vehicle" placeholder="2021 Toyota Camry" required></label>
+      <label class="f">What do you need?
+        <select name="job">
+          <option>Full vehicle tint</option>
+          <option>Front windows to match factory</option>
+          <option>Windshield heat film</option>
+          <option>Old tint removal</option>
+          <option>Vinyl stripes or accents</option>
+          <option>Not sure, help me choose</option>
+        </select>
+      </label>
+      <label class="f">Anything else (optional)<textarea name="notes" placeholder="Shade you're thinking, days that work for you..."></textarea></label>
+      <button class="btn btn-aqua" type="submit">Send as a text</button>
+      <p class="form-note">Nothing is stored on this page. Your message opens in your phone's messaging app and you send it yourself.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Tailored Tint · 13201 S Belcher Rd Unit 2, Largo, FL 33773 · <a href="tel:+17272105346">(727) 210-5346</a></span>
+    <span>Site preview by <a href="https://shopfrontsites.org">Shopfront Sites</a></span>
+  </div>
+</footer>
+<span class="preview-tag">Website preview</span>
+
+<script>
+(function(){
+  var s=document.getElementById('shade'),o=document.getElementById('shadeOut'),l=document.getElementById('legal'),root=document.documentElement;
+  function update(){
+    var v=+s.value; o.textContent=v+'%';
+    root.style.setProperty('--shade',(1-v/100).toFixed(2));
+    var t;
+    if(v>=28) t='<strong>Legal all the way around in Florida.</strong> Front side windows must let through 28% of light or more.';
+    else if(v>=15) t='<strong>Legal on rear and back windows.</strong> Front sides need to stay at 28% or lighter.';
+    else t='<strong>Limo-dark.</strong> Rear glass only on most vehicles; front sides need 28% or lighter.';
+    l.innerHTML=t;
+  }
+  s.addEventListener('input',update); update();
+
+  var f=document.getElementById('quoteForm');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f);
+    var m='Hi Parker, this is '+d.get('name')+' ('+d.get('phone')+'). I have a '+d.get('vehicle')+' and I\'m looking for: '+d.get('job')+'.';
+    if(d.get('notes'))m+=' '+d.get('notes');
+    m+=' When could you fit me in?';
+    window.location.href='sms:+17272105346?&body='+encodeURIComponent(m);
+  });
+})();
+</script>
+</body>
+</html>

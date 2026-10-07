@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Horizon Mobile Detailing — Mobile auto detailing in Clearwater, FL</title>
+<meta name="description" content="Horizon Mobile Detailing comes to your driveway or office in Clearwater and Pinellas County. 5.0 stars on Google across 228 reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4EFE6; --bg-2:#FFFFFF; --ink:#13283A; --ink-2:#5A6B7A; --line:#DED6C8;
+    --harbor:#13283A; --harbor-2:#1C3A52; --on-harbor:#F4F7FA; --on-harbor-2:#A6BBCC;
+    --sky:#7FD3F5; --sky-ink:#0B1B28; --sand:#E9DCC2;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#0C1824;--bg-2:#13243A;--ink:#F4F7FA;--ink-2:#AEBFCC;--line:#24394F;--harbor:#0A1420;--harbor-2:#13243A}
+  }
+  :root[data-theme="dark"]{--bg:#0C1824;--bg-2:#13243A;--ink:#F4F7FA;--ink-2:#AEBFCC;--line:#24394F;--harbor:#0A1420;--harbor-2:#13243A}
+  html{scroll-padding-top:4.5rem;scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{margin:0;font-family:Fraunces,Georgia,serif;line-height:1.05;letter-spacing:-.015em}
+  h1{font-size:clamp(2.5rem,8vw,4.5rem);font-weight:600}
+  h1 em{font-style:italic;color:var(--sky)}
+  h2{font-size:clamp(1.9rem,5vw,2.75rem);font-weight:600}
+  h3{font-size:1.3rem;font-weight:700;font-family:Manrope,system-ui,sans-serif;letter-spacing:0}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sky)}
+  .eyebrow::before{content:"";width:1.5rem;height:2px;background:var(--sky);border-radius:2px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.6rem;font-weight:700;font-size:1.02rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+  .btn:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+  .btn-sky{background:var(--sky);color:var(--sky-ink)}
+  .btn-ghost{background:transparent;color:var(--on-harbor);border-color:rgba(255,255,255,.3)}
+  .btn-harbor{background:var(--harbor);color:var(--on-harbor)}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn-harbor{background:var(--sky);color:var(--sky-ink)}}
+  :root[data-theme="dark"] .btn-harbor{background:var(--sky);color:var(--sky-ink)}
+
+  /* header */
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--harbor);color:var(--on-harbor);border-bottom:1px solid rgba(255,255,255,.08)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem;gap:1rem}
+  .logo{display:inline-flex;align-items:center;gap:.55rem;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.25rem;text-decoration:none;color:var(--on-harbor);letter-spacing:-.01em;white-space:nowrap}
+  .logo .mark{width:1.6rem;height:1.6rem;flex:none}
+  .logo small{font-family:Manrope,sans-serif;font-weight:500;font-size:.8rem;color:var(--on-harbor-2);letter-spacing:.06em;text-transform:uppercase}
+  @media (max-width:420px){.logo small{display:none}}
+  nav a{text-decoration:none;color:var(--on-harbor-2);font-weight:600;margin-left:1.25rem;font-size:.98rem}
+  nav a:hover{color:var(--on-harbor)}
+  @media (max-width:720px){nav{display:none}}
+  .call-pill{background:var(--sky);color:var(--sky-ink);text-decoration:none;font-weight:700;padding:.5rem .95rem;border-radius:999px;font-size:.95rem;white-space:nowrap}
+
+  /* hero */
+  .hero{background:
+      radial-gradient(ellipse 80% 60% at 100% 100%,rgba(127,211,245,.18),transparent 60%),
+      linear-gradient(180deg,var(--harbor-2),var(--harbor) 70%);
+    color:var(--on-harbor);padding:3rem 0 3.5rem;overflow:hidden;position:relative}
+  .hero .wrap{display:grid;gap:2.5rem}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .hero .lede{color:var(--on-harbor-2);font-size:1.15rem;max-width:38ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .proof{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;margin-top:1.75rem;color:var(--on-harbor-2);font-size:.95rem}
+  .proof .stars{color:var(--sky);letter-spacing:.08em;font-size:1rem}
+  .proof strong{color:var(--on-harbor);font-weight:700}
+  .stage{position:relative;border-radius:1rem;overflow:hidden;background:
+      linear-gradient(180deg,#1E4160 0%,#13283A 55%,#0B1B28 100%);border:1px solid rgba(255,255,255,.1);aspect-ratio:5/4}
+  .stage .horizon-line{position:absolute;left:0;right:0;top:52%;height:1px;background:linear-gradient(90deg,transparent,rgba(127,211,245,.6),transparent)}
+  .stage .sun{position:absolute;left:50%;top:52%;width:38%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(127,211,245,.55),rgba(127,211,245,.12) 55%,transparent 70%);filter:blur(1px)}
+  .stage svg{position:absolute;left:0;right:0;bottom:6%;width:100%;height:auto}
+  .stage .badge{position:absolute;left:.9rem;top:.9rem;background:rgba(11,27,40,.7);backdrop-filter:blur(6px);color:var(--on-harbor);font-size:.85rem;font-weight:600;padding:.4rem .75rem;border-radius:999px;border:1px solid rgba(255,255,255,.15)}
+  .stage .badge b{color:var(--sky)}
+  .stage-cap{color:var(--on-harbor-2);font-size:.95rem;margin-top:.75rem;text-align:center}
+  @media (prefers-reduced-motion:no-preference){
+    .gleam{animation:gleam 4.5s ease-in-out infinite}
+    @keyframes gleam{0%,100%{transform:translateX(-120px);opacity:0}15%{opacity:.8}50%{transform:translateX(420px);opacity:.8}65%,99%{opacity:0}}
+  }
+
+  /* sections */
+  section{padding:3.75rem 0}
+  .section-head{display:grid;gap:.6rem;max-width:56ch}
+  .section-head p{color:var(--ink-2)}
+
+  .services .grid{display:grid;gap:1rem;margin-top:1.75rem}
+  @media (min-width:700px){.services .grid{grid-template-columns:repeat(2,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.3rem;display:grid;grid-template-columns:auto 1fr;gap:.9rem 1rem;align-items:start}
+  .svc .ico{width:2.75rem;height:2.75rem;border-radius:.75rem;background:var(--harbor);display:grid;place-items:center;color:var(--sky)}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .svc .ico{background:rgba(127,211,245,.12)}}
+  :root[data-theme="dark"] .svc .ico{background:rgba(127,211,245,.12)}
+  .svc .ico svg{width:1.4rem;height:1.4rem}
+  .svc p{color:var(--ink-2);margin-top:.35rem;font-size:1rem}
+
+  .pricing{background:var(--harbor);color:var(--on-harbor)}
+  .pricing .section-head p{color:var(--on-harbor-2)}
+  .pricing .eyebrow{color:var(--sky)}
+  .pricing .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:800px){.pricing .grid{grid-template-columns:repeat(3,1fr)}}
+  .pkg{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:1rem;padding:1.4rem;display:flex;flex-direction:column}
+  .pkg.featured{border-color:var(--sky);box-shadow:0 0 0 1px var(--sky) inset}
+  .pkg .tag{align-self:flex-start;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sky-ink);background:var(--sky);padding:.25rem .6rem;border-radius:999px;margin-bottom:.75rem}
+  .pkg .from{color:var(--on-harbor-2);font-size:.9rem;margin-top:.6rem}
+  .pkg .price{font-family:Fraunces,Georgia,serif;font-size:2.4rem;font-weight:600;line-height:1;margin:.15rem 0 .25rem}
+  .pkg .time{color:var(--on-harbor-2);font-size:.95rem}
+  .pkg ul{margin:1rem 0 1.25rem;padding-left:1.1rem;color:var(--on-harbor-2);font-size:1rem;display:grid;gap:.4rem}
+  .pkg ul li::marker{color:var(--sky)}
+  .pkg .btn{margin-top:auto}
+  .pricing .note{color:var(--on-harbor-2);margin-top:1.25rem;font-size:.9rem;display:flex;gap:.5rem;align-items:flex-start}
+  .pricing .note svg{flex:none;width:1.1rem;height:1.1rem;margin-top:.15rem;color:var(--sky)}
+
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:800px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.3rem;position:relative}
+  .review::before{content:"\201C";position:absolute;right:1rem;top:.3rem;font-family:Fraunces,Georgia,serif;font-size:4rem;line-height:1;color:var(--sand);opacity:.9}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .review::before{color:var(--line)}}
+  :root[data-theme="dark"] .review::before{color:var(--line)}
+  .review p{position:relative}
+  .review .stars{color:#E0A526;letter-spacing:.1em;margin-bottom:.6rem}
+  .review cite{display:block;margin-top:.9rem;font-style:normal;color:var(--ink-2);font-size:.92rem}
+  .rating-badge{display:inline-flex;align-items:center;gap:.75rem;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.5rem 1rem .5rem .6rem;margin-top:1rem}
+  .rating-badge .g{width:2rem;height:2rem;border-radius:50%;background:var(--harbor);color:#fff;display:grid;place-items:center;font-weight:800;font-family:Fraunces,Georgia,serif}
+  .rating-badge strong{font-size:1.1rem}
+  .rating-badge span{color:var(--ink-2);font-size:.95rem}
+
+  .about{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about .wrap{display:grid;gap:2rem}
+  @media (min-width:800px){.about .wrap{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .about p{color:var(--ink-2);margin-top:.8rem}
+  .area{background:var(--bg);border:1px solid var(--line);border-radius:1rem;padding:1.3rem}
+  .area h3{margin-bottom:.75rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0}
+  .chips li{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .8rem;font-size:.95rem;font-weight:600}
+  .hours{margin-top:1.1rem;color:var(--ink-2);font-size:.95rem;display:grid;gap:.25rem}
+  .hours strong{color:var(--ink)}
+
+  .quote{background:var(--harbor);color:var(--on-harbor)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--on-harbor-2);margin-top:.9rem;max-width:40ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.6rem}
+  .contact-list li{display:flex;gap:.6rem;align-items:center}
+  .contact-list svg{width:1.1rem;height:1.1rem;color:var(--sky);flex:none}
+  .contact-list a{color:var(--on-harbor);text-decoration-color:var(--sky);text-underline-offset:3px}
+  form{display:grid;gap:.9rem;background:rgba(255,255,255,.05);padding:1.4rem;border-radius:1rem;border:1px solid rgba(255,255,255,.12)}
+  label{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-harbor-2)}
+  input,select,textarea{font:inherit;color:#13283A;background:#fff;border:1px solid var(--line);border-radius:.5rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--sky);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-harbor-2)}
+
+  footer{background:var(--harbor);color:var(--on-harbor-2);padding:1.5rem 0 2rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.08)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-harbor);text-decoration-color:var(--sky);text-underline-offset:3px}
+  .social{display:flex;gap:.9rem;align-items:center}
+  .social a{display:inline-flex;align-items:center;gap:.4rem;text-decoration:none;font-weight:600}
+  .social svg{width:1.1rem;height:1.1rem}
+
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--sky);color:var(--sky-ink);font-size:.75rem;font-weight:700;padding:.35rem .7rem;border-radius:999px;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="var(--sky)"/><path d="M3 19h26" stroke="#13283A" stroke-width="2.5" stroke-linecap="round"/><path d="M8 19a8 8 0 0 1 16 0" fill="#13283A"/></svg>
+      Horizon <small>Mobile Detailing</small>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+18135801299">Call or text</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Clearwater, FL · We come to you</span>
+      <h1 style="margin-top:.9rem">Showroom-fresh, <em>right where it's parked.</em></h1>
+      <p class="lede">Horizon Mobile Detailing brings the water, the power and every product to your driveway or office across Clearwater and Pinellas County. You keep your day. Your car comes back looking new.</p>
+      <div class="hero-actions">
+        <a class="btn btn-sky" href="#quote">Get a quote</a>
+        <a class="btn btn-ghost" href="tel:+18135801299">(813) 580-1299</a>
+      </div>
+      <div class="proof">
+        <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <span><strong>5.0</strong> on Google · <strong>228</strong> reviews</span>
+        <span>· Open daily 6:30am–7:30pm</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="stage" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="horizon-line"></div>
+        <span class="badge"><b>Mobile</b> · at your home or office</span>
+        <svg viewBox="0 0 520 230">
+          <defs>
+            <linearGradient id="paint" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#F7FAFC"/>
+              <stop offset=".55" stop-color="#D9E3EC"/>
+              <stop offset="1" stop-color="#9FB0C1"/>
+            </linearGradient>
+            <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#7FD3F5" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#13283A" stop-opacity=".95"/>
+            </linearGradient>
+            <linearGradient id="sweep" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+              <stop offset=".5" stop-color="#fff" stop-opacity=".75"/>
+              <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+            </linearGradient>
+            <clipPath id="bodyClip">
+              <path d="M58 170 C56 142 70 124 108 118 L150 112 C180 84 218 66 262 66 C318 66 358 84 394 116 L450 124 C472 128 484 142 482 170 L472 182 L60 182 Z"/>
+            </clipPath>
+          </defs>
+          <ellipse cx="262" cy="204" rx="235" ry="12" fill="#000" opacity=".4"/>
+          <path fill="url(#paint)" d="M58 170 C56 142 70 124 108 118 L150 112 C180 84 218 66 262 66 C318 66 358 84 394 116 L450 124 C472 128 484 142 482 170 L472 182 L60 182 Z"/>
+          <path fill="url(#glass)" d="M168 114 C192 92 224 78 262 78 C300 78 334 90 366 114 Z"/>
+          <path fill="#fff" opacity=".35" d="M176 112 C198 94 226 84 258 84 L258 112 Z"/>
+          <g clip-path="url(#bodyClip)"><rect class="gleam" x="0" y="60" width="120" height="130" fill="url(#sweep)" transform="skewX(-20)"/></g>
+          <rect x="60" y="176" width="420" height="10" rx="4" fill="#0B1B28"/>
+          <g fill="#0B1B28"><circle cx="142" cy="180" r="30"/><circle cx="398" cy="180" r="30"/></g>
+          <g fill="#C9D4DE"><circle cx="142" cy="180" r="16"/><circle cx="398" cy="180" r="16"/></g>
+          <g fill="#0B1B28"><circle cx="142" cy="180" r="6"/><circle cx="398" cy="180" r="6"/></g>
+          <rect x="456" y="140" width="22" height="9" rx="3" fill="#FFF1C2"/>
+          <rect x="60" y="142" width="18" height="8" rx="3" fill="#FF7A7A"/>
+          <g fill="#7FD3F5" opacity=".9">
+            <circle cx="90" cy="48" r="2"/><circle cx="470" cy="60" r="2.5"/><circle cx="420" cy="40" r="1.5"/>
+          </g>
+        </svg>
+      </div>
+      <p class="stage-cap">Hand wash, interior deep clean, paint correction and ceramic coating, all done on site.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>Everything a detail shop does, without the shop.</h2>
+      <p>Pick one service or combine them. Every visit is fully mobile, so there's nothing to drop off and nowhere to wait.</p>
+    </div>
+    <div class="grid">
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3 4 6 7 6 10.5a6 6 0 0 1-12 0C6 10 9 7 12 3z"/></svg></div>
+        <div><h3>Exterior wash and protect</h3><p>Two-bucket hand wash, wheels and tires cleaned and dressed, door jambs, windows, and a spray sealant so it beads for weeks.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18M8 7V5h8v2"/></svg></div>
+        <div><h3>Interior deep clean</h3><p>Shampooed seats and carpet, leather cleaned and conditioned, vents, cup holders, pet hair and stains. Every surface wiped and protected.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+        <div><h3>Paint correction</h3><p>Machine polishing to remove swirls, water spots and light scratches. The step that makes paint actually look deep again.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.4 5.6L20 9l-4.5 3.9L17 19l-5-3-5 3 1.5-6.1L4 9l5.6-1.4z"/></svg></div>
+        <div><h3>Ceramic coating</h3><p>Long-term gloss and protection against Florida sun, salt air and love bugs. Washes get easier for years, not weeks.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>Simple packages, quoted up front.</h2>
+      <p>Final price depends on vehicle size and condition. Text a photo and you'll get a firm number back.</p>
+    </div>
+    <div class="grid">
+      <div class="pkg">
+        <h3>Maintenance detail</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$95</div>
+        <div class="time">About 1.5 hours</div>
+        <ul><li>Hand wash and dry</li><li>Wheels, tires and jambs</li><li>Interior vacuum and wipe-down</li><li>Glass inside and out</li></ul>
+        <a class="btn btn-ghost" href="#quote">Book this</a>
+      </div>
+      <div class="pkg featured">
+        <span class="tag">Most popular</span>
+        <h3>Full interior and exterior</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$225</div>
+        <div class="time">About 3–4 hours</div>
+        <ul><li>Everything in the maintenance detail</li><li>Shampooed seats and carpet</li><li>Leather cleaned and conditioned</li><li>Clay bar and paint sealant</li><li>Pet hair and stain treatment</li></ul>
+        <a class="btn btn-sky" href="#quote">Book this</a>
+      </div>
+      <div class="pkg">
+        <h3>Paint correction and ceramic</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$650</div>
+        <div class="time">1–2 days</div>
+        <ul><li>One or two-stage polish</li><li>Swirl and water-spot removal</li><li>Professional ceramic coating</li><li>Multi-year protection</li></ul>
+        <a class="btn btn-ghost" href="#quote">Get a quote</a>
+      </div>
+    </div>
+    <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span>Example pricing — we'll put in your real numbers. Trucks, large SUVs and heavily soiled vehicles are quoted individually.</span></p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>228 people in Pinellas gave Caleb five stars.</h2>
+    </div>
+    <div class="rating-badge"><span class="g">G</span><strong>5.0</strong><span>on Google across 228 reviews</span></div>
+    <div class="grid">
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>Caleb did an excellent job detailing my Volvo. You can really tell he put a lot of time and effort into his work; the car looks fantastic inside and out.</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>He came directly to my office to detail my car and I was able to head home that day with what felt like a new car. I highly recommend him 10/10!</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>Every surface was spotless, the leather looked refreshed, and they paid attention to the little things most places miss. They arrived on time and the whole experience felt very professional.</p>
+        <cite>Google review</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About</span>
+      <h2 style="margin-top:.6rem">Owner-run, and it shows.</h2>
+      <p>Horizon Mobile Detailing is run by Caleb out of downtown Clearwater. He's the one who answers the phone, shows up with the gear, and does the work. Customers keep mentioning the same things: on time, honest about what the car needs, and relentless about the little spots other shops skip.</p>
+      <p>Fully mobile means you don't lose a morning. Book it for while you're at work or at home, and come out to a finished car.</p>
+    </div>
+    <div class="area">
+      <h3>Service area</h3>
+      <ul class="chips">
+        <li>Clearwater</li><li>Clearwater Beach</li><li>Dunedin</li><li>Largo</li><li>Safety Harbor</li><li>Belleair</li><li>Palm Harbor</li><li>Pinellas Park</li><li>St. Petersburg by request</li>
+      </ul>
+      <div class="hours">
+        <span><strong>Open daily</strong> 6:30am – 7:30pm</span>
+        <span>600 Cleveland St, Clearwater, FL 33755</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2 style="margin-top:.6rem">Tell us about the car.</h2>
+      <p class="sub">Fill this in and it opens a text to Horizon with your details already typed. Or just call.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><a href="tel:+18135801299">(813) 580-1299</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-5A8 8 0 1 1 21 12z"/></svg><a href="sms:+18135801299?&body=Hi%20Horizon%2C%20I%27d%20like%20a%20quote%20for%20a%20detail%20on%20my%20">Text us a photo of the car</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><a href="https://www.instagram.com/horizonmobiledetailing/" target="_blank" rel="noopener">@horizonmobiledetailing</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Open daily, 6:30am – 7:30pm</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Your phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(727) 555-0123" required></label>
+      <label>Vehicle<input name="vehicle" placeholder="2021 Toyota 4Runner" required></label>
+      <label>What do you need?
+        <select name="need">
+          <option>Maintenance detail</option>
+          <option>Full interior and exterior</option>
+          <option>Paint correction and ceramic</option>
+          <option>Interior only</option>
+          <option>Not sure, help me choose</option>
+        </select>
+      </label>
+      <label>Anything else (where the car is, when works)<textarea name="notes" placeholder="Dunedin, weekday mornings. Dog hair in the back seat."></textarea></label>
+      <button class="btn btn-sky" type="submit">Send as a text</button>
+      <p class="form-note">Nothing is stored on this page. Your message opens in your phone's messaging app and you send it yourself.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Horizon Mobile Detailing LLC · Clearwater, FL · <a href="tel:+18135801299">(813) 580-1299</a></span>
+    <div class="social">
+      <a href="https://www.instagram.com/horizonmobiledetailing/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
+      <a href="https://www.facebook.com/horizonmobiledetailingllc/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg>Facebook</a>
+    </div>
+    <span>Site preview by <a href="https://shopfrontsites.org" target="_blank" rel="noopener">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" target="_blank" rel="noopener">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Horizon, this is '+f.get('name')+' ('+f.get('phone')+'). I have a '+f.get('vehicle')+' and I\'m looking for: '+f.get('need')+'.';
+    if(f.get('notes'))msg+=' '+f.get('notes');
+    msg+=' What do you have open?';
+    window.location.href='sms:+18135801299?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

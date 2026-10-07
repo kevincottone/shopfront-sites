@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alley Auto Tint — Window tinting in Largo, FL</title>
+<meta name="description" content="Alley Auto Tint on Ulmerton Rd in Largo. Ceramic window tint, front-window match, tint removal and re-tint. Open 7 days. Rated 4.7 on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EEF0EB; --bg-2:#FFFFFF; --ink:#0E1013; --ink-2:#565B5E; --line:#D6DAD2;
+    --black:#0E1013; --black-2:#17191E; --on-black:#F3F4EF; --on-black-2:#9DA2A4;
+    --lime:#C5F135; --lime-ink:#0E1013; --lime-dim:#9BC41C;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#0E1013;--bg-2:#17191E;--ink:#F3F4EF;--ink-2:#AEB3B5;--line:#2A2E34}
+  }
+  :root[data-theme="dark"]{--bg:#0E1013;--bg-2:#17191E;--ink:#F3F4EF;--ink-2:#AEB3B5;--line:#2A2E34}
+  html{scroll-padding-top:calc(3.75rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Bebas Neue",Impact,"Arial Narrow",sans-serif;margin:0;line-height:.95;font-weight:400;letter-spacing:.01em}
+  h1{font-size:clamp(3.2rem,11vw,6.5rem)}
+  h2{font-size:clamp(2.4rem,7vw,3.8rem)}
+  h3{font-size:1.6rem;letter-spacing:.03em}
+  p{margin:0}
+  .wrap{width:min(1060px,100% - 2rem);margin-inline:auto}
+  .kicker{font-family:"Bebas Neue",sans-serif;font-size:1.05rem;letter-spacing:.18em;color:var(--lime-dim);margin-bottom:.6rem}
+  .hero .kicker,.reviews .kicker,.area .kicker{color:var(--lime)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.2rem;font-family:"Bebas Neue",sans-serif;font-size:1.35rem;letter-spacing:.06em;text-decoration:none;border:2px solid transparent;cursor:pointer;line-height:1}
+  .btn:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+  .btn-lime{background:var(--lime);color:var(--lime-ink)}
+  .btn-lime:hover{background:#D4FF4A}
+  .btn-outline{background:transparent;color:var(--on-black);border-color:rgba(255,255,255,.28)}
+  .btn-outline:hover{border-color:var(--lime);color:var(--lime)}
+
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--black);color:var(--on-black);border-bottom:1px solid rgba(255,255,255,.08)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem;gap:1rem}
+  .logo{display:flex;align-items:center;gap:.55rem;font-family:"Bebas Neue",sans-serif;font-size:1.55rem;letter-spacing:.06em;text-decoration:none;color:var(--on-black);white-space:nowrap}
+  .logo i{display:inline-block;width:.9rem;height:1.5rem;background:var(--lime);transform:skewX(-14deg);border-radius:.1rem}
+  nav a{text-decoration:none;color:var(--on-black-2);font-weight:500;margin-left:1.25rem;font-size:.95rem}
+  nav a:hover{color:var(--lime)}
+  @media (max-width:700px){nav{display:none}}
+  .call-pill{background:var(--lime);color:var(--lime-ink);text-decoration:none;font-family:"Bebas Neue",sans-serif;letter-spacing:.06em;font-size:1.15rem;padding:.45rem .95rem;border-radius:.2rem;white-space:nowrap}
+
+  .hero{position:relative;background:var(--black);color:var(--on-black);padding:3.25rem 0 3.75rem;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+    repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 2px,transparent 2px 18px);pointer-events:none}
+  .hero::after{content:"";position:absolute;right:-12vw;top:-8rem;width:60vw;max-width:620px;height:140%;background:linear-gradient(180deg,var(--lime),transparent 70%);opacity:.08;transform:skewX(-14deg);pointer-events:none}
+  .hero .wrap{position:relative;display:grid;gap:2.5rem}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .hero h1 em{font-style:normal;color:var(--lime)}
+  .hero .lede{color:var(--on-black-2);font-size:1.2rem;max-width:36ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:flex;gap:1.75rem;flex-wrap:wrap;margin-top:2.25rem;color:var(--on-black-2);font-size:.92rem}
+  .trust strong{display:block;color:var(--on-black);font-family:"Bebas Neue",sans-serif;font-size:1.9rem;letter-spacing:.03em;line-height:1}
+  .trust strong span{color:var(--lime)}
+
+  .quote-box{background:var(--black-2);border:1px solid rgba(255,255,255,.1);border-radius:.4rem;padding:1.25rem;box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
+  .quote-box h3{color:var(--on-black);margin-bottom:.9rem}
+  .quote-box .lbl{font-size:.85rem;color:var(--on-black-2);text-transform:uppercase;letter-spacing:.08em;font-weight:500;margin:.9rem 0 .45rem}
+  .quote-box .lbl:first-of-type{margin-top:0}
+  .chips{display:flex;flex-wrap:wrap;gap:.45rem}
+  .chip{background:transparent;color:var(--on-black);border:1.5px solid rgba(255,255,255,.25);border-radius:.2rem;padding:.5rem .85rem;font:inherit;font-size:.95rem;font-weight:500;cursor:pointer}
+  .chip[aria-pressed="true"]{background:var(--lime);border-color:var(--lime);color:var(--lime-ink);font-weight:700}
+  .chip:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+  .est{margin-top:1.1rem;display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;border-top:1px solid rgba(255,255,255,.1);padding-top:1rem}
+  .est .from{color:var(--on-black-2);font-size:.9rem}
+  .est .num{font-family:"Bebas Neue",sans-serif;font-size:2.8rem;line-height:1;color:var(--lime)}
+  .est a{color:var(--on-black);font-weight:700;text-decoration-color:var(--lime);text-underline-offset:3px;font-size:.95rem}
+  .est-note{margin-top:.6rem;font-size:.8rem;color:var(--on-black-2)}
+
+  section{padding:4rem 0}
+  .services .grid{display:grid;gap:1rem;margin-top:1.75rem}
+  @media (min-width:700px){.services .grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:980px){.services .grid{grid-template-columns:repeat(4,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-left:4px solid var(--lime);border-radius:.3rem;padding:1.2rem}
+  .svc p{color:var(--ink-2);margin-top:.45rem;font-size:1rem}
+  .svc svg{width:2.2rem;height:2.2rem;display:block;margin-bottom:.8rem}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .intro{color:var(--ink-2);margin-top:.6rem;max-width:52ch}
+  .table-scroll{overflow-x:auto;margin-top:1.75rem;-webkit-overflow-scrolling:touch}
+  .pricing table{width:100%;min-width:520px;border-collapse:collapse;background:var(--bg);border:1px solid var(--line)}
+  .pricing th,.pricing td{text-align:left;padding:.9rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
+  .pricing th{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:1.2rem;letter-spacing:.06em;background:var(--black);color:var(--on-black)}
+  .pricing td.price{font-family:"Bebas Neue",sans-serif;font-size:1.5rem;letter-spacing:.02em;white-space:nowrap}
+  .pricing td small{display:block;color:var(--ink-2);font-size:.95rem;margin-top:.15rem}
+  .pricing .note{color:var(--ink-2);margin-top:1rem;font-size:.95rem}
+  .pricing .example{display:inline-block;margin-top:.9rem;background:var(--lime);color:var(--lime-ink);font-size:.85rem;font-weight:700;padding:.3rem .65rem;border-radius:.2rem}
+
+  .reviews{background:var(--black);color:var(--on-black);position:relative;overflow:hidden}
+  .reviews::before{content:"";position:absolute;left:-10vw;bottom:-6rem;width:50vw;max-width:500px;height:120%;background:linear-gradient(0deg,var(--lime),transparent 70%);opacity:.07;transform:skewX(-14deg);pointer-events:none}
+  .reviews .wrap{position:relative}
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:760px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:.3rem;padding:1.3rem;display:flex;flex-direction:column}
+  .review p{flex:1}
+  .stars{color:var(--lime);letter-spacing:.12em;margin-bottom:.6rem}
+  .review cite{display:block;margin-top:.9rem;font-style:normal;color:var(--on-black-2);font-size:.92rem}
+  .rating-line{color:var(--on-black-2);margin-top:.6rem}
+  .rating-line strong{color:var(--on-black)}
+
+  .area .wrap{display:grid;gap:2rem}
+  @media (min-width:820px){.area .wrap{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .area .kicker{color:var(--lime-dim)}
+  .area p{color:var(--ink-2);margin-top:.8rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:.2rem;padding:.35rem .8rem;font-size:.95rem}
+  .hours{background:var(--bg-2);border:1px solid var(--line);border-radius:.3rem;padding:1.3rem}
+  .hours h3{margin-bottom:.6rem}
+  .hours dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.4rem 1.25rem}
+  .hours dt{font-weight:500}
+  .hours dd{margin:0;color:var(--ink-2)}
+  .hours .addr{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line)}
+  .hours .addr a{color:var(--ink);text-decoration-color:var(--lime-dim);text-underline-offset:3px}
+
+  .book{background:var(--bg-2);border-top:1px solid var(--line)}
+  .book .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.book .wrap{grid-template-columns:1fr 1fr}}
+  .book .sub{color:var(--ink-2);margin-top:.8rem;max-width:40ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.6rem}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--lime-dim);text-underline-offset:3px;font-weight:500}
+  .contact-list .big{font-family:"Bebas Neue",sans-serif;font-size:2rem;letter-spacing:.03em;text-decoration:none}
+  .ig{display:inline-flex;align-items:center;gap:.5rem}
+  .ig svg{width:1.2rem;height:1.2rem}
+  form{display:grid;gap:.9rem;background:var(--bg);padding:1.4rem;border-radius:.3rem;border:1px solid var(--line)}
+  label.f{display:grid;gap:.35rem;font-weight:500;font-size:.95rem;color:var(--ink-2)}
+  input,select,textarea{font:inherit;color:#0E1013;background:#fff;border:1px solid var(--line);border-radius:.2rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--lime);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--ink-2)}
+
+  footer{background:var(--black);color:var(--on-black-2);padding:1.5rem 0 4rem;font-size:.9rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-black-2)}
+  footer a:hover{color:var(--lime)}
+
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--lime);color:var(--lime-ink);font-size:.75rem;font-weight:700;padding:.3rem .6rem;border-radius:999px;z-index:20;text-decoration:none}
+  .preview-tag:hover{background:#D4FF4A}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><i aria-hidden="true"></i>Alley Auto Tint</a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Hours</a>
+    </nav>
+    <a class="call-pill" href="tel:+17275968160">Call the shop</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Largo, FL &middot; Ulmerton Rd</p>
+      <h1>Dark glass.<br><em>Done in an hour.</em></h1>
+      <p class="lede">Ceramic and carbon window tint for cars, trucks and SUVs on Ulmerton Rd in Largo. Call today, get in tomorrow, wait while it's done.</p>
+      <div class="hero-actions">
+        <a class="btn btn-lime" href="#book">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+17275968160">(727) 596-8160</a>
+      </div>
+      <div class="trust">
+        <div><strong>4.7<span>&#9733;</span></strong>129 Google reviews</div>
+        <div><strong>7 days</strong>Open every day</div>
+        <div><strong>~1 hr</strong>Most installs</div>
+      </div>
+    </div>
+
+    <div class="quote-box" aria-labelledby="qbTitle">
+      <h3 id="qbTitle">Ballpark your tint</h3>
+      <p class="lbl">Vehicle</p>
+      <div class="chips" role="group" aria-label="Vehicle type">
+        <button class="chip" type="button" aria-pressed="true" data-v="sedan">Sedan / coupe</button>
+        <button class="chip" type="button" aria-pressed="false" data-v="suv">SUV / truck</button>
+        <button class="chip" type="button" aria-pressed="false" data-v="van">Van / 3-row</button>
+      </div>
+      <p class="lbl">Job</p>
+      <div class="chips" role="group" aria-label="Tint package">
+        <button class="chip" type="button" aria-pressed="true" data-j="full">Full vehicle</button>
+        <button class="chip" type="button" aria-pressed="false" data-j="fronts">Two fronts</button>
+        <button class="chip" type="button" aria-pressed="false" data-j="shield">Windshield</button>
+        <button class="chip" type="button" aria-pressed="false" data-j="remove">Removal + re-tint</button>
+      </div>
+      <div class="est" aria-live="polite">
+        <div><div class="from">Ceramic, starting at</div><div class="num" id="estNum">$280</div></div>
+        <a id="estLink" href="sms:+17275968160?&body=Hi%20Alley%20Auto%20Tint%2C%20I%27d%20like%20a%20quote%20on%20a%20full%20vehicle%20tint%20for%20a%20sedan.">Text this to the shop</a>
+      </div>
+      <p class="est-note">Example pricing. Final price depends on the car and film.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <p class="kicker">What we do</p>
+    <h2>Tint, and only tint</h2>
+    <div class="grid">
+      <div class="svc">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="12" width="34" height="18" rx="3" fill="none" stroke="var(--lime-dim)" stroke-width="2.5"/><path d="M3 21h34" stroke="var(--lime-dim)" stroke-width="2.5"/><rect x="3" y="12" width="34" height="9" rx="3" fill="var(--lime)" opacity=".35"/></svg>
+        <h3>Full vehicle tint</h3>
+        <p>Every side window and the rear glass, shade matched all the way around. Ceramic or carbon film.</p>
+      </div>
+      <div class="svc">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="12" width="15" height="18" rx="2.5" fill="var(--lime)" opacity=".35" stroke="var(--lime-dim)" stroke-width="2.5"/><rect x="22" y="12" width="15" height="18" rx="2.5" fill="none" stroke="var(--lime-dim)" stroke-width="2.5" stroke-dasharray="3 3"/></svg>
+        <h3>Two front windows</h3>
+        <p>Match your factory rear privacy glass so the truck or SUV looks right from every angle.</p>
+      </div>
+      <div class="svc">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 28 L11 12 H29 L34 28 Z" fill="none" stroke="var(--lime-dim)" stroke-width="2.5" stroke-linejoin="round"/><path d="M8.5 20 H31.5" stroke="var(--lime)" stroke-width="3"/></svg>
+        <h3>Windshield</h3>
+        <p>A sun strip or full clear heat-rejecting film on the windshield to cut glare and cabin heat.</p>
+      </div>
+      <div class="svc">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="10" width="30" height="20" rx="3" fill="none" stroke="var(--lime-dim)" stroke-width="2.5"/><path d="M5 30 Q18 14 35 10" fill="var(--lime)" opacity=".35"/><path d="M26 30 l9 -9" stroke="var(--lime-dim)" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <h3>Removal and re-tint</h3>
+        <p>Purple, bubbling or peeling film stripped clean, adhesive off the glass, fresh tint on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <p class="kicker">Pricing</p>
+    <h2>Straight numbers</h2>
+    <p class="intro">Starting prices for common jobs. Ceramic blocks more heat; carbon is the budget option. Text a photo of your car for an exact quote.</p>
+    <div class="table-scroll">
+    <table>
+      <thead><tr><th>Package</th><th>Carbon</th><th>Ceramic</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Two front windows</strong><small>Match factory rear tint</small></td><td class="price">From $90</td><td class="price">From $130</td></tr>
+        <tr><td><strong>Full sedan or coupe</strong><small>All sides plus rear glass</small></td><td class="price">From $180</td><td class="price">From $280</td></tr>
+        <tr><td><strong>Full SUV or truck</strong><small>Sides, quarters and rear</small></td><td class="price">From $220</td><td class="price">From $330</td></tr>
+        <tr><td><strong>Windshield</strong><small>Sun strip / full clear film</small></td><td class="price">—</td><td class="price">$50 / From $150</td></tr>
+        <tr><td><strong>Old tint removal</strong><small>Per vehicle, before re-tint</small></td><td class="price" colspan="2">From $60</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="note">Vans, 3-row SUVs and vehicles with old film quoted on arrival.</p>
+    <span class="example">Example pricing — we'll put in your real numbers.</span>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <p class="kicker">Reviews</p>
+    <h2>What Largo drivers say</h2>
+    <p class="rating-line"><strong>4.7 out of 5</strong> across 129 Google reviews.</p>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>I called them and was able to make an appointment the next day. They finished my tint within a few hours and it looks super good!</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>I've done 4 cars tinted with Josh. Best speedy service you can get and affordable!</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>They were done in about an hour. The car looked great, the price was reasonable and the service was top-notch.</p><cite>Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <div>
+      <p class="kicker">The shop</p>
+      <h2>On Ulmerton, open 7 days</h2>
+      <p>Alley Auto Tint is in the plaza at 12539 Ulmerton Rd, Suite 8 in Largo. Most jobs are done while you wait, so bring a coffee. Drivers come from across Pinellas and the beaches.</p>
+      <div class="towns">
+        <span>Largo</span><span>Seminole</span><span>Clearwater</span><span>Pinellas Park</span><span>St. Petersburg</span><span>Indian Rocks Beach</span><span>Belleair</span><span>Dunedin</span>
+      </div>
+    </div>
+    <div class="hours">
+      <h3>Hours</h3>
+      <dl>
+        <dt>Mon – Sat</dt><dd>7:30 AM – 6:00 PM</dd>
+        <dt>Sunday</dt><dd>7:30 AM – 12:00 PM</dd>
+      </dl>
+      <div class="addr">
+        <a href="https://maps.google.com/?q=Alley+Auto+Tint+12539+Ulmerton+Rd+%238+Largo+FL+33774" rel="noopener">12539 Ulmerton Rd #8, Largo, FL 33774</a><br>
+        <a href="tel:+17275968160">(727) 596-8160</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Get a quote</p>
+      <h2>Text us your car</h2>
+      <p class="sub">Fill this in and it opens a text to the shop with everything already typed. Or just call during open hours.</p>
+      <ul class="contact-list">
+        <li><a class="big" href="tel:+17275968160">(727) 596-8160</a></li>
+        <li>12539 Ulmerton Rd #8, Largo, FL 33774</li>
+        <li><a class="ig" href="https://www.instagram.com/alleyautotint" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>@alleyautotint on Instagram</a></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Phone<input name="phone" type="tel" autocomplete="tel" placeholder="(727) 555-0123" required></label>
+      <label class="f">Year, make and model<input name="vehicle" placeholder="2019 Toyota 4Runner" required></label>
+      <label class="f">What do you need?<textarea name="need" placeholder="Full ceramic tint, 20% rear and 35% fronts. Has old tint that needs to come off." required></textarea></label>
+      <button class="btn btn-lime" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text to the shop in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Alley Auto Tint, 12539 Ulmerton Rd #8, Largo, FL 33774 &middot; <a href="tel:+17275968160">(727) 596-8160</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener">Shopfront Sites</a></span>
+  </div>
+</footer>
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener">Website preview by Shopfront Sites</a>
+
+<script>
+(function(){
+  var SMS='sms:+17275968160?&body=';
+  var price={
+    sedan:{full:280,fronts:130,shield:150,remove:340},
+    suv:{full:330,fronts:130,shield:150,remove:390},
+    van:{full:380,fronts:130,shield:150,remove:440}
+  };
+  var vName={sedan:'sedan or coupe',suv:'SUV or truck',van:'van or 3-row SUV'};
+  var jName={full:'full vehicle tint',fronts:'two front windows',shield:'windshield film',remove:'old tint removal and re-tint'};
+  var v='sedan',j='full';
+  var num=document.getElementById('estNum'),link=document.getElementById('estLink');
+  function render(){
+    num.textContent='$'+price[v][j];
+    link.href=SMS+encodeURIComponent('Hi Alley Auto Tint, I\'d like a quote on '+jName[j]+' for a '+vName[v]+'.');
+  }
+  function wire(sel,attr,set){
+    var chips=document.querySelectorAll(sel);
+    chips.forEach(function(c){c.addEventListener('click',function(){
+      chips.forEach(function(x){x.setAttribute('aria-pressed','false')});
+      c.setAttribute('aria-pressed','true');
+      set(c.dataset[attr]); render();
+    })});
+  }
+  wire('.chip[data-v]','v',function(x){v=x});
+  wire('.chip[data-j]','j',function(x){j=x});
+  render();
+
+  var f=document.getElementById('quoteForm');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f);
+    var m='Hi Alley Auto Tint, this is '+d.get('name')+' ('+d.get('phone')+'). I have a '+d.get('vehicle')+'. I need: '+d.get('need')+' When can you fit me in?';
+    window.location.href=SMS+encodeURIComponent(m);
+  });
+})();
+</script>
+</body>
+</html>

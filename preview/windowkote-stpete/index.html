@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Window-Kote of St Petersburg — Auto, home and commercial tint since 1985</title>
+<meta name="description" content="Family-owned window tinting and vinyl graphics in St. Petersburg, FL since 1985. Automotive, residential and commercial tint with a lifetime warranty.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F0E8; --bg-2:#FFFFFF; --ink:#16212E; --ink-2:#5B6572; --line:#DED7C9;
+    --navy:#16212E; --navy-2:#1F2E40; --on-navy:#F4F0E8; --on-navy-2:#A7B0BC;
+    --copper:#B8622E; --copper-soft:#D98B59; --on-copper:#FFFFFF;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#121A24;--bg-2:#1A2432;--ink:#F4F0E8;--ink-2:#B4BCC7;--line:#2B3748;--navy:#0C131B;--navy-2:#141D28}
+  }
+  :root[data-theme="dark"]{--bg:#121A24;--bg-2:#1A2432;--ink:#F4F0E8;--ink-2:#B4BCC7;--line:#2B3748;--navy:#0C131B;--navy-2:#141D28}
+  html{scroll-padding-top:4rem;scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Public Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:Fraunces,Georgia,serif;margin:0;line-height:1.05;letter-spacing:-.01em}
+  h1{font-size:clamp(2.5rem,8vw,4.5rem);font-weight:700}
+  h2{font-size:clamp(1.9rem,5.5vw,2.75rem);font-weight:600}
+  h3{font-size:1.3rem;font-weight:600}
+  p{margin:0}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);margin-bottom:.9rem}
+  .hero .eyebrow{color:var(--copper-soft)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.35rem;font-weight:700;font-size:1.02rem;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--copper);outline-offset:3px}
+  .btn-copper{background:var(--copper);color:var(--on-copper)}
+  .btn-copper:hover{background:#A3552A}
+  .btn-outline{background:transparent;color:var(--on-navy);border-color:rgba(255,255,255,.3)}
+  .btn-outline:hover{border-color:rgba(255,255,255,.6)}
+
+  header{position:sticky;top:0;z-index:10;background:var(--navy);color:var(--on-navy);border-bottom:1px solid rgba(255,255,255,.08)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem;gap:1rem}
+  .logo{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.3rem;text-decoration:none;color:var(--on-navy);letter-spacing:.01em;white-space:nowrap}
+  .logo span{color:var(--copper-soft)}
+  nav a{text-decoration:none;color:var(--on-navy-2);font-weight:600;margin-left:1.25rem;font-size:.95rem}
+  nav a:hover{color:var(--on-navy)}
+  @media (max-width:700px){nav{display:none}}
+  .call-pill{background:var(--copper);color:#fff;text-decoration:none;font-weight:700;padding:.45rem .9rem;border-radius:999px;font-size:.92rem;white-space:nowrap}
+
+  .hero{background:var(--navy);color:var(--on-navy);padding:3.25rem 0 3.75rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:auto -20% -40% auto;width:60vw;max-width:640px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(184,98,46,.28),transparent 65%);pointer-events:none}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .hero .lede{color:var(--on-navy-2);font-size:1.15rem;max-width:40ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .hero .fine{margin-top:1.75rem;color:var(--on-navy-2);font-size:.95rem}
+  .hero .fine b{color:var(--on-navy);font-weight:600}
+
+  .card{background:var(--navy-2);border:1px solid rgba(255,255,255,.1);border-radius:.75rem;padding:1.4rem;position:relative}
+  .card svg{width:100%;height:auto;display:block;border-radius:.5rem}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-top:1.1rem}
+  .stat{border-top:2px solid var(--copper);padding-top:.6rem}
+  .stat .n{font-family:Fraunces,Georgia,serif;font-size:1.9rem;font-weight:700;line-height:1;color:var(--on-navy)}
+  .stat .l{color:var(--on-navy-2);font-size:.85rem;margin-top:.3rem;line-height:1.3}
+
+  section{padding:3.75rem 0}
+  .svcs .grid{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:640px){.svcs .grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:960px){.svcs .grid{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:.6rem;padding:1.4rem;display:grid;gap:.5rem;align-content:start}
+  .svc .ic{width:2.5rem;height:2.5rem;border-radius:.5rem;background:var(--navy);display:grid;place-items:center;margin-bottom:.4rem}
+  .svc .ic svg{width:1.4rem;height:1.4rem;stroke:var(--copper-soft);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);font-size:1rem}
+  .svc-note{color:var(--ink-2);margin-top:1.5rem;font-size:.98rem;max-width:62ch}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .intro{color:var(--ink-2);margin-top:.6rem;max-width:56ch}
+  .table-scroll{overflow-x:auto;margin-top:2rem;-webkit-overflow-scrolling:touch}
+  .pricing table{width:100%;border-collapse:collapse;background:var(--bg);border:1px solid var(--line);min-width:520px}
+  .pricing th,.pricing td{text-align:left;padding:.95rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
+  .pricing th{font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;background:var(--navy);color:var(--on-navy)}
+  .pricing td.price{font-family:Fraunces,Georgia,serif;font-size:1.25rem;font-weight:600;white-space:nowrap}
+  .pricing td.price small{display:block;font-family:"Public Sans",sans-serif;font-size:.78rem;font-weight:600;color:var(--copper);letter-spacing:.06em;text-transform:uppercase}
+  .pricing td small.d{display:block;color:var(--ink-2);font-size:.92rem;margin-top:.15rem}
+  .pricing .note{color:var(--ink-2);margin-top:1rem;font-size:.95rem}
+  .pricing .example{display:inline-block;margin-top:1.25rem;padding:.45rem .8rem;border:1px dashed var(--copper);border-radius:.4rem;color:var(--ink-2);font-size:.88rem}
+
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:800px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:.6rem;padding:1.4rem;display:grid;align-content:start;gap:.6rem}
+  .stars{color:var(--copper);letter-spacing:.1em;font-size:1.05rem}
+  .review blockquote{margin:0;font-size:1.02rem}
+  .review cite{display:block;font-style:normal;color:var(--ink-2);font-size:.92rem}
+  .rating-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem 1rem;color:var(--ink-2);margin-top:.6rem}
+  .rating-line .big{font-family:Fraunces,Georgia,serif;font-size:2.4rem;font-weight:700;color:var(--ink);line-height:1}
+
+  .about{background:var(--navy);color:var(--on-navy)}
+  .about .wrap{display:grid;gap:2.5rem}
+  @media (min-width:860px){.about .wrap{grid-template-columns:1.15fr .85fr;align-items:start}}
+  .about p{color:var(--on-navy-2);margin-top:.9rem;max-width:54ch}
+  .about ul{margin:1.1rem 0 0;padding-left:1.1rem;color:var(--on-navy-2);display:grid;gap:.45rem}
+  .about .box{background:var(--navy-2);border:1px solid rgba(255,255,255,.1);border-radius:.75rem;padding:1.4rem}
+  .about .box h3{color:var(--on-navy);margin-bottom:.8rem}
+  .hours{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
+  .hours li{display:flex;justify-content:space-between;gap:1rem;color:var(--on-navy-2);border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:.4rem}
+  .hours li b{color:var(--on-navy);font-weight:600}
+  .areas{margin-top:1.4rem;color:var(--on-navy-2);font-size:.95rem}
+  .areas b{color:var(--on-navy);font-weight:600}
+
+  .book .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.book .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .book .sub{color:var(--ink-2);margin-top:.9rem;max-width:40ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.6rem}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--copper);text-underline-offset:3px;font-weight:600}
+  .contact-list li{display:flex;gap:.6rem;align-items:baseline}
+  .contact-list li::before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:var(--copper);flex:none;transform:translateY(-.1rem)}
+  form{display:grid;gap:.9rem;background:var(--bg-2);padding:1.4rem;border-radius:.6rem;border:1px solid var(--line)}
+  label.f{display:grid;gap:.35rem;font-weight:600;font-size:.92rem;color:var(--ink-2)}
+  input,select,textarea{font:inherit;color:#16212E;background:#fff;border:1px solid #CFC7B8;border-radius:.35rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:4.5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--copper);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--ink-2)}
+
+  footer{background:var(--navy);color:var(--on-navy-2);padding:1.5rem 0 2rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.08)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  footer a{color:var(--on-navy);text-decoration-color:var(--copper-soft)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--copper);color:#fff;font-size:.75rem;font-weight:700;padding:.3rem .6rem;border-radius:999px;z-index:20;text-decoration:none}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Window<span>-</span>Kote</a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">Hours</a>
+      <a href="#book">Quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+17275225722">(727) 522-5722</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">St. Petersburg, Florida · Family-owned since 1985</span>
+      <h1>Forty years of keeping St. Pete cool behind the glass.</h1>
+      <p class="lede">Automotive, residential and commercial window tint, plus vinyl graphics and wraps, from the same family at the same 16th Street North shop since 1985. Every install carries a lifetime warranty.</p>
+      <div class="hero-actions">
+        <a class="btn btn-copper" href="#book">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+17275225722">Call the shop</a>
+      </div>
+      <p class="fine">Installed in a <b>climate-controlled facility</b> with <b>Solar Gard</b> films from Saint-Gobain. High-performance and ceramic options.</p>
+    </div>
+
+    <div class="card">
+      <svg viewBox="0 0 520 260" role="img" aria-labelledby="heroArt">
+        <title id="heroArt">Illustration of a sunlit car window and a home window, both tinted</title>
+        <defs>
+          <linearGradient id="sun" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#F2C98A"/><stop offset="1" stop-color="#B8622E"/></linearGradient>
+          <linearGradient id="glass" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#2B4A6B"/><stop offset="1" stop-color="#0E1823"/></linearGradient>
+          <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#1B2E44"/><stop offset="1" stop-color="#16212E"/></linearGradient>
+        </defs>
+        <rect width="520" height="260" rx="10" fill="url(#sky)"/>
+        <circle cx="420" cy="62" r="40" fill="url(#sun)"/>
+        <g stroke="#D98B59" stroke-width="2" opacity=".55" stroke-linecap="round">
+          <line x1="420" y1="6" x2="420" y2="14"/><line x1="476" y1="62" x2="468" y2="62"/><line x1="459" y1="23" x2="453" y2="29"/><line x1="459" y1="101" x2="453" y2="95"/><line x1="381" y1="23" x2="387" y2="29"/>
+        </g>
+        <!-- house window -->
+        <rect x="36" y="44" width="150" height="150" rx="6" fill="#F4F0E8"/>
+        <rect x="48" y="56" width="126" height="126" rx="3" fill="url(#glass)"/>
+        <line x1="111" y1="56" x2="111" y2="182" stroke="#F4F0E8" stroke-width="6"/>
+        <line x1="48" y1="119" x2="174" y2="119" stroke="#F4F0E8" stroke-width="6"/>
+        <path d="M60 170 L100 130 L120 150 L172 98" stroke="#D98B59" stroke-width="2" fill="none" opacity=".35" stroke-dasharray="4 5"/>
+        <rect x="28" y="194" width="166" height="10" rx="3" fill="#CFC7B8"/>
+        <!-- car -->
+        <ellipse cx="370" cy="230" rx="140" ry="9" fill="#000" opacity=".4"/>
+        <path fill="#E8E2D6" d="M236 206 C234 184 244 170 270 164 L300 160 C320 134 348 120 384 120 C426 120 456 134 482 160 L500 164 C512 168 518 180 516 206 L508 214 L240 214 Z"/>
+        <path d="M312 160 C330 140 352 130 384 130 L384 160 Z" fill="url(#glass)"/>
+        <path d="M392 130 C420 130 442 140 466 160 L392 160 Z" fill="url(#glass)"/>
+        <path d="M312 160 C330 140 352 130 384 130 L384 160 Z M392 130 C420 130 442 140 466 160 L392 160 Z" fill="#0B1118" opacity=".35"/>
+        <path fill="none" stroke="#16212E" stroke-width="3" d="M308 162 C328 138 354 126 388 126 C422 126 448 138 470 162"/>
+        <line x1="388" y1="126" x2="388" y2="162" stroke="#16212E" stroke-width="3"/>
+        <rect x="236" y="210" width="280" height="8" rx="3" fill="#16212E"/>
+        <g fill="#16212E"><circle cx="292" cy="212" r="24"/><circle cx="462" cy="212" r="24"/></g>
+        <g fill="#8E97A3"><circle cx="292" cy="212" r="11"/><circle cx="462" cy="212" r="11"/></g>
+        <rect x="498" y="182" width="16" height="8" rx="3" fill="#F2C98A"/>
+        <rect x="238" y="184" width="14" height="7" rx="3" fill="#D9534F"/>
+      </svg>
+      <div class="stats">
+        <div class="stat"><div class="n">1985</div><div class="l">Same family, same location</div></div>
+        <div class="stat"><div class="n">4.7<span style="font-size:1rem;color:var(--copper-soft)">★</span></div><div class="l">185 Google reviews</div></div>
+        <div class="stat"><div class="n">Lifetime</div><div class="l">Warranty on film and install</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="svcs" id="services">
+  <div class="wrap">
+    <span class="eyebrow">What we do</span>
+    <h2>Tint and graphics for cars, homes and storefronts.</h2>
+    <div class="grid">
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13l2-5a2 2 0 0 1 2-1.3h10A2 2 0 0 1 19 8l2 5v5H3z"/><path d="M3 13h18"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg></div>
+        <h3>Automotive tint</h3>
+        <p>Cars, trucks, SUVs and RVs tinted inside a climate-controlled bay. Choose high-performance or ceramic Solar Gard film; we'll keep you within Florida's legal limits and match factory privacy glass.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><rect x="10" y="13" width="4" height="7"/></svg></div>
+        <h3>Residential tint</h3>
+        <p>Cut the glare and the afternoon heat load on west-facing rooms without blocking the view. Lower cooling bills, less fading on floors and furniture.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 10h18M9 4v16M15 4v16"/></svg></div>
+        <h3>Commercial tint</h3>
+        <p>Storefronts, offices and multi-floor glass. Solar control for comfort and energy savings, with installs scheduled around your business hours.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 21V9"/><path d="M13 14h4M13 17h4"/></svg></div>
+        <h3>Decorative and privacy film</h3>
+        <p>Frosted, etched-look and patterned films for conference rooms, bathrooms and glass partitions. The privacy of frosted glass at a fraction of the cost.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 10-10-3-3L5 16z"/><path d="M13 7l3 3"/><path d="M15 20h5"/></svg></div>
+        <h3>Vinyl graphics and lettering</h3>
+        <p>Business names, hours and logos on doors and windows. Lettering and logos on work trucks and trailers so the vehicle advertises while it's parked.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12c4-6 12-6 16 0-4 6-12 6-16 0z"/><path d="M4 12h16"/><path d="M8 7l1 3M16 7l-1 3"/></svg></div>
+        <h3>Vehicle wraps</h3>
+        <p>Partial and full wraps for commercial vehicles and fleets. Printed and installed to hold up in Florida sun.</p>
+      </div>
+    </div>
+    <p class="svc-note">Not sure which film is right for your car or your windows? Call the shop and describe what's bothering you: heat, glare, fading or privacy. We've been answering that question since 1985.</p>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <span class="eyebrow">Pricing</span>
+    <h2>Honest starting prices.</h2>
+    <p class="intro">Exact pricing depends on the vehicle, the glass and the film you choose. These give you a place to start; call or text for a firm number.</p>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Job</th><th>Film</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Two front windows</strong><small class="d">Match your factory rear tint</small></td><td>High-performance</td><td class="price"><small>Starting at</small>$120</td></tr>
+          <tr><td><strong>Full car</strong><small class="d">All side windows and rear glass, sedan or coupe</small></td><td>High-performance</td><td class="price"><small>Starting at</small>$250</td></tr>
+          <tr><td><strong>Full car</strong><small class="d">Ceramic for maximum heat rejection</small></td><td>Ceramic</td><td class="price"><small>Starting at</small>$450</td></tr>
+          <tr><td><strong>Trucks, SUVs and RVs</strong><small class="d">Quoted by vehicle and glass count</small></td><td>Either</td><td class="price"><small>Starting at</small>$300</td></tr>
+          <tr><td><strong>Residential and commercial</strong><small class="d">Per square foot, measured on site</small></td><td>Solar control or decorative</td><td class="price"><small>Starting at</small>$8 / sq ft</td></tr>
+          <tr><td><strong>Vinyl lettering and graphics</strong><small class="d">Storefront hours and logos, truck doors</small></td><td>—</td><td class="price"><small>Starting at</small>$150</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Every film we install is backed by a lifetime warranty. Old tint removal is quoted on arrival.</p>
+    <span class="example">Example pricing — we'll put in your real numbers.</span>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <span class="eyebrow">Reviews</span>
+    <h2>Customers who keep coming back.</h2>
+    <div class="rating-line"><span class="big">4.7</span><span class="stars" aria-label="4.7 out of 5 stars">★★★★★</span><span>from 185 Google reviews</span></div>
+    <div class="grid">
+      <div class="review">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>I recently purchased a new truck and there was only one company that came to mind when I wanted to get the windows tinted. Brian and the guys are the best around, they are the only ones I recommend.</blockquote>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>They did our tinting on an RV and our SUV 5 years ago and still do a great job. I made an appointment and waited while they put on the tinting. Came out perfect.</blockquote>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>I've taken 6 cars there over the past 6 years. Their work is consistent and I haven't had any issues. The staff is super nice.</blockquote>
+        <cite>Google review</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">The shop</span>
+      <h2>Same corner of 16th Street North since 1985.</h2>
+      <p>Window-Kote is a family-owned shop that has tinted St. Petersburg's cars, homes and businesses from the same location for four decades. Customers bring us their second, third and sixth vehicle because the work holds up and the people are the same.</p>
+      <ul>
+        <li>Climate-controlled installation bay for clean, dust-free tint</li>
+        <li>Solar Gard films from Saint-Gobain, used exclusively</li>
+        <li>Lifetime warranty on every product and installation</li>
+        <li>Appointments available; most cars done while you wait</li>
+      </ul>
+      <p class="areas"><b>Serving</b> St. Petersburg, Pinellas Park, Largo, Clearwater, Seminole, Gulfport, Tierra Verde and the beaches. Residential and commercial estimates on site across Pinellas County.</p>
+    </div>
+    <div class="box">
+      <h3>Hours and location</h3>
+      <ul class="hours">
+        <li><span>Monday – Friday</span><b>8:00 AM – 5:00 PM</b></li>
+        <li><span>Saturday</span><b>Closed</b></li>
+        <li><span>Sunday</span><b>Closed</b></li>
+      </ul>
+      <p class="areas"><b>3801 16th St N</b><br>St. Petersburg, FL 33703<br><a href="https://maps.google.com/?q=3801+16th+St+N,+St.+Petersburg,+FL+33703" style="color:var(--copper-soft)">Open in Maps</a></p>
+      <p class="areas"><a href="tel:+17275225722" style="color:var(--on-navy);font-weight:600">(727) 522-5722</a><br><a href="mailto:windowkote@verizon.net" style="color:var(--on-navy-2)">windowkote@verizon.net</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Tell us what you're tinting.</h2>
+      <p class="sub">Fill this in and it opens a text to the shop with your details. Or just call during business hours and talk to a person.</p>
+      <ul class="contact-list">
+        <li><a href="tel:+17275225722">(727) 522-5722</a></li>
+        <li><span>3801 16th St N, St. Petersburg, FL 33703</span></li>
+        <li><span>Monday – Friday, 8 AM – 5 PM</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Your phone<input name="phone" type="tel" autocomplete="tel" placeholder="(727) 555-0100" required></label>
+      <label class="f">Vehicle, or home / business<input name="vehicle" placeholder="2022 Toyota Tacoma, or 'storefront on 4th St'" required></label>
+      <label class="f">What do you need?
+        <select name="job">
+          <option>Full car tint</option>
+          <option>Two front windows</option>
+          <option>Truck, SUV or RV tint</option>
+          <option>Residential window tint</option>
+          <option>Commercial window tint</option>
+          <option>Vinyl graphics or lettering</option>
+          <option>Vehicle wrap</option>
+          <option>Not sure, help me choose</option>
+        </select>
+      </label>
+      <button class="btn btn-copper" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text to Window-Kote in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Window-Kote of St Petersburg · 3801 16th St N, St. Petersburg, FL 33703 · <a href="tel:+17275225722">(727) 522-5722</a></span>
+    <span>Site preview by <a href="https://shopfrontsites.org">Shopfront Sites</a></span>
+  </div>
+</footer>
+<a class="preview-tag" href="https://shopfrontsites.org">Website preview</a>
+
+<script>
+(function(){
+  var f=document.getElementById('quoteForm');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f);
+    var m='Hi Window-Kote, this is '+d.get('name')+' ('+d.get('phone')+'). I have a '+d.get('vehicle')+' and I need: '+d.get('job')+'. Can I get a quote?';
+    window.location.href='sms:+17275225722?&body='+encodeURIComponent(m);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>L&amp;K Auto Repair — Mobile Mechanic, Pinellas Park &amp; Pinellas County</title>
+<meta name="description" content="Family-owned mobile mechanic serving Pinellas Park and all of Pinellas County. Engine, brakes, AC, electrical, transmissions and suspension, repaired at your home or workplace. 4.9 stars on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F6F3EC; --bg-2:#FFFFFF; --ink:#15201F; --ink-2:#5A6866; --line:#DED9CC;
+    --petrol:#10403C; --petrol-2:#17524D; --on-petrol:#F3F6F2; --on-petrol-2:#A9C4BE;
+    --coral:#F26B4E; --coral-ink:#15201F;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#131B1A;--bg-2:#1B2524;--ink:#F3F6F2;--ink-2:#AEBBB8;--line:#2C3836}}
+  :root[data-theme="dark"]{--bg:#131B1A;--bg-2:#1B2524;--ink:#F3F6F2;--ink-2:#AEBBB8;--line:#2C3836}
+  html{scroll-padding-top:calc(4rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:Archivo,system-ui,sans-serif;margin:0;line-height:1.02;font-weight:900;letter-spacing:-.025em}
+  h1{font-size:clamp(2.6rem,8.5vw,4.8rem)}
+  h2{font-size:clamp(1.9rem,5.5vw,2.8rem)}
+  h3{font-size:1.25rem;font-weight:700;letter-spacing:-.01em}
+  p{margin:0}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--coral);margin-bottom:.8rem}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.45rem;font-weight:700;font-size:1.05rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+  .btn:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+  .btn-coral{background:var(--coral);color:var(--coral-ink)}
+  .btn-coral:hover{background:#FF7D61}
+  .btn-outline{background:transparent;color:var(--on-petrol);border-color:rgba(255,255,255,.3)}
+  .btn-outline:hover{border-color:rgba(255,255,255,.6)}
+
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--petrol);color:var(--on-petrol);border-bottom:1px solid rgba(255,255,255,.08)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:3.9rem}
+  .logo{display:flex;align-items:center;gap:.6rem;font-family:Archivo,sans-serif;font-weight:900;font-size:1.2rem;text-decoration:none;color:var(--on-petrol);letter-spacing:-.02em;white-space:nowrap}
+  .logo .mark{width:1.9rem;height:1.9rem;border-radius:.4rem;background:var(--coral);color:var(--coral-ink);display:grid;place-items:center;font-size:.8rem;font-weight:900;letter-spacing:-.04em;flex:0 0 auto}
+  .logo small{display:block;font-family:Manrope,sans-serif;font-weight:500;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--on-petrol-2);line-height:1}
+  nav a{text-decoration:none;color:var(--on-petrol-2);font-weight:500;margin-left:1.25rem;font-size:.98rem}
+  nav a:hover{color:var(--on-petrol)}
+  @media (max-width:720px){nav{display:none}}
+  .call-pill{background:var(--coral);color:var(--coral-ink);text-decoration:none;font-weight:700;padding:.5rem .95rem;border-radius:999px;font-size:.95rem;white-space:nowrap}
+
+  .hero{background:var(--petrol);color:var(--on-petrol);padding:3.25rem 0 3.75rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;right:-12rem;top:-10rem;width:34rem;height:34rem;border-radius:50%;border:5rem solid rgba(242,107,78,.08);pointer-events:none}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.15fr .85fr;align-items:start}}
+  .hero .lede{color:var(--on-petrol-2);font-size:1.15rem;max-width:40ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.6rem}
+  .trust{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:1.25rem 2rem;margin-top:2.25rem;color:var(--on-petrol-2);font-size:.9rem}
+  .trust strong{display:block;color:var(--on-petrol);font-family:Archivo,sans-serif;font-size:1.5rem;font-weight:900;letter-spacing:-.02em}
+  .trust .star{color:var(--coral)}
+
+  .visit{background:var(--petrol-2);border:1px solid rgba(255,255,255,.1);border-radius:.8rem;padding:1.4rem}
+  .visit h3{color:var(--on-petrol);margin-bottom:1.1rem}
+  .tl{list-style:none;margin:0;padding:0;display:grid;gap:0}
+  .tl li{position:relative;padding:0 0 1.15rem 2.4rem}
+  .tl li:last-child{padding-bottom:0}
+  .tl li::before{content:"";position:absolute;left:.62rem;top:1.4rem;bottom:-.1rem;width:2px;background:rgba(255,255,255,.15)}
+  .tl li:last-child::before{display:none}
+  .tl .dot{position:absolute;left:0;top:.15rem;width:1.35rem;height:1.35rem;border-radius:50%;background:var(--coral);color:var(--coral-ink);font-size:.75rem;font-weight:900;display:grid;place-items:center;font-family:Archivo,sans-serif}
+  .tl b{display:block;color:var(--on-petrol);font-weight:700}
+  .tl span{color:var(--on-petrol-2);font-size:.95rem}
+  .visit .hrs{margin-top:1.25rem;padding-top:1.1rem;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;align-items:center;gap:1rem;color:var(--on-petrol-2);font-size:.95rem}
+  .visit .hrs b{color:var(--on-petrol)}
+  .visit .btn{width:100%;margin-top:1.1rem}
+
+  section{padding:3.9rem 0}
+  .sec-head{display:grid;gap:.6rem;max-width:56ch}
+  .sec-head p{color:var(--ink-2);font-size:1.05rem}
+  .services .grid{display:grid;gap:1rem;margin-top:2rem}
+  @media (min-width:640px){.services .grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:900px){.services .grid{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:.7rem;padding:1.3rem;display:grid;gap:.5rem;align-content:start}
+  .svc .ico{width:2.6rem;height:2.6rem;border-radius:.55rem;background:var(--petrol);display:grid;place-items:center;margin-bottom:.4rem}
+  .svc .ico svg{width:1.4rem;height:1.4rem;stroke:var(--coral);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);font-size:1rem}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .price-list{list-style:none;margin:2rem 0 0;padding:0;display:grid;gap:0;border:1px solid var(--line);border-radius:.7rem;overflow:hidden;background:var(--bg)}
+  .price-list li{display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;align-items:center;padding:1rem 1.15rem;border-top:1px solid var(--line)}
+  .price-list li:first-child{border-top:0}
+  .price-list b{font-weight:700}
+  .price-list small{display:block;color:var(--ink-2);font-size:.92rem;font-weight:400}
+  .price-list .n{font-family:Archivo,sans-serif;font-weight:900;font-size:1.25rem;letter-spacing:-.02em;white-space:nowrap;color:var(--petrol)}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .price-list .n{color:var(--coral)}}
+  :root[data-theme="dark"] .price-list .n{color:var(--coral)}
+  .price-list .n em{font-style:normal;font-family:Manrope,sans-serif;font-weight:500;font-size:.8rem;color:var(--ink-2);display:block;text-align:right;letter-spacing:0}
+  .price-note{margin-top:1rem;font-size:.92rem;color:var(--ink-2);display:flex;gap:.6rem;align-items:flex-start}
+  .price-note .tag{flex:0 0 auto;background:var(--coral);color:var(--coral-ink);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:999px;margin-top:.15rem}
+  .pricing .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.pricing .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}.pricing .price-list{margin-top:0}}
+  .promise{margin-top:1.5rem;display:grid;gap:.9rem}
+  .promise div{display:flex;gap:.8rem;align-items:flex-start;color:var(--ink-2)}
+  .promise svg{flex:0 0 auto;width:1.35rem;height:1.35rem;margin-top:.15rem;stroke:var(--coral);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  .promise b{color:var(--ink)}
+
+  .reviews{background:var(--petrol);color:var(--on-petrol)}
+  .reviews .sec-head p{color:var(--on-petrol-2)}
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:760px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:.7rem;padding:1.3rem;display:grid;align-content:start}
+  .stars{color:var(--coral);letter-spacing:.12em;margin-bottom:.6rem;font-size:1.05rem}
+  .review p{font-size:1.02rem}
+  .review cite{display:block;margin-top:.9rem;font-style:normal;color:var(--on-petrol-2);font-size:.92rem}
+  .g-line{display:inline-flex;align-items:center;gap:.55rem;margin-top:.4rem;color:var(--on-petrol-2)}
+  .g-line .big{font-family:Archivo,sans-serif;font-weight:900;font-size:1.6rem;color:var(--on-petrol);letter-spacing:-.02em}
+  .g-line .star{color:var(--coral);font-size:1.3rem}
+
+  .about .wrap{display:grid;gap:2.25rem}
+  @media (min-width:860px){.about .wrap{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .about p{color:var(--ink-2);margin-top:.9rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.95rem}
+  .facts{background:var(--bg-2);border:1px solid var(--line);border-radius:.7rem;padding:1.3rem;display:grid;gap:1rem}
+  .facts div{display:grid;gap:.15rem;padding-top:1rem;border-top:1px solid var(--line)}
+  .facts div:first-child{padding-top:0;border-top:0}
+  .facts small{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--coral)}
+  .facts b{font-weight:700}
+  .facts span{color:var(--ink-2);font-size:.95rem}
+  .facts a{color:var(--ink);text-decoration-color:var(--coral);font-weight:600}
+
+  .book{background:var(--bg-2);border-top:1px solid var(--line)}
+  .book .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.book .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .book .sub{color:var(--ink-2);margin-top:.9rem;max-width:42ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.6rem}
+  .contact-list li{display:flex;gap:.7rem;align-items:center;color:var(--ink-2)}
+  .contact-list svg{width:1.2rem;height:1.2rem;stroke:var(--coral);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--coral);font-weight:600}
+  form{display:grid;gap:.95rem;background:var(--petrol);color:var(--on-petrol);padding:1.5rem;border-radius:.8rem;border:1px solid rgba(255,255,255,.08)}
+  form h3{color:var(--on-petrol)}
+  label.f{display:grid;gap:.35rem;font-weight:500;font-size:.95rem;color:var(--on-petrol-2)}
+  input,textarea{font:inherit;color:#15201F;background:#fff;border:1px solid #CFD6D4;border-radius:.45rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5rem;resize:vertical}
+  input:focus-visible,textarea:focus-visible{outline:3px solid var(--coral);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-petrol-2)}
+  footer{background:var(--petrol);color:var(--on-petrol-2);padding:1.75rem 0 2.25rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.1)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-petrol);text-decoration-color:var(--coral)}
+  footer .soc{display:flex;gap:1rem}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--coral);color:var(--coral-ink);font-size:.75rem;font-weight:700;padding:.3rem .6rem;border-radius:999px;z-index:20}
+  .preview-bar{background:#15201F;color:#F3F6F2;font-size:.85rem;text-align:center;padding:.5rem 1rem}
+  .preview-bar a{color:var(--coral);font-weight:700}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org">Shopfront Sites</a> for L&amp;K Auto Repair. Not the live site yet.</div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark">L&amp;K</span><span>Auto Repair<small>Mobile mechanic</small></span></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">Service area</a>
+      <a href="#book">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+17273331867">Call (727) 333-1867</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Pinellas Park · Pinellas County · We come to you</span>
+      <h1>Your driveway is the shop.</h1>
+      <p class="lede">Family-owned mobile mechanic service. Engine, brakes, AC, electrical, transmissions and suspension, repaired right where your car sits, at home or at work. No tow, no shuttle, no waiting room.</p>
+      <div class="hero-actions">
+        <a class="btn btn-coral" href="#book">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+17273331867">(727) 333-1867</a>
+      </div>
+      <div class="trust">
+        <div><strong><span class="star">★</span> 4.9</strong>244 Google reviews</div>
+        <div><strong>7 days</strong>Weekends included</div>
+        <div><strong>Mobile</strong>Home or workplace</div>
+      </div>
+    </div>
+
+    <div class="visit">
+      <h3>How a visit goes</h3>
+      <ol class="tl">
+        <li><span class="dot">1</span><b>Text or call with the symptoms</b><span>Tell us what the car is doing and where it's parked. We'll give you a straight answer on timing.</span></li>
+        <li><span class="dot">2</span><b>A tech comes to the car</b><span>Tools, scanner and parts on the truck. We diagnose on-site and explain it in plain English first.</span></li>
+        <li><span class="dot">3</span><b>Approve, then we fix it</b><span>Nothing starts until you've okayed the price. You see the old parts when we're done.</span></li>
+      </ol>
+      <div class="hrs"><span>Open <b>7 days, 10am–4pm</b></span><span>Closed holidays</span></div>
+      <a class="btn btn-coral" href="sms:+17273331867?&body=Hi%20L%26K%2C%20I%27d%20like%20to%20schedule%20a%20mobile%20visit.%20My%20car%3A%20">Text us about your car</a>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>What we handle on-site</h2>
+      <p>From diagnostics and drivability issues to heavy-line work. If it's bigger than a driveway job, we'll tell you up front.</p>
+    </div>
+    <div class="grid">
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10H7z"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5 5l2 2M17 17l2 2M19 5l-2 2M5 19l2-2"/></svg></div><h3>Engine repair</h3><p>Misfires, check-engine lights, timing, leaks and no-start problems. Diagnosed with a scanner, not a guess.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div><h3>Brake services</h3><p>Pads, rotors, calipers and brake lines. Usually finished in your driveway in a couple of hours.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16v8H4z"/><path d="M8 8V5M16 8V5M8 16v3M16 16v3M4 12h16"/></svg></div><h3>Transmissions</h3><p>Service, repair and full replacements, including on work trucks and diesels. Done on-site.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/><path d="M12 11c1 1.5 2 2.5 2 4a2 2 0 0 1-4 0c0-1.5 1-2.5 2-4z"/></svg></div><h3>Air conditioning</h3><p>Warm air in a Florida July is an emergency. Leak checks, recharges, compressors and blend doors.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L5 13h6l-1 9 9-12h-6l1-8z"/></svg></div><h3>Electrical system</h3><p>Batteries, starters, alternators, wiring gremlins and dash warning lights, traced to the real cause.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20V4M18 20V4"/><path d="M6 8c4 0 8 2 12 0M6 14c4 0 8 2 12 0"/></svg></div><h3>Suspension repair</h3><p>Struts, shocks, control arms, ball joints and sway bar links. Fixes the clunks and the wander.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Fair rates based on the job, not inflated shop labor times.</h2>
+        <p>You'll know the number before any work starts. Most mobile jobs come in under what a shop charges once you count the tow and the time off.</p>
+      </div>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Diagnostic fee applied to the repair</b> when you have us do the work.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Written quote by text</b> so there's nothing to remember or argue about.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Old parts shown to you</b> before they leave in the truck.</p></div>
+      </div>
+    </div>
+    <div>
+      <ul class="price-list">
+        <li><div><b>Mobile diagnostic</b><small>Scan, road test and a plain-English explanation</small></div><span class="n">$89<em>starting at</em></span></li>
+        <li><div><b>Oil change</b><small>Full synthetic, filter, fluid top-off</small></div><span class="n">$79<em>starting at</em></span></li>
+        <li><div><b>Brake pads and rotors</b><small>Per axle, parts and labor</small></div><span class="n">$249<em>starting at</em></span></li>
+        <li><div><b>Battery replacement</b><small>Installed and tested, charging system checked</small></div><span class="n">$179<em>starting at</em></span></li>
+        <li><div><b>Starter or alternator</b><small>Parts and labor, most cars and light trucks</small></div><span class="n">$299<em>starting at</em></span></li>
+        <li><div><b>AC inspection and recharge</b><small>Leak check, evacuate and recharge</small></div><span class="n">$149<em>starting at</em></span></li>
+      </ul>
+      <p class="price-note"><span class="tag">Note</span><span>Example pricing — we'll put in your real numbers. Final quotes depend on the vehicle and parts.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>What Pinellas drivers say</h2>
+      <p class="g-line"><span class="star">★★★★★</span><span class="big">4.9</span><span>across 244 Google reviews</span></p>
+    </div>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Called late Saturday afternoon. The mechanic was there Sunday morning, and I was back on the road in an hour."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Larry came to the house and installed a new transmission in one of our mobile welding trucks. Had us back up and running in no time!"</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Fair prices, fast responses, and great job execution. I always request Edwin, he is fast, effective, and above all incredibly kind."</p><cite>Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About and service area</span>
+      <h2>Based in Pinellas Park. Rolling all over Pinellas County.</h2>
+      <p>L&amp;K Auto Repair is a family-owned mobile mechanic service with years of hands-on experience across diagnostics, drivability issues, electrical repairs and heavy-line work. Every visit includes a thorough inspection and clear communication before anything gets replaced.</p>
+      <p>A little outside the county line? Text anyway and we'll let you know.</p>
+      <div class="towns">
+        <span>Pinellas Park</span><span>St. Petersburg</span><span>Largo</span><span>Clearwater</span><span>Seminole</span><span>Kenneth City</span><span>Gulfport</span><span>Dunedin</span><span>Safety Harbor</span><span>Palm Harbor</span><span>Tarpon Springs</span><span>The beaches</span>
+      </div>
+    </div>
+    <div class="facts">
+      <div><small>Hours</small><b>Every day, 10am to 4pm</b><span>Closed all holidays. Stranded outside those hours? Text us and we'll do our best.</span></div>
+      <div><small>Home base</small><b>5741 66th Ave N, Pinellas Park, FL 33781</b><span>Mobile service. We come to your home or workplace.</span></div>
+      <div><small>Phone</small><b><a href="tel:+17273331867">(727) 333-1867</a></b><span>Call or <a href="sms:+17273331867">text</a>, whichever is easier.</span></div>
+      <div><small>Registration</small><b>Florida Motor Vehicle Repair Reg. #MV108145</b><span>Voted Best Mobile Mechanic 2025, BusinessRate, Pinellas Park</span></div>
+      <div><small>Follow</small><b><a href="https://www.instagram.com/Lkmobilemechanic/" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/lkautorepairalwaysfair/" rel="noopener">Facebook</a></b></div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Tell us what the car is doing.</h2>
+      <p class="sub">Fill this in and it opens a text to L&amp;K with your details already typed. We'll reply with a price and a time. Or just call.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+17273331867">(727) 333-1867</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg><a href="sms:+17273331867">Text us</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Mobile service, Pinellas Park and all of Pinellas County</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>7 days, 10am–4pm</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <h3>Request a quote</h3>
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(727) 555-0123" required></label>
+      <label class="f">Vehicle<input name="vehicle" placeholder="2014 Ford F-150" required></label>
+      <label class="f">What do you need?<textarea name="need" placeholder="Grinding when I brake, car is at my house in Largo" required></textarea></label>
+      <button class="btn btn-coral" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>L&amp;K Auto Repair, Mobile Mechanic Services · Pinellas Park, FL · <a href="tel:+17273331867">(727) 333-1867</a></span>
+    <span class="soc"><a href="https://www.instagram.com/Lkmobilemechanic/" rel="noopener">Instagram</a><a href="https://www.facebook.com/lkautorepairalwaysfair/" rel="noopener">Facebook</a></span>
+    <span>Site preview by <a href="https://shopfrontsites.org">Shopfront Sites</a></span>
+  </div>
+</footer>
+<span class="preview-tag">Website preview</span>
+
+<script>
+(function(){
+  var f=document.getElementById('quoteForm');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f);
+    var m='Hi L&K, this is '+d.get('name')+' ('+d.get('phone')+'). '+d.get('vehicle')+': '+d.get('need')+' When could you come out?';
+    window.location.href='sms:+17273331867?&body='+encodeURIComponent(m);
+  });
+})();
+</script>
+</body>
+</html>

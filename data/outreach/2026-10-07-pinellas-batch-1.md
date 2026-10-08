@@ -85,3 +85,27 @@ Send texts from your phone. Email only where an address is listed. One follow-up
 - Handy Dandy David Mobile Mechanic — St. Pete · 138 · 2023 WordPress
 - RL Auto Repair Mobile Mechanic — Pinellas Park · 17 · none
 - Pinellas Park Mobile Auto Mechanic — 1 review · skip
+
+---
+
+## REVISED follow-ups for Oct 11 (send from your Tampa Bay Google Voice number, no link)
+
+Since the first texts came from an out-of-state number with a link, treat these as a fresh opener from a local number. If they reply, send the preview link as a second message.
+
+- **Start-S (Vlad) · +1 727-339-9328**
+  > Hey Vlad, Kevin here in Tampa Bay — you've got 278 five-star reviews and no website, so I built you a free mockup. Mind if I send the link?
+
+- **Horizon Mobile Detailing · +1 813-580-1299** (or IG DM @horizonmobiledetailing)
+  > Hey, is this the right number for Horizon? Kevin in Tampa Bay — 228 reviews and no site to book from, so I made you a free mockup. Want the link?
+
+- **Tailored Tint (Parker) · +1 727-210-5346** ⚠ storefront — may be a landline; if no reply, try Facebook Messenger
+  > Hey Parker, Kevin here in Tampa Bay — Tailored Tint has 171 reviews and no website, so I built you a free mockup. Mind if I send it over?
+
+- **Alley Auto Tint · +1 727-596-8160** ⚠ storefront — prefer IG DM @alleyautotint
+  > Hey, is this the right account for Alley Auto Tint? Kevin in Tampa Bay — 129 reviews and nothing to click on Google, so I made you a free site mockup. Want the link?
+
+- **L&K Mobile Mechanic · +1 727-333-1867** (or IG DM @Lkmobilemechanic)
+  > Hey, is this L&K? Kevin here in Tampa Bay — 244 reviews, and your current site doesn't let people text you a quote. I built a free replacement mockup. Mind if I send the link?
+
+**Step 2 for any reply (same for all):**
+> Here you go: <preview link> — the quote button texts straight to your phone. Free to look, tell me what you think.

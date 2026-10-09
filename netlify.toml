@@ -1,2 +1,7 @@
 [build]
   publish = "."
+
+[[headers]]
+  for = "/preview/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

@@ -162,7 +162,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-293-9550  ·  **Preview:** (no preview yet — ask Claude when they say yes)
 
 **Opener:**
-> Hey Jonathan, Kevin here in Tampa Bay — you've got 97 reviews and no website, so I built Mobile Mechanic Land O' Lakes LAKES a free mockup. Mind if I send the link?
+> Hey Jonathan, Kevin here in Tampa Bay — you've got 97 reviews and no website, so I built Mobile Mechanic Land O' Lakes a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: (no preview yet — ask Claude when they say yes) — the quote button texts straight to your phone. Free to look, tell me what you think.

@@ -343,10 +343,10 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 ## INSTAGRAM DM
 
 ### JD Wrapped it — Tampa · 43 reviews · storefront
-**Contact:** exists per reviews (handle not found)  ·  **Preview:** (no preview yet — ask Claude when they say yes)
+**Contact:** +1 813-599-4588 (IG handle not found — text instead)  ·  **Preview:** https://shopfrontsites.org/preview/jdwrappedit
 
 **Opener:**
-> Hey Joe, Kevin here in Tampa Bay — 43 reviews on Google and nothing to click besides IG, so I built JD Wrapped it a free website mockup. Want the link?
+> Hey Joe, Kevin here in Tampa Bay — you've got 43 five-star reviews and no website, so I built JD Wrapped It a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: https://shopfrontsites.org/preview/flfilm — the quote button texts straight to your phone. Free to look, tell me what you think.

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Billy's Hands-on Detailing — Detailing, paint correction and ceramic coating, Land O' Lakes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF6EE; --bg-2:#FFFFFF; --ink:#2B1A17; --ink-2:#6B5450; --line:#E6D9CC;
+    --ox:#5A1F1F; --ox-2:#742A2A; --on-ox:#FBF3EA; --on-ox-2:#D9B9B0;
+    --honey:#E0A458; --honey-ink:#2B1A17;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1C1210;--bg-2:#2A1B18;--ink:#FBF3EA;--ink-2:#CDB5AC;--line:#3F2A26}}
+  :root[data-theme="dark"]{--bg:#1C1210;--bg-2:#2A1B18;--ink:#FBF3EA;--ink-2:#CDB5AC;--line:#3F2A26}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Nunito Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{margin:0;line-height:1.05;font-family:Fraunces,Georgia,serif;font-weight:700;letter-spacing:-.01em}
+  h1{font-size:clamp(2.5rem,8vw,4.5rem);font-weight:800}
+  h2{font-size:clamp(1.9rem,5vw,2.7rem)}
+  h3{font-size:1.3rem}
+  p{margin:0}
+  .wrap{width:min(1020px,100% - 2rem);margin-inline:auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.6rem;font-weight:700;font-size:1.05rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+  .btn:focus-visible{outline:3px solid var(--honey);outline-offset:3px}
+  .btn-honey{background:var(--honey);color:var(--honey-ink)}
+  .btn-outline{background:transparent;color:var(--on-ox);border-color:rgba(255,255,255,.35)}
+
+  .sf-banner{background:var(--honey);color:var(--honey-ink);text-align:center;font-size:.9rem;font-weight:600;padding:.45rem 1rem}
+  .sf-banner a{color:inherit;font-weight:700}
+
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--ox);color:var(--on-ox)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem;gap:.75rem}
+  .logo{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:1.25rem;text-decoration:none;color:var(--on-ox);white-space:nowrap}
+  .logo span{color:var(--honey)}
+  nav a{text-decoration:none;color:var(--on-ox-2);font-weight:600;margin-left:1.25rem}
+  @media (max-width:700px){nav{display:none}}
+  .call-pill{background:var(--honey);color:var(--honey-ink);text-decoration:none;font-weight:700;padding:.45rem .9rem;border-radius:999px;font-size:.95rem;white-space:nowrap}
+
+  .hero{background:var(--ox);color:var(--on-ox);padding:3rem 0 3.5rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 100% 0%,rgba(224,164,88,.18),transparent 65%);pointer-events:none}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .hero .eyebrow{color:var(--honey);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem;margin-bottom:.9rem}
+  .hero .lede{color:var(--on-ox-2);font-size:1.15rem;max-width:40ch;margin-top:1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+  .trust{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;color:var(--on-ox-2);font-size:.95rem}
+  .trust strong{display:block;color:var(--on-ox);font-size:1.4rem;font-weight:800;font-family:Fraunces,Georgia,serif}
+
+  .gloss{position:relative;border-radius:1rem;overflow:hidden;aspect-ratio:4/3;background:#1a0d0b;border:1px solid rgba(255,255,255,.1)}
+  .gloss .paint{position:absolute;inset:0;background:
+      radial-gradient(ellipse 55% 35% at 28% 22%,rgba(255,255,255,.5),transparent 60%),
+      radial-gradient(ellipse 40% 25% at 75% 80%,rgba(224,164,88,.35),transparent 60%),
+      linear-gradient(160deg,#8d3030 0%,#5A1F1F 45%,#2e0f0f 100%)}
+  .gloss .bead{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.85),rgba(255,255,255,.15) 60%,transparent 70%);box-shadow:inset 0 -2px 4px rgba(0,0,0,.3)}
+  .gloss .cap{position:absolute;left:.9rem;bottom:.9rem;right:.9rem;color:#fff;font-size:.9rem;font-weight:600;background:rgba(0,0,0,.4);padding:.5rem .75rem;border-radius:.5rem}
+
+  section{padding:3.75rem 0}
+  .sub-h{color:var(--ink-2);margin-top:.6rem;max-width:52ch}
+  .services .grid{display:grid;gap:1rem;margin-top:1.75rem}
+  @media (min-width:700px){.services .grid{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:.8rem;padding:1.25rem;border-top:4px solid var(--honey)}
+  .svc p{color:var(--ink-2);margin-top:.4rem;font-size:1rem}
+
+  .pk{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pk .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:800px){.pk .grid{grid-template-columns:repeat(4,1fr)}}
+  @media (min-width:600px) and (max-width:799px){.pk .grid{grid-template-columns:repeat(2,1fr)}}
+  .pkg{background:var(--bg);border:1px solid var(--line);border-radius:.8rem;padding:1.3rem;display:flex;flex-direction:column}
+  .pkg.featured{border-color:var(--ox-2);border-width:2px}
+  .pkg .from{color:var(--ink-2);font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;margin-top:.6rem}
+  .pkg .price{font-family:Fraunces,Georgia,serif;font-size:2rem;font-weight:800;margin:0 0 .2rem}
+  .pkg ul{margin:.9rem 0 1.25rem;padding-left:1.1rem;color:var(--ink-2);font-size:.98rem;display:grid;gap:.35rem}
+  .pkg .btn{margin-top:auto;background:var(--ox);color:var(--on-ox)}
+  .pk .note{color:var(--ink-2);margin-top:1.25rem;font-size:.95rem}
+
+  .reviews{background:var(--ox);color:var(--on-ox)}
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:700px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:.8rem;padding:1.3rem}
+  .stars{color:var(--honey);letter-spacing:.1em;margin-bottom:.5rem}
+  .review cite{display:block;margin-top:.8rem;font-style:normal;color:var(--on-ox-2);font-size:.95rem}
+  .rating-line{color:var(--on-ox-2);margin-top:.5rem}
+
+  .about .wrap{display:grid;gap:2rem}
+  @media (min-width:800px){.about .wrap{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .about p{color:var(--ink-2);margin-top:.8rem}
+  .about h3{margin-top:1.25rem}
+  .about h3:first-child{margin-top:0}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .8rem;font-size:.95rem}
+  .hours{list-style:none;padding:0;margin:.6rem 0 0;color:var(--ink-2);display:grid;gap:.25rem}
+  .hours li{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px dashed var(--line);padding:.3rem 0}
+  .about a{color:var(--ink);text-decoration-color:var(--honey)}
+
+  .book{background:var(--bg-2);border-top:1px solid var(--line)}
+  .book .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.book .wrap{grid-template-columns:1fr 1fr}}
+  .book .sub{color:var(--ink-2);margin-top:.8rem;max-width:40ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.5rem}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--honey);font-weight:700}
+  form{display:grid;gap:.9rem;background:var(--bg);padding:1.4rem;border-radius:.8rem;border:1px solid var(--line)}
+  label{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--ink-2)}
+  input,select,textarea{font:inherit;color:#2B1A17;background:#fff;border:1px solid var(--line);border-radius:.5rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--honey);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--ink-2)}
+  footer{background:var(--ox);color:var(--on-ox-2);padding:1.5rem 0 2.5rem;font-size:.9rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  footer a{color:var(--on-ox)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--honey);color:var(--honey-ink);font-size:.75rem;font-weight:700;padding:.3rem .6rem;border-radius:999px;z-index:20}
+</style>
+</head>
+<body>
+<div class="sf-banner">Website preview by <a href="https://shopfrontsites.org">Shopfront Sites</a></div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Billy's <span>Hands-on</span> Detailing</a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">Find us</a>
+    </nav>
+    <a class="call-pill" href="tel:+18139009275">Call Billy</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Land O' Lakes, on US 41</p>
+      <h1>Done by hand. Done right.</h1>
+      <p class="lede">Full interior and exterior detailing, paint correction and ceramic coating at Billy's shop on Land O' Lakes Blvd. Drop the car off, grab a slice next door, and pick it up looking like the day you bought it.</p>
+      <div class="hero-actions">
+        <a class="btn btn-honey" href="#book">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+18139009275">(813) 900-9275</a>
+      </div>
+      <div class="trust">
+        <div><strong>4.9</strong>Google rating</div>
+        <div><strong>292</strong>Google reviews</div>
+        <div><strong>7 days</strong>Open every day</div>
+      </div>
+    </div>
+    <div>
+      <div class="gloss" aria-hidden="true">
+        <div class="paint"></div>
+        <div class="bead" style="left:18%;top:62%;width:34px;height:34px"></div>
+        <div class="bead" style="left:30%;top:50%;width:18px;height:18px"></div>
+        <div class="bead" style="left:44%;top:68%;width:26px;height:26px"></div>
+        <div class="bead" style="left:58%;top:40%;width:14px;height:14px"></div>
+        <div class="bead" style="left:66%;top:58%;width:40px;height:40px"></div>
+        <div class="bead" style="left:80%;top:30%;width:20px;height:20px"></div>
+        <div class="bead" style="left:76%;top:72%;width:16px;height:16px"></div>
+        <div class="cap">Corrected, coated, beading. The kind of shine that lasts years, not weeks.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <h2>What Billy and the crew do</h2>
+    <p class="sub-h">Every car gets the hands-on treatment. No drive-through, no shortcuts, nothing pushed on you that you don't need.</p>
+    <div class="grid">
+      <div class="svc"><h3>Full detail</h3><p>Inside and out. Seats, carpets, vents, door jambs, wheels, tires and trim. The nooks and crannies most places skip.</p></div>
+      <div class="svc"><h3>Interior deep clean</h3><p>Shampoo, extraction, odor removal. Smoke, pets, spilled coffee. Cars that sat for months come back fresh.</p></div>
+      <div class="svc"><h3>Paint correction</h3><p>Clay bar, multi-stage polish and color correction to pull swirls, oxidation and light scratches out of the paint.</p></div>
+      <div class="svc"><h3>Ceramic coating</h3><p>Long-term protection on paint and glass. Easier washes, deeper gloss, real resistance to Florida sun.</p></div>
+      <div class="svc"><h3>Headlight restoration</h3><p>Yellowed, hazy lenses de-oxidized and sealed so you can actually see at night.</p></div>
+      <div class="svc"><h3>Engine bay and trim</h3><p>Engine bay detailed, faded plastic re-blacked, chrome and glass polished. The finishing touches.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pk" id="pricing">
+  <div class="wrap">
+    <h2>Pricing</h2>
+    <p class="sub-h">Fair, straightforward and quoted before any work starts. Call or text Billy with your year, make and model for an exact number.</p>
+    <div class="grid">
+      <div class="pkg">
+        <h3>Interior detail</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$150</div>
+        <ul><li>Vacuum and shampoo</li><li>Seats, carpets, mats</li><li>Dash, vents, door panels</li><li>Windows inside</li></ul>
+        <a class="btn" href="#book">Get a quote</a>
+      </div>
+      <div class="pkg featured">
+        <h3>Full detail</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$250</div>
+        <ul><li>Everything in the interior</li><li>Hand wash, clay bar, wax</li><li>Wheels, tires, trim dressed</li><li>Door jambs and engine bay</li></ul>
+        <a class="btn" href="#book">Get a quote</a>
+      </div>
+      <div class="pkg">
+        <h3>Paint correction</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$400</div>
+        <ul><li>Clay bar and decontamination</li><li>Single or multi-stage polish</li><li>Swirl and scratch removal</li><li>Sealant to lock it in</li></ul>
+        <a class="btn" href="#book">Get a quote</a>
+      </div>
+      <div class="pkg">
+        <h3>Ceramic coating</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$800</div>
+        <ul><li>Full paint correction first</li><li>Coating on paint and glass</li><li>Multi-year protection</li><li>Care instructions included</li></ul>
+        <a class="btn" href="#book">Get a quote</a>
+      </div>
+    </div>
+    <p class="note">Example pricing — we'll put in your real numbers. Trucks, large SUVs and heavily soiled interiors quoted individually.</p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <h2>What customers say</h2>
+    <p class="rating-line">Rated 4.9 on Google across 292 reviews.</p>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>My 12 year old car looks brand new. Arguably even better than when I bought it new. I went all in on color correction, multi-stage polish, clay bar and ceramic coat, and the quote was very fair and worth every dollar.</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Took a car that had been sitting for 8 months, ex-owner was a smoker. Billy's got it looking like it came fresh off the lot and got rid of the smoke smell too. 5 stars.</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Billy was very pleasant and professional. He listens to your needs and doesn't try to push anything on you. The prices he offers are very reasonable for the area.</p><cite>Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <h2>Owner-run, on Land O' Lakes Blvd</h2>
+      <p>Billy runs the shop himself and works the cars alongside his crew. He'll look at your car, tell you what it actually needs, and quote it straight. Most details take a couple of hours, so drop it off and he'll call when it's ready. There's a shaded rest area with a big fan if you'd rather wait.</p>
+      <p>Find us at <a href="https://maps.google.com/?q=Billy's+Hands-on+Detailing+3939+Land+O'+Lakes+Blvd+Land+O'+Lakes+FL+34639">3939 Land O' Lakes Blvd</a>, on US 41 next to ABC Pizza.</p>
+      <h3 style="margin-top:1.5rem">Customers come from</h3>
+      <div class="towns">
+        <span>Land O' Lakes</span><span>Lutz</span><span>Wesley Chapel</span><span>Odessa</span><span>New Tampa</span><span>Trinity</span><span>Zephyrhills</span><span>Carrollwood</span>
+      </div>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <ul class="hours">
+        <li><span>Monday – Saturday</span><span>9:00am – 5:30pm</span></li>
+        <li><span>Sunday</span><span>9:00am – 5:00pm</span></li>
+      </ul>
+      <h3>Reach Billy</h3>
+      <p><a href="tel:+18139009275">(813) 900-9275</a><br>Call or text. Walk-ins welcome, but a quick text ahead gets you in faster.</p>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Get a quote</h2>
+      <p class="sub">Fill this in and it opens a text to Billy with the details already typed. Or just call the shop.</p>
+      <ul class="contact-list">
+        <li><a href="tel:+18139009275">(813) 900-9275</a></li>
+        <li>3939 Land O' Lakes Blvd, Land O' Lakes, FL 34639</li>
+        <li>Open 7 days a week</li>
+      </ul>
+    </div>
+    <form id="bookForm">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Your phone<input name="phone" type="tel" autocomplete="tel" placeholder="(813) 555-0100"></label>
+      <label>Year, make and model<input name="car" placeholder="2019 Ford F-150" required></label>
+      <label>What do you need?<textarea name="need" placeholder="Full detail, dog hair everywhere. Maybe ceramic if the price is right." required></textarea></label>
+      <button class="btn btn-honey" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Billy's Hands-on Detailing, Land O' Lakes, FL</span>
+    <span>Website preview by <a href="https://shopfrontsites.org">Shopfront Sites</a></span>
+  </div>
+</footer>
+<span class="preview-tag">Website preview</span>
+
+<script>
+(function(){
+  var f=document.getElementById('bookForm');
+  f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f);
+    var m='Hi Billy, this is '+d.get('name')+'. '+d.get('car')+': '+d.get('need');
+    if(d.get('phone'))m+=' You can reach me at '+d.get('phone')+'.';
+    m+=' What would that run and when could you fit me in?';
+    window.location.href='sms:+18139009275?&body='+encodeURIComponent(m);});
+})();
+</script>
+</body>
+</html>

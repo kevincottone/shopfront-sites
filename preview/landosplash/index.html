@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lando Splash Auto Detailing — Hand car wash and detailing, Land O' Lakes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F2FAFD; --bg-2:#FFFFFF; --ink:#0B2545; --ink-2:#4A6078; --line:#CFE6F0;
+    --splash:#0EA5E9; --splash-2:#0284C7; --deep:#0B2545; --on-deep:#F2FAFD; --on-deep-2:#A9D6EC;
+    --coral:#FF6B4A; --coral-ink:#FFFFFF; --lime:#C6F91F;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#081A30;--bg-2:#0F2642;--ink:#F2FAFD;--ink-2:#A9C4D8;--line:#1F3D5C}}
+  :root[data-theme="dark"]{--bg:#081A30;--bg-2:#0F2642;--ink:#F2FAFD;--ink-2:#A9C4D8;--line:#1F3D5C}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Nunito,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Baloo 2",Nunito,sans-serif;margin:0;line-height:1.02;font-weight:800;letter-spacing:-.01em}
+  h1{font-size:clamp(2.7rem,9vw,4.9rem)}
+  h2{font-size:clamp(1.9rem,5.5vw,2.8rem)}
+  h3{font-size:1.35rem;font-weight:700}
+  p{margin:0}
+  .wrap{width:min(1020px,100% - 2rem);margin-inline:auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:999px;font-weight:700;font-size:1.05rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+  .btn:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+  .btn-coral{background:var(--coral);color:var(--coral-ink);box-shadow:0 6px 0 rgba(0,0,0,.18)}
+  .btn-coral:active{transform:translateY(3px);box-shadow:0 3px 0 rgba(0,0,0,.18)}
+  .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--deep);color:var(--on-deep)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem;gap:.75rem}
+  .logo{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:1.4rem;text-decoration:none;color:#fff;display:flex;align-items:center;gap:.4rem;white-space:nowrap}
+  .logo svg{width:1.5rem;height:1.5rem;flex:0 0 auto}
+  .logo span{color:var(--splash)}
+  nav a{text-decoration:none;color:var(--on-deep-2);font-weight:600;margin-left:1.25rem}
+  @media (max-width:640px){nav{display:none}}
+  .call-pill{background:var(--coral);color:#fff;text-decoration:none;font-weight:700;padding:.45rem .9rem;border-radius:999px;font-size:.95rem;white-space:nowrap}
+
+  .hero{position:relative;background:linear-gradient(170deg,var(--splash) 0%,var(--splash-2) 55%,#0369A1 100%);color:#fff;padding:3.25rem 0 5.5rem;overflow:hidden}
+  .hero .bubbles{position:absolute;inset:0;pointer-events:none}
+  .hero .bubbles i{position:absolute;border-radius:50%;background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.25);animation:rise 9s linear infinite}
+  @keyframes rise{from{transform:translateY(0)}to{transform:translateY(-120vh)}}
+  @media (prefers-reduced-motion:reduce){.hero .bubbles i{animation:none}}
+  .hero .wrap{position:relative;display:grid;gap:2.5rem}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr 1fr;align-items:center}}
+  .hero .kicker{display:inline-flex;align-items:center;gap:.5rem;background:rgba(11,37,69,.35);border-radius:999px;padding:.35rem .9rem .35rem .5rem;font-weight:700;font-size:.95rem;margin-bottom:1.1rem}
+  .hero .kicker b{background:var(--lime);color:var(--deep);border-radius:999px;padding:.1rem .55rem;font-size:.9rem}
+  .hero .lede{color:#E0F4FD;font-size:1.15rem;max-width:36ch;margin-top:1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+  .wave{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:4rem;display:block}
+  .wave path{fill:var(--bg)}
+
+  .car{width:100%;max-width:520px;margin-inline:auto;display:block;filter:drop-shadow(0 18px 24px rgba(0,0,0,.25))}
+  .car .drop{animation:drip 2.2s ease-in infinite}
+  .car .drop.d2{animation-delay:.7s}.car .drop.d3{animation-delay:1.3s}
+  @keyframes drip{0%{transform:translateY(0);opacity:0}15%{opacity:1}100%{transform:translateY(60px);opacity:0}}
+  @media (prefers-reduced-motion:reduce){.car .drop{animation:none;opacity:.8}}
+  .hero-cap{text-align:center;color:#E0F4FD;font-size:.95rem;margin-top:.75rem}
+
+  section{padding:3.75rem 0}
+  .sub{color:var(--ink-2);margin-top:.6rem;max-width:52ch}
+  .sv .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:720px){.sv .grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:960px){.sv .grid{grid-template-columns:repeat(4,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:1.25rem;padding:1.4rem;position:relative;overflow:hidden}
+  .svc::before{content:"";position:absolute;right:-1.5rem;top:-1.5rem;width:5rem;height:5rem;border-radius:50%;background:var(--splash);opacity:.12}
+  .svc .ic{width:2.75rem;height:2.75rem;border-radius:.9rem;display:grid;place-items:center;background:var(--splash);color:#fff;margin-bottom:.9rem}
+  .svc .ic svg{width:1.5rem;height:1.5rem}
+  .svc p{color:var(--ink-2);margin-top:.4rem;font-size:1rem}
+
+  .pk{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pk .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:800px){.pk .grid{grid-template-columns:repeat(3,1fr)}}
+  .pkg{background:var(--bg);border:1px solid var(--line);border-radius:1.25rem;padding:1.4rem;display:flex;flex-direction:column;position:relative}
+  .pkg.featured{border:2px solid var(--splash)}
+  .pkg .badge{position:absolute;top:-.8rem;left:1.2rem;background:var(--coral);color:#fff;font-weight:700;font-size:.8rem;padding:.25rem .7rem;border-radius:999px}
+  .pkg .from{color:var(--ink-2);font-size:.9rem;margin-top:.6rem}
+  .pkg .price{font-family:"Baloo 2",sans-serif;font-size:2.3rem;font-weight:800;line-height:1;color:var(--splash-2);margin:.1rem 0 .3rem}
+  .pkg .time{color:var(--ink-2);font-size:.95rem}
+  .pkg ul{margin:1rem 0 1.25rem;padding-left:1.1rem;color:var(--ink-2);font-size:1rem;display:grid;gap:.35rem}
+  .pkg .btn{margin-top:auto;background:var(--deep);color:#fff}
+  .pk .note{color:var(--ink-2);margin-top:1.25rem;font-size:.95rem}
+  .pk .note b{color:var(--ink)}
+
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:700px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:1.25rem;padding:1.3rem;display:flex;flex-direction:column}
+  .stars{color:var(--coral);letter-spacing:.1em;margin-bottom:.5rem}
+  .review p{flex:1}
+  .review cite{display:block;margin-top:.8rem;font-style:normal;color:var(--ink-2);font-size:.95rem}
+  .rating-line{display:inline-flex;align-items:center;gap:.6rem;margin-top:.75rem;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.4rem 1rem .4rem .6rem;font-weight:600}
+  .rating-line .big{font-family:"Baloo 2",sans-serif;font-size:1.5rem;font-weight:800;color:var(--splash-2);line-height:1}
+  .rating-line .st{color:var(--coral);letter-spacing:.05em;font-size:.9rem}
+
+  .about{background:var(--deep);color:var(--on-deep)}
+  .about .wrap{display:grid;gap:2rem}
+  @media (min-width:800px){.about .wrap{grid-template-columns:1.1fr 1fr;align-items:center}}
+  .about p{color:var(--on-deep-2);margin-top:.8rem}
+  .about h3{color:#fff;margin-top:1.4rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+  .towns span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:.35rem .8rem;font-size:.95rem;color:#fff}
+  .addr{background:rgba(14,165,233,.15);border:1px solid rgba(14,165,233,.4);border-radius:1.25rem;padding:1.3rem}
+  .addr a{color:#fff;text-decoration-color:var(--lime)}
+  .addr .row{display:flex;gap:.8rem;align-items:flex-start;padding:.6rem 0;border-top:1px solid rgba(255,255,255,.12)}
+  .addr .row:first-child{border-top:0;padding-top:0}
+  .addr svg{width:1.3rem;height:1.3rem;flex:0 0 auto;color:var(--splash);margin-top:.15rem}
+  .addr small{display:block;color:var(--on-deep-2);font-size:.9rem}
+
+  .book{background:linear-gradient(170deg,var(--splash) 0%,var(--splash-2) 100%);color:#fff}
+  .book .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.book .wrap{grid-template-columns:1fr 1fr}}
+  .book .bsub{color:#E0F4FD;margin-top:.8rem;max-width:40ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.5rem}
+  .contact-list a{color:#fff;text-decoration-color:var(--lime);font-weight:700}
+  form{display:grid;gap:.9rem;background:rgba(11,37,69,.28);padding:1.4rem;border-radius:1.25rem;border:1px solid rgba(255,255,255,.2)}
+  label.f{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:#E0F4FD}
+  input,select,textarea{font:inherit;color:#0B2545;background:#fff;border:1px solid var(--line);border-radius:.7rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:4.5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--lime);outline-offset:1px}
+  .form-note{font-size:.9rem;color:#E0F4FD}
+  footer{background:var(--deep);color:var(--on-deep-2);padding:1.5rem 0 4rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.1)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  footer a{color:#fff}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--lime);color:var(--deep);font-size:.75rem;font-weight:700;padding:.35rem .7rem;border-radius:999px;z-index:20;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13z" fill="#0EA5E9"/><path d="M9 15.5a3 3 0 0 0 2 2.8" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>Lando <span>Splash</span></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">Find us</a>
+      <a href="#book">Quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+18137337500">Call Taylor</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="bubbles" aria-hidden="true">
+    <i style="left:6%;bottom:-3rem;width:1.2rem;height:1.2rem;animation-duration:11s"></i>
+    <i style="left:18%;bottom:-3rem;width:2.4rem;height:2.4rem;animation-duration:14s;animation-delay:-4s"></i>
+    <i style="left:34%;bottom:-3rem;width:.9rem;height:.9rem;animation-duration:9s;animation-delay:-2s"></i>
+    <i style="left:52%;bottom:-3rem;width:1.8rem;height:1.8rem;animation-duration:13s;animation-delay:-7s"></i>
+    <i style="left:70%;bottom:-3rem;width:1.1rem;height:1.1rem;animation-duration:10s;animation-delay:-5s"></i>
+    <i style="left:86%;bottom:-3rem;width:3rem;height:3rem;animation-duration:16s;animation-delay:-9s"></i>
+    <i style="left:94%;bottom:-3rem;width:1.4rem;height:1.4rem;animation-duration:12s;animation-delay:-1s"></i>
+  </div>
+  <div class="wrap">
+    <div>
+      <div class="kicker"><b>5.0 ★</b> 122 Google reviews</div>
+      <h1>Make a splash. Leave spotless.</h1>
+      <p class="lede">Hand car wash and full detailing on Land O' Lakes Blvd. Taylor and the team wash every panel by hand, so there's no brush scratches, no missed corners, and no rushing you through a tunnel.</p>
+      <div class="hero-actions">
+        <a class="btn btn-coral" href="#book">Get a quote</a>
+        <a class="btn btn-outline" href="#pricing">See pricing</a>
+      </div>
+    </div>
+    <div>
+      <svg class="car" viewBox="0 0 520 300" role="img" aria-label="Illustration of a freshly washed car with water droplets">
+        <ellipse cx="260" cy="262" rx="210" ry="18" fill="rgba(0,0,0,.18)"/>
+        <path d="M70 215 L70 170 Q70 150 90 145 L140 135 L185 85 Q195 72 212 72 L330 72 Q348 72 360 86 L405 135 L455 142 Q475 147 475 168 L475 215 Q475 228 462 228 L83 228 Q70 228 70 215 Z" fill="#FF6B4A"/>
+        <path d="M70 185 L475 185 L475 215 Q475 228 462 228 L83 228 Q70 228 70 215 Z" fill="#E6522F"/>
+        <path d="M200 90 Q206 80 218 80 L262 80 L262 135 L160 135 Z" fill="#CFF4FF"/>
+        <path d="M278 80 L330 80 Q340 80 346 88 L384 135 L278 135 Z" fill="#CFF4FF"/>
+        <path d="M205 86 L240 86 L240 100 L190 118 Z" fill="#fff" opacity=".55"/>
+        <path d="M95 190 L155 190" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+        <rect x="430" y="150" width="34" height="18" rx="6" fill="#FFE27A"/>
+        <rect x="70" y="155" width="18" height="16" rx="5" fill="#FFB3A1"/>
+        <circle cx="150" cy="228" r="34" fill="#0B2545"/><circle cx="150" cy="228" r="16" fill="#D9E8F2"/><circle cx="150" cy="228" r="6" fill="#0B2545"/>
+        <circle cx="395" cy="228" r="34" fill="#0B2545"/><circle cx="395" cy="228" r="16" fill="#D9E8F2"/><circle cx="395" cy="228" r="6" fill="#0B2545"/>
+        <path d="M120 60 l10 -10 M135 48 l6 -6 M100 75 l6 -6" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+        <path d="M410 48 l10 -10 M425 36 l6 -6" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+        <g class="drop"><path d="M300 150 c-6 9 -9 14 -9 19 a9 9 0 0 0 18 0 c0 -5 -3 -10 -9 -19z" fill="#CFF4FF"/></g>
+        <g class="drop d2"><path d="M230 150 c-6 9 -9 14 -9 19 a9 9 0 0 0 18 0 c0 -5 -3 -10 -9 -19z" fill="#CFF4FF"/></g>
+        <g class="drop d3"><path d="M365 160 c-5 8 -7 11 -7 15 a7 7 0 0 0 14 0 c0 -4 -2 -7 -7 -15z" fill="#CFF4FF"/></g>
+        <g opacity=".9"><circle cx="60" cy="110" r="10" fill="none" stroke="#fff" stroke-width="3"/><circle cx="40" cy="140" r="6" fill="none" stroke="#fff" stroke-width="3"/><circle cx="490" cy="100" r="8" fill="none" stroke="#fff" stroke-width="3"/><circle cx="505" cy="130" r="5" fill="none" stroke="#fff" stroke-width="3"/></g>
+      </svg>
+      <p class="hero-cap">Hand washed. Hand dried. Done right the first time.</p>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C 240 90 480 0 720 40 C 960 80 1200 0 1440 40 L1440 80 L0 80 Z"/></svg>
+</section>
+
+<section class="sv" id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="sub">Every car gets washed by hand, by people who care how it looks when you pull out of the lot.</p>
+    <div class="grid">
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3c-3 4-6 7-6 10a6 6 0 0 0 12 0c0-3-3-6-6-10z"/></svg></div><h3>Hand car wash</h3><p>Two-bucket hand wash, wheels and tires scrubbed, windows cleaned, towel dried. No automatic brushes touch your paint.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M7 7V5h10v2M7 12h10"/></svg></div><h3>Interior detailing</h3><p>Deep vacuum, shampooed carpets and seats, leather and plastics cleaned and dressed, vents and crevices done.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l2.5 5 5.5.8-4 3.9.9 5.5L12 14.6 7.1 17.2l.9-5.5-4-3.9L9.5 7z"/></svg></div><h3>Exterior detailing</h3><p>Clay bar, decontamination, polish and protection so the paint feels smooth and stays glossy for weeks.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 17h14l2-6-4-6H7l-4 6z"/><circle cx="8" cy="19" r="1.5"/><circle cx="16" cy="19" r="1.5"/></svg></div><h3>Trucks and SUVs</h3><p>Work trucks, family SUVs, lifted rigs. Same meticulous process, sized for the bigger stuff.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pk" id="pricing">
+  <div class="wrap">
+    <h2>Pricing</h2>
+    <p class="sub">Example pricing — we'll put in your real numbers.</p>
+    <div class="grid">
+      <div class="pkg">
+        <h3>Splash Wash</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$35</div>
+        <div class="time">About 45 minutes</div>
+        <ul><li>Hand wash and towel dry</li><li>Wheels and tires dressed</li><li>Windows inside and out</li><li>Quick interior vacuum</li></ul>
+        <a class="btn" href="#book">Get a quote</a>
+      </div>
+      <div class="pkg featured">
+        <span class="badge">Most popular</span>
+        <h3>Inside &amp; Out</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$150</div>
+        <div class="time">About 2–3 hours</div>
+        <ul><li>Everything in the Splash Wash</li><li>Shampooed carpets and seats</li><li>Leather and plastics cleaned</li><li>Door jambs, vents, cup holders</li><li>Spray sealant on the paint</li></ul>
+        <a class="btn" href="#book">Get a quote</a>
+      </div>
+      <div class="pkg">
+        <h3>Full Detail</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$275</div>
+        <div class="time">Half a day</div>
+        <ul><li>Everything in Inside &amp; Out</li><li>Clay bar and decontamination</li><li>One-step machine polish</li><li>Paint protection applied</li><li>Engine bay wipe-down</li></ul>
+        <a class="btn" href="#book">Get a quote</a>
+      </div>
+    </div>
+    <p class="note"><b>Trucks and large SUVs</b> add a little for the extra size. Text Taylor a photo of the car and he'll give you a real number before you come in.</p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <h2>What Land O' Lakes says</h2>
+    <div class="rating-line"><span class="big">5.0</span><span><span class="st">★★★★★</span><br>across 122 Google reviews</span></div>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Best car wash I've ever been to. I've brought my car and truck to Taylor and he made them look immaculate. He is honest, transparent, and competitive with his pricing."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Watched how meticulous they were and making sure no section of the vehicle was left unnoticed. Will only take my truck to Lando and the team."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Amazing hand car wash with outstanding attention to detail. The final finish looked incredible — my car looked brand new."</p><cite>Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <h2>Right on Land O' Lakes Blvd</h2>
+      <p>Lando Splash is a local shop run by Taylor. You can drop the car and run errands, or hang out and watch the work. Customers who've waited say that's how they got hooked: seeing every section of the car get its turn.</p>
+      <h3>Drivers come from</h3>
+      <div class="towns"><span>Land O' Lakes</span><span>Lutz</span><span>Wesley Chapel</span><span>Odessa</span><span>Trinity</span><span>New Tampa</span><span>Carrollwood</span></div>
+    </div>
+    <div class="addr">
+      <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><a href="https://www.google.com/maps/search/?api=1&query=Lando%20Splash%20Auto%20Detailing&query_place_id=ChIJcbxVqPS7wogRNZK8QzfQ-Ac" target="_blank" rel="noopener">4109 Land O' Lakes Blvd</a><small>Land O' Lakes, FL 34639</small></div></div>
+      <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><div><a href="tel:+18137337500">(813) 733-7500</a><small>Call or text Taylor for a time</small></div></div>
+      <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div>Hours<small>Call ahead — detail slots fill up on weekends</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div>
+      <h2>Get a quote</h2>
+      <p class="bsub">Fill this in and it opens a text to Taylor with your details. He'll reply with a price and a time.</p>
+      <ul class="contact-list">
+        <li><a href="tel:+18137337500">(813) 733-7500</a></li>
+        <li>4109 Land O' Lakes Blvd, Land O' Lakes</li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Your phone<input name="phone" type="tel" autocomplete="tel" placeholder="(813) 555-0100" required></label>
+      <label class="f">Vehicle<input name="car" placeholder="2021 F-150" required></label>
+      <label class="f">What do you need?<textarea name="need" placeholder="Inside and out, lots of dog hair in the back"></textarea></label>
+      <button class="btn btn-coral" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Lando Splash Auto Detailing, Land O' Lakes, FL · <a href="tel:+18137337500">(813) 733-7500</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org">Shopfront Sites</a></span>
+  </div>
+</footer>
+<a class="preview-tag" href="https://shopfrontsites.org">Website preview by Shopfront Sites</a>
+
+<script>
+(function(){
+  var f=document.getElementById('quoteForm');
+  f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f);
+    var m='Hi Taylor, this is '+d.get('name')+' ('+d.get('phone')+'). I\'d like a quote for my '+d.get('car')+'.';
+    if(d.get('need'))m+=' '+d.get('need')+'.';
+    m+=' What do you have open?';
+    window.location.href='sms:+18137337500?&body='+encodeURIComponent(m);});
+})();
+</script>
+</body>
+</html>

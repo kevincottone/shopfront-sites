@@ -8,7 +8,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-664-0022  ·  **Preview:** https://shopfrontsites.org/preview/precisiontint
 
 **Opener:**
-> Hey, is this the right number for Precision Car Audio and? Kevin here in Tampa Bay — you've got 549 reviews and no website, so I built you a free mockup. Mind if I send the link?
+> Hey, is this the right number for Precision? Kevin here in Tampa Bay — you've got 549 reviews and no website, so I built you a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: https://shopfrontsites.org/preview/precisiontint — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -22,7 +22,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-723-9679  ·  **Preview:** https://shopfrontsites.org/preview/presidential
 
 **Opener:**
-> Hey Derek, Kevin here in Tampa Bay — you've got 339 five-star reviews and no website, so I built Presidential Automotive Detailing a free mockup. Mind if I send the link?
+> Hey Derek, Kevin here in Tampa Bay — you've got 339 five-star reviews and no website, so I built Presidential a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: https://shopfrontsites.org/preview/presidential — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -36,7 +36,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-465-2937  ·  **Preview:** https://shopfrontsites.org/preview/apexdetailing
 
 **Opener:**
-> Hey Ryland, Kevin here in Tampa Bay — you've got 300 five-star reviews and no website, so I built Apex Mobile Detailing & a free mockup. Mind if I send the link?
+> Hey Ryland, Kevin here in Tampa Bay — you've got 300 five-star reviews and no website, so I built Apex a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: https://shopfrontsites.org/preview/apexdetailing — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -50,7 +50,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-900-9275  ·  **Preview:** https://shopfrontsites.org/preview/billys
 
 **Opener:**
-> Hey Billy, Kevin here in Tampa Bay — you've got 292 five-star reviews and no website, so I built Billy's Hands-on Detailing a free mockup. Mind if I send the link?
+> Hey Billy, Kevin here in Tampa Bay — you've got 292 five-star reviews and no website, so I built Billy's a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: https://shopfrontsites.org/preview/billys — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -64,7 +64,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-748-0212  ·  **Preview:** https://shopfrontsites.org/preview/moes
 
 **Opener:**
-> Hey Moe, Kevin here in Tampa Bay — you've got 183 five-star reviews and no website, so I built Moe's Mobile Detailing & a free mockup. Mind if I send the link?
+> Hey Moe, Kevin here in Tampa Bay — you've got 183 five-star reviews and no website, so I built Moe's a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: https://shopfrontsites.org/preview/moes — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -92,7 +92,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 352-600-1932  ·  **Preview:** https://shopfrontsites.org/preview/neighborhoodtint
 
 **Opener:**
-> Hey Dexter, Kevin here in Tampa Bay — you've got 137 five-star reviews and the current site isn't doing them justice, so I built a free replacement mockup for Neighborhood Window Tinting. Mind if I send the link?
+> Hey Dexter, Kevin here in Tampa Bay — you've got 137 five-star reviews and the current site isn't doing them justice, so I built a free replacement mockup for Neighborhood Tint. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: https://shopfrontsites.org/preview/neighborhoodtint — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -106,7 +106,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-733-7500  ·  **Preview:** https://shopfrontsites.org/preview/landosplash
 
 **Opener:**
-> Hey Taylor, Kevin here in Tampa Bay — you've got 122 five-star reviews and no website, so I built Lando Splash Auto Detailing a free mockup. Mind if I send the link?
+> Hey Taylor, Kevin here in Tampa Bay — you've got 122 five-star reviews and no website, so I built Lando Splash a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: https://shopfrontsites.org/preview/landosplash — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -120,7 +120,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-607-0113  ·  **Preview:** (no preview yet — ask Claude when they say yes)
 
 **Opener:**
-> Hey Ezechiel, Kevin here in Tampa Bay — you've got 120 five-star reviews and no website, so I built OTW Mobile Auto Mechanics a free mockup. Mind if I send the link?
+> Hey Ezechiel, Kevin here in Tampa Bay — you've got 120 five-star reviews and no website, so I built OTW a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: (no preview yet — ask Claude when they say yes) — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -134,7 +134,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-696-5660  ·  **Preview:** (no preview yet — ask Claude when they say yes)
 
 **Opener:**
-> Hey Miguel, Kevin here in Tampa Bay — you've got 117 five-star reviews and no website, so I built TINT THAT CAR a free mockup. Mind if I send the link?
+> Hey Miguel, Kevin here in Tampa Bay — you've got 117 five-star reviews and no website, so I built Tint That Car a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: (no preview yet — ask Claude when they say yes) — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -148,7 +148,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-947-2247  ·  **Preview:** (no preview yet — ask Claude when they say yes)
 
 **Opener:**
-> Hey Dre, Kevin here in Tampa Bay — you've got 102 five-star reviews and the current site isn't doing them justice, so I built a free replacement mockup for Bubbles Detailz & Wraps. Mind if I send the link?
+> Hey Dre, Kevin here in Tampa Bay — you've got 102 five-star reviews and the current site isn't doing them justice, so I built a free replacement mockup for Bubbles. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: (no preview yet — ask Claude when they say yes) — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -162,7 +162,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-293-9550  ·  **Preview:** (no preview yet — ask Claude when they say yes)
 
 **Opener:**
-> Hey Jonathan, Kevin here in Tampa Bay — you've got 97 reviews and no website, so I built MOBILE MECHANIC LAND O LAKES a free mockup. Mind if I send the link?
+> Hey Jonathan, Kevin here in Tampa Bay — you've got 97 reviews and no website, so I built Mobile Mechanic Land O' Lakes LAKES a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: (no preview yet — ask Claude when they say yes) — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -190,7 +190,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-599-3865  ·  **Preview:** (no preview yet — ask Claude when they say yes)
 
 **Opener:**
-> Hey Jraven, Kevin here in Tampa Bay — you've got 68 five-star reviews and no website, so I built j's mobile mechanics a free mockup. Mind if I send the link?
+> Hey Jraven, Kevin here in Tampa Bay — you've got 68 five-star reviews and no website, so I built J's Mobile Mechanics a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: (no preview yet — ask Claude when they say yes) — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -204,7 +204,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-424-9182  ·  **Preview:** (no preview yet — ask Claude when they say yes)
 
 **Opener:**
-> Hey Royce, Kevin here in Tampa Bay — you've got 63 five-star reviews and no website, so I built RAD Spa Mobile Detailing a free mockup. Mind if I send the link?
+> Hey Royce, Kevin here in Tampa Bay — you've got 63 five-star reviews and no website, so I built RAD Spa a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: (no preview yet — ask Claude when they say yes) — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -246,7 +246,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-833-7962  ·  **Preview:** (no preview yet — ask Claude when they say yes)
 
 **Opener:**
-> Hey Oleg, Kevin here in Tampa Bay — you've got 50 five-star reviews and no website, so I built Top Notch Mobile Detailing a free mockup. Mind if I send the link?
+> Hey Oleg, Kevin here in Tampa Bay — you've got 50 five-star reviews and no website, so I built Top Notch a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: (no preview yet — ask Claude when they say yes) — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -260,7 +260,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-528-0681  ·  **Preview:** (no preview yet — ask Claude when they say yes)
 
 **Opener:**
-> Hey Paul, Kevin here in Tampa Bay — you've got 48 five-star reviews and no website, so I built SubX Mobile Window Tinting a free mockup. Mind if I send the link?
+> Hey Paul, Kevin here in Tampa Bay — you've got 48 five-star reviews and no website, so I built SubX a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: (no preview yet — ask Claude when they say yes) — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -288,7 +288,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-347-7872  ·  **Preview:** (no preview yet — ask Claude when they say yes)
 
 **Opener:**
-> Hey Angel, Kevin here in Tampa Bay — you've got 38 five-star reviews and no website, so I built FAIR TECH MOBILE MECHANIC a free mockup. Mind if I send the link?
+> Hey Angel, Kevin here in Tampa Bay — you've got 38 five-star reviews and no website, so I built Fair Tech a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: (no preview yet — ask Claude when they say yes) — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -302,7 +302,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-412-9333  ·  **Preview:** (no preview yet — ask Claude when they say yes)
 
 **Opener:**
-> Hey Mike, Kevin here in Tampa Bay — you've got 34 five-star reviews and no website, so I built Brobles Mobile Auto Repair a free mockup. Mind if I send the link?
+> Hey Mike, Kevin here in Tampa Bay — you've got 34 five-star reviews and no website, so I built Brobles a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: (no preview yet — ask Claude when they say yes) — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -316,7 +316,7 @@ Send OPENERS from your Google Voice (Tampa Bay) number. No link in the opener. W
 **Contact:** +1 813-838-8577  ·  **Preview:** (no preview yet — ask Claude when they say yes)
 
 **Opener:**
-> Hey Mike, Kevin here in Tampa Bay — you've got 33 reviews and no website, so I built Auto Elegance Mobile Detailing a free mockup. Mind if I send the link?
+> Hey Mike, Kevin here in Tampa Bay — you've got 33 reviews and no website, so I built Auto Elegance a free mockup. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: (no preview yet — ask Claude when they say yes) — the quote button texts straight to your phone. Free to look, tell me what you think.

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JD Wrapped it — Chrome delete, roof wraps and vinyl wraps in Tampa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F1EA; --bg-2:#FFFFFF; --ink:#111A17; --ink-2:#515B57; --line:#DAD6CC;
+    --pine:#0E2A24; --pine-2:#163B33; --on-pine:#F4F1EA; --on-pine-2:#A8B8B1;
+    --brass:#D9A441; --brass-ink:#111A17; --brass-deep:#B7862C;
+    --chrome:#C9CED3; --black:#121416;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#0F1614;--bg-2:#182220;--ink:#F1EEE6;--ink-2:#B3BDB8;--line:#2A3632}
+  }
+  :root[data-theme="dark"]{--bg:#0F1614;--bg-2:#182220;--ink:#F1EEE6;--ink-2:#B3BDB8;--line:#2A3632}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Archivo Black",Archivo,sans-serif;font-weight:400;margin:0;line-height:1.02;letter-spacing:-.01em}
+  h1{font-size:clamp(2.5rem,9vw,4.9rem)}
+  h2{font-size:clamp(1.8rem,5.5vw,2.8rem)}
+  h3{font-size:1.25rem}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1080px,100% - 2rem);margin-inline:auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:999px;font-family:Archivo,sans-serif;font-size:1.05rem;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+  .btn-brass{background:var(--brass);color:var(--brass-ink)}
+  .btn-brass:hover{background:var(--brass-deep)}
+  .btn-outline{background:transparent;color:var(--on-pine);border-color:rgba(255,255,255,.3)}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+  .eyebrow::before{content:"";width:.55rem;height:.55rem;border-radius:50%;background:var(--brass)}
+
+  /* header */
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--pine);color:var(--on-pine);border-bottom:1px solid rgba(255,255,255,.08)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem;gap:.75rem}
+  .logo{font-family:"Archivo Black",sans-serif;font-size:1.3rem;letter-spacing:-.01em;text-decoration:none;white-space:nowrap}
+  .logo span{color:var(--brass)}
+  nav a{text-decoration:none;color:var(--on-pine-2);font-weight:600;margin-left:1.25rem}
+  nav a:hover{color:var(--on-pine)}
+  @media (max-width:700px){nav{display:none}}
+  .call-pill{background:var(--brass);color:var(--brass-ink);text-decoration:none;font-weight:700;font-size:.95rem;padding:.5rem .95rem;border-radius:999px;white-space:nowrap}
+
+  /* hero */
+  .hero{background:var(--pine);color:var(--on-pine);padding:3rem 0 3.5rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;right:-20%;top:-40%;width:60%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(217,164,65,.14),transparent 65%);pointer-events:none}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .hero h1 em{font-style:normal;color:var(--brass)}
+  .hero .lede{color:var(--on-pine-2);font-size:1.15rem;max-width:36ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.6rem}
+  .hero-meta{margin-top:1.75rem;color:var(--on-pine-2);font-size:.95rem;display:flex;flex-wrap:wrap;gap:.4rem 1.25rem}
+  .hero-meta b{color:var(--on-pine)}
+  .hero-meta .star{color:var(--brass)}
+
+  .stage{background:var(--pine-2);border:1px solid rgba(255,255,255,.08);border-radius:1rem;padding:1.1rem 1.1rem 1rem}
+  .stage svg{width:100%;height:auto;display:block}
+  .tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:.4rem;margin-top:1rem}
+  .tabs button{background:transparent;color:var(--on-pine);border:1.5px solid rgba(255,255,255,.22);border-radius:999px;padding:.55rem .3rem;font-family:Archivo,sans-serif;font-size:.85rem;font-weight:600;cursor:pointer}
+  .tabs button[aria-pressed="true"]{background:var(--brass);border-color:var(--brass);color:var(--brass-ink)}
+  .tabs button:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+  .stage-caption{margin-top:.8rem;color:var(--on-pine-2);font-size:.95rem;min-height:2.9rem}
+  .stage-caption b{color:var(--on-pine);font-family:"Archivo Black",sans-serif;font-weight:400;font-size:1.05rem;display:block}
+  @media (prefers-reduced-motion:no-preference){.stage .layer{transition:opacity .3s ease}}
+
+  /* sections */
+  section{padding:3.75rem 0}
+  .svcs .grid{display:grid;gap:1.1rem;margin-top:1.75rem}
+  @media (min-width:700px){.svcs .grid{grid-template-columns:repeat(2,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);padding:1.3rem 1.4rem;border-radius:.9rem;position:relative}
+  .svc::before{content:"";position:absolute;left:1.4rem;top:0;width:3rem;height:4px;background:var(--brass);border-radius:0 0 3px 3px}
+  .svc p{color:var(--ink-2);margin-top:.5rem}
+  .svc .from{display:block;margin-top:.9rem;font-family:"Archivo Black",sans-serif;font-size:1.1rem}
+  .svc .from small{display:block;font-family:Archivo,sans-serif;font-weight:400;font-size:.85rem;color:var(--ink-2)}
+  .price-note{margin-top:1.25rem;color:var(--ink-2);font-size:.9rem}
+
+  .about{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about .wrap{display:grid;gap:2rem}
+  @media (min-width:800px){.about .wrap{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .about p{color:var(--ink-2);margin-top:.9rem}
+  .facts{list-style:none;padding:0;margin:0;display:grid;gap:.8rem}
+  .facts li{display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:start;padding:.9rem 1rem;background:var(--bg);border-radius:.7rem;border:1px solid var(--line)}
+  .facts .k{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--brass-deep);padding-top:.25rem;min-width:4.5rem}
+  .facts a{text-decoration-color:var(--brass)}
+
+  .reviews .grid{display:grid;gap:1.1rem;margin-top:1.75rem}
+  @media (min-width:800px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:.9rem;padding:1.3rem;display:flex;flex-direction:column}
+  .review p{flex:1}
+  .stars{color:var(--brass);letter-spacing:.1em;margin-bottom:.6rem}
+  .review cite{display:block;margin-top:.9rem;font-style:normal;color:var(--ink-2);font-size:.92rem;font-weight:600}
+  .rating-line{color:var(--ink-2);margin-top:.5rem}
+  .rating-line b{color:var(--ink)}
+
+  .quote{background:var(--pine);color:var(--on-pine)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr}}
+  .quote .sub{color:var(--on-pine-2);margin-top:.9rem;max-width:40ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.55rem}
+  .contact-list a{color:var(--on-pine);text-decoration-color:var(--brass)}
+  form{display:grid;gap:.9rem;background:rgba(255,255,255,.05);padding:1.4rem;border-radius:1rem;border:1px solid rgba(255,255,255,.1)}
+  label{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-pine-2)}
+  input,select,textarea{font:inherit;color:#111A17;background:#fff;border:1px solid var(--line);border-radius:.5rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--brass);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-pine-2)}
+
+  footer{background:var(--pine);color:var(--on-pine-2);padding:1.5rem 0 2rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.08)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  footer a{color:var(--on-pine);text-decoration-color:var(--brass)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--brass);color:var(--brass-ink);font-size:.75rem;font-weight:700;padding:.3rem .6rem;border-radius:999px;z-index:20;text-decoration:none}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">JD <span>Wrapped</span> it</a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#about">The shop</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+18135994588">Call Joe</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Carrollwood, Tampa</span>
+      <h1 style="margin-top:.8rem">Lose the chrome.<br><em>Keep the car.</em></h1>
+      <p class="lede">Chrome deletes, gloss black roofs, tuxedo wraps and full color changes, installed by Joe off W Linebaugh Ave. Text a photo of your car and get a real number back.</p>
+      <div class="hero-actions">
+        <a class="btn btn-brass" href="#quote">Get a quote</a>
+        <a class="btn btn-outline" href="sms:+18135994588?&body=Hi%20Joe%2C%20I%27d%20like%20a%20quote%20for%20my%20">Text us a photo</a>
+      </div>
+      <p class="hero-meta"><span><span class="star">★</span> <b>4.9</b> on Google, 43 reviews</span><span>Text anytime, seven days a week</span></p>
+    </div>
+
+    <div class="stage" aria-label="Service preview">
+      <svg viewBox="0 0 520 230" role="img" aria-labelledby="stageTitle">
+        <title id="stageTitle">Car silhouette showing the selected wrap</title>
+        <defs>
+          <linearGradient id="sheen" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#fff" stop-opacity=".3"/>
+            <stop offset=".5" stop-color="#fff" stop-opacity="0"/>
+            <stop offset="1" stop-color="#000" stop-opacity=".3"/>
+          </linearGradient>
+          <linearGradient id="chromeGrad" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#F3F5F7"/>
+            <stop offset=".5" stop-color="#AEB5BC"/>
+            <stop offset="1" stop-color="#E6E9EC"/>
+          </linearGradient>
+        </defs>
+        <ellipse cx="260" cy="200" rx="230" ry="12" fill="#000" opacity=".4"/>
+        <!-- body: pearl white so black accents read -->
+        <path fill="#E8E6E0" d="M62 168 C60 143 72 126 108 120 L150 114 C178 88 215 70 262 70 C318 70 356 88 392 118 L448 126 C470 130 482 144 480 168 L470 178 L58 178 Z"/>
+        <path fill="url(#sheen)" d="M62 168 C60 143 72 126 108 120 L150 114 C178 88 215 70 262 70 C318 70 356 88 392 118 L448 126 C470 130 482 144 480 168 L470 178 L58 178 Z"/>
+        <!-- full color change layer -->
+        <g class="layer" id="layerFull" opacity="0">
+          <path fill="#1F4A3E" d="M62 168 C60 143 72 126 108 120 L150 114 C178 88 215 70 262 70 C318 70 356 88 392 118 L448 126 C470 130 482 144 480 168 L470 178 L58 178 Z"/>
+          <path fill="url(#sheen)" d="M62 168 C60 143 72 126 108 120 L150 114 C178 88 215 70 262 70 C318 70 356 88 392 118 L448 126 C470 130 482 144 480 168 L470 178 L58 178 Z"/>
+        </g>
+        <!-- tuxedo layer: hood + trunk black -->
+        <g class="layer" id="layerTux" opacity="0">
+          <path fill="#121416" d="M66 150 C70 134 84 124 108 120 L150 114 L166 116 L160 150 Z"/>
+          <path fill="#121416" d="M364 116 L392 118 L448 126 C466 130 478 142 478 150 L370 150 Z"/>
+        </g>
+        <!-- windows -->
+        <path fill="#0d0d10" opacity=".9" d="M166 116 C190 94 222 80 262 80 C300 80 332 92 364 116 Z"/>
+        <path fill="#9fb3c8" opacity=".3" d="M172 114 C194 96 224 86 258 86 L258 114 Z"/>
+        <!-- roof layer: black roof -->
+        <g class="layer" id="layerRoof" opacity="0">
+          <path fill="#121416" d="M190 84 C212 74 236 70 262 70 C288 70 312 74 334 84 L328 90 C306 82 284 79 262 79 C240 79 218 82 196 90 Z"/>
+        </g>
+        <g class="layer" id="layerTuxRoof" opacity="0">
+          <path fill="#121416" d="M190 84 C212 74 236 70 262 70 C288 70 312 74 334 84 L328 90 C306 82 284 79 262 79 C240 79 218 82 196 90 Z"/>
+        </g>
+        <!-- chrome trim: window surround, grille, door handles -->
+        <g id="trimChrome">
+          <path fill="none" stroke="url(#chromeGrad)" stroke-width="4" stroke-linejoin="round" d="M166 116 C190 94 222 80 262 80 C300 80 332 92 364 116"/>
+          <rect x="462" y="146" width="16" height="18" rx="3" fill="url(#chromeGrad)"/>
+          <rect x="200" y="130" width="26" height="6" rx="3" fill="url(#chromeGrad)"/>
+          <rect x="300" y="130" width="26" height="6" rx="3" fill="url(#chromeGrad)"/>
+        </g>
+        <!-- chrome delete layer: same trim in gloss black -->
+        <g class="layer" id="layerDelete" opacity="1">
+          <path fill="none" stroke="#121416" stroke-width="4" stroke-linejoin="round" d="M166 116 C190 94 222 80 262 80 C300 80 332 92 364 116"/>
+          <rect x="462" y="146" width="16" height="18" rx="3" fill="#121416"/>
+          <rect x="200" y="130" width="26" height="6" rx="3" fill="#121416"/>
+          <rect x="300" y="130" width="26" height="6" rx="3" fill="#121416"/>
+        </g>
+        <rect x="58" y="174" width="424" height="10" rx="4" fill="#0d0d10"/>
+        <g fill="#0d0d10"><circle cx="140" cy="176" r="30"/><circle cx="400" cy="176" r="30"/></g>
+        <g fill="#8f99a6"><circle cx="140" cy="176" r="16"/><circle cx="400" cy="176" r="16"/></g>
+        <g fill="#0d0d10"><circle cx="140" cy="176" r="6"/><circle cx="400" cy="176" r="6"/></g>
+        <rect x="454" y="136" width="22" height="9" rx="3" fill="#ffe9a8"/>
+        <rect x="62" y="144" width="18" height="8" rx="3" fill="#ff6b6b"/>
+      </svg>
+      <div class="tabs" role="group" aria-label="Pick a service">
+        <button type="button" aria-pressed="true" data-layers="layerDelete" data-name="Chrome delete" data-sub="Window trim, grille, badges and handles blacked out in gloss or satin.">Chrome</button>
+        <button type="button" aria-pressed="false" data-layers="layerRoof" data-name="Roof wrap" data-sub="Gloss black roof, mirrors optional. A one-day job that changes the whole stance.">Roof</button>
+        <button type="button" aria-pressed="false" data-layers="layerTux layerTuxRoof layerDelete" data-name="Tuxedo wrap" data-sub="Hood, roof and trunk in black with the chrome gone. Two-tone, factory clean.">Tuxedo</button>
+        <button type="button" aria-pressed="false" data-layers="layerFull layerDelete" data-name="Full color change" data-sub="Every panel in the color you pick. Paint untouched underneath.">Full</button>
+      </div>
+      <div class="stage-caption" id="stageCaption" aria-live="polite"><b>Chrome delete</b>Window trim, grille, badges and handles blacked out in gloss or satin.</div>
+    </div>
+  </div>
+</section>
+
+<section class="svcs" id="services">
+  <div class="wrap">
+    <span class="eyebrow">Services</span>
+    <h2 style="margin-top:.6rem">What we wrap</h2>
+    <div class="grid">
+      <div class="svc">
+        <h3>Chrome delete</h3>
+        <p>Window surrounds, grille, badges, mirror caps and bumper trim wrapped in gloss or satin black. Tricky new grilles included, with a plan for the badge so it flows with the rest of the car.</p>
+        <span class="from">Starting at $400<small>Window trim and grille; full delete quoted per vehicle</small></span>
+      </div>
+      <div class="svc">
+        <h3>Roof wraps</h3>
+        <p>Gloss black roof, with mirrors and spoiler to match if you want them. Edges tucked, no seams you can see from the sidewalk.</p>
+        <span class="from">Starting at $300<small>Roof only, most sedans and coupes</small></span>
+      </div>
+      <div class="svc">
+        <h3>Tuxedo and accent wraps</h3>
+        <p>Hood, roof and trunk in black for the two-tone look, or just the pieces you want: hood, grille, mirrors, spoiler. Changes the car without committing to a full wrap.</p>
+        <span class="from">Starting at $650<small>Hood, roof and trunk</small></span>
+      </div>
+      <div class="svc">
+        <h3>Full color change</h3>
+        <p>Every panel wrapped in gloss, satin or matte. Paint stays protected underneath and it peels off clean when it's time to sell.</p>
+        <span class="from">Starting at $2,700<small>Coupe or sedan; trucks and SUVs quoted per vehicle</small></span>
+      </div>
+    </div>
+    <p class="price-note">Example pricing — we'll put in your real numbers.</p>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">The shop</span>
+      <h2 style="margin-top:.6rem">Joe answers the phone, Joe does the work</h2>
+      <p>JD Wrapped it is a wrap shop on W Linebaugh Ave in Carrollwood, run by Joe. Most people find him on social media, text a photo of their car, and have a price the same day. Chrome deletes on new Mercedes and BMWs, blacked-out roofs and mirrors, tuxedo wraps, full color changes.</p>
+      <p>Customers keep saying the same things: easy to talk to, straight about what it'll cost, quick turnaround, and the work comes out cleaner than they expected. That's the whole pitch.</p>
+    </div>
+    <ul class="facts">
+      <li><span class="k">Where</span><span>5555 W Linebaugh Ave, Tampa, FL 33624 — serving Carrollwood, Citrus Park, Westchase, Lutz and all of Tampa Bay</span></li>
+      <li><span class="k">Hours</span><span>Text anytime, seven days a week. Work by appointment.</span></li>
+      <li><span class="k">Call</span><span><a href="tel:+18135994588">(813) 599-4588</a></span></li>
+      <li><span class="k">Rated</span><span>4.9 stars on Google from 43 reviews</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <span class="eyebrow">Reviews</span>
+    <h2 style="margin-top:.6rem">What customers say</h2>
+    <p class="rating-line"><b>4.9</b> on Google across <b>43</b> reviews.</p>
+    <div class="grid">
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"I couldn't be happier with my tuxedo wrap! The quality of the work is outstanding and it completely transformed the look of my vehicle. Joe's customer service was top-notch."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"We just moved to Tampa and I just got a new truck that needed chrome delete. I have a Mercedes GLS and the new grills are a bit tricky. Joe was able to execute the job flawlessly."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Just had the roof and mirrors of my car wrapped and JD did an awesome job! The quality of the work and attention to detail really stood out."</p>
+        <cite>Google review</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2 style="margin-top:.6rem">Text Joe your car</h2>
+      <p class="sub">Fill this in and it opens a text to the shop with your details already typed. Add a photo of the car before you hit send, or just call.</p>
+      <ul class="contact-list">
+        <li><a href="tel:+18135994588">(813) 599-4588</a></li>
+        <li>5555 W Linebaugh Ave, Tampa, FL 33624</li>
+        <li>Text anytime, seven days a week</li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Your phone<input name="phone" type="tel" autocomplete="tel" placeholder="(813) 555-0123"></label>
+      <label>Year, make and model<input name="vehicle" placeholder="2023 Mercedes GLS" required></label>
+      <label>What do you need?
+        <select name="job">
+          <option>Chrome delete</option>
+          <option>Roof wrap</option>
+          <option>Tuxedo or accent wrap</option>
+          <option>Full color change</option>
+          <option>Not sure yet</option>
+        </select>
+      </label>
+      <label>Anything else<textarea name="notes" placeholder="Gloss black roof and mirrors, grille too..."></textarea></label>
+      <button class="btn btn-brass" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>JD Wrapped it, Tampa, FL</span>
+    <span>Chrome delete, roof wraps and vinyl wraps</span>
+    <span>Website preview by <a href="https://shopfrontsites.org">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org">Website preview by Shopfront Sites</a>
+
+<script>
+(function(){
+  var tabs=document.querySelectorAll('.tabs button');
+  var cap=document.getElementById('stageCaption');
+  var layers=document.querySelectorAll('.stage .layer');
+  tabs.forEach(function(b){
+    b.addEventListener('click',function(){
+      tabs.forEach(function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+      var on=b.dataset.layers.split(' ');
+      layers.forEach(function(l){l.setAttribute('opacity',on.indexOf(l.id)>-1?'1':'0')});
+      cap.innerHTML='<b></b>';
+      cap.firstChild.textContent=b.dataset.name;
+      cap.appendChild(document.createTextNode(b.dataset.sub));
+    });
+  });
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Joe, this is '+f.get('name')+'. I have a '+f.get('vehicle')+' and I need: '+f.get('job')+'.';
+    if(f.get('phone'))msg+=' My number is '+f.get('phone')+'.';
+    if(f.get('notes'))msg+=' '+f.get('notes');
+    msg+=' Can I get a quote?';
+    window.location.href='sms:+18135994588?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

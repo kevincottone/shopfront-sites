@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mobile Mechanic — Tampa · 24-hour mobile auto repair, jump starts and alternators</title>
+<meta name="description" content="Mobile Mechanic, Tampa: 24-hour mobile auto repair across Tampa Bay. Jump starts, alternators, batteries, brakes and no-start diagnostics done where your car sits. 4.4 stars on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F5F0; --bg-2:#FFFFFF; --ink:#1B1A22; --ink-2:#5B5A66; --line:#E2DED4;
+    --night:#1F2233; --night-2:#2A2E45; --on-night:#F6F4EE; --on-night-2:#B5B8CC;
+    --amber:#FFB020; --amber-2:#F29D00; --amber-ink:#1F1A08;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15171F;--bg-2:#1D2029;--ink:#F3F2EC;--ink-2:#AEB0C0;--line:#2E3242}}
+  :root[data-theme="dark"]{--bg:#15171F;--bg-2:#1D2029;--ink:#F3F2EC;--ink-2:#AEB0C0;--line:#2E3242}
+  html{scroll-padding-top:calc(4.25rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Barlow,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Barlow Condensed",system-ui,sans-serif;margin:0;line-height:.98;font-weight:800;letter-spacing:-.01em;text-transform:uppercase}
+  h1{font-size:clamp(3rem,11vw,6rem)}
+  h2{font-size:clamp(2.2rem,6.5vw,3.4rem)}
+  h3{font-size:1.45rem;font-weight:700}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--amber-2);margin-bottom:.8rem}
+  .eyebrow::before{content:"";width:1.4rem;height:3px;background:var(--amber)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.35rem;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.25rem;letter-spacing:.03em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+  .btn-amber{background:var(--amber);color:var(--amber-ink)}
+  .btn-amber:hover{background:var(--amber-2)}
+  .btn-outline{background:transparent;color:var(--on-night);border-color:rgba(255,255,255,.3)}
+  .btn-outline:hover{border-color:rgba(255,255,255,.65)}
+
+  /* header */
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--night);color:var(--on-night);border-bottom:3px solid var(--amber)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:3.9rem}
+  .logo{display:flex;align-items:center;gap:.6rem;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.35rem;text-transform:uppercase;letter-spacing:.02em;text-decoration:none;color:var(--on-night);white-space:nowrap;line-height:1}
+  .logo .mark{width:2rem;height:2rem;border-radius:.35rem;background:var(--amber);display:grid;place-items:center;flex:0 0 auto}
+  .logo .mark svg{width:1.3rem;height:1.3rem;stroke:var(--amber-ink);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+  .logo small{display:block;font-family:Barlow,sans-serif;font-weight:500;font-size:.68rem;letter-spacing:.14em;color:var(--on-night-2);margin-top:.2rem}
+  nav a{text-decoration:none;color:var(--on-night-2);font-weight:500;margin-left:1.25rem;font-size:.98rem}
+  nav a:hover{color:var(--on-night)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--amber);color:var(--amber-ink);text-decoration:none;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:.03em;text-transform:uppercase;padding:.5rem .95rem;border-radius:999px;white-space:nowrap}
+  .call-pill:hover{background:var(--amber-2)}
+
+  /* hero */
+  .hero{background:var(--night);color:var(--on-night);padding:3rem 0 3.5rem;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:14px;background:repeating-linear-gradient(135deg,var(--amber) 0 18px,var(--night) 18px 36px);opacity:.9}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .hero h1 em{font-style:normal;color:var(--amber)}
+  .hero .lede{color:var(--on-night-2);font-size:1.15rem;max-width:40ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.6rem}
+  .trust{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:1.25rem 2rem;margin-top:2.25rem;color:var(--on-night-2);font-size:.9rem}
+  .trust strong{display:block;color:var(--on-night);font-family:"Barlow Condensed",sans-serif;font-size:1.7rem;font-weight:800;line-height:1}
+  .trust .star{color:var(--amber)}
+  @media (max-width:420px){.trust{grid-template-columns:repeat(2,auto)}}
+
+  .scene{background:var(--night-2);border:1px solid rgba(255,255,255,.08);border-radius:.6rem;padding:1.1rem}
+  .scene svg{width:100%;height:auto;display:block}
+  .scene .status{display:grid;grid-template-columns:auto 1fr;gap:.6rem 1rem;align-items:center;margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.1);font-size:.95rem;color:var(--on-night-2)}
+  .scene .status b{color:var(--on-night);font-weight:600}
+  .scene .live{display:inline-flex;align-items:center;gap:.45rem;font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--amber);font-size:1rem}
+  .scene .live i{width:.6rem;height:.6rem;border-radius:50%;background:var(--amber);box-shadow:0 0 0 0 rgba(255,176,32,.6)}
+  @media (prefers-reduced-motion:no-preference){
+    .scene .live i{animation:pulse 1.8s ease-out infinite}
+    @keyframes pulse{to{box-shadow:0 0 0 .7rem rgba(255,176,32,0)}}
+    .beacon{animation:blink 1.2s steps(2,end) infinite}
+    @keyframes blink{50%{opacity:.25}}
+  }
+
+  /* sections */
+  section{padding:4rem 0}
+  .sec-head{display:grid;gap:.6rem;max-width:58ch}
+  .sec-head p{color:var(--ink-2);font-size:1.05rem}
+  .grid{display:grid;gap:1rem;margin-top:2rem}
+  @media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:900px){.grid.three{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-left:5px solid var(--amber);border-radius:.5rem;padding:1.3rem;display:grid;gap:.45rem;align-content:start}
+  .svc .ico{width:2.6rem;height:2.6rem;border-radius:.45rem;background:var(--night);display:grid;place-items:center;margin-bottom:.4rem}
+  .svc .ico svg{width:1.45rem;height:1.45rem;stroke:var(--amber);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);font-size:1rem}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.pricing .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}.pricing .price-list{margin-top:0}}
+  .price-list{list-style:none;margin:2rem 0 0;padding:0;border:1px solid var(--line);border-radius:.5rem;overflow:hidden;background:var(--bg)}
+  .price-list li{display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;align-items:center;padding:1rem 1.15rem;border-top:1px solid var(--line)}
+  .price-list li:first-child{border-top:0}
+  .price-list b{font-weight:600;font-size:1.05rem}
+  .price-list small{display:block;color:var(--ink-2);font-size:.92rem;font-weight:400}
+  .price-list .n{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.6rem;white-space:nowrap;text-align:right;line-height:1}
+  .price-list .n em{font-style:normal;font-family:Barlow,sans-serif;font-weight:500;font-size:.75rem;color:var(--ink-2);display:block;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.15rem}
+  .promise{margin-top:1.5rem;display:grid;gap:.9rem}
+  .promise div{display:flex;gap:.8rem;align-items:flex-start;color:var(--ink-2)}
+  .promise svg{flex:0 0 auto;width:1.35rem;height:1.35rem;margin-top:.15rem;stroke:var(--amber-2);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  .promise b{color:var(--ink)}
+  .price-note{margin-top:1rem;font-size:.92rem;color:var(--ink-2);display:flex;gap:.6rem;align-items:flex-start}
+  .price-note .tag{flex:0 0 auto;background:var(--amber);color:var(--amber-ink);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:999px;margin-top:.15rem}
+
+  .steps{display:grid;gap:1.5rem;margin-top:2rem;counter-reset:step}
+  @media (min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{position:relative;padding-left:3.5rem}
+  .step::before{counter-increment:step;content:counter(step,decimal-leading-zero);position:absolute;top:0;left:0;width:2.6rem;height:2.6rem;border-radius:.4rem;background:var(--night);color:var(--amber);display:grid;place-items:center;font-family:"Barlow Condensed",sans-serif;font-size:1.3rem;font-weight:800}
+  .step p{color:var(--ink-2);margin-top:.4rem}
+
+  .reviews{background:var(--night);color:var(--on-night)}
+  .reviews .sec-head p{color:var(--on-night-2)}
+  .reviews .grid{grid-template-columns:1fr}
+  @media (min-width:760px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:.5rem;padding:1.3rem;display:flex;flex-direction:column}
+  .stars{color:var(--amber);letter-spacing:.12em;margin-bottom:.6rem;font-size:1.05rem}
+  .review p{font-size:1.02rem}
+  .review cite{display:block;margin-top:auto;padding-top:.9rem;font-style:normal;color:var(--on-night-2);font-size:.92rem}
+  .g-line{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin-top:.4rem;color:var(--on-night-2)}
+  .g-line .big{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.9rem;color:var(--on-night);line-height:1}
+  .g-line .star{color:var(--amber);font-size:1.2rem;letter-spacing:.08em}
+
+  .area .wrap{display:grid;gap:2.25rem}
+  @media (min-width:860px){.area .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .area p{color:var(--ink-2);margin-top:.9rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.95rem}
+  .map{background:var(--night);border-radius:.6rem;padding:1rem;border:1px solid rgba(255,255,255,.08)}
+  .map svg{display:block;width:100%;height:auto}
+  .hours{margin-top:1.25rem;display:grid;grid-template-columns:auto 1fr;gap:.3rem 1rem;color:var(--ink-2);font-size:.98rem}
+  .hours b{color:var(--ink);font-weight:600}
+
+  .quote{background:var(--bg-2);border-top:1px solid var(--line)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--ink-2);margin-top:.9rem;max-width:42ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.7rem}
+  .contact-list li{display:flex;gap:.7rem;align-items:center;color:var(--ink-2)}
+  .contact-list svg{width:1.2rem;height:1.2rem;stroke:var(--amber-2);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--amber);font-weight:600}
+  .contact-list .big{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:2rem;text-decoration:none;line-height:1}
+  form{display:grid;gap:.95rem;background:var(--night);color:var(--on-night);padding:1.5rem;border-radius:.6rem;border-top:5px solid var(--amber)}
+  form h3{color:var(--on-night)}
+  label{display:grid;gap:.35rem;font-weight:500;font-size:.95rem;color:var(--on-night-2)}
+  input,textarea{font:inherit;color:#1B1A22;background:#fff;border:1px solid #CFCDC4;border-radius:.35rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.2rem;resize:vertical}
+  input:focus-visible,textarea:focus-visible{outline:3px solid var(--amber);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-night-2)}
+
+  footer{background:var(--night);color:var(--on-night-2);padding:1.75rem 0 4.5rem;font-size:.9rem;border-top:3px solid var(--amber)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-night);text-decoration-color:var(--amber)}
+  .preview-bar{background:#1B1A22;color:#F6F4EE;font-size:.85rem;text-align:center;padding:.5rem 1rem}
+  .preview-bar a{color:var(--amber);font-weight:700}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--amber);color:var(--amber-ink);font-size:.78rem;font-weight:700;padding:.35rem .7rem;border-radius:999px;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+  .preview-tag:hover{background:var(--amber-2)}
+
+  @media (max-width:480px){header .wrap{flex-wrap:wrap;gap:.4rem .75rem;padding-block:.5rem}header .wrap>*{min-width:0}.logo,.brand{font-size:1.05rem;max-width:60%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.call-pill{font-size:.85rem;padding:.4rem .75rem;margin-left:auto}}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a> for Mobile Mechanic, Tampa. Not the live site yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 7a5 5 0 1 0-4 8l7 7 3-3-7-7a5 5 0 0 0 1-5z"/></svg></span><span>Mobile Mechanic<small>Tampa · 24 hours</small></span></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+18133080288">Call now</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Tampa, FL · Open 24 hours · We come to you</span>
+      <h1>Stuck? <em>We're already on the way.</em></h1>
+      <p class="lede">Mobile Mechanic — Tampa sends a mechanic to wherever the car quit: your driveway, the office lot, the side of the Howard Frankland. Jump starts, batteries, alternators, brakes and no-start diagnostics, day or night, no tow truck needed.</p>
+      <div class="hero-actions">
+        <a class="btn btn-amber" href="tel:+18133080288">(813) 308-0288</a>
+        <a class="btn btn-outline" href="#quote">Get a quote</a>
+      </div>
+      <div class="trust">
+        <div><strong><span class="star">★</span> 4.4</strong>97 Google reviews</div>
+        <div><strong>24 / 7</strong>Nights and weekends</div>
+        <div><strong>On-site</strong>Home, work or roadside</div>
+      </div>
+    </div>
+
+    <div class="scene" aria-label="Mobile mechanic arriving at a stranded car">
+      <svg viewBox="0 0 520 250" role="img" aria-labelledby="sceneTitle">
+        <title id="sceneTitle">Illustration of a service truck with an amber beacon pulling up to a stalled car at night</title>
+        <defs>
+          <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#2A2E45"/>
+            <stop offset="1" stop-color="#1F2233"/>
+          </linearGradient>
+          <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#FFB020" stop-opacity=".55"/>
+            <stop offset="1" stop-color="#FFB020" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="520" height="250" fill="url(#sky)"/>
+        <!-- stars -->
+        <g fill="#F6F4EE" opacity=".5">
+          <circle cx="40" cy="30" r="1.5"/><circle cx="120" cy="18" r="1"/><circle cx="210" cy="40" r="1.3"/><circle cx="330" cy="22" r="1"/><circle cx="470" cy="36" r="1.5"/><circle cx="400" cy="58" r="1"/>
+        </g>
+        <!-- skyline hint -->
+        <g fill="#171A29">
+          <rect x="300" y="110" width="26" height="80"/><rect x="332" y="92" width="18" height="98"/><rect x="356" y="120" width="34" height="70"/><rect x="396" y="100" width="22" height="90"/><rect x="424" y="128" width="40" height="62"/><rect x="470" y="112" width="30" height="78"/>
+        </g>
+        <g fill="#FFB020" opacity=".35">
+          <rect x="306" y="120" width="4" height="5"/><rect x="316" y="134" width="4" height="5"/><rect x="338" y="104" width="4" height="5"/><rect x="338" y="124" width="4" height="5"/><rect x="402" y="112" width="4" height="5"/><rect x="410" y="140" width="4" height="5"/><rect x="478" y="126" width="4" height="5"/><rect x="490" y="150" width="4" height="5"/>
+        </g>
+        <!-- road -->
+        <rect x="0" y="190" width="520" height="60" fill="#14151E"/>
+        <g stroke="#FFB020" stroke-width="3" stroke-dasharray="26 20" opacity=".7"><path d="M0 220 H520"/></g>
+        <!-- beacon glow -->
+        <circle class="beacon" cx="150" cy="96" r="70" fill="url(#glow)"/>
+        <!-- service truck -->
+        <path fill="#F6F4EE" d="M48 184 L48 120 C48 112 54 106 62 106 L140 106 L140 184 Z"/>
+        <path fill="#F6F4EE" d="M140 128 L196 128 C204 128 210 132 214 138 L232 164 L232 184 L140 184 Z"/>
+        <rect x="150" y="138" width="40" height="22" rx="2" fill="#2A2E45"/>
+        <rect x="48" y="112" width="92" height="72" fill="#2A2E45"/>
+        <rect x="56" y="120" width="76" height="56" rx="2" fill="#1F2233"/>
+        <g fill="#FFB020"><rect x="62" y="128" width="64" height="5" rx="1"/><rect x="62" y="142" width="64" height="5" rx="1"/><rect x="62" y="156" width="64" height="5" rx="1"/></g>
+        <g fill="#F6F4EE"><rect x="66" y="134" width="10" height="7"/><rect x="82" y="134" width="16" height="7"/><rect x="104" y="134" width="12" height="7"/><rect x="66" y="148" width="18" height="7"/><rect x="90" y="148" width="10" height="7"/><rect x="106" y="148" width="14" height="7"/></g>
+        <rect x="48" y="108" width="92" height="6" fill="#FFB020"/>
+        <text x="94" y="104" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-weight="800" font-size="11" fill="#F6F4EE" letter-spacing="1">MOBILE MECHANIC</text>
+        <!-- beacon -->
+        <rect class="beacon" x="60" y="92" width="22" height="9" rx="2" fill="#FFB020"/>
+        <rect x="44" y="180" width="194" height="8" rx="2" fill="#14151E"/>
+        <rect x="232" y="158" width="7" height="12" rx="1" fill="#FFE9A8"/>
+        <!-- wheels -->
+        <g><circle cx="90" cy="190" r="18" fill="#0E0F16"/><circle cx="90" cy="190" r="8" fill="#8E90A3"/></g>
+        <g><circle cx="200" cy="190" r="18" fill="#0E0F16"/><circle cx="200" cy="190" r="8" fill="#8E90A3"/></g>
+        <!-- headlight beam -->
+        <path d="M238 160 L330 142 L330 186 L238 174 Z" fill="#FFB020" opacity=".12"/>
+        <!-- stalled car -->
+        <path fill="#8E90A3" d="M330 184 L330 160 C330 156 334 152 338 152 L356 152 L372 134 L420 134 L440 152 L466 152 C472 152 476 156 476 162 L476 184 Z"/>
+        <path fill="#2A2E45" d="M360 152 L374 139 L418 139 L432 152 Z"/>
+        <rect x="326" y="180" width="154" height="8" rx="2" fill="#14151E"/>
+        <circle cx="358" cy="188" r="15" fill="#0E0F16"/><circle cx="358" cy="188" r="6" fill="#8E90A3"/>
+        <circle cx="446" cy="188" r="15" fill="#0E0F16"/><circle cx="446" cy="188" r="6" fill="#8E90A3"/>
+        <!-- open hood -->
+        <path d="M338 152 L352 126 L396 128" fill="none" stroke="#8E90A3" stroke-width="6" stroke-linecap="round"/>
+        <!-- hazard -->
+        <rect class="beacon" x="470" y="160" width="6" height="8" rx="1" fill="#FFB020"/>
+        <!-- warning triangle -->
+        <path d="M292 190 L302 172 L312 190 Z" fill="#FFB020"/><path d="M292 190 L302 172 L312 190 Z" fill="none" stroke="#C4300F" stroke-width="2"/>
+      </svg>
+      <div class="status">
+        <span class="live"><i aria-hidden="true"></i>Dispatching</span><b>Techs on call around the clock, every day</b>
+        <span class="live" style="color:var(--on-night-2)"><i aria-hidden="true" style="background:var(--on-night-2);animation:none;box-shadow:none"></i>Pay how you like</span><b>Card, cash and mobile payment on site</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>Fixed where the car quit</h2>
+      <p>Most of the jobs that leave you stranded can be done on the spot. If something truly needs a lift, you'll hear that before any money changes hands.</p>
+    </div>
+    <div class="grid three">
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L5 13h6l-1 9 9-12h-6l1-8z"/></svg></div><h3>Jump starts</h3><p>Dead battery in the parking garage or at the curb. A tech comes to you, gets you running and tests whether the battery is actually done.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.5 6.5l1.5 1.5M16 16l1.5 1.5M17.5 6.5L16 8M8 16l-1.5 1.5"/></svg></div><h3>Alternators</h3><p>Battery light on, dimming headlights, car dies while driving. Charging system tested on site and the alternator swapped in your driveway.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="16" height="10" rx="2"/><path d="M19 11h2v4h-2M7 12v2M11 12v2M15 12v2"/></svg></div><h3>Batteries and starters</h3><p>Clicking, slow crank or nothing at all. New battery or starter installed and the whole system checked so you're not calling again next week.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div><h3>Brakes</h3><p>Pads, rotors, calipers and brake hoses. Seized calipers and grinding stops handled right where the car is parked.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M8 11l2 2 4-4"/></svg></div><h3>No-start diagnostics</h3><p>Scanner on the truck. Fuel, spark, electrical or sensor, the cause is found and explained in plain English before anything is replaced.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 7a5 5 0 1 0-4 8l7 7 3-3-7-7a5 5 0 0 0 1-5z"/></svg></div><h3>General mobile repair</h3><p>Belts, hoses, coolant leaks, sensors and the odd jobs that keep getting put off. Ask about anything and get a straight answer.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>The number before the work</h2>
+        <p>The trip-out fee and the repair price are laid out when you call, so there are no surprises when the tech is standing next to your car.</p>
+      </div>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Quoted on the phone</b> with the trip fee and parts estimate before anyone rolls.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Multiple ways to pay</b> once the job is done: card, cash or mobile payment.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Night and weekend calls</b> priced up front, not tacked on after.</p></div>
+      </div>
+    </div>
+    <div>
+      <ul class="price-list">
+        <li><div><b>Jump start</b><small>Tech comes to you, gets you running, battery and charging test</small></div><span class="n"><em>Starting at</em>$79</span></li>
+        <li><div><b>Mobile diagnostic</b><small>Scan, inspection and a clear explanation. Applied to the repair if you go ahead</small></div><span class="n"><em>Starting at</em>$89</span></li>
+        <li><div><b>Battery replacement</b><small>Installed and tested, charging system checked</small></div><span class="n"><em>Starting at</em>$169</span></li>
+        <li><div><b>Alternator</b><small>Parts and labor, most cars and light trucks</small></div><span class="n"><em>Starting at</em>$329</span></li>
+        <li><div><b>Starter</b><small>Parts and labor, tested before and after</small></div><span class="n"><em>Starting at</em>$299</span></li>
+        <li><div><b>Brake pads and rotors</b><small>Per axle, parts and labor. Calipers and hoses quoted on site</small></div><span class="n"><em>Starting at</em>$249</span></li>
+      </ul>
+      <p class="price-note"><span class="tag">Note</span><span>Example pricing — we'll put in your real numbers. Final quotes depend on the vehicle, the parts and the time of day.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps, no tow truck</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Call with the symptom</h3>
+        <p>Year, make, model, what it's doing and where it's parked. You get a price and an arrival window on the same call, any hour.</p>
+      </div>
+      <div class="step">
+        <h3>A tech pulls up</h3>
+        <p>Tools, scanner and common parts on the truck. The cause is confirmed and the price is okayed with you before anything comes apart.</p>
+      </div>
+      <div class="step">
+        <h3>Drive away</h3>
+        <p>Most jump starts, batteries, alternators and brake jobs are finished in one visit. Pay on site however is easiest for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>What Tampa drivers say</h2>
+      <p class="g-line"><span class="star" aria-hidden="true">★★★★☆</span><span class="big">4.4</span><span>across 97 Google reviews</span></p>
+    </div>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Anthony was extremely knowledgeable and fast working. Meeting us where our vehicle was parked helped tremendously. 10/10 recommended."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Paul the mechanic helped in a time of need! Seized passenger brake caliper and damaged brake hose replaced. Very knowledgeable and kind."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"The mobile mechanic was punctual, professional, and fixed my car quickly. I loved the convenience of having the repair done right at my home."</p><cite>Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About and service area</span>
+      <h2>Based in Tampa. On call across the Bay.</h2>
+      <p>Mobile Mechanic runs out of Seminole Heights in Tampa with a crew of techs on call around the clock, so when the car dies at 11pm there's still a real person answering and a truck heading your way. Customers ask for their tech by name because the work gets done right and the explanation is honest.</p>
+      <p>Stuck a little farther out? Call anyway and we'll tell you straight whether we can get there.</p>
+      <div class="towns">
+        <span>Tampa</span><span>Seminole Heights</span><span>Downtown</span><span>Ybor City</span><span>South Tampa</span><span>Westchase</span><span>Carrollwood</span><span>Temple Terrace</span><span>Brandon</span><span>Riverview</span><span>Town 'n' Country</span><span>Tampa airport</span>
+      </div>
+      <div class="hours">
+        <b>Every day</b><span>Open 24 hours</span>
+        <b>Home base</b><span>213 W Emily St, Tampa, FL 33603</span>
+        <b>Phone</b><span><a href="tel:+18133080288">(813) 308-0288</a></span>
+      </div>
+    </div>
+    <div class="map" aria-label="Service area map">
+      <svg viewBox="0 0 400 300" role="img" aria-labelledby="mapTitle">
+        <title id="mapTitle">Stylized map of Tampa Bay with Tampa at the center of the service area</title>
+        <rect width="400" height="300" fill="#14151E"/>
+        <!-- pinellas peninsula, west -->
+        <path d="M0 0 L70 0 C84 40 90 90 82 140 C74 190 86 240 70 300 L0 300 Z" fill="#2A2E45"/>
+        <!-- hillsborough mainland, north and east -->
+        <path d="M120 0 L400 0 L400 300 L250 300 C236 270 230 240 236 210 C244 180 226 160 212 140 C196 118 198 90 170 70 C150 55 128 40 120 0 Z" fill="#2A2E45"/>
+        <!-- south tampa peninsula -->
+        <path d="M212 140 C206 160 198 180 204 205 C208 222 220 232 232 240 C240 230 240 210 236 196 C236 180 230 160 212 140 Z" fill="#353A57"/>
+        <!-- bridges -->
+        <path d="M82 120 L198 128" stroke="#8E90A3" stroke-width="2" stroke-dasharray="4 3"/>
+        <path d="M80 210 L236 222" stroke="#8E90A3" stroke-width="2" stroke-dasharray="4 3"/>
+        <!-- radius -->
+        <circle cx="212" cy="112" r="122" fill="#FFB020" opacity=".1"/>
+        <circle cx="212" cy="112" r="122" fill="none" stroke="#FFB020" stroke-width="2" stroke-dasharray="6 5"/>
+        <circle cx="212" cy="112" r="58" fill="#FFB020" opacity=".14"/>
+        <!-- towns -->
+        <g font-family="Barlow, sans-serif" font-size="11" fill="#D7D9E6">
+          <circle cx="290" cy="150" r="3" fill="#D7D9E6"/><text x="297" y="154">Brandon</text>
+          <circle cx="282" cy="76" r="3" fill="#D7D9E6"/><text x="289" y="80">Temple Terrace</text>
+          <circle cx="160" cy="60" r="3" fill="#D7D9E6"/><text x="110" y="52">Carrollwood</text>
+          <circle cx="146" cy="110" r="3" fill="#D7D9E6"/><text x="100" y="104">Westchase</text>
+          <circle cx="222" cy="200" r="3" fill="#D7D9E6"/><text x="229" y="204">South Tampa</text>
+          <circle cx="300" cy="215" r="3" fill="#D7D9E6"/><text x="307" y="219">Riverview</text>
+          <text x="20" y="160">St. Pete</text>
+        </g>
+        <!-- Tampa pin -->
+        <path d="M212 84 C200 84 192 93 192 104 C192 120 212 138 212 138 C212 138 232 120 232 104 C232 93 224 84 212 84 Z" fill="#FFB020"/>
+        <circle cx="212" cy="104" r="7" fill="#1F1A08"/>
+        <text x="212" y="158" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-weight="800" font-size="15" fill="#F6F4EE" letter-spacing="1">TAMPA</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Tell us what the car is doing.</h2>
+      <p class="sub">Fill this in and it opens a text to Mobile Mechanic with your details already typed. Stranded right now? Skip the form and call, someone picks up around the clock.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a class="big" href="tel:+18133080288">(813) 308-0288</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg><a href="sms:+18133080288?&body=Hi%2C%20I%20need%20a%20mobile%20mechanic%20in%20Tampa.%20My%20car%3A%20">Text (813) 308-0288</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Mobile service based in Tampa, FL 33603</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Open 24 hours, 7 days a week</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <h3>Request a quote</h3>
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(813) 555-0123" required></label>
+      <label>Vehicle (year, make, model)<input name="vehicle" placeholder="2015 Toyota Camry" required></label>
+      <label>What do you need?<textarea name="need" placeholder="Won't start, clicking when I turn the key. Parked at my apartment in Seminole Heights" required></textarea></label>
+      <button class="btn btn-amber" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Mobile Mechanic · Tampa, FL · <a href="tel:+18133080288">(813) 308-0288</a> · Open 24 hours</span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener" target="_blank">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi, this is '+f.get('name')+'. I have a '+f.get('vehicle')+' and I need: '+f.get('need');
+    msg=msg.replace(/[.\s]*$/,'')+'.';
+    if(f.get('phone'))msg+=' You can reach me at '+f.get('phone')+'.';
+    msg+=' How soon could a mechanic come out?';
+    window.location.href='sms:+18133080288?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

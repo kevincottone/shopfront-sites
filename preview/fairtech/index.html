@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fair Tech Mobile Mechanic — Angel comes to you, Wimauma and South Hillsborough</title>
+<meta name="description" content="Fair Tech Mobile Mechanic: brakes, wheel bearings, tune-ups and general repair done at your home or work across Wimauma, Sun City Center, Riverview, Valrico and Brandon. 4.8 stars on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F7F3; --bg-2:#FFFFFF; --ink:#13201A; --ink-2:#55665D; --line:#D8E0DA;
+    --green:#0F3D2E; --green-2:#165540; --on-green:#F7FBF8; --on-green-2:#A9C9B8;
+    --lime:#B8E63E; --lime-2:#A6D52C; --lime-ink:#13201A;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0E1613;--bg-2:#172019;--ink:#EEF4EF;--ink-2:#A8B8AD;--line:#2A3830}}
+  :root[data-theme="dark"]{--bg:#0E1613;--bg-2:#172019;--ink:#EEF4EF;--ink-2:#A8B8AD;--line:#2A3830}
+  html{scroll-padding-top:calc(4rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Barlow Condensed",system-ui,sans-serif;margin:0;line-height:.98;font-weight:800;letter-spacing:-.005em}
+  h1{font-size:clamp(3rem,10vw,5.6rem);text-transform:uppercase}
+  h2{font-size:clamp(2.1rem,6vw,3.2rem);text-transform:uppercase}
+  h3{font-size:1.35rem;font-weight:700;line-height:1.1}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green-2);margin-bottom:.8rem}
+  .eyebrow::before{content:"";width:1.4rem;height:3px;background:var(--lime)}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .eyebrow{color:var(--lime)}}
+  :root[data-theme="dark"] .eyebrow{color:var(--lime)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.4rem;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:.03em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+  .btn-lime{background:var(--lime);color:var(--lime-ink)}
+  .btn-lime:hover{background:var(--lime-2)}
+  .btn-outline{background:transparent;color:var(--on-green);border-color:rgba(255,255,255,.35)}
+  .btn-outline:hover{border-color:rgba(255,255,255,.7)}
+
+  /* header */
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--green);color:var(--on-green);border-bottom:1px solid rgba(255,255,255,.08)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.9rem;gap:.75rem}
+  .logo{display:flex;align-items:center;gap:.6rem;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.45rem;text-transform:uppercase;letter-spacing:.02em;text-decoration:none;color:var(--on-green);white-space:nowrap;line-height:1}
+  .logo .mark{width:2rem;height:2rem;border-radius:.35rem;background:var(--lime);display:grid;place-items:center;flex:0 0 auto}
+  .logo .mark svg{width:1.3rem;height:1.3rem;stroke:var(--lime-ink);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+  .logo small{display:block;font-family:"Source Sans 3",sans-serif;font-weight:600;font-size:.68rem;letter-spacing:.14em;color:var(--on-green-2);margin-top:.2rem}
+  nav a{text-decoration:none;color:var(--on-green-2);font-weight:600;margin-left:1.25rem;font-size:.98rem}
+  nav a:hover{color:var(--on-green)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--lime);color:var(--lime-ink);text-decoration:none;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:.03em;text-transform:uppercase;padding:.5rem 1rem;border-radius:999px;white-space:nowrap}
+
+  /* hero */
+  .hero{background:var(--green);color:var(--on-green);padding:3.25rem 0 3.75rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+    linear-gradient(115deg,transparent 0 62%,rgba(184,230,62,.07) 62% 63%,transparent 63% 70%,rgba(184,230,62,.05) 70% 100%);pointer-events:none}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .hero .eyebrow{color:var(--lime)}
+  .hero h1 em{font-style:normal;color:var(--lime)}
+  .hero .lede{color:var(--on-green-2);font-size:1.18rem;max-width:40ch;margin-top:1.2rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:flex;flex-wrap:wrap;gap:1rem 2rem;margin-top:2.25rem;color:var(--on-green-2);font-size:.92rem}
+  .trust strong{display:block;color:var(--on-green);font-family:"Barlow Condensed",sans-serif;font-size:1.7rem;font-weight:800;line-height:1}
+  .trust .star{color:var(--lime)}
+
+  .stage{background:var(--green-2);border:1px solid rgba(255,255,255,.1);border-radius:.8rem;padding:1.25rem}
+  .stage svg{width:100%;height:auto;display:block}
+  .checks{list-style:none;margin:1.1rem 0 0;padding:0;display:grid;gap:.55rem;font-size:.98rem}
+  .checks li{display:flex;gap:.6rem;align-items:flex-start;color:var(--on-green)}
+  .checks li::before{content:"";flex:none;width:1.15rem;height:1.15rem;margin-top:.2rem;border-radius:.25rem;background:var(--lime) center/60% no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2313201A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5 5L20 6.5'/%3E%3C/svg%3E")}
+  @media (prefers-reduced-motion:no-preference){
+    .wrench{transform-origin:118px 142px;animation:turn 5s ease-in-out infinite;transform-box:view-box}
+    @keyframes turn{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(10deg)}}
+  }
+
+  /* sections */
+  section{padding:4rem 0}
+  .sec-head{max-width:58ch}
+  .sec-head p{color:var(--ink-2);margin-top:.7rem;font-size:1.05rem}
+  .grid{display:grid;gap:1.1rem;margin-top:2rem}
+  @media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:960px){.grid.three{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-left:5px solid var(--lime);border-radius:.6rem;padding:1.3rem 1.4rem}
+  .svc .ico{width:2.5rem;height:2.5rem;border-radius:.5rem;background:var(--green);display:grid;place-items:center;margin-bottom:.9rem}
+  .svc .ico svg{width:1.4rem;height:1.4rem;stroke:var(--lime);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);margin-top:.5rem;font-size:1rem}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.pricing .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}.pricing .price-list{margin-top:0}}
+  .promise{margin-top:1.5rem;display:grid;gap:.9rem}
+  .promise div{display:flex;gap:.8rem;align-items:flex-start;color:var(--ink-2)}
+  .promise svg{flex:0 0 auto;width:1.35rem;height:1.35rem;margin-top:.15rem;stroke:var(--green-2);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .promise svg{stroke:var(--lime)}}
+  :root[data-theme="dark"] .promise svg{stroke:var(--lime)}
+  .promise b{color:var(--ink)}
+  .price-list{list-style:none;margin:2rem 0 0;padding:0;border:1px solid var(--line);border-radius:.7rem;overflow:hidden;background:var(--bg)}
+  .price-list li{display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;align-items:center;padding:1rem 1.15rem;border-top:1px solid var(--line)}
+  .price-list li:first-child{border-top:0}
+  .price-list b{font-weight:700}
+  .price-list small{display:block;color:var(--ink-2);font-size:.92rem;font-weight:400}
+  .price-list .n{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.5rem;white-space:nowrap;color:var(--green-2);text-align:right;line-height:1}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .price-list .n{color:var(--lime)}}
+  :root[data-theme="dark"] .price-list .n{color:var(--lime)}
+  .price-list .n em{font-style:normal;font-family:"Source Sans 3",sans-serif;font-weight:600;font-size:.72rem;color:var(--ink-2);display:block;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.15rem}
+  .price-note{margin-top:1rem;font-size:.92rem;color:var(--ink-2);display:flex;gap:.6rem;align-items:flex-start}
+  .price-note .tag{flex:0 0 auto;background:var(--lime);color:var(--lime-ink);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:999px;margin-top:.15rem}
+
+  .steps{display:grid;gap:1.5rem;margin-top:2rem;counter-reset:step}
+  @media (min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{position:relative;padding-left:3.4rem}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;top:0;left:0;width:2.5rem;height:2.5rem;border-radius:.4rem;background:var(--green);color:var(--lime);display:grid;place-items:center;font-family:"Barlow Condensed",sans-serif;font-size:1.5rem;font-weight:800}
+  .step p{color:var(--ink-2);margin-top:.4rem}
+
+  .reviews{background:var(--green);color:var(--on-green)}
+  .reviews .sec-head p{color:var(--on-green-2)}
+  .reviews .grid{grid-template-columns:1fr}
+  @media (min-width:800px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:.6rem;padding:1.4rem;display:flex;flex-direction:column}
+  .review p{font-size:1.04rem}
+  .review cite{display:block;margin-top:auto;padding-top:.9rem;font-style:normal;color:var(--on-green-2);font-weight:500;font-size:.92rem}
+  .stars{color:var(--lime);letter-spacing:.12em;font-size:1.05rem;margin-bottom:.6rem}
+  .g-line{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .75rem;color:var(--on-green-2);margin-top:.7rem}
+  .g-line .big{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:2rem;color:var(--on-green);line-height:1}
+
+  .area .wrap{display:grid;gap:2.25rem}
+  @media (min-width:860px){.area .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .area p{color:var(--ink-2);margin-top:.9rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.95rem}
+  .map{background:var(--green);border-radius:.75rem;padding:1rem;border:1px solid rgba(255,255,255,.08)}
+  .map svg{display:block;width:100%;height:auto}
+  .hours{margin-top:1.4rem;display:grid;grid-template-columns:auto 1fr;gap:.3rem 1rem;color:var(--ink-2);font-size:.98rem}
+  .hours b{color:var(--ink);font-weight:700}
+
+  .quote{background:var(--bg-2);border-top:1px solid var(--line)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--ink-2);margin-top:.9rem;max-width:42ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.65rem}
+  .contact-list li{display:flex;gap:.7rem;align-items:center;color:var(--ink-2)}
+  .contact-list svg{width:1.2rem;height:1.2rem;stroke:var(--green-2);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .contact-list svg{stroke:var(--lime)}}
+  :root[data-theme="dark"] .contact-list svg{stroke:var(--lime)}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--lime);font-weight:600}
+  .contact-list .big{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.8rem;text-decoration:none;line-height:1}
+  form{display:grid;gap:.95rem;background:var(--green);color:var(--on-green);padding:1.5rem;border-radius:.8rem;border:1px solid rgba(255,255,255,.08)}
+  form h3{color:var(--on-green);text-transform:uppercase;font-size:1.5rem}
+  label.f{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-green-2)}
+  input,textarea{font:inherit;color:#13201A;background:#fff;border:1px solid #C9D6CD;border-radius:.4rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5rem;resize:vertical}
+  input:focus-visible,textarea:focus-visible{outline:3px solid var(--lime);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-green-2)}
+
+  footer{background:var(--green);color:var(--on-green-2);padding:1.75rem 0 4rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.1)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-green);text-decoration-color:var(--lime)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--lime);color:var(--lime-ink);font-size:.78rem;font-weight:700;padding:.35rem .7rem;border-radius:999px;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+  .preview-tag:hover{background:var(--lime-2)}
+  .preview-bar{background:#13201A;color:#F7FBF8;font-size:.85rem;text-align:center;padding:.5rem 1rem}
+  .preview-bar a{color:var(--lime);font-weight:700}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a> for Fair Tech Mobile Mechanic. Not the live site yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0-5.3 5.3L4 17l3 3 5.2-5.2a4 4 0 0 0 5.3-5.3l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></span><span>Fair Tech<small>Mobile Mechanic</small></span></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+18133477872">Call Angel</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Wimauma, FL · South Hillsborough · We come to you</span>
+      <h1>A fair price, <em>fixed where it's parked.</em></h1>
+      <p class="lede">Brakes, wheel bearings, tune-ups and the repairs that pile up past 100k miles, done by Angel at your home or workplace. No tow, no shop markup, and the price is explained before a bolt comes off.</p>
+      <div class="hero-actions">
+        <a class="btn btn-lime" href="#quote">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+18133477872">(813) 347-7872</a>
+      </div>
+      <div class="trust">
+        <div><strong><span class="star">★</span> 4.8</strong>38 Google reviews</div>
+        <div><strong>7 days</strong>6am to 8pm</div>
+        <div><strong>Mobile</strong>Home, work, roadside</div>
+      </div>
+    </div>
+
+    <div class="stage" aria-label="Illustration of a mechanic working on a car in a driveway">
+      <svg viewBox="0 0 520 260" role="img" aria-labelledby="stageTitle">
+        <title id="stageTitle">A car on a jack in a driveway with a toolbox and a wrench</title>
+        <!-- ground -->
+        <rect x="0" y="210" width="520" height="50" fill="#0B2A20"/>
+        <rect x="0" y="210" width="520" height="3" fill="#B8E63E" opacity=".6"/>
+        <!-- palm hint -->
+        <rect x="446" y="120" width="8" height="92" fill="#0B2A20"/>
+        <path d="M450 122 C430 100 405 100 392 112 C416 108 436 116 450 122 Z M450 122 C470 100 495 100 508 112 C484 108 464 116 450 122 Z M450 122 C440 96 446 78 462 70 C452 86 452 104 450 122 Z M450 122 C436 104 412 98 400 86 C420 94 440 104 450 122 Z" fill="#165540"/>
+        <!-- car body -->
+        <path fill="#E9F1EB" d="M70 190 L70 150 C70 142 76 136 84 136 L118 136 L150 96 C154 91 160 88 166 88 L282 88 C290 88 296 92 300 98 L330 136 L380 140 C392 142 400 150 400 160 L400 190 Z"/>
+        <!-- windows -->
+        <path fill="#13201A" d="M158 100 L212 100 L212 134 L130 134 Z"/>
+        <path fill="#13201A" d="M224 100 L278 100 L312 134 L224 134 Z"/>
+        <path fill="#9fc9b4" opacity=".25" d="M158 100 L184 100 L184 134 L130 134 Z"/>
+        <!-- lime stripe -->
+        <rect x="70" y="160" width="330" height="8" fill="#B8E63E"/>
+        <!-- lights -->
+        <rect x="392" y="150" width="10" height="12" rx="2" fill="#FFE9A8"/>
+        <rect x="68" y="152" width="8" height="12" rx="2" fill="#FF6B6B"/>
+        <!-- front wheel on jack, lifted -->
+        <g>
+          <circle cx="330" cy="188" r="24" fill="#0E1613"/>
+          <circle cx="330" cy="188" r="12" fill="#8FA69A"/>
+          <circle cx="330" cy="188" r="4" fill="#0E1613"/>
+        </g>
+        <!-- rear wheel missing: hub + brake rotor exposed -->
+        <circle cx="140" cy="190" r="22" fill="#0B2A20"/>
+        <circle cx="140" cy="190" r="16" fill="#8FA69A"/>
+        <circle cx="140" cy="190" r="6" fill="#13201A"/>
+        <path d="M140 178 L140 202 M128 190 L152 190" stroke="#13201A" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- floor jack -->
+        <rect x="210" y="200" width="60" height="10" rx="3" fill="#B8E63E"/>
+        <path d="M222 200 L252 184 L262 184" stroke="#B8E63E" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <rect x="258" y="178" width="14" height="6" rx="2" fill="#E9F1EB"/>
+        <!-- removed wheel leaning -->
+        <circle cx="52" cy="186" r="24" fill="#0E1613"/>
+        <circle cx="52" cy="186" r="12" fill="#8FA69A"/>
+        <circle cx="52" cy="186" r="4" fill="#0E1613"/>
+        <!-- toolbox -->
+        <rect x="420" y="170" width="70" height="40" rx="4" fill="#B8E63E"/>
+        <rect x="420" y="184" width="70" height="3" fill="#13201A"/>
+        <rect x="446" y="162" width="18" height="8" rx="2" fill="#13201A"/>
+        <!-- wrench -->
+        <g class="wrench">
+          <rect x="112" y="138" width="10" height="36" rx="3" fill="#E9F1EB" transform="rotate(-35 118 142)"/>
+          <path d="M108 134 a10 10 0 1 1 20 0 l-4 6 h-12 z" fill="#E9F1EB" transform="rotate(-35 118 142)"/>
+        </g>
+      </svg>
+      <ul class="checks">
+        <li>Parts and labor explained before any work starts</li>
+        <li>Happy to install parts you've already bought</li>
+        <li>Fast replies, often same or next day, even weekends</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>What Angel handles on-site</h2>
+      <p>Most of what a shop does on a lift can be done right where the car sits. If a job honestly needs a shop, you'll hear that first, not after.</p>
+    </div>
+    <div class="grid three">
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div><h3>Brakes</h3><p>Pads, rotors and calipers, front and rear. Grinding, pulsing or a soft pedal handled in your driveway.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3M6.3 6.3l2.2 2.2M15.5 15.5l2.2 2.2M17.7 6.3l-2.2 2.2M8.5 15.5l-2.2 2.2"/></svg></div><h3>Wheel bearings and hubs</h3><p>That hum that gets louder with speed. Hub assemblies replaced on the spot, with your parts or his.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L5 13h6l-1 9 9-12h-6l1-8z"/></svg></div><h3>Tune-ups</h3><p>Spark plugs, coils, filters and valve cover gaskets. Rough idle and misfires sorted before they cost more.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div><h3>Oil and fluids</h3><p>Oil changes, differential and transmission fluid, coolant. Maintenance at your door instead of your lunch break.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h16v9H4z"/><path d="M7 8V5M17 8V5M4 12h16M9 17v3M15 17v3"/></svg></div><h3>Cooling and belts</h3><p>Radiators, water pumps, thermostats, accessory and drive belts. The parts that go around 140k miles.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0-5.3 5.3L4 17l3 3 5.2-5.2a4 4 0 0 0 5.3-5.3l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></div><h3>General mobile repair</h3><p>Starters, alternators, no-starts and the odd jobs. Ask about anything, you'll get a straight answer.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Fair is in the name</h2>
+        <p>Customers keep saying the same thing: the most reasonable number they got after calling around. You'll know the price before any work starts.</p>
+      </div>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Bring your own parts</b> and pay labor only. Angel installs what you've bought.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Save-money options offered</b> when there's a cheaper way to do the job right.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Root cause found,</b> not just the symptom you called about.</p></div>
+      </div>
+    </div>
+    <div>
+      <ul class="price-list">
+        <li><div><b>Mobile diagnostic visit</b><small>Scan, inspection and a plain-English plan</small></div><span class="n"><em>Starting at</em>$79</span></li>
+        <li><div><b>Brake pads and rotors</b><small>Per axle, parts and labor</small></div><span class="n"><em>Starting at</em>$229</span></li>
+        <li><div><b>Wheel hub bearing</b><small>Per wheel, labor with your parts or his</small></div><span class="n"><em>Starting at</em>$149</span></li>
+        <li><div><b>Tune-up: plugs and coils</b><small>4-cylinder, parts and labor</small></div><span class="n"><em>Starting at</em>$199</span></li>
+        <li><div><b>Oil change at your door</b><small>Full synthetic, filter, fluid top-off</small></div><span class="n"><em>Starting at</em>$75</span></li>
+        <li><div><b>Customer-supplied parts install</b><small>Labor only, quoted by the job</small></div><span class="n"><em>Starting at</em>$95</span></li>
+      </ul>
+      <p class="price-note"><span class="tag">Note</span><span>Example pricing — we'll put in your real numbers. Final quotes depend on the vehicle and parts.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps, no waiting room</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Call or text what's wrong</h3><p>Year, make, model and the symptom. A short video of the noise helps. Angel replies fast, holiday weekends included.</p></div>
+      <div class="step"><h3>Angel comes to the car</h3><p>Home, office or parking lot in South Hillsborough. He confirms the cause and gives you the parts and labor price first.</p></div>
+      <div class="step"><h3>Fixed where it sits</h3><p>Most jobs are done the same visit, many in under two hours. You keep your day and skip the tow.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>What customers say</h2>
+      <p class="g-line"><span class="big">4.8</span><span class="stars" aria-label="4.8 out of 5 stars">★★★★★</span><span>across 38 Google reviews</span></p>
+    </div>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>"I shopped around for mobile mechanics in the Valrico/Riverview area, and Fair Tech was by far the most affordable. Angel was incredibly accommodating and explained he could easily install the parts I provided."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>"Angel is my main mechanic these days since moving to FL. Oil changes, full brake jobs, belts, differential and transmission fluid, he can do it all. The guy is honest, fair, and the most reasonable with costs."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>"Angel responded very quickly when we first contacted him and was able to schedule us in for the next day, even on a holiday weekend. Very honest, fair priced, and professional."</p><cite>Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About and service area</span>
+      <h2>Based in Wimauma, on the road across South Hillsborough</h2>
+      <p>Fair Tech Mobile Mechanic is run by Angel out of Wimauma, FL. Customers who've been through two or three other mechanics tend to stop looking once they find him: honest about what's needed, realistic about cost, and quick to call back.</p>
+      <p>A little outside the area? Text anyway and he'll let you know.</p>
+      <div class="towns">
+        <span>Wimauma</span><span>Sun City Center</span><span>Ruskin</span><span>Apollo Beach</span><span>Riverview</span><span>Gibsonton</span><span>Valrico</span><span>Brandon</span><span>Lithia</span><span>Plant City</span><span>Tampa by request</span>
+      </div>
+      <div class="hours">
+        <b>Every day</b><span>6:00 AM – 8:00 PM</span>
+        <b>Home base</b><span>Stanford Rd, Wimauma, FL 33598</span>
+      </div>
+    </div>
+    <div class="map" aria-label="Service area map">
+      <svg viewBox="0 0 400 300" role="img" aria-labelledby="mapTitle">
+        <title id="mapTitle">Stylized map of South Hillsborough County with Wimauma at the center of the service area</title>
+        <!-- bay water -->
+        <rect width="400" height="300" fill="#0B2A20"/>
+        <!-- land -->
+        <path d="M110 0 L400 0 L400 300 L60 300 C70 260 50 230 70 200 C90 170 80 130 100 100 C115 70 100 30 110 0 Z" fill="#165540"/>
+        <!-- shoreline -->
+        <path d="M60 300 C70 260 50 230 70 200 C90 170 80 130 100 100 C115 70 100 30 110 0" stroke="#B8E63E" stroke-width="1.5" opacity=".4" fill="none"/>
+        <!-- I-75 line -->
+        <path d="M150 0 C160 80 165 160 190 300" stroke="#8FA69A" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+        <!-- service radius -->
+        <circle cx="250" cy="190" r="125" fill="#B8E63E" opacity=".1"/>
+        <circle cx="250" cy="190" r="125" fill="none" stroke="#B8E63E" stroke-width="2" stroke-dasharray="6 5"/>
+        <circle cx="250" cy="190" r="60" fill="#B8E63E" opacity=".12"/>
+        <!-- towns -->
+        <g font-family="Source Sans 3, sans-serif" font-size="11" fill="#D7E6DC">
+          <circle cx="150" cy="22" r="3" fill="#D7E6DC"/><text x="158" y="26">Brandon</text>
+          <circle cx="250" cy="40" r="3" fill="#D7E6DC"/><text x="258" y="44">Valrico</text>
+          <circle cx="340" cy="60" r="3" fill="#D7E6DC"/><text x="300" y="78">Plant City</text>
+          <circle cx="165" cy="100" r="3" fill="#D7E6DC"/><text x="173" y="104">Riverview</text>
+          <circle cx="112" cy="150" r="3" fill="#D7E6DC"/><text x="120" y="154">Apollo Beach</text>
+          <circle cx="120" cy="225" r="3" fill="#D7E6DC"/><text x="128" y="229">Ruskin</text>
+          <circle cx="190" cy="250" r="3" fill="#D7E6DC"/><text x="198" y="254">Sun City Center</text>
+          <circle cx="320" cy="150" r="3" fill="#D7E6DC"/><text x="328" y="154">Lithia</text>
+          <text x="20" y="150" fill="#8FA69A" font-size="10">Tampa Bay</text>
+        </g>
+        <!-- Wimauma pin -->
+        <path d="M250 160 C238 160 230 169 230 180 C230 196 250 214 250 214 C250 214 270 196 270 180 C270 169 262 160 250 160 Z" fill="#B8E63E"/>
+        <circle cx="250" cy="180" r="7" fill="#13201A"/>
+        <text x="250" y="234" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-weight="800" font-size="16" fill="#F7FBF8" letter-spacing="1">WIMAUMA</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Tell Angel what the car is doing</h2>
+      <p class="sub">Fill this in and it opens a text to Angel with your details already typed. He'll reply with a price and a time. Or just call, 6am to 8pm any day.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a class="big" href="tel:+18133477872">(813) 347-7872</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg><a href="sms:+18133477872?&body=Hi%20Angel%2C%20I%27d%20like%20a%20quote%20for%20my%20">Text (813) 347-7872</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Mobile service based in Wimauma, FL 33598</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Every day, 6:00 AM – 8:00 PM</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <h3>Request a quote</h3>
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Your phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(813) 555-0123" required></label>
+      <label class="f">Vehicle (year, make, model)<input name="vehicle" placeholder="2015 Chrysler 200" required></label>
+      <label class="f">What do you need?<textarea name="need" placeholder="Humming from the front wheel, car is at my house in Riverview" required></textarea></label>
+      <button class="btn btn-lime" type="submit">Send as a text</button>
+      <p class="form-note">Nothing is stored here. Your message opens in your phone's messaging app and you send it yourself.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Fair Tech Mobile Mechanic · Wimauma, FL · <a href="tel:+18133477872">(813) 347-7872</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener" target="_blank">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Angel, this is '+f.get('name')+'. I have a '+f.get('vehicle')+' and I need: '+f.get('need');
+    msg=msg.replace(/[.\s]*$/,'')+'.';
+    if(f.get('phone'))msg+=' You can reach me at '+f.get('phone')+'.';
+    msg+=' When could you come out?';
+    window.location.href='sms:+18133477872?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

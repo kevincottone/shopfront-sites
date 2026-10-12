@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tint That Car — Window tinting in Tampa, FL</title>
+<meta name="description" content="Automotive window tinting, tint removal and windshield strips on Causeway Blvd in Tampa, FL. Rated 5.0 on Google across 117 reviews. Call or text (813) 696-5660.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F1EA; --bg-2:#FFFFFF; --ink:#16171D; --ink-2:#5A5B66; --line:#DDD8CE;
+    --coal:#16171D; --coal-2:#23242C; --on-coal:#F7F4EE; --on-coal-2:#A6A7B2;
+    --ember:#FF5A36; --ember-2:#FF7A5C; --ember-ink:#16171D;
+    --glass:#BFD9EA;
+    --shade:0.65;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#121317;--bg-2:#1B1C22;--ink:#F3F0EA;--ink-2:#AEAFB8;--line:#2C2D36}
+  }
+  :root[data-theme="dark"]{--bg:#121317;--bg-2:#1B1C22;--ink:#F3F0EA;--ink-2:#AEAFB8;--line:#2C2D36}
+  html{scroll-padding-top:calc(3.75rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Manrope",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Bebas Neue","Manrope",system-ui,sans-serif;margin:0;line-height:.95;letter-spacing:.01em;font-weight:400}
+  h1{font-size:clamp(3.4rem,13vw,7rem)}
+  h2{font-size:clamp(2.5rem,7.5vw,4rem)}
+  h3{font-size:1.6rem;letter-spacing:.03em}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1060px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-block;font-weight:800;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ember);margin-bottom:.9rem}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.6rem;border-radius:.4rem;font-weight:800;font-size:1.02rem;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+  .btn:focus-visible{outline:3px solid var(--ember);outline-offset:3px}
+  .btn-ember{background:var(--ember);color:var(--ember-ink)}
+  .btn-ember:hover{background:var(--ember-2)}
+  .btn-ghost{background:transparent;color:var(--on-coal);border-color:rgba(255,255,255,.3)}
+  .btn-ghost:hover{border-color:var(--ember)}
+
+  .preview-bar{background:var(--ember);color:var(--ember-ink);font-size:.9rem;text-align:center;padding:.5rem 1rem;font-weight:600}
+  .preview-bar a{color:inherit;font-weight:800}
+
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--coal);color:var(--on-coal);border-bottom:1px solid rgba(255,255,255,.08)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem;gap:1rem}
+  .logo{font-family:"Bebas Neue",sans-serif;font-size:1.6rem;letter-spacing:.06em;text-decoration:none;display:flex;align-items:center;gap:.55rem;white-space:nowrap;color:var(--on-coal)}
+  .logo i{width:1.3rem;height:1.3rem;display:inline-block;flex:none;background:var(--ember);clip-path:polygon(0 100%,25% 0,100% 0,75% 100%)}
+  .logo em{font-style:normal;color:var(--ember)}
+  nav a{text-decoration:none;color:var(--on-coal-2);font-weight:600;margin-left:1.25rem;font-size:.95rem}
+  nav a:hover{color:var(--ember-2)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--ember);color:var(--ember-ink);text-decoration:none;font-weight:800;font-size:.92rem;padding:.5rem .95rem;border-radius:.4rem;white-space:nowrap;text-transform:uppercase;letter-spacing:.03em}
+  .call-pill:hover{background:var(--ember-2)}
+
+  .hero{position:relative;background:var(--coal);color:var(--on-coal);padding:3rem 0 3.5rem;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.025) 22px 23px);pointer-events:none}
+  .hero::after{content:"";position:absolute;left:-10vw;bottom:-40%;width:60vw;max-width:600px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,90,54,.25),transparent 65%);pointer-events:none}
+  .hero .wrap{position:relative;display:grid;gap:2.5rem;z-index:1}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .hero h1 em{font-style:normal;color:var(--ember)}
+  .hero .lede{color:var(--on-coal-2);font-size:1.2rem;max-width:36ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;margin-top:1.75rem;color:var(--on-coal-2);font-size:.95rem}
+  .trust b{color:var(--on-coal);font-weight:800}
+  .trust .stars{color:var(--ember);letter-spacing:.08em}
+
+  .demo{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:.75rem;padding:1.25rem}
+  .demo-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.75rem}
+  .demo-head span{color:var(--on-coal-2);font-size:.95rem}
+  .demo-head output{font-family:"Bebas Neue",sans-serif;font-size:1.8rem;color:var(--ember);letter-spacing:.04em}
+  .demo svg{width:100%;height:auto;display:block;border-radius:.5rem}
+  .swatches{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem;margin-top:1rem}
+  .swatches button{font:inherit;font-weight:800;font-size:.9rem;color:var(--on-coal);background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);border-radius:.4rem;padding:.55rem .2rem;cursor:pointer;display:grid;gap:.35rem;justify-items:center}
+  .swatches button i{display:block;width:100%;height:.9rem;border-radius:.2rem;background:var(--glass)}
+  .swatches button[aria-pressed=true]{border-color:var(--ember);background:rgba(255,90,54,.12)}
+  .swatches button:focus-visible{outline:3px solid var(--ember);outline-offset:2px}
+  .legal{margin-top:.8rem;font-size:.92rem;color:var(--on-coal-2);min-height:2.8em}
+  .legal strong{color:var(--ember-2);font-weight:700}
+  @media (prefers-reduced-motion:no-preference){.glass{transition:opacity .2s ease}}
+
+  section{padding:4rem 0}
+  .sub{color:var(--ink-2);margin-top:.8rem;max-width:52ch}
+
+  .services .grid{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:700px){.services .grid{grid-template-columns:repeat(2,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:.75rem;padding:1.4rem;display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start;border-left:5px solid var(--ember)}
+  .svc .ic{width:2.75rem;height:2.75rem;border-radius:.5rem;background:var(--coal);display:grid;place-items:center;flex:none}
+  .svc .ic svg{width:1.4rem;height:1.4rem;stroke:var(--ember);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);margin-top:.4rem}
+  .fast{margin-top:1.5rem;display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:center;background:var(--coal);color:var(--on-coal-2);border-radius:.75rem;padding:1.1rem 1.25rem}
+  .fast svg{width:2.4rem;height:2.4rem;stroke:var(--ember);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .fast b{color:var(--on-coal)}
+
+  .pricing{background:var(--coal);color:var(--on-coal)}
+  .pricing .sub{color:var(--on-coal-2)}
+  .tiers{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:800px){.tiers{grid-template-columns:repeat(3,1fr)}}
+  .tier{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:.75rem;padding:1.5rem;display:flex;flex-direction:column}
+  .tier.feat{border-color:var(--ember);background:rgba(255,90,54,.1)}
+  .tier .tag{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ember-2);font-weight:800}
+  .tier h3{margin-top:.4rem;font-size:1.9rem}
+  .tier .desc{color:var(--on-coal-2);margin-top:.5rem;font-size:.98rem;flex:1}
+  .tier .price{margin-top:1.25rem;font-family:"Bebas Neue",sans-serif;font-size:2.4rem;line-height:1;letter-spacing:.02em}
+  .tier .price small{display:block;font-family:"Manrope",sans-serif;font-weight:500;font-size:.85rem;color:var(--on-coal-2);margin-top:.35rem;letter-spacing:0}
+  .tier ul{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.45rem;color:var(--on-coal-2);font-size:.95rem}
+  .tier li::before{content:"";display:inline-block;width:.5rem;height:.5rem;background:var(--ember);margin-right:.6rem;vertical-align:middle;clip-path:polygon(0 100%,30% 0,100% 0,70% 100%)}
+  .addons{margin-top:2rem;display:grid;gap:.6rem}
+  @media (min-width:700px){.addons{grid-template-columns:repeat(3,1fr)}}
+  .addon{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid rgba(255,255,255,.12);padding:.7rem 0;color:var(--on-coal-2)}
+  .addon b{color:var(--on-coal);font-weight:800;white-space:nowrap}
+  .pricing .note{margin-top:1.5rem;font-size:.9rem;color:var(--on-coal-2);border:1px dashed rgba(255,255,255,.3);border-radius:.5rem;padding:.7rem 1rem;display:inline-block}
+
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:800px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:.75rem;padding:1.4rem;display:flex;flex-direction:column}
+  .review .stars{color:var(--ember);letter-spacing:.1em;margin-bottom:.6rem}
+  .review p{flex:1}
+  .review cite{display:block;margin-top:.9rem;font-style:normal;color:var(--ink-2);font-size:.95rem}
+  .rating-badge{display:inline-flex;align-items:center;gap:.75rem;margin-top:1.25rem;background:var(--bg-2);border:1px solid var(--line);border-radius:.5rem;padding:.5rem 1rem .5rem .6rem}
+  .rating-badge .num{font-family:"Bebas Neue",sans-serif;font-size:1.7rem;background:var(--coal);color:var(--ember);border-radius:.35rem;padding:.2rem .7rem;letter-spacing:.04em}
+  .rating-badge span{color:var(--ink-2);font-size:.95rem}
+
+  .about{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.about .wrap{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .about p{color:var(--ink-2);margin-top:.9rem}
+  .area{background:var(--bg);border:1px solid var(--line);border-radius:.75rem;padding:1.4rem}
+  .area h3{margin-bottom:.75rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.5rem}
+  .chips span{background:var(--bg-2);border:1px solid var(--line);border-radius:.35rem;padding:.3rem .8rem;font-size:.92rem;font-weight:600}
+  .hours{list-style:none;padding:0;margin:1.25rem 0 0;display:grid;gap:.35rem;font-size:.95rem;color:var(--ink-2)}
+  .hours li{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line);padding-bottom:.3rem}
+  .hours b{color:var(--ink);font-weight:700}
+  .area .addr{margin-top:1rem;font-size:.95rem;color:var(--ink-2)}
+  .area .addr a{color:var(--ink);text-decoration-color:var(--ember);text-underline-offset:3px}
+
+  .quote{background:var(--coal);color:var(--on-coal)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr}}
+  .quote .sub{color:var(--on-coal-2)}
+  .contact-list{list-style:none;padding:0;margin:1.75rem 0 0;display:grid;gap:.6rem;font-size:1.05rem}
+  .contact-list a{color:var(--on-coal);text-decoration-color:var(--ember);text-underline-offset:3px}
+  .contact-list .big{font-family:"Bebas Neue",sans-serif;font-size:2.3rem;letter-spacing:.04em;text-decoration:none;color:var(--ember)}
+  form{display:grid;gap:.9rem;background:rgba(255,255,255,.05);padding:1.4rem;border-radius:.75rem;border:1px solid rgba(255,255,255,.12)}
+  label.f{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-coal-2)}
+  input,select,textarea{font:inherit;color:#16171D;background:#fff;border:1px solid var(--line);border-radius:.4rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--ember);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-coal-2)}
+
+  footer{background:#0E0F13;color:var(--on-coal-2);padding:1.5rem 0 4rem;font-size:.9rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  footer a{color:var(--on-coal);text-decoration-color:var(--ember)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--ember);color:var(--ember-ink);font-size:.75rem;font-weight:800;padding:.3rem .6rem;border-radius:.35rem;z-index:20;text-decoration:none}
+  .preview-tag:hover{background:var(--ember-2)}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Website preview built for Tint That Car by <a href="https://shopfrontsites.org">Shopfront Sites</a>. Not live yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><i aria-hidden="true"></i>Tint That <em>Car</em></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">Shop</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+18136965660">Call Miguel</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Window tinting · Causeway Blvd, Tampa</span>
+      <h1>Dark glass. <em>Cool car.</em> Done today.</h1>
+      <p class="lede">Window tint, old-tint removal and windshield strips at Miguel's shop on Causeway Blvd. Next-day appointments most weeks, honest quotes, and film rolls you see before they go on.</p>
+      <div class="hero-actions">
+        <a class="btn btn-ember" href="#quote">Get a quote</a>
+        <a class="btn btn-ghost" href="tel:+18136965660">(813) 696-5660</a>
+      </div>
+      <div class="trust">
+        <span><span class="stars" aria-hidden="true">★★★★★</span> <b>5.0</b> on Google</span>
+        <span><b>117</b> reviews</span>
+        <span>Mon–Sat</span>
+      </div>
+    </div>
+
+    <div class="demo">
+      <div class="demo-head">
+        <span>Pick a shade</span>
+        <output id="shadeOut" for="shadeBtns">35%</output>
+      </div>
+      <svg viewBox="0 0 520 240" role="img" aria-labelledby="demoTitle">
+        <title id="demoTitle">Rear three-quarter view of a car showing the selected tint darkness on the side and rear glass</title>
+        <defs>
+          <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#23242C"/><stop offset="1" stop-color="#16171D"/>
+          </linearGradient>
+          <linearGradient id="sun" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="#FFD9B0"/><stop offset="1" stop-color="#FF5A36"/>
+          </linearGradient>
+          <linearGradient id="body" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#EDEBE6"/><stop offset="1" stop-color="#B8B5AE"/>
+          </linearGradient>
+          <clipPath id="winClip">
+            <path d="M150 118 C172 92 206 78 262 78 L262 118 Z"/>
+            <path d="M270 78 C322 78 358 92 384 118 L270 118 Z"/>
+          </clipPath>
+        </defs>
+        <rect width="520" height="240" rx="10" fill="url(#sky)"/>
+        <circle cx="70" cy="60" r="34" fill="url(#sun)"/>
+        <g stroke="#FF7A5C" stroke-width="2" opacity=".5" stroke-linecap="round">
+          <line x1="70" y1="10" x2="70" y2="18"/><line x1="70" y1="102" x2="70" y2="110"/>
+          <line x1="20" y1="60" x2="28" y2="60"/><line x1="112" y1="60" x2="120" y2="60"/>
+          <line x1="35" y1="25" x2="41" y2="31"/><line x1="99" y1="89" x2="105" y2="95"/>
+          <line x1="105" y1="25" x2="99" y2="31"/><line x1="41" y1="89" x2="35" y2="95"/>
+        </g>
+        <rect x="0" y="200" width="520" height="40" fill="#0E0F13"/>
+        <line x1="20" y1="222" x2="120" y2="222" stroke="#FF5A36" stroke-width="3" stroke-dasharray="26 18" opacity=".7"/>
+        <line x1="200" y1="222" x2="520" y2="222" stroke="#FF5A36" stroke-width="3" stroke-dasharray="26 18" opacity=".7"/>
+        <ellipse cx="262" cy="206" rx="230" ry="9" fill="#000" opacity=".5"/>
+        <path fill="url(#body)" d="M56 178 C54 154 68 136 104 130 L142 124 C166 96 206 80 262 80 C326 80 366 98 396 128 L450 136 C474 140 486 156 484 178 L474 188 L52 188 Z"/>
+        <g clip-path="url(#winClip)">
+          <rect x="140" y="70" width="250" height="52" fill="var(--glass)"/>
+          <rect x="140" y="70" width="250" height="52" fill="url(#sun)" opacity=".25"/>
+          <rect class="glass" x="140" y="70" width="250" height="52" fill="#07080B" style="opacity:var(--shade)"/>
+        </g>
+        <path fill="none" stroke="#16171D" stroke-width="3" d="M146 120 C170 92 206 76 262 76 C324 76 360 92 388 120"/>
+        <line x1="266" y1="76" x2="266" y2="120" stroke="#16171D" stroke-width="3"/>
+        <rect x="52" y="184" width="432" height="10" rx="4" fill="#16171D"/>
+        <g fill="#16171D"><circle cx="140" cy="186" r="30"/><circle cx="400" cy="186" r="30"/></g>
+        <g fill="#6E6F78"><circle cx="140" cy="186" r="14"/><circle cx="400" cy="186" r="14"/></g>
+        <g fill="#16171D"><circle cx="140" cy="186" r="5"/><circle cx="400" cy="186" r="5"/></g>
+        <rect x="458" y="152" width="22" height="9" rx="3" fill="#FFD9B0"/>
+        <rect x="56" y="154" width="18" height="8" rx="3" fill="#FF5A36"/>
+      </svg>
+      <div class="swatches" id="shadeBtns" role="group" aria-label="Tint darkness">
+        <button type="button" data-v="50"><i style="opacity:.5;background:#07080B"></i>50%</button>
+        <button type="button" data-v="35" aria-pressed="true"><i style="opacity:.65;background:#07080B"></i>35%</button>
+        <button type="button" data-v="28"><i style="opacity:.72;background:#07080B"></i>28%</button>
+        <button type="button" data-v="15"><i style="opacity:.85;background:#07080B"></i>15%</button>
+        <button type="button" data-v="5"><i style="opacity:.95;background:#07080B"></i>5%</button>
+      </div>
+      <p class="legal" id="legal"></p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <span class="eyebrow">What we do</span>
+    <h2>Tint, strip, redo</h2>
+    <p class="sub">Whatever your glass needs: fresh film on a new car, a match for the two fronts, or ripping out the purple bubbled stuff and starting over.</p>
+    <div class="grid">
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 13l2-5a3 3 0 0 1 3-2h8a3 3 0 0 1 3 2l2 5v5H3z"/><circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/></svg></div>
+        <div>
+          <h3>Full vehicle tint</h3>
+          <p>All side windows plus the rear glass, cut for your exact vehicle. Pick a shade above or tell Miguel how you drive and he'll recommend one.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 12h18M12 5v14"/></svg></div>
+        <div>
+          <h3>Two fronts to match</h3>
+          <p>Factory privacy glass in the back already? Match the two front windows so the whole car reads as one, usually in under an hour.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20L20 4"/><path d="M4 4l6 6M14 14l6 6"/></svg></div>
+        <div>
+          <h3>Tint removal</h3>
+          <p>Old, purple or bubbling film stripped clean, adhesive and all. Fresh film can go on the same visit.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h16l-2 10H6z"/><path d="M5 11h14"/></svg></div>
+        <div>
+          <h3>Windshield strip</h3>
+          <p>A tinted band across the top of the windshield that knocks down the low sun on the Crosstown and I-4 without darkening your view.</p>
+        </div>
+      </div>
+    </div>
+    <div class="fast">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6M12 2v3"/></svg>
+      <p><b>Need it fast?</b> Reviewers keep saying the same thing: called around, got in next day, left satisfied. Text the shop and ask what's open this week.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <span class="eyebrow">Pricing</span>
+    <h2>Straight prices, no games</h2>
+    <p class="sub">Prices depend on film type and how many windows your vehicle has. Here is where each option starts for a standard sedan.</p>
+    <div class="tiers">
+      <div class="tier">
+        <span class="tag">Good</span>
+        <h3>Carbon film</h3>
+        <p class="desc">A true black look that won't fade to purple, solid heat reduction, and no metal so your phone and radio stay clear.</p>
+        <div class="price">Starting at $199<small>full sedan, all sides and rear</small></div>
+        <ul><li>Color-stable</li><li>Glare reduction</li><li>UV protection</li></ul>
+      </div>
+      <div class="tier feat">
+        <span class="tag">Most popular</span>
+        <h3>Ceramic film</h3>
+        <p class="desc">Blocks infrared heat, not just light. The cabin stays cooler even at a lighter, Florida-legal shade on the fronts.</p>
+        <div class="price">Starting at $329<small>full sedan, all sides and rear</small></div>
+        <ul><li>Highest heat rejection</li><li>Clear visibility at night</li><li>No signal interference</li></ul>
+      </div>
+      <div class="tier">
+        <span class="tag">Match</span>
+        <h3>Two fronts only</h3>
+        <p class="desc">Already tinted from the factory in back? Match the two front windows and be in and out fast.</p>
+        <div class="price">Starting at $99<small>carbon · ceramic from $149</small></div>
+        <ul><li>Factory shade matched</li><li>Usually under an hour</li></ul>
+      </div>
+    </div>
+    <div class="addons">
+      <div class="addon"><span>Windshield strip</span><b>From $49</b></div>
+      <div class="addon"><span>Old tint removal</span><b>From $79</b></div>
+      <div class="addon"><span>Removal + new tint</span><b>Ask for a bundle</b></div>
+    </div>
+    <p class="note">Example pricing — we'll put in your real numbers. Trucks, SUVs and vans quoted on arrival.</p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <span class="eyebrow">Reviews</span>
+    <h2>What Tampa drivers say</h2>
+    <div class="rating-badge"><span class="num">5.0</span><span>on Google across 117 reviews</span></div>
+    <div class="grid">
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Got me in next day, and did an amazing job on the tint. Took old tint off no problem and threw in some trim tint for the front windshield."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"He offered the best quote for full packages out of all the places I called and was able to accommodate me knowing I only had a day to get it done."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Miguel took the time to explain the tinting process in detail, including aftercare instructions. He showed me the roll numbers of the film before even starting the installation."</p>
+        <cite>Google review</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">The shop</span>
+      <h2>Miguel's shop on Causeway</h2>
+      <p>Tint That Car is Miguel's shop on Causeway Blvd, just east of the Crosstown in Tampa. Walk in and you'll get a straight quote, a clear explanation of the shades and what's legal in Florida, and a look at the film roll before it touches your glass. Customers come back with their next car and mention the same things each time: fair prices, quick turnaround, and a clean, flawless finish.</p>
+      <p>Serving Tampa, Brandon and the rest of Hillsborough County, plus drivers who make the trip from across the bay.</p>
+    </div>
+    <div class="area">
+      <h3>Service area</h3>
+      <div class="chips">
+        <span>Tampa</span><span>Brandon</span><span>Riverview</span><span>Palm River</span><span>Ybor City</span><span>Seffner</span><span>Valrico</span><span>Apollo Beach</span>
+      </div>
+      <ul class="hours" aria-label="Hours">
+        <li><b>Mon – Fri</b><span>9:00 AM – 7:00 PM</span></li>
+        <li><b>Saturday</b><span>9:00 AM – 4:00 PM</span></li>
+        <li><b>Sunday</b><span>Closed</span></li>
+      </ul>
+      <p class="addr"><a href="https://maps.google.com/?q=Tint+That+Car+6050+Causeway+Blvd+Tampa+FL+33619" rel="noopener">6050 Causeway Blvd, Tampa, FL 33619</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Text Miguel your car</h2>
+      <p class="sub">Fill this in and it opens a text to the shop with your details already typed. Or just call during open hours and ask what's available this week.</p>
+      <ul class="contact-list">
+        <li><a class="big" href="tel:+18136965660">(813) 696-5660</a></li>
+        <li>6050 Causeway Blvd, Tampa, FL 33619</li>
+        <li>Open Mon–Fri 9–7, Sat 9–4</li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(813) 555-0100" required></label>
+      <label class="f">Vehicle (year, make, model)<input name="vehicle" placeholder="2017 Mazda 3" required></label>
+      <label class="f">What do you need?
+        <select name="job">
+          <option>Full vehicle tint</option>
+          <option>Two front windows to match factory</option>
+          <option>Tint removal</option>
+          <option>Tint removal + new tint</option>
+          <option>Windshield strip</option>
+          <option>Not sure, help me choose</option>
+        </select>
+      </label>
+      <label class="f">Anything else (optional)<textarea name="notes" placeholder="Shade you're thinking, days that work for you..."></textarea></label>
+      <button class="btn btn-ember" type="submit">Send as a text</button>
+      <p class="form-note">Nothing is stored on this page. Your message opens in your phone's messaging app and you send it yourself.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Tint That Car LLC · 6050 Causeway Blvd, Tampa, FL 33619 · <a href="tel:+18136965660">(813) 696-5660</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener">Shopfront Sites</a></span>
+  </div>
+</footer>
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener">Website preview by Shopfront Sites</a>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('#shadeBtns button'),o=document.getElementById('shadeOut'),l=document.getElementById('legal'),root=document.documentElement;
+  function setShade(v){
+    o.textContent=v+'%';
+    root.style.setProperty('--shade',(1-v/100).toFixed(2));
+    var t;
+    if(v>=28) t='<strong>Legal all the way around in Florida.</strong> Front side windows must let through 28% of light or more.';
+    else if(v>=15) t='<strong>Legal on rear and back windows.</strong> Front sides need to stay at 28% or lighter.';
+    else t='<strong>Limo-dark.</strong> Rear glass only on most vehicles; front sides need 28% or lighter.';
+    l.innerHTML=t;
+  }
+  Array.prototype.forEach.call(btns,function(b){
+    b.addEventListener('click',function(){
+      Array.prototype.forEach.call(btns,function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+      setShade(+b.getAttribute('data-v'));
+    });
+  });
+  setShade(35);
+
+  var f=document.getElementById('quoteForm');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f);
+    var m='Hi Miguel, this is '+d.get('name')+' ('+d.get('phone')+'). I have a '+d.get('vehicle')+' and I\'m looking for: '+d.get('job')+'.';
+    if(d.get('notes'))m+=' '+d.get('notes');
+    m+=' When could you fit me in?';
+    window.location.href='sms:+18136965660?&body='+encodeURIComponent(m);
+  });
+})();
+</script>
+</body>
+</html>

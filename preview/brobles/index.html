@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brobles Mobile Auto Repair — Mobile mechanic in Lutz, Land O' Lakes and North Tampa</title>
+<meta name="description" content="Brobles Mobile Auto Repair LLC: brakes, oil changes, electrical and general repair done at your home or work across Lutz, Land O' Lakes, Wesley Chapel and North Tampa. 5.0 stars on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F6F8; --bg-2:#FFFFFF; --ink:#1A2733; --ink-2:#56687A; --line:#D7DFE7;
+    --steel:#3A5A78; --steel-2:#2B4560; --steel-3:#4A7094; --on-steel:#F5F8FB; --on-steel-2:#B7C9DA;
+    --yel:#F5C518; --yel-2:#E0B10E; --yel-ink:#1A2733;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141C24;--bg-2:#1C2733;--ink:#EEF3F8;--ink-2:#AFC0D0;--line:#2E3D4C}}
+  :root[data-theme="dark"]{--bg:#141C24;--bg-2:#1C2733;--ink:#EEF3F8;--ink-2:#AFC0D0;--line:#2E3D4C}
+  html{scroll-padding-top:calc(4.5rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Nunito Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Barlow Condensed",system-ui,sans-serif;margin:0;line-height:.98;letter-spacing:-.005em;text-transform:uppercase}
+  h1{font-size:clamp(3rem,10.5vw,5.6rem);font-weight:800}
+  h2{font-size:clamp(2.1rem,6vw,3.2rem);font-weight:700}
+  h3{font-size:1.4rem;font-weight:700;letter-spacing:.01em}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--steel-3);margin-bottom:.8rem}
+  .eyebrow::before{content:"";width:1.5rem;height:.3rem;background:var(--yel);border-radius:2px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.4rem;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.25rem;letter-spacing:.03em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--yel);outline-offset:3px}
+  .btn-yel{background:var(--yel);color:var(--yel-ink)}
+  .btn-yel:hover{background:var(--yel-2)}
+  .btn-outline{background:transparent;color:var(--on-steel);border-color:rgba(255,255,255,.35)}
+  .btn-outline:hover{border-color:var(--yel)}
+
+  /* preview bar + header */
+  .preview-bar{background:#1A2733;color:#F5F8FB;font-size:.85rem;text-align:center;padding:.5rem 1rem}
+  .preview-bar a{color:var(--yel);font-weight:700}
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--steel-2);color:var(--on-steel);border-bottom:3px solid var(--yel)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:3.9rem}
+  .logo{display:flex;align-items:center;gap:.6rem;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.45rem;text-transform:uppercase;text-decoration:none;color:var(--on-steel);letter-spacing:.01em;white-space:nowrap;line-height:1}
+  .logo .mark{width:2rem;height:2rem;border-radius:.35rem;background:var(--yel);color:var(--yel-ink);display:grid;place-items:center;font-size:1.1rem;font-weight:800;flex:0 0 auto}
+  .logo small{display:block;font-family:"Nunito Sans",sans-serif;font-weight:600;font-size:.68rem;letter-spacing:.14em;color:var(--on-steel-2);margin-top:.2rem}
+  @media (max-width:400px){.logo small{display:none}}
+  nav a{text-decoration:none;color:var(--on-steel-2);font-weight:600;margin-left:1.25rem;font-size:.95rem}
+  nav a:hover{color:var(--yel)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--yel);color:var(--yel-ink);text-decoration:none;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:.03em;text-transform:uppercase;padding:.5rem .95rem;border-radius:999px;white-space:nowrap}
+
+  /* hero */
+  .hero{background:var(--steel);color:var(--on-steel);padding:3.25rem 0 3.75rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;left:0;right:0;bottom:0;height:.9rem;background:repeating-linear-gradient(135deg,var(--yel) 0 18px,#1A2733 18px 36px);opacity:.85}
+  .hero::after{content:"";position:absolute;right:-6rem;top:-6rem;width:26rem;height:26rem;border-radius:50%;background:radial-gradient(circle,rgba(245,197,24,.16),transparent 65%);pointer-events:none}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative;z-index:1}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .hero .eyebrow{color:var(--on-steel-2)}
+  .hero h1 em{font-style:normal;color:var(--yel)}
+  .hero .lede{color:var(--on-steel-2);font-size:1.15rem;max-width:40ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:flex;flex-wrap:wrap;gap:1rem 2.25rem;margin-top:2.25rem;color:var(--on-steel-2);font-size:.9rem}
+  .trust strong{display:block;color:var(--on-steel);font-family:"Barlow Condensed",sans-serif;font-size:1.9rem;font-weight:800;line-height:1}
+  .trust .star{color:var(--yel)}
+
+  .truck-stage{background:var(--steel-2);border-radius:.7rem;padding:1.25rem;border:1px solid rgba(255,255,255,.1)}
+  .truck-stage svg{width:100%;height:auto;display:block}
+  .checks{list-style:none;margin:1.1rem 0 0;padding:0;display:grid;gap:.55rem;font-size:.98rem}
+  .checks li{display:flex;gap:.65rem;align-items:flex-start;color:var(--on-steel)}
+  .checks li::before{content:"";flex:none;width:1.15rem;height:1.15rem;margin-top:.2rem;border-radius:.25rem;background:var(--yel) center/65% no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231A2733' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5 5L20 6.5'/%3E%3C/svg%3E")}
+  @media (prefers-reduced-motion:no-preference){
+    .wheel{transform-origin:center;animation:roll 7s linear infinite;transform-box:fill-box}
+    @keyframes roll{to{transform:rotate(360deg)}}
+  }
+
+  /* sections */
+  section{padding:4rem 0}
+  .sec-head{display:grid;gap:.5rem;max-width:58ch}
+  .sec-head p{color:var(--ink-2);font-size:1.05rem}
+  .grid{display:grid;gap:1.1rem;margin-top:2rem}
+  @media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:940px){.grid.three{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-left:5px solid var(--yel);border-radius:.5rem;padding:1.3rem 1.4rem;display:grid;gap:.45rem;align-content:start}
+  .svc .ico{width:2.6rem;height:2.6rem;border-radius:.45rem;background:var(--steel);display:grid;place-items:center;margin-bottom:.4rem}
+  .svc .ico svg{width:1.45rem;height:1.45rem;stroke:var(--yel);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);font-size:1rem}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.pricing .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}.pricing .price-list{margin-top:0}}
+  .price-list{list-style:none;margin:2rem 0 0;padding:0;border:1px solid var(--line);border-radius:.6rem;overflow:hidden;background:var(--bg)}
+  .price-list li{display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;align-items:center;padding:1rem 1.15rem;border-top:1px solid var(--line)}
+  .price-list li:first-child{border-top:0}
+  .price-list b{font-weight:700}
+  .price-list small{display:block;color:var(--ink-2);font-size:.92rem;font-weight:400}
+  .price-list .n{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.6rem;line-height:1;white-space:nowrap;color:var(--steel);text-align:right}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .price-list .n{color:var(--yel)}}
+  :root[data-theme="dark"] .price-list .n{color:var(--yel)}
+  .price-list .n em{font-style:normal;font-family:"Nunito Sans",sans-serif;font-weight:600;font-size:.72rem;color:var(--ink-2);display:block;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem}
+  .promise{margin-top:1.5rem;display:grid;gap:.9rem}
+  .promise div{display:flex;gap:.8rem;align-items:flex-start;color:var(--ink-2)}
+  .promise svg{flex:0 0 auto;width:1.35rem;height:1.35rem;margin-top:.15rem;stroke:var(--steel-3);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  .promise b{color:var(--ink)}
+  .price-note{margin-top:1rem;font-size:.92rem;color:var(--ink-2);display:flex;gap:.6rem;align-items:flex-start}
+  .price-note .tag{flex:0 0 auto;background:var(--yel);color:var(--yel-ink);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:999px;margin-top:.15rem}
+
+  .steps{display:grid;gap:1.5rem;margin-top:2rem;counter-reset:step}
+  @media (min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{position:relative;padding-left:3.6rem}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;top:0;left:0;width:2.7rem;height:2.7rem;border-radius:.4rem;background:var(--steel);color:var(--yel);display:grid;place-items:center;font-family:"Barlow Condensed",sans-serif;font-size:1.6rem;font-weight:800}
+  .step p{color:var(--ink-2);margin-top:.4rem}
+
+  .reviews{background:var(--steel);color:var(--on-steel)}
+  .reviews .eyebrow{color:var(--on-steel-2)}
+  .reviews .sec-head p{color:var(--on-steel-2)}
+  .reviews .grid{grid-template-columns:1fr}
+  @media (min-width:780px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:.6rem;padding:1.35rem;display:flex;flex-direction:column}
+  .stars{color:var(--yel);letter-spacing:.12em;margin-bottom:.6rem;font-size:1.05rem}
+  .review p{font-size:1.02rem}
+  .review cite{display:block;margin-top:auto;padding-top:.9rem;font-style:normal;color:var(--on-steel-2);font-size:.92rem}
+  .g-line{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin-top:.4rem;color:var(--on-steel-2)}
+  .g-line .big{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:2rem;line-height:1;color:var(--on-steel)}
+  .g-line .star{color:var(--yel);font-size:1.25rem}
+
+  .about .wrap{display:grid;gap:2.25rem}
+  @media (min-width:860px){.about .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .about p{color:var(--ink-2);margin-top:.9rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.95rem}
+  .map{background:var(--steel-2);border-radius:.7rem;padding:1rem;border:1px solid rgba(255,255,255,.1)}
+  .map svg{display:block;width:100%;height:auto}
+  .facts{margin-top:1.5rem;display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem;color:var(--ink-2);font-size:.98rem}
+  .facts b{color:var(--ink);font-weight:700}
+  .facts a{color:var(--ink);text-decoration-color:var(--yel)}
+
+  .quote{background:var(--bg-2);border-top:1px solid var(--line)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--ink-2);margin-top:.9rem;max-width:42ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.65rem}
+  .contact-list li{display:flex;gap:.7rem;align-items:center;color:var(--ink-2)}
+  .contact-list svg{width:1.2rem;height:1.2rem;stroke:var(--steel-3);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--yel);font-weight:700}
+  .contact-list .big{font-family:"Barlow Condensed",sans-serif;font-size:2rem;line-height:1;text-decoration:none}
+  form{display:grid;gap:.95rem;background:var(--steel-2);color:var(--on-steel);padding:1.5rem;border-radius:.7rem;border-top:5px solid var(--yel)}
+  form h3{color:var(--on-steel)}
+  label.f{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-steel-2)}
+  input,textarea{font:inherit;color:#1A2733;background:#fff;border:1px solid #C9D3DD;border-radius:.4rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.2rem;resize:vertical}
+  input:focus-visible,textarea:focus-visible{outline:3px solid var(--yel);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-steel-2)}
+
+  footer{background:var(--steel-2);color:var(--on-steel-2);padding:1.75rem 0 4rem;font-size:.9rem;border-top:3px solid var(--yel)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-steel);text-decoration-color:var(--yel)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--yel);color:var(--yel-ink);font-size:.78rem;font-weight:700;padding:.35rem .7rem;border-radius:999px;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+  .preview-tag:hover{background:var(--yel-2)}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a> for Brobles Mobile Auto Repair. Not the live site yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark">B</span><span>Brobles<small>Mobile Auto Repair</small></span></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+18134129333">Call Mike</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Lutz, FL · Land O' Lakes · North Tampa</span>
+      <h1>The mechanic pulls up. <em>Your car never leaves.</em></h1>
+      <p class="lede">Brakes, oil changes, electrical gremlins and the repairs that usually mean a tow and a day off, done in your driveway or office lot by Mike and Chad of Brobles Mobile Auto Repair LLC. Parts ordered for you, price agreed before a wrench comes out.</p>
+      <div class="hero-actions">
+        <a class="btn btn-yel" href="#quote">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+18134129333">(813) 412-9333</a>
+      </div>
+      <div class="trust">
+        <div><strong><span class="star">★</span> 5.0</strong>34 Google reviews, every one 5 stars</div>
+        <div><strong>Mobile</strong>Home, work or roadside</div>
+        <div><strong>2 techs</strong>Mike and Chad</div>
+      </div>
+    </div>
+
+    <div class="truck-stage" aria-label="Mobile service truck">
+      <svg viewBox="0 0 520 240" role="img" aria-labelledby="truckTitle">
+        <title id="truckTitle">Illustration of a service pickup with a tool box parked in a driveway</title>
+        <defs>
+          <linearGradient id="sheen" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#fff" stop-opacity=".25"/>
+            <stop offset=".6" stop-color="#fff" stop-opacity="0"/>
+            <stop offset="1" stop-color="#000" stop-opacity=".18"/>
+          </linearGradient>
+        </defs>
+        <!-- driveway -->
+        <rect x="0" y="196" width="520" height="44" fill="#1A2733"/>
+        <rect x="0" y="196" width="520" height="3" fill="#F5C518" opacity=".7"/>
+        <!-- garage hint -->
+        <rect x="396" y="90" width="124" height="106" fill="#2B4560"/>
+        <path d="M390 92 L458 46 L526 92 Z" fill="#4A7094"/>
+        <rect x="414" y="118" width="88" height="78" fill="#1A2733"/>
+        <g stroke="#3A5A78" stroke-width="2"><path d="M414 138h88M414 158h88M414 178h88"/></g>
+        <!-- truck bed with toolbox -->
+        <path fill="#E6ECF2" d="M40 176 L40 112 L186 112 L186 176 Z"/>
+        <path fill="url(#sheen)" d="M40 176 L40 112 L186 112 L186 176 Z"/>
+        <rect x="52" y="90" width="124" height="26" rx="3" fill="#2B4560"/>
+        <rect x="52" y="90" width="124" height="6" rx="2" fill="#F5C518"/>
+        <path d="M78 90 L78 82 L150 82 L150 90" fill="none" stroke="#8FA4B8" stroke-width="3"/>
+        <!-- cab -->
+        <path fill="#E6ECF2" d="M186 176 L186 112 L196 76 C198 70 204 66 210 66 L270 66 C278 66 284 70 288 76 L306 112 L306 176 Z"/>
+        <path fill="url(#sheen)" d="M186 176 L186 112 L196 76 C198 70 204 66 210 66 L270 66 C278 66 284 70 288 76 L306 112 L306 176 Z"/>
+        <path fill="#1A2733" d="M202 112 L208 80 C209 76 212 74 216 74 L266 74 C270 74 273 76 275 80 L292 112 Z"/>
+        <path fill="#9FB6CC" opacity=".25" d="M202 112 L208 80 C209 76 212 74 216 74 L240 74 L240 112 Z"/>
+        <!-- yellow stripe with name -->
+        <rect x="40" y="128" width="266" height="16" fill="#F5C518"/>
+        <text x="48" y="140" font-family="Barlow Condensed, sans-serif" font-weight="800" font-size="12.5" fill="#1A2733" letter-spacing="1">BROBLES  MOBILE  AUTO  REPAIR</text>
+        <!-- bumper, lights -->
+        <rect x="34" y="172" width="280" height="10" rx="3" fill="#2B4560"/>
+        <rect x="304" y="150" width="10" height="16" rx="2" fill="#FFE9A8"/>
+        <rect x="34" y="150" width="8" height="12" rx="2" fill="#E04E3C"/>
+        <!-- wheels -->
+        <g class="wheel">
+          <circle cx="100" cy="182" r="23" fill="#121A22"/>
+          <circle cx="100" cy="182" r="12" fill="#8FA4B8"/>
+          <path d="M100 170 L100 194 M88 182 L112 182 M91.5 173.5 L108.5 190.5 M108.5 173.5 L91.5 190.5" stroke="#121A22" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="100" cy="182" r="4" fill="#121A22"/>
+        </g>
+        <g class="wheel">
+          <circle cx="254" cy="182" r="23" fill="#121A22"/>
+          <circle cx="254" cy="182" r="12" fill="#8FA4B8"/>
+          <path d="M254 170 L254 194 M242 182 L266 182 M245.5 173.5 L262.5 190.5 M262.5 173.5 L245.5 190.5" stroke="#121A22" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="254" cy="182" r="4" fill="#121A22"/>
+        </g>
+        <!-- jack + creeper on the ground -->
+        <rect x="330" y="186" width="44" height="8" rx="2" fill="#F5C518"/>
+        <rect x="346" y="176" width="12" height="10" fill="#8FA4B8"/>
+        <circle cx="336" cy="196" r="4" fill="#8FA4B8"/><circle cx="368" cy="196" r="4" fill="#8FA4B8"/>
+      </svg>
+      <ul class="checks">
+        <li>Two techs on the job, so most repairs finish in one visit</li>
+        <li>Parts ordered and brought to you, nothing for you to chase</li>
+        <li>Price for parts and labor agreed before the work starts</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>What Mike and Chad fix on site</h2>
+      <p>Most of what a shop puts on a lift can be done where the car sits. If a job really does need a bay, you'll hear that up front, not after.</p>
+    </div>
+    <div class="grid three">
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div><h3>Brakes</h3><p>Pads, rotors and calipers, per axle, in your driveway. Grinding, pulsing or a soft pedal sorted the same visit.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div><h3>Oil changes</h3><p>Full synthetic, filter and a look underneath while it drains. Trucks, SUVs and the family sedan, back to back.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L5 13h6l-1 9 9-12h-6l1-8z"/></svg></div><h3>Electrical</h3><p>Batteries, starters, alternators, washer motors, blown speakers and dash lights, traced to the actual cause.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 17h16M6 17V9a6 6 0 0 1 12 0v8"/><path d="M12 7v3M10 12h4"/></svg></div><h3>Diagnostics and check engine</h3><p>Scanner on, cause found, explained in plain English before anything gets replaced.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h3l3-6 4 12 3-6h5"/></svg></div><h3>Roadside and no-start</h3><p>Stopped on the shoulder or dead in the lot. Tested on the spot and fixed without a tow whenever possible.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 7a5 5 0 1 0-4 8l7 7 3-3-7-7a5 5 0 0 0 1-5z"/></svg></div><h3>General repair</h3><p>A/C checks, fuel lines, mirrors, belts, hoses and the odd jobs that pile up. If it's on the car, ask.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Shop-quality work without the shop markup</h2>
+        <p>Customers keep saying the quote came in under the dealership. You'll have the full number for parts and labor before anything starts.</p>
+      </div>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Parts handled for you.</b> Mike and Chad order what the job needs and bring it along.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Quote by text</b> so the number is in writing, not from memory.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>No tow, no shuttle, no waiting room.</b> You keep your day.</p></div>
+      </div>
+    </div>
+    <div>
+      <ul class="price-list">
+        <li><div><b>Mobile diagnostic visit</b><small>Scan, inspection and a plain-English plan</small></div><span class="n"><em>Starting at</em>$89</span></li>
+        <li><div><b>Oil change at your door</b><small>Full synthetic, filter, fluid top-off</small></div><span class="n"><em>Starting at</em>$79</span></li>
+        <li><div><b>Brake pads and rotors</b><small>Per axle, parts and labor</small></div><span class="n"><em>Starting at</em>$249</span></li>
+        <li><div><b>Battery replacement</b><small>Installed and tested, charging system checked</small></div><span class="n"><em>Starting at</em>$169</span></li>
+        <li><div><b>Starter or alternator</b><small>Parts and labor, most cars and light trucks</small></div><span class="n"><em>Starting at</em>$299</span></li>
+        <li><div><b>A/C diagnosis</b><small>Leak check and inspection; compressor and component repairs quoted on site</small></div><span class="n"><em>Starting at</em>$129</span></li>
+      </ul>
+      <p class="price-note"><span class="tag">Note</span><span>Example pricing — we'll put in your real numbers. Final quotes depend on the vehicle and parts.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps, one visit</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Text or call what's wrong</h3>
+        <p>Year, make, model, the symptom and where the car is parked. A photo or a short video of the noise helps.</p>
+      </div>
+      <div class="step">
+        <h3>Mike and Chad pull up</h3>
+        <p>Home, office or the side of the road. They confirm the cause and give you the parts-and-labor price before touching anything.</p>
+      </div>
+      <div class="step">
+        <h3>Fixed where it sits</h3>
+        <p>With two techs on the job, most repairs are done in well under the time a shop would take. You never hand over the keys.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>A perfect 5.0 on Google</h2>
+      <p class="g-line"><span class="star" aria-hidden="true">★★★★★</span><span class="big">5.0</span><span>across 34 Google reviews</span></p>
+    </div>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Mike and Chad fixed the windshield wiper fluid motor and my two in-dash speakers that were blown. They handled the ordering of everything that was needed, and the cost, convenience and speed was unmatchable."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"They were able to schedule me quickly, their price was better than what the dealership quoted me, and it's super convenient that they are able to come to your home for repairs."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"They arrived promptly, were here less than 30 minutes, replaced a side view mirror on our BMW and checked out the A/C on our Nissan. The convenience of mobile service can't be overstated."</p><cite>Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="area">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About and service area</span>
+      <h2>Based in Lutz. On the road across North Tampa.</h2>
+      <p>Brobles Mobile Auto Repair LLC is a two-tech mobile mechanic service run by Mike out of Lutz, FL. Customers come back because the price is fair, the explanation is honest and the car gets fixed the first time, in their own driveway.</p>
+      <p>A bit outside the usual area? Text anyway and you'll get a straight answer.</p>
+      <div class="towns">
+        <span>Lutz</span><span>Land O' Lakes</span><span>Wesley Chapel</span><span>New Tampa</span><span>Carrollwood</span><span>Odessa</span><span>Temple Terrace</span><span>Tampa</span><span>Brandon by request</span>
+      </div>
+      <div class="facts">
+        <b>Home base</b><span>2751 E County Line Rd, Lutz, FL 33559. Mobile only, we come to you.</span>
+        <b>Phone</b><span><a href="tel:+18134129333">(813) 412-9333</a>, call or <a href="sms:+18134129333">text</a></span>
+        <b>Hours</b><span>Call or text for same-day or next-day availability</span>
+      </div>
+    </div>
+    <div class="map" aria-label="Service area map">
+      <svg viewBox="0 0 400 300" role="img" aria-labelledby="mapTitle">
+        <title id="mapTitle">Stylized map of North Tampa with Lutz at the center of the service area</title>
+        <rect width="400" height="300" fill="#2B4560"/>
+        <!-- bay -->
+        <path d="M0 300 L0 230 C40 215 70 240 100 262 C120 276 140 300 150 300 Z" fill="#1A2733"/>
+        <!-- I-75 / I-275 hints -->
+        <path d="M300 0 C296 80 292 160 282 300" stroke="#4A7094" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+        <path d="M172 0 C176 90 182 170 196 300" stroke="#4A7094" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+        <!-- county line -->
+        <path d="M0 108 L400 104" stroke="#8FA4B8" stroke-width="1.5" stroke-dasharray="3 4"/>
+        <text x="8" y="100" font-family="Nunito Sans, sans-serif" font-size="9" fill="#8FA4B8">PASCO</text>
+        <text x="8" y="120" font-family="Nunito Sans, sans-serif" font-size="9" fill="#8FA4B8">HILLSBOROUGH</text>
+        <!-- service radius -->
+        <circle cx="200" cy="120" r="116" fill="#F5C518" opacity=".12"/>
+        <circle cx="200" cy="120" r="116" fill="none" stroke="#F5C518" stroke-width="2" stroke-dasharray="6 5"/>
+        <circle cx="200" cy="120" r="56" fill="#F5C518" opacity=".14"/>
+        <!-- towns -->
+        <g font-family="Nunito Sans, sans-serif" font-size="11" fill="#D9E4EE">
+          <circle cx="168" cy="52" r="3" fill="#D9E4EE"/><text x="104" y="56">Land O' Lakes</text>
+          <circle cx="300" cy="58" r="3" fill="#D9E4EE"/><text x="307" y="62">Wesley Chapel</text>
+          <circle cx="96" cy="124" r="3" fill="#D9E4EE"/><text x="52" y="128">Odessa</text>
+          <circle cx="286" cy="150" r="3" fill="#D9E4EE"/><text x="293" y="154">New Tampa</text>
+          <circle cx="150" cy="186" r="3" fill="#D9E4EE"/><text x="78" y="190">Carrollwood</text>
+          <circle cx="258" cy="218" r="3" fill="#D9E4EE"/><text x="265" y="222">Temple Terrace</text>
+          <circle cx="196" cy="262" r="3" fill="#D9E4EE"/><text x="204" y="266">Tampa</text>
+        </g>
+        <!-- Lutz pin -->
+        <path d="M200 92 C188 92 180 101 180 112 C180 128 200 146 200 146 C200 146 220 128 220 112 C220 101 212 92 200 92 Z" fill="#F5C518"/>
+        <circle cx="200" cy="112" r="7" fill="#1A2733"/>
+        <text x="200" y="166" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-weight="800" font-size="16" fill="#F5F8FB" letter-spacing="1">LUTZ</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Tell Mike what the car is doing</h2>
+      <p class="sub">Fill this in and it opens a text to Brobles with your details already typed. You'll get a price and a time back. Or just call.</p>
+      <ul class="contact-list">
+        <li><a class="big" href="tel:+18134129333">(813) 412-9333</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg><a href="sms:+18134129333?&body=Hi%20Mike%2C%20I%27d%20like%20a%20quote%20for%20my%20">Text (813) 412-9333</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Mobile service based in Lutz, FL 33559</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Text any time, replies during working hours</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <h3>Request a quote</h3>
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(813) 555-0123" required></label>
+      <label class="f">Vehicle (year, make, model)<input name="vehicle" placeholder="2022 Ford F-150" required></label>
+      <label class="f">What do you need?<textarea name="need" placeholder="Grinding when I brake, car is at my house in Land O' Lakes" required></textarea></label>
+      <button class="btn btn-yel" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Brobles Mobile Auto Repair LLC · Lutz, FL · <a href="tel:+18134129333">(813) 412-9333</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener" target="_blank">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Mike, this is '+f.get('name')+'. I have a '+f.get('vehicle')+' and I need: '+f.get('need');
+    msg=msg.replace(/[.\s]*$/,'')+'.';
+    if(f.get('phone'))msg+=' You can reach me at '+f.get('phone')+'.';
+    msg+=' When could you come out?';
+    window.location.href='sms:+18134129333?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

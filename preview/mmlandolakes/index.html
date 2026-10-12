@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mobile Mechanic Land O' Lakes — 24-hour mobile auto repair, brakes and European cars</title>
+<meta name="description" content="Mobile Mechanic Land O' Lakes: Jonathan comes to your home or workplace for brakes, diagnostics and European car repair across Land O' Lakes, Lutz, Wesley Chapel and north Tampa. Open 24 hours. 4.5 stars on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F5F0; --bg-2:#FFFFFF; --ink:#1A1A1C; --ink-2:#5B5B63; --line:#E1DED6;
+    --graphite:#1F2023; --graphite-2:#2B2C31; --on-graphite:#F6F4EE; --on-graphite-2:#B2B1AC;
+    --amber:#F5B82E; --amber-2:#E2A51A; --amber-ink:#1F1600;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141416;--bg-2:#1D1D21;--ink:#F3F1EB;--ink-2:#B0AFA9;--line:#2E2E34}}
+  :root[data-theme="dark"]{--bg:#141416;--bg-2:#1D1D21;--ink:#F3F1EB;--ink-2:#B0AFA9;--line:#2E2E34}
+  html{scroll-padding-top:calc(4rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Barlow Condensed",system-ui,sans-serif;margin:0;line-height:.98;text-transform:uppercase;letter-spacing:.005em}
+  h1{font-size:clamp(3rem,10vw,5.6rem);font-weight:800}
+  h2{font-size:clamp(2.1rem,6vw,3.2rem);font-weight:700}
+  h3{font-size:1.35rem;font-weight:700;letter-spacing:.02em}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--amber-2);margin-bottom:.8rem}
+  .eyebrow::before{content:"";width:1.6rem;height:3px;background:var(--amber)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.35rem;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.25rem;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+  .btn-amber{background:var(--amber);color:var(--amber-ink)}
+  .btn-amber:hover{background:var(--amber-2)}
+  .btn-outline{background:transparent;color:var(--on-graphite);border-color:rgba(255,255,255,.3)}
+  .btn-outline:hover{border-color:var(--amber)}
+
+  /* header */
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--graphite);color:var(--on-graphite);border-bottom:3px solid var(--amber)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.9rem;gap:.75rem}
+  .logo{display:flex;align-items:center;gap:.6rem;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;letter-spacing:.02em;text-decoration:none;line-height:1;white-space:nowrap}
+  .logo .mark{width:2rem;height:2rem;flex:0 0 auto;background:var(--amber);color:var(--amber-ink);display:grid;place-items:center;border-radius:.3rem;transform:skewX(-8deg)}
+  .logo .mark svg{width:1.25rem;height:1.25rem;transform:skewX(8deg)}
+  .logo small{display:block;font-family:Figtree,sans-serif;font-weight:500;font-size:.68rem;letter-spacing:.12em;color:var(--on-graphite-2);margin-top:.2rem}
+  @media (max-width:400px){.logo small{display:none}}
+  nav a{text-decoration:none;color:var(--on-graphite-2);font-weight:500;margin-left:1.25rem;font-size:.98rem}
+  nav a:hover{color:var(--amber)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--amber);color:var(--amber-ink);text-decoration:none;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.05rem;text-transform:uppercase;letter-spacing:.04em;padding:.5rem .95rem;border-radius:999px;white-space:nowrap}
+
+  /* hero */
+  .hero{background:var(--graphite);color:var(--on-graphite);padding:3.25rem 0 3.75rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;left:0;right:0;bottom:0;height:5rem;background:repeating-linear-gradient(-45deg,var(--amber) 0 14px,transparent 14px 28px);opacity:.08;pointer-events:none}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .hero h1 em{font-style:normal;color:var(--amber)}
+  .hero .lede{color:var(--on-graphite-2);font-size:1.15rem;max-width:40ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.6rem}
+  .trust{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:1.25rem 2rem;margin-top:2.25rem;color:var(--on-graphite-2);font-size:.9rem}
+  .trust strong{display:block;color:var(--on-graphite);font-family:"Barlow Condensed",sans-serif;font-size:1.7rem;font-weight:800;line-height:1}
+  .trust .star{color:var(--amber)}
+
+  .card-24{background:var(--graphite-2);border:1px solid rgba(255,255,255,.1);border-radius:.6rem;padding:1.4rem;position:relative;overflow:hidden}
+  .card-24 .clock{display:flex;align-items:center;gap:1rem;margin-bottom:1rem}
+  .card-24 .clock svg{width:3.4rem;height:3.4rem;flex:0 0 auto}
+  .card-24 .clock b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:2.2rem;font-weight:800;line-height:1;text-transform:uppercase}
+  .card-24 .clock span{color:var(--on-graphite-2);font-size:.95rem}
+  .checks{list-style:none;margin:0;padding:0;display:grid;gap:.65rem}
+  .checks li{display:flex;gap:.7rem;align-items:flex-start;color:var(--on-graphite)}
+  .checks li::before{content:"";flex:none;width:1.2rem;height:1.2rem;margin-top:.2rem;border-radius:.25rem;background:var(--amber) center/65% no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F1600' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5 5L20 6.5'/%3E%3C/svg%3E")}
+  .card-24 .btn{width:100%;margin-top:1.25rem}
+  @media (prefers-reduced-motion:no-preference){
+    .hand{transform-origin:50% 50%;transform-box:view-box;animation:tick 12s linear infinite}
+    @keyframes tick{to{transform:rotate(360deg)}}
+  }
+
+  /* sections */
+  section{padding:4rem 0}
+  .sec-head{display:grid;gap:.6rem;max-width:56ch}
+  .sec-head p{color:var(--ink-2);font-size:1.05rem}
+  .grid{display:grid;gap:1rem;margin-top:2rem}
+  @media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:900px){.grid.three{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:.5rem;padding:1.3rem;display:grid;gap:.5rem;align-content:start}
+  .svc .ico{width:2.6rem;height:2.6rem;border-radius:.4rem;background:var(--graphite);display:grid;place-items:center;margin-bottom:.3rem}
+  .svc .ico svg{width:1.4rem;height:1.4rem;stroke:var(--amber);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);font-size:1rem}
+  .euro{margin-top:1.25rem;background:var(--graphite);color:var(--on-graphite);border-radius:.6rem;padding:1.4rem;display:grid;gap:1rem}
+  @media (min-width:760px){.euro{grid-template-columns:1fr auto;align-items:center}}
+  .euro h3{color:var(--amber);font-size:1.6rem}
+  .euro p{color:var(--on-graphite-2);margin-top:.4rem;max-width:60ch}
+  .badges{display:flex;flex-wrap:wrap;gap:.5rem}
+  .badges span{border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:.3rem .8rem;font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.95rem}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.pricing .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}}
+  .price-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:.6rem;overflow:hidden;background:var(--bg)}
+  .price-list li{display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;align-items:center;padding:1rem 1.15rem;border-top:1px solid var(--line)}
+  .price-list li:first-child{border-top:0}
+  .price-list b{font-weight:700}
+  .price-list small{display:block;color:var(--ink-2);font-size:.92rem;font-weight:400}
+  .price-list .n{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.6rem;line-height:1;white-space:nowrap;text-align:right}
+  .price-list .n em{font-style:normal;font-family:Figtree,sans-serif;font-weight:500;font-size:.75rem;color:var(--ink-2);display:block;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.15rem}
+  .promise{margin-top:1.5rem;display:grid;gap:.9rem}
+  .promise div{display:flex;gap:.8rem;align-items:flex-start;color:var(--ink-2)}
+  .promise svg{flex:0 0 auto;width:1.35rem;height:1.35rem;margin-top:.15rem;stroke:var(--amber-2);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  .promise b{color:var(--ink)}
+  .price-note{margin-top:1rem;font-size:.92rem;color:var(--ink-2);display:flex;gap:.6rem;align-items:flex-start}
+  .price-note .tag{flex:0 0 auto;background:var(--amber);color:var(--amber-ink);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:999px;margin-top:.15rem}
+
+  .steps{display:grid;gap:1.5rem;margin-top:2rem;counter-reset:step}
+  @media (min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{position:relative;padding-left:3.6rem}
+  .step::before{counter-increment:step;content:"0" counter(step);position:absolute;top:0;left:0;width:2.7rem;height:2.7rem;border-radius:.35rem;background:var(--graphite);color:var(--amber);display:grid;place-items:center;font-family:"Barlow Condensed",sans-serif;font-size:1.3rem;font-weight:800;transform:skewX(-8deg)}
+  .step p{color:var(--ink-2);margin-top:.4rem}
+
+  .reviews{background:var(--graphite);color:var(--on-graphite)}
+  .reviews .sec-head p{color:var(--on-graphite-2)}
+  .reviews .grid{gap:1.25rem}
+  @media (min-width:760px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:.6rem;padding:1.3rem;display:flex;flex-direction:column}
+  .stars{color:var(--amber);letter-spacing:.12em;margin-bottom:.6rem;font-size:1.05rem}
+  .review p{font-size:1.02rem}
+  .review cite{display:block;margin-top:auto;padding-top:.9rem;font-style:normal;color:var(--on-graphite-2);font-size:.92rem}
+  .g-line{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin-top:.4rem;color:var(--on-graphite-2)}
+  .g-line .big{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.9rem;line-height:1;color:var(--on-graphite)}
+  .g-line .star{color:var(--amber);font-size:1.2rem}
+
+  .area .wrap{display:grid;gap:2.25rem}
+  @media (min-width:860px){.area .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .area p{color:var(--ink-2);margin-top:.9rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.95rem}
+  .hours{margin-top:1.25rem;display:grid;grid-template-columns:auto 1fr;gap:.25rem 1rem;color:var(--ink-2);font-size:.98rem}
+  .hours b{color:var(--ink);font-weight:600}
+  .map{background:var(--graphite);border-radius:.6rem;padding:1rem;border:1px solid rgba(255,255,255,.08)}
+  .map svg{display:block;width:100%;height:auto}
+
+  .quote{background:var(--bg-2);border-top:1px solid var(--line)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--ink-2);margin-top:.9rem;max-width:42ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.7rem}
+  .contact-list li{display:flex;gap:.7rem;align-items:center;color:var(--ink-2)}
+  .contact-list svg{width:1.2rem;height:1.2rem;stroke:var(--amber-2);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--amber);font-weight:600}
+  .contact-list .big{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.9rem;line-height:1;text-decoration:none}
+  form{display:grid;gap:.95rem;background:var(--graphite);color:var(--on-graphite);padding:1.5rem;border-radius:.6rem;border-top:4px solid var(--amber)}
+  form h3{color:var(--on-graphite)}
+  label.f{display:grid;gap:.35rem;font-weight:500;font-size:.95rem;color:var(--on-graphite-2)}
+  input,textarea{font:inherit;color:#1A1A1C;background:#fff;border:1px solid #CFCDC5;border-radius:.35rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5rem;resize:vertical}
+  input:focus-visible,textarea:focus-visible{outline:3px solid var(--amber);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-graphite-2)}
+
+  footer{background:var(--graphite);color:var(--on-graphite-2);padding:1.75rem 0 4.25rem;font-size:.9rem;border-top:3px solid var(--amber)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-graphite);text-decoration-color:var(--amber)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--amber);color:var(--amber-ink);font-size:.78rem;font-weight:700;padding:.35rem .7rem;border-radius:999px;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+  .preview-tag:hover{background:var(--amber-2)}
+  .preview-bar{background:#111113;color:#F6F4EE;font-size:.85rem;text-align:center;padding:.5rem 1rem}
+  .preview-bar a{color:var(--amber);font-weight:700}
+
+  @media (max-width:480px){header .wrap{flex-wrap:wrap;gap:.4rem .75rem;padding-block:.5rem}header .wrap>*{min-width:0}.logo,.brand{font-size:1.05rem;max-width:60%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.call-pill{font-size:.85rem;padding:.4rem .75rem;margin-left:auto}}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a> for Mobile Mechanic Land O' Lakes. Not the live site yet.</div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 7a5 5 0 1 0-4 8l7 7 3-3-7-7a5 5 0 0 0 1-5z"/></svg></span><span>Mobile Mechanic<small>Land O' Lakes · 24 hours</small></span></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+18132939550">Call Jonathan</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Land O' Lakes, FL · Pasco and north Tampa</span>
+      <h1>Broken down? <em>Jonathan's on the way.</em></h1>
+      <p class="lede">Mobile Mechanic Land O' Lakes brings the tools, the scanner and the know-how to your driveway, office lot or roadside, any hour of the day. Brakes, diagnostics and the European cars most mobile guys won't touch.</p>
+      <div class="hero-actions">
+        <a class="btn btn-amber" href="#quote">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+18132939550">(813) 293-9550</a>
+      </div>
+      <div class="trust">
+        <div><strong><span class="star">★</span> 4.5</strong>97 Google reviews</div>
+        <div><strong>24 / 7</strong>Open every day</div>
+        <div><strong>Mobile</strong>We come to you</div>
+      </div>
+    </div>
+
+    <div class="card-24">
+      <div class="clock">
+        <svg viewBox="0 0 64 64" role="img" aria-label="Clock icon">
+          <circle cx="32" cy="32" r="29" fill="none" stroke="#F5B82E" stroke-width="4"/>
+          <g class="hand"><path d="M32 32 L32 12" stroke="#F6F4EE" stroke-width="4" stroke-linecap="round"/></g>
+          <path d="M32 32 L46 32" stroke="#F5B82E" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="32" cy="32" r="3.5" fill="#F5B82E"/>
+        </svg>
+        <div><b>Open 24 hours</b><span>Seven days a week, including the middle of the night</span></div>
+      </div>
+      <ul class="checks">
+        <li>Same-day visits whenever the schedule allows, even late</li>
+        <li>Parts and labor priced before any work starts</li>
+        <li>Fully equipped van: scanner, jacks, specialty tools on board</li>
+        <li>Clear updates by call or text the whole way through</li>
+      </ul>
+      <a class="btn btn-amber" href="sms:+18132939550?&body=Hi%20Jonathan%2C%20I%20need%20a%20mobile%20mechanic.%20My%20car%3A%20">Text Jonathan now</a>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>Fixed where the car sits</h2>
+      <p>Most of what a shop does on a lift, Jonathan does in your driveway. If a job truly needs a shop, you'll hear that up front instead of after the bill.</p>
+    </div>
+    <div class="grid three">
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div><h3>Brakes</h3><p>Pads, rotors, calipers, hoses and fluid. Grinding, pulsing or a soft pedal handled the same visit.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17h16M6 17V9a6 6 0 0 1 12 0v8"/><path d="M12 7v3M10 12h4"/></svg></div><h3>Diagnostics and check engine</h3><p>Scan tool on the car, cause found and explained in plain language before a single part is ordered.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h10l3 3h5v9H3z"/><path d="M7 15h.01M12 15h.01M17 15h.01"/></svg></div><h3>European cars</h3><p>BMW, Porsche, Mercedes, Audi and VW. The specialty tools and the patience these cars need, without the dealer price.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L5 13h6l-1 9 9-12h-6l1-8z"/></svg></div><h3>No-start and electrical</h3><p>Batteries, starters, alternators and wiring gremlins. Tested on the spot and replaced without a tow.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div><h3>Cooling and leaks</h3><p>Coolant lines, hoses, water pumps and oil leaks. Road-debris damage patched up and back on the road same day when possible.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 7a5 5 0 1 0-4 8l7 7 3-3-7-7a5 5 0 0 0 1-5z"/></svg></div><h3>Tune-ups and maintenance</h3><p>Spark plugs, carbon cleaning, oil changes, filters, belts and the odd jobs that pile up. Ask about anything.</p></div>
+    </div>
+    <div class="euro">
+      <div>
+        <h3>The European car guy</h3>
+        <p>Customers bring Jonathan their 335i, their Cayenne and their daily Audi because he knows the quirks and carries the tools. Spark plugs gapped right, carbon buildup cleaned, coolant systems sorted, all in your driveway.</p>
+      </div>
+      <div class="badges"><span>BMW</span><span>Porsche</span><span>Mercedes</span><span>Audi</span><span>VW</span><span>Mini</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Straight numbers, before the work</h2>
+        <p>Mobile means no tow bill, no shuttle and no waiting room. You get the parts and labor price by text and approve it before anything comes apart.</p>
+      </div>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Diagnostic fee applied to the repair</b> when Jonathan does the work.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Quote sent by text</b> so there's nothing to remember or argue about.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Old parts shown to you</b> before they leave in the van.</p></div>
+      </div>
+    </div>
+    <div>
+      <ul class="price-list">
+        <li><div><b>Mobile diagnostic visit</b><small>Scan, inspection and a plain-English plan</small></div><span class="n"><em>Starting at</em>$95</span></li>
+        <li><div><b>Brake pads and rotors</b><small>Per axle, parts and labor</small></div><span class="n"><em>Starting at</em>$259</span></li>
+        <li><div><b>Battery, starter or alternator</b><small>Tested and replaced on site, part priced to your car</small></div><span class="n"><em>Starting at</em>$139</span></li>
+        <li><div><b>Spark plugs</b><small>Four-cylinder, plugs gapped and installed. Sixes and turbos quoted</small></div><span class="n"><em>Starting at</em>$149</span></li>
+        <li><div><b>Coolant hose or line repair</b><small>Labor plus parts, system bled and pressure-checked</small></div><span class="n"><em>Starting at</em>$179</span></li>
+        <li><div><b>European oil service</b><small>Full synthetic, OE-spec filter, reset at your door</small></div><span class="n"><em>Starting at</em>$129</span></li>
+        <li><div><b>After-hours call-out</b><small>Nights and weekends, added to the job</small></div><span class="n"><em>Starting at</em>$60</span></li>
+      </ul>
+      <p class="price-note"><span class="tag">Note</span><span>Example pricing — we'll put in your real numbers. Final quotes depend on the vehicle and parts.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps, no tow truck</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Call or text the symptoms</h3><p>Year, make, model and what it's doing. A photo or a short video of the noise helps. Any hour, you'll get a straight answer on timing.</p></div>
+      <div class="step"><h3>Jonathan pulls up</h3><p>Home, office lot or shoulder of the road. He confirms the cause and sends the parts and labor price before touching anything.</p></div>
+      <div class="step"><h3>Approved, then fixed</h3><p>Most jobs are done the same visit. You keep your day, skip the tow and never sit in a waiting room.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>What drivers say</h2>
+      <p class="g-line"><span class="star" aria-hidden="true">★★★★★</span><span class="big">4.5</span><span>across 97 Google reviews</span></p>
+    </div>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>"In my Porsche I hit road debris which caused a coolant line to break. Jon and his team were able to diagnose the problem quickly and get my car back on the road in the same day."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>"He did an amazing job with my cherished E92 BMW 335i. Changed and gapped my NGK spark plugs, and the service to take care of the internal carbon buildup was amazing. My car runs like new!"</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>"Jonathan was able to come the same day I called him even if it was at the very end of the night. He was very communicative and punctual. The pricing was fair and vehicle was fixed within 24 hours of my call."</p><cite>Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About and service area</span>
+      <h2>Based in Land O' Lakes, on the road across Pasco and north Tampa</h2>
+      <p>Mobile Mechanic Land O' Lakes is run by Jonathan out of Land O' Lakes Blvd. The phone is answered around the clock because cars don't break down on a schedule, and a lot of the work is done at odd hours for people who can't miss a shift.</p>
+      <div class="towns">
+        <span>Land O' Lakes</span><span>Lutz</span><span>Wesley Chapel</span><span>Odessa</span><span>New Tampa</span><span>Trinity</span><span>Zephyrhills</span><span>Carrollwood</span><span>Tampa by request</span>
+      </div>
+      <div class="hours">
+        <b>Mon–Sun</b><span>Open 24 hours</span>
+        <b>Home base</b><span>6340 Land O' Lakes Blvd, Land O' Lakes, FL 34638</span>
+      </div>
+    </div>
+    <div class="map" aria-label="Service area map">
+      <svg viewBox="0 0 400 300" role="img" aria-labelledby="mapTitle">
+        <title id="mapTitle">Stylized map of Pasco and north Hillsborough with Land O' Lakes at the center of the service area</title>
+        <rect width="400" height="300" fill="#2B2C31"/>
+        <!-- gulf -->
+        <path d="M0 0 L70 0 C60 60 80 120 60 180 C50 230 70 270 50 300 L0 300 Z" fill="#1F2023"/>
+        <!-- lakes -->
+        <ellipse cx="190" cy="120" rx="18" ry="12" fill="#1F2023"/>
+        <ellipse cx="225" cy="150" rx="14" ry="10" fill="#1F2023"/>
+        <ellipse cx="170" cy="160" rx="10" ry="8" fill="#1F2023"/>
+        <!-- roads -->
+        <path d="M200 0 L200 300" stroke="#55565C" stroke-width="3"/>
+        <path d="M120 0 C125 100 130 200 125 300" stroke="#55565C" stroke-width="2"/>
+        <path d="M290 0 C285 100 280 200 285 300" stroke="#55565C" stroke-width="2"/>
+        <path d="M60 110 L400 100" stroke="#55565C" stroke-width="2" stroke-dasharray="6 4"/>
+        <path d="M0 230 L400 230" stroke="#55565C" stroke-width="2"/>
+        <!-- service radius -->
+        <circle cx="200" cy="140" r="120" fill="#F5B82E" opacity=".1"/>
+        <circle cx="200" cy="140" r="120" fill="none" stroke="#F5B82E" stroke-width="2" stroke-dasharray="6 5"/>
+        <circle cx="200" cy="140" r="60" fill="#F5B82E" opacity=".12"/>
+        <!-- towns -->
+        <g font-family="Figtree, sans-serif" font-size="11" fill="#D8D6CF">
+          <circle cx="285" cy="110" r="3" fill="#D8D6CF"/><text x="292" y="114">Wesley Chapel</text>
+          <circle cx="205" cy="195" r="3" fill="#D8D6CF"/><text x="212" y="199">Lutz</text>
+          <circle cx="120" cy="170" r="3" fill="#D8D6CF"/><text x="60" y="174">Odessa</text>
+          <circle cx="110" cy="100" r="3" fill="#D8D6CF"/><text x="60" y="92">Trinity</text>
+          <circle cx="330" cy="60" r="3" fill="#D8D6CF"/><text x="300" y="52">Zephyrhills</text>
+          <circle cx="280" cy="235" r="3" fill="#D8D6CF"/><text x="287" y="250">New Tampa</text>
+          <text x="140" y="275">Carrollwood</text><circle cx="130" cy="262" r="3" fill="#D8D6CF"/>
+          <text x="220" y="292">Tampa</text>
+        </g>
+        <!-- pin -->
+        <path d="M200 110 C188 110 180 119 180 130 C180 146 200 164 200 164 C200 164 220 146 220 130 C220 119 212 110 200 110 Z" fill="#F5B82E"/>
+        <circle cx="200" cy="130" r="7" fill="#1F1600"/>
+        <text x="200" y="182" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-weight="800" font-size="15" fill="#F6F4EE">LAND O' LAKES</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Tell Jonathan what the car is doing</h2>
+      <p class="sub">Fill this in and it opens a text with your details already typed. He'll reply with a price and a time. Or just call, any hour.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a class="big" href="tel:+18132939550">(813) 293-9550</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg><a href="sms:+18132939550?&body=Hi%20Jonathan%2C%20I%27d%20like%20a%20quote%20for%20my%20">Text (813) 293-9550</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Mobile service based in Land O' Lakes, FL 34638</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Open 24 hours, 7 days a week</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <h3>Request a quote</h3>
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(813) 555-0123" required></label>
+      <label class="f">Vehicle (year, make, model)<input name="vehicle" placeholder="2012 BMW 335i" required></label>
+      <label class="f">What do you need?<textarea name="need" placeholder="Grinding when I brake, car is at my house in Lutz" required></textarea></label>
+      <button class="btn btn-amber" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Mobile Mechanic Land O' Lakes · 6340 Land O' Lakes Blvd, Land O' Lakes, FL 34638</span>
+    <span><a href="tel:+18132939550">(813) 293-9550</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener" target="_blank">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Jonathan, this is '+f.get('name')+'. I have a '+f.get('vehicle')+' and I need: '+f.get('need');
+    msg=msg.replace(/[.\s]*$/,'')+'.';
+    if(f.get('phone'))msg+=' You can reach me at '+f.get('phone')+'.';
+    msg+=' When could you come out?';
+    window.location.href='sms:+18132939550?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

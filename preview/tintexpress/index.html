@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tint Express — Mobile window tint, wraps & PPF in Tarpon Springs, FL</title>
+<meta name="description" content="Mobile window tinting, chrome delete, wraps and paint protection film across Tampa Bay, plus a shop in Tarpon Springs. Rated 4.8 on Google across 1,304 reviews. Call or text (888) 600-1644.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F6F4F0; --bg-2:#FFFFFF; --ink:#1A1A1F; --ink-2:#5B5B66; --line:#E0DDD6;
+    --coal:#141418; --coal-2:#1F1F26; --on-coal:#F6F4F0; --on-coal-2:#A6A6B2;
+    --amber:#F5A524; --amber-2:#FFB94A; --amber-ink:#1A1200;
+    --red:#E0432F;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#0E0E12;--bg-2:#17171D;--ink:#F3F1EC;--ink-2:#A6A6B2;--line:#2A2A33}
+  }
+  :root[data-theme="dark"]{--bg:#0E0E12;--bg-2:#17171D;--ink:#F3F1EC;--ink-2:#A6A6B2;--line:#2A2A33}
+  html{scroll-padding-top:calc(3.75rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Archivo",system-ui,sans-serif;margin:0;line-height:1.02;letter-spacing:-.025em;font-weight:800}
+  h1{font-size:clamp(2.6rem,9vw,5rem);font-weight:900;text-transform:uppercase;letter-spacing:-.03em}
+  h2{font-size:clamp(1.9rem,5.5vw,2.9rem)}
+  h3{font-size:1.3rem;font-weight:700}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1080px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-family:"Archivo",sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:.9rem}
+  .eyebrow::before{content:"";width:1.4rem;height:3px;background:var(--amber);border-radius:2px}
+  .on-dark .eyebrow{color:var(--amber)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.5rem;font-family:"Archivo",sans-serif;font-weight:800;font-size:1.05rem;text-transform:uppercase;letter-spacing:.03em;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+  .btn-amber{background:var(--amber);color:var(--amber-ink)}
+  .btn-amber:hover{background:var(--amber-2)}
+  .btn-ghost{background:transparent;color:var(--on-coal);border-color:rgba(255,255,255,.3)}
+  .btn-ghost:hover{border-color:var(--amber)}
+
+  .preview-bar{background:var(--amber);color:var(--amber-ink);font-size:.9rem;text-align:center;padding:.5rem 1rem;font-weight:600}
+  .preview-bar a{color:inherit;font-weight:700}
+
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--coal);color:var(--on-coal);border-bottom:1px solid rgba(255,255,255,.08)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem;gap:1rem}
+  .logo{font-family:"Archivo",sans-serif;font-weight:900;font-size:1.3rem;text-decoration:none;display:flex;align-items:center;gap:.5rem;white-space:nowrap;color:var(--on-coal);text-transform:uppercase;letter-spacing:-.02em}
+  .logo i{display:inline-block;width:1.5rem;height:1.1rem;flex:none;background:linear-gradient(100deg,var(--amber) 0 45%,var(--red) 45% 70%,transparent 70%);clip-path:polygon(20% 0,100% 0,80% 100%,0 100%)}
+  .logo em{font-style:normal;color:var(--amber)}
+  nav a{text-decoration:none;color:var(--on-coal-2);font-weight:600;margin-left:1.25rem;font-size:.95rem}
+  nav a:hover{color:var(--amber)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--amber);color:var(--amber-ink);text-decoration:none;font-family:"Archivo",sans-serif;font-weight:800;font-size:.9rem;text-transform:uppercase;letter-spacing:.03em;padding:.5rem .95rem;border-radius:.45rem;white-space:nowrap}
+  .call-pill:hover{background:var(--amber-2)}
+
+  /* hero */
+  .hero{position:relative;background:var(--coal);color:var(--on-coal);padding:3rem 0 3.5rem;overflow:hidden}
+  .hero::before{content:"";position:absolute;right:-30vw;top:-20%;width:90vw;max-width:900px;aspect-ratio:1;background:radial-gradient(circle,rgba(245,165,36,.18),transparent 62%);pointer-events:none}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:repeating-linear-gradient(90deg,var(--amber) 0 40px,transparent 40px 64px);opacity:.8}
+  .hero .wrap{position:relative;display:grid;gap:2.5rem}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .hero h1 em{font-style:normal;color:var(--amber)}
+  .hero .lede{color:var(--on-coal-2);font-size:1.2rem;max-width:38ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;margin-top:1.75rem;color:var(--on-coal-2);font-size:.95rem}
+  .trust b{color:var(--on-coal);font-family:"Archivo",sans-serif;font-weight:700}
+
+  /* review-count hero card */
+  .proof{background:linear-gradient(160deg,var(--coal-2),#121216);border:1px solid rgba(255,255,255,.12);border-radius:1.1rem;padding:1.5rem;position:relative;overflow:hidden}
+  .proof::before{content:"";position:absolute;inset:auto -20% -40% auto;width:60%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(245,165,36,.22),transparent 65%);pointer-events:none}
+  .proof-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;font-size:.9rem;color:var(--on-coal-2);position:relative}
+  .glogo{display:inline-flex;align-items:center;gap:.45rem;font-weight:600;color:var(--on-coal)}
+  .glogo i{width:1.1rem;height:1.1rem;border-radius:50%;background:conic-gradient(#4285F4 0 25%,#34A853 25% 50%,#FBBC05 50% 75%,#EA4335 75% 100%);display:inline-block;position:relative}
+  .glogo i::after{content:"";position:absolute;inset:.28rem;border-radius:50%;background:var(--coal-2)}
+  .count{font-family:"Archivo",sans-serif;font-weight:900;font-size:clamp(4.6rem,20vw,7.5rem);line-height:.9;letter-spacing:-.05em;color:var(--on-coal);margin-top:.9rem;position:relative;font-variant-numeric:tabular-nums}
+  .count sup{font-size:.35em;color:var(--amber);vertical-align:top;top:.25em;position:relative;letter-spacing:0}
+  .count-label{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem;margin-top:.5rem;position:relative}
+  .count-label .stars{color:var(--amber);letter-spacing:.1em;font-size:1.3rem;line-height:1}
+  .count-label b{font-family:"Archivo",sans-serif;font-weight:800;font-size:1.35rem;color:var(--on-coal)}
+  .count-label span{color:var(--on-coal-2);font-size:.95rem}
+  .tags{margin-top:1.1rem;display:flex;flex-wrap:wrap;gap:.4rem;position:relative}
+  .tags span{font-size:.8rem;font-weight:600;color:var(--on-coal);border:1px solid rgba(255,255,255,.2);border-radius:.4rem;padding:.25rem .6rem}
+  .ticker{margin-top:1.1rem;position:relative;border-top:1px solid rgba(255,255,255,.12);padding-top:1rem;min-height:5.6em}
+  .ticker p{font-size:.95rem;color:var(--on-coal);font-style:italic}
+  .ticker cite{display:block;margin-top:.4rem;font-style:normal;font-size:.8rem;color:var(--on-coal-2)}
+  .ticker-nav{display:flex;gap:.4rem;margin-top:.75rem}
+  .ticker-nav button{font:inherit;background:transparent;border:1px solid rgba(255,255,255,.25);color:var(--on-coal);border-radius:999px;width:2.4rem;height:2.4rem;cursor:pointer;display:grid;place-items:center}
+  .ticker-nav button:hover{border-color:var(--amber);color:var(--amber)}
+  .ticker-nav button:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+  .dots{display:inline-flex;gap:.35rem;align-items:center;margin-left:auto}
+  .dots i{width:.45rem;height:.45rem;border-radius:50%;background:rgba(255,255,255,.25)}
+  .dots i.on{background:var(--amber)}
+
+  section{padding:4rem 0}
+  .sub{color:var(--ink-2);margin-top:.8rem;max-width:52ch}
+
+  /* how */
+  .how{background:var(--bg-2);border-bottom:1px solid var(--line);padding:2.25rem 0}
+  .how .wrap{display:grid;gap:1rem}
+  @media (min-width:760px){.how .wrap{grid-template-columns:repeat(3,1fr);gap:1.5rem}}
+  .step{display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:start}
+  .step .n{font-family:"Archivo",sans-serif;font-weight:900;font-size:1.05rem;width:2.3rem;height:2.3rem;border-radius:.5rem;background:var(--coal);color:var(--amber);display:grid;place-items:center;flex:none;transform:skewX(-8deg)}
+  .step b{font-family:"Archivo",sans-serif;font-weight:700;font-size:1.05rem;display:block}
+  .step p{color:var(--ink-2);font-size:.97rem;margin-top:.2rem}
+
+  /* services */
+  .services .grid{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:700px){.services .grid{grid-template-columns:repeat(2,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.4rem;display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start;border-top:4px solid var(--amber)}
+  .svc .ic{width:2.75rem;height:2.75rem;border-radius:.6rem;background:var(--coal);display:grid;place-items:center;flex:none}
+  .svc .ic svg{width:1.4rem;height:1.4rem;stroke:var(--amber);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);margin-top:.4rem}
+  .also{margin-top:1.5rem;display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:center;background:var(--bg-2);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:.6rem;padding:1.1rem 1.25rem;color:var(--ink-2)}
+  .also svg{width:2.4rem;height:2.4rem;stroke:var(--red);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .also b{color:var(--ink)}
+
+  /* pricing */
+  .pricing{background:var(--coal);color:var(--on-coal)}
+  .pricing .sub{color:var(--on-coal-2)}
+  .tiers{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:800px){.tiers{grid-template-columns:repeat(3,1fr)}}
+  .tier{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:1rem;padding:1.5rem;display:flex;flex-direction:column}
+  .tier.feat{border-color:var(--amber);background:rgba(245,165,36,.08)}
+  .tier .tag{font-family:"Archivo",sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);font-weight:700}
+  .tier h3{margin-top:.4rem;font-size:1.5rem}
+  .tier .desc{color:var(--on-coal-2);margin-top:.5rem;font-size:.98rem;flex:1}
+  .tier .price{margin-top:1.25rem;font-family:"Archivo",sans-serif;font-size:2rem;font-weight:900;line-height:1;letter-spacing:-.03em}
+  .tier .price small{display:block;font-family:"Inter",sans-serif;font-weight:400;font-size:.85rem;color:var(--on-coal-2);margin-top:.35rem;letter-spacing:0}
+  .tier ul{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.45rem;color:var(--on-coal-2);font-size:.95rem}
+  .tier li::before{content:"";display:inline-block;width:.5rem;height:.5rem;background:var(--amber);margin-right:.6rem;vertical-align:middle;transform:skewX(-12deg)}
+  .addons{margin-top:2rem;display:grid;gap:.6rem}
+  @media (min-width:700px){.addons{grid-template-columns:repeat(3,1fr)}}
+  .addon{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid rgba(255,255,255,.12);padding:.7rem 0;color:var(--on-coal-2)}
+  .addon b{color:var(--on-coal);font-family:"Archivo",sans-serif;font-weight:700;white-space:nowrap}
+  .pricing .note{margin-top:1.5rem;font-size:.9rem;color:var(--on-coal-2);border:1px dashed rgba(255,255,255,.3);border-radius:.6rem;padding:.7rem 1rem;display:inline-block}
+
+  /* reviews */
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:800px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.4rem;display:flex;flex-direction:column}
+  .review .stars{color:var(--amber);letter-spacing:.1em;margin-bottom:.6rem}
+  .review p{flex:1}
+  .review cite{display:block;margin-top:.9rem;font-style:normal;color:var(--ink-2);font-size:.95rem}
+  .rating-badge{display:inline-flex;align-items:center;gap:.75rem;margin-top:1.25rem;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.5rem 1rem .5rem .6rem}
+  .rating-badge .num{font-family:"Archivo",sans-serif;font-weight:900;font-size:1.5rem;background:var(--coal);color:var(--amber);border-radius:999px;padding:.2rem .7rem}
+  .rating-badge span{color:var(--ink-2);font-size:.95rem}
+  .reviews .more{margin-top:1.5rem;color:var(--ink-2);font-size:.95rem}
+
+  /* about */
+  .about{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.about .wrap{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .about p{color:var(--ink-2);margin-top:.9rem}
+  .area{background:var(--bg);border:1px solid var(--line);border-radius:1rem;padding:1.4rem}
+  .area h3{margin-bottom:.75rem}
+  .area .lead{color:var(--ink-2);font-size:.95rem;margin:0 0 .9rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.5rem}
+  .chips span{background:var(--bg-2);border:1px solid var(--line);border-radius:.4rem;padding:.3rem .8rem;font-size:.92rem}
+  .hours{list-style:none;padding:0;margin:1.25rem 0 0;display:grid;gap:.35rem;font-size:.95rem;color:var(--ink-2)}
+  .hours li{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line);padding-bottom:.3rem}
+  .hours b{color:var(--ink);font-weight:600}
+
+  /* quote */
+  .quote{background:var(--coal);color:var(--on-coal)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr}}
+  .quote .sub{color:var(--on-coal-2)}
+  .contact-list{list-style:none;padding:0;margin:1.75rem 0 0;display:grid;gap:.6rem;font-size:1.05rem}
+  .contact-list a{color:var(--on-coal);text-decoration-color:var(--amber);text-underline-offset:3px}
+  .contact-list .big{font-family:"Archivo",sans-serif;font-size:1.9rem;font-weight:900;text-decoration:none;letter-spacing:-.02em}
+  form{display:grid;gap:.9rem;background:rgba(255,255,255,.05);padding:1.4rem;border-radius:1rem;border:1px solid rgba(255,255,255,.12)}
+  label.f{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-coal-2)}
+  input:not([type=range]),select,textarea{font:inherit;color:#1A1A1F;background:#fff;border:1px solid var(--line);border-radius:.5rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--amber);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-coal-2)}
+
+  footer{background:#0B0B0E;color:var(--on-coal-2);padding:1.5rem 0 4rem;font-size:.9rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  footer a{color:var(--on-coal);text-decoration-color:var(--amber)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--amber);color:var(--amber-ink);font-size:.75rem;font-weight:700;padding:.3rem .6rem;border-radius:999px;z-index:20;text-decoration:none}
+  .preview-tag:hover{background:var(--amber-2)}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Website preview built for Tint Express by <a href="https://shopfrontsites.org">Shopfront Sites</a>. Not live yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><i aria-hidden="true"></i>Tint <em>Express</em></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+18886001644">Call Dave</a>
+  </div>
+</header>
+
+<section class="hero on-dark" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Mobile tint · wraps · PPF · Tampa Bay</span>
+      <h1>1,300+ drivers can't be wrong. <em>We come to you.</em></h1>
+      <p class="lede">Tint Express brings the film, the tools and the crew to your driveway or office anywhere in Tampa Bay, or book a bay at the new shop on US-19 in Tarpon Springs. Call Diana, she'll get you a time.</p>
+      <div class="hero-actions">
+        <a class="btn btn-amber" href="#quote">Get a quote</a>
+        <a class="btn btn-ghost" href="tel:+18886001644">(888) 600-1644</a>
+      </div>
+      <div class="trust">
+        <span><b>4.8</b> on Google</span>
+        <span><b>1,304</b> reviews</span>
+        <span>Mobile or in-shop</span>
+      </div>
+    </div>
+
+    <div class="proof" aria-label="Google review summary">
+      <div class="proof-top">
+        <span class="glogo"><i aria-hidden="true"></i>Google reviews</span>
+        <span>Tarpon Springs · Tampa Bay</span>
+      </div>
+      <div class="count"><span id="countNum">1,304</span><sup>reviews</sup></div>
+      <div class="count-label">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <b>4.8</b>
+        <span>average rating</span>
+      </div>
+      <div class="tags">
+        <span>Mobile service</span><span>Tarpon Springs shop</span><span>Tint · Wraps · PPF</span>
+      </div>
+      <div class="ticker" aria-live="polite">
+        <p id="tickText"></p>
+        <cite>Google review</cite>
+        <div class="ticker-nav">
+          <button type="button" id="tickPrev" aria-label="Previous review">&#8249;</button>
+          <button type="button" id="tickNext" aria-label="Next review">&#8250;</button>
+          <span class="dots" id="tickDots" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="how">
+  <div class="wrap">
+    <div class="step"><span class="n">1</span><div><b>Call or text your car</b><p>Year, make, model and what you're after. Diana walks you through the options and the price.</p></div></div>
+    <div class="step"><span class="n">2</span><div><b>Pick your spot</b><p>Your driveway, your office lot, or the shop in Tarpon Springs. The crew shows up when they say they will.</p></div></div>
+    <div class="step"><span class="n">3</span><div><b>Done by the end of an episode</b><p>Dust-free install, clean edges, and a cabin that's noticeably cooler on the drive home.</p></div></div>
+  </div>
+</div>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <span class="eyebrow">What we do</span>
+    <h2>Tint, wraps and protection, wherever your car is parked</h2>
+    <p class="sub">Dave and the crew handle every job themselves, from a two-window tint match to a full chrome delete, mobile or in the shop.</p>
+    <div class="grid">
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 13l2-5a3 3 0 0 1 3-2h8a3 3 0 0 1 3 2l2 5v5H3z"/><circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/></svg></div>
+        <div>
+          <h3>Window tint</h3>
+          <p>Full vehicle, front windows to match the factory rear, or a windshield heat film. Shades explained in plain English so you pick the right one for your budget.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4z"/><path d="M4 12h16M8 7v10M16 7v10"/></svg></div>
+        <div>
+          <h3>Chrome delete &amp; wraps</h3>
+          <p>Blacked-out trim, badges and window surrounds, color-change panels, or a full wrap. The look that makes your car one of one on the road.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.5 8-8 9-4.5-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div>
+          <h3>Paint protection film</h3>
+          <p>Clear film over the bumper, hood and mirrors to take the rock chips and bug splatter so your paint doesn't have to.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 17h2l2-6h10l2 6h2"/><path d="M5 17v3M19 17v3M7 11l1.5-4h7L17 11"/><circle cx="12" cy="7" r="1"/></svg></div>
+        <div>
+          <h3>Mobile service</h3>
+          <p>The crew brings everything needed to tint or wrap at your home or work. Anywhere in Tampa Bay with room to open the doors.</p>
+        </div>
+      </div>
+    </div>
+    <div class="also">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+      <p><b>Caliper painting, too.</b> Customers mention Dave suggesting painted brake calipers alongside a chrome delete. Ask about it when you book.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing on-dark" id="pricing">
+  <div class="wrap">
+    <span class="eyebrow">Pricing</span>
+    <h2>Know the number before we roll up</h2>
+    <p class="sub">Prices depend on film type and how many windows your vehicle has. Here is where each option starts for a standard sedan, installed at your location or in the shop.</p>
+    <div class="tiers">
+      <div class="tier">
+        <span class="tag">Good</span>
+        <h3>Carbon film</h3>
+        <p class="desc">A true black look that won't fade to purple, solid heat reduction, and no metal so your phone and radio stay clear.</p>
+        <div class="price">Starting at $239<small>full sedan, all sides and rear</small></div>
+        <ul><li>Color-stable</li><li>Glare reduction</li><li>UV protection</li></ul>
+      </div>
+      <div class="tier feat">
+        <span class="tag">Most popular</span>
+        <h3>Ceramic film</h3>
+        <p class="desc">Blocks infrared heat, not just light. The cabin stays cooler even at a lighter, Florida-legal shade on the fronts.</p>
+        <div class="price">Starting at $359<small>full sedan, all sides and rear</small></div>
+        <ul><li>Highest heat rejection</li><li>Clear visibility at night</li><li>No signal interference</li></ul>
+      </div>
+      <div class="tier">
+        <span class="tag">Match</span>
+        <h3>Two fronts only</h3>
+        <p class="desc">Factory privacy glass in back already? Match the two front windows and be done before your show is over.</p>
+        <div class="price">Starting at $129<small>carbon · ceramic from $179</small></div>
+        <ul><li>Factory shade matched</li><li>Usually under an hour</li></ul>
+      </div>
+    </div>
+    <div class="addons">
+      <div class="addon"><span>Windshield heat film</span><b>From $219</b></div>
+      <div class="addon"><span>Chrome delete</span><b>From $349</b></div>
+      <div class="addon"><span>PPF, partial front</span><b>From $799</b></div>
+      <div class="addon"><span>Old tint removal</span><b>From $89</b></div>
+      <div class="addon"><span>Full color-change wrap</span><b>Quoted</b></div>
+      <div class="addon"><span>Caliper painting</span><b>Quoted</b></div>
+    </div>
+    <p class="note">Example pricing — we'll put in your real numbers. Trucks, SUVs and vans quoted by phone.</p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <span class="eyebrow">Reviews</span>
+    <h2>What 1,304 Tampa Bay drivers say</h2>
+    <div class="rating-badge"><span class="num">4.8</span><span>on Google across 1,304 reviews</span></div>
+    <div class="grid">
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Dave is incredibly particular about his work. He won't even let a single speck of dust get under the tint. The end result looks absolutely flawless."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Diana is awesome with explaining all your options. They come to you which is a plus, and the owner knows his stuff. He gets it done in a speedy time and it looks great."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Made an appointment at their new shop in Tarpon Springs and I could not be happier. The work is superb. It looks like a brand new, entirely different car."</p>
+        <cite>Google review</cite>
+      </div>
+    </div>
+    <p class="more">Those are three of more than thirteen hundred. The rest are on Google, and the same names keep coming up: Diana on the phone, Dave on the glass.</p>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Service area</span>
+      <h2>Based in Tarpon Springs. Working all over Tampa Bay.</h2>
+      <p>Tint Express started as a mobile operation and still is: Dave and the crew load up and drive to you, so you don't lose a morning sitting in a waiting room. There's now also a shop on US-19 in Tarpon Springs for anyone who'd rather drop the car off, or for bigger wrap and PPF jobs.</p>
+      <p>Customers mention the same things in review after review: Diana's clear, friendly answers on the phone, a crew that shows up on time, and a finish with no dust and no bubbles.</p>
+    </div>
+    <div class="area">
+      <h3>Where the crew drives to</h3>
+      <p class="lead">Home, office, apartment lot — anywhere with room to open the doors. Or visit the shop at 40347 US-19, Tarpon Springs.</p>
+      <div class="chips">
+        <span>Tarpon Springs</span><span>Palm Harbor</span><span>Dunedin</span><span>Clearwater</span><span>Oldsmar</span><span>New Port Richey</span><span>Trinity</span><span>Tampa</span><span>St. Petersburg</span>
+      </div>
+      <ul class="hours" aria-label="Hours">
+        <li><b>Mon – Fri</b><span>10:00 AM – 6:00 PM</span></li>
+        <li><b>Saturday</b><span>10:00 AM – 3:00 PM</span></li>
+        <li><b>Sunday</b><span>Closed</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="quote on-dark" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Text us your car</h2>
+      <p class="sub">Fill this in and it opens a text to Tint Express with your details already typed. Or call during open hours and Diana will quote it on the spot.</p>
+      <ul class="contact-list">
+        <li><a class="big" href="tel:+18886001644">(888) 600-1644</a></li>
+        <li>Mobile across Tampa Bay · Shop at 40347 US-19, Tarpon Springs, FL 34689</li>
+        <li><a href="https://www.facebook.com/windowTintingExpress" rel="noopener">Tint Express on Facebook</a></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(727) 555-0100" required></label>
+      <label class="f">Vehicle (year, make, model)<input name="vehicle" placeholder="2024 Mazda CX-50" required></label>
+      <label class="f">What do you need?
+        <select name="job">
+          <option>Full vehicle tint</option>
+          <option>Front windows to match factory</option>
+          <option>Windshield heat film</option>
+          <option>Chrome delete</option>
+          <option>Wrap (partial or full)</option>
+          <option>Paint protection film</option>
+          <option>Old tint removal</option>
+          <option>Not sure, help me choose</option>
+        </select>
+      </label>
+      <label class="f">Where should we come to? (optional)<textarea name="notes" placeholder="Your area or cross streets, days that work for you, or 'I'll come to the shop'..."></textarea></label>
+      <button class="btn btn-amber" type="submit">Send as a text</button>
+      <p class="form-note">Nothing is stored on this page. Your message opens in your phone's messaging app and you send it yourself.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Tint Express · 40347 US-19, Tarpon Springs, FL 34689 · Mobile across Tampa Bay · <a href="tel:+18886001644">(888) 600-1644</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener">Shopfront Sites</a></span>
+  </div>
+</footer>
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener">Website preview by Shopfront Sites</a>
+
+<script>
+(function(){
+  var quotes=[
+    "By the time I watched one episode they were finished. Dramatic difference in the amount of heat coming into my car.",
+    "Dave took the time to explain the heat rejection technology, and I can honestly say it works.",
+    "Diana seamlessly set up an appointment at my convenience and gave me quick, accurate details about how the process works.",
+    "They walked me through some options I hadn't thought of. The work is superb, definitely one of one on the road."
+  ];
+  var i=0,t=document.getElementById('tickText'),dots=document.getElementById('tickDots'),timer;
+  quotes.forEach(function(){var d=document.createElement('i');dots.appendChild(d)});
+  function show(n){
+    i=(n+quotes.length)%quotes.length;
+    t.textContent='“'+quotes[i]+'”';
+    Array.prototype.forEach.call(dots.children,function(d,k){d.className=k===i?'on':''});
+  }
+  function auto(){
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    clearInterval(timer);timer=setInterval(function(){show(i+1)},6000);
+  }
+  document.getElementById('tickPrev').addEventListener('click',function(){show(i-1);auto()});
+  document.getElementById('tickNext').addEventListener('click',function(){show(i+1);auto()});
+  show(0);auto();
+
+  // count-up for the review number
+  var c=document.getElementById('countNum'),target=1304;
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'requestAnimationFrame' in window){
+    var start=null,dur=1400;
+    function tick(ts){
+      if(!start)start=ts;
+      var p=Math.min(1,(ts-start)/dur);p=1-Math.pow(1-p,3);
+      c.textContent=Math.round(target*p).toLocaleString('en-US');
+      if(p<1)requestAnimationFrame(tick);
+    }
+    c.textContent='0';requestAnimationFrame(tick);
+  }
+
+  var f=document.getElementById('quoteForm');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f);
+    var m='Hi Tint Express, this is '+d.get('name')+' ('+d.get('phone')+'). I have a '+d.get('vehicle')+' and I\'m looking for: '+d.get('job')+'.';
+    if(d.get('notes'))m+=' '+d.get('notes');
+    m+=' When could you fit me in?';
+    window.location.href='sms:+18886001644?&body='+encodeURIComponent(m);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carmedix of FL — Mobile mechanic in Clearwater and Pinellas County</title>
+<meta name="description" content="Carmedix of FL: brakes, suspension, cooling systems and general repair done at your home or work across Clearwater, Largo, Dunedin, Palm Harbor and Pinellas County. 4.8 stars on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF6F1; --bg-2:#FFFFFF; --ink:#24161A; --ink-2:#6B5A5E; --line:#E6DAD6;
+    --ox:#5A1B24; --ox-2:#431219; --ox-3:#7A2A35; --on-ox:#FBF4F2; --on-ox-2:#D9B8BE;
+    --coral:#FF7A45; --coral-2:#F0652E; --coral-ink:#24161A;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1A1114;--bg-2:#24181C;--ink:#F6EEEE;--ink-2:#C2ACB1;--line:#3C2C31}}
+  :root[data-theme="dark"]{--bg:#1A1114;--bg-2:#24181C;--ink:#F6EEEE;--ink-2:#C2ACB1;--line:#3C2C31}
+  html{scroll-padding-top:calc(4.5rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Figtree",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Oswald",system-ui,sans-serif;margin:0;line-height:1.02;letter-spacing:-.005em;text-transform:uppercase}
+  h1{font-size:clamp(2.7rem,9.5vw,5.2rem);font-weight:700}
+  h2{font-size:clamp(2rem,5.8vw,3rem);font-weight:600}
+  h3{font-size:1.3rem;font-weight:600;letter-spacing:.01em}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ox-3);margin-bottom:.8rem}
+  .eyebrow::before{content:"";width:.9rem;height:.9rem;border-radius:50%;background:var(--coral)}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .eyebrow{color:var(--on-ox-2)}}
+  :root[data-theme="dark"] .eyebrow{color:var(--on-ox-2)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:999px;font-family:"Oswald",sans-serif;font-weight:600;font-size:1.15rem;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+  .btn-coral{background:var(--coral);color:var(--coral-ink)}
+  .btn-coral:hover{background:var(--coral-2)}
+  .btn-outline{background:transparent;color:var(--on-ox);border-color:rgba(255,255,255,.35)}
+  .btn-outline:hover{border-color:var(--coral)}
+
+  /* preview bar + header */
+  .preview-bar{background:#24161A;color:#FBF4F2;font-size:.85rem;text-align:center;padding:.5rem 1rem}
+  .preview-bar a{color:var(--coral);font-weight:700}
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--ox-2);color:var(--on-ox);border-bottom:3px solid var(--coral)}
+  header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem .75rem;min-height:3.9rem;padding:.5rem 0}
+  .logo{display:flex;align-items:center;gap:.6rem;font-family:"Oswald",sans-serif;font-weight:700;font-size:1.35rem;text-transform:uppercase;text-decoration:none;color:var(--on-ox);letter-spacing:.03em;line-height:1;min-width:0}
+  .logo .mark{width:2rem;height:2rem;border-radius:50%;background:var(--coral);display:grid;place-items:center;flex:0 0 auto}
+  .logo .mark svg{width:1.2rem;height:1.2rem;fill:var(--coral-ink)}
+  .logo small{display:block;font-family:"Figtree",sans-serif;font-weight:600;font-size:.66rem;letter-spacing:.14em;color:var(--on-ox-2);margin-top:.2rem}
+  nav a{text-decoration:none;color:var(--on-ox-2);font-weight:600;margin-left:1.25rem;font-size:.95rem}
+  nav a:hover{color:var(--coral)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--coral);color:var(--coral-ink);text-decoration:none;font-family:"Oswald",sans-serif;font-weight:600;font-size:1rem;letter-spacing:.04em;text-transform:uppercase;padding:.5rem .95rem;border-radius:999px;white-space:nowrap}
+
+  /* hero */
+  .hero{background:var(--ox);color:var(--on-ox);padding:3.25rem 0 3.75rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(circle at 85% 15%,rgba(255,122,69,.18),transparent 40%),
+    linear-gradient(180deg,rgba(0,0,0,.08),transparent 60%);pointer-events:none}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:.6rem;background:repeating-linear-gradient(90deg,var(--coral) 0 28px,transparent 28px 40px);opacity:.9}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative;z-index:1}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .hero .eyebrow{color:var(--on-ox-2)}
+  .hero h1 em{font-style:normal;color:var(--coral)}
+  .hero .lede{color:var(--on-ox-2);font-size:1.15rem;max-width:42ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:flex;flex-wrap:wrap;gap:1rem 2.25rem;margin-top:2.25rem;color:var(--on-ox-2);font-size:.9rem}
+  .trust strong{display:block;color:var(--on-ox);font-family:"Oswald",sans-serif;font-size:1.85rem;font-weight:700;line-height:1}
+  .trust .star{color:var(--coral)}
+
+  .stage{background:var(--ox-2);border-radius:.8rem;padding:1.25rem;border:1px solid rgba(255,255,255,.1)}
+  .stage svg{width:100%;height:auto;display:block}
+  .checks{list-style:none;margin:1.1rem 0 0;padding:0;display:grid;gap:.55rem;font-size:.98rem}
+  .checks li{display:flex;gap:.65rem;align-items:flex-start;color:var(--on-ox)}
+  .checks li::before{content:"";flex:none;width:1.15rem;height:1.15rem;margin-top:.2rem;border-radius:50%;background:var(--coral) center/60% no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2324161A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5 5L20 6.5'/%3E%3C/svg%3E")}
+  @media (prefers-reduced-motion:no-preference){
+    .pulse{stroke-dasharray:420;stroke-dashoffset:420;animation:beat 3.2s linear infinite}
+    @keyframes beat{0%{stroke-dashoffset:420}60%{stroke-dashoffset:0}100%{stroke-dashoffset:0}}
+  }
+
+  /* sections */
+  section{padding:4rem 0}
+  .sec-head{display:grid;gap:.5rem;max-width:58ch}
+  .sec-head p{color:var(--ink-2);font-size:1.05rem}
+  .grid{display:grid;gap:1.1rem;margin-top:2rem}
+  @media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:940px){.grid.three{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-top:4px solid var(--coral);border-radius:.6rem;padding:1.3rem 1.4rem;display:grid;gap:.45rem;align-content:start}
+  .svc .ico{width:2.6rem;height:2.6rem;border-radius:50%;background:var(--ox);display:grid;place-items:center;margin-bottom:.4rem}
+  .svc .ico svg{width:1.4rem;height:1.4rem;stroke:var(--coral);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);font-size:1rem}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.pricing .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}.pricing .price-list{margin-top:0}}
+  .price-list{list-style:none;margin:2rem 0 0;padding:0;border:1px solid var(--line);border-radius:.7rem;overflow:hidden;background:var(--bg)}
+  .price-list li{display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;align-items:center;padding:1rem 1.15rem;border-top:1px solid var(--line)}
+  .price-list li:first-child{border-top:0}
+  .price-list b{font-weight:700}
+  .price-list small{display:block;color:var(--ink-2);font-size:.92rem;font-weight:400}
+  .price-list .n{font-family:"Oswald",sans-serif;font-weight:700;font-size:1.5rem;line-height:1;white-space:nowrap;color:var(--ox);text-align:right}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .price-list .n{color:var(--coral)}}
+  :root[data-theme="dark"] .price-list .n{color:var(--coral)}
+  .price-list .n em{font-style:normal;font-family:"Figtree",sans-serif;font-weight:600;font-size:.72rem;color:var(--ink-2);display:block;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem}
+  .promise{margin-top:1.5rem;display:grid;gap:.9rem}
+  .promise div{display:flex;gap:.8rem;align-items:flex-start;color:var(--ink-2)}
+  .promise svg{flex:0 0 auto;width:1.35rem;height:1.35rem;margin-top:.15rem;stroke:var(--coral-2);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  .promise b{color:var(--ink)}
+  .price-note{margin-top:1rem;font-size:.92rem;color:var(--ink-2);display:flex;gap:.6rem;align-items:flex-start}
+  .price-note .tag{flex:0 0 auto;background:var(--coral);color:var(--coral-ink);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:999px;margin-top:.15rem}
+
+  .steps{display:grid;gap:1.5rem;margin-top:2rem;counter-reset:step}
+  @media (min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{position:relative;padding-left:3.6rem}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;top:0;left:0;width:2.7rem;height:2.7rem;border-radius:50%;background:var(--ox);color:var(--coral);display:grid;place-items:center;font-family:"Oswald",sans-serif;font-size:1.5rem;font-weight:700}
+  .step p{color:var(--ink-2);margin-top:.4rem}
+
+  .reviews{background:var(--ox);color:var(--on-ox)}
+  .reviews .eyebrow{color:var(--on-ox-2)}
+  .reviews .sec-head p{color:var(--on-ox-2)}
+  .reviews .grid{grid-template-columns:1fr}
+  @media (min-width:780px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:.7rem;padding:1.35rem;display:flex;flex-direction:column}
+  .stars{color:var(--coral);letter-spacing:.12em;margin-bottom:.6rem;font-size:1.05rem}
+  .review p{font-size:1.02rem}
+  .review cite{display:block;margin-top:auto;padding-top:.9rem;font-style:normal;color:var(--on-ox-2);font-size:.92rem}
+  .g-line{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin-top:.4rem;color:var(--on-ox-2)}
+  .g-line .big{font-family:"Oswald",sans-serif;font-weight:700;font-size:2rem;line-height:1;color:var(--on-ox)}
+  .g-line .star{color:var(--coral);font-size:1.25rem}
+
+  .about .wrap{display:grid;gap:2.25rem}
+  @media (min-width:860px){.about .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .about p{color:var(--ink-2);margin-top:.9rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.95rem}
+  .map{background:var(--ox-2);border-radius:.8rem;padding:1rem;border:1px solid rgba(255,255,255,.1)}
+  .map svg{display:block;width:100%;height:auto}
+  .facts{margin-top:1.5rem;display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem;color:var(--ink-2);font-size:.98rem}
+  .facts b{color:var(--ink);font-weight:700}
+  .facts a{color:var(--ink);text-decoration-color:var(--coral)}
+
+  .quote{background:var(--bg-2);border-top:1px solid var(--line)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--ink-2);margin-top:.9rem;max-width:42ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.65rem}
+  .contact-list li{display:flex;gap:.7rem;align-items:center;color:var(--ink-2)}
+  .contact-list svg{width:1.2rem;height:1.2rem;stroke:var(--coral-2);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--coral);font-weight:700}
+  .contact-list .big{font-family:"Oswald",sans-serif;font-size:1.9rem;line-height:1;text-decoration:none}
+  form{display:grid;gap:.95rem;background:var(--ox-2);color:var(--on-ox);padding:1.5rem;border-radius:.8rem;border-top:5px solid var(--coral)}
+  form h3{color:var(--on-ox)}
+  label.f{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-ox-2)}
+  input,textarea{font:inherit;color:#24161A;background:#fff;border:1px solid #D9C9C5;border-radius:.5rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.2rem;resize:vertical}
+  input:focus-visible,textarea:focus-visible{outline:3px solid var(--coral);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-ox-2)}
+
+  footer{background:var(--ox-2);color:var(--on-ox-2);padding:1.75rem 0 4rem;font-size:.9rem;border-top:3px solid var(--coral)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-ox);text-decoration-color:var(--coral)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--coral);color:var(--coral-ink);font-size:.78rem;font-weight:700;padding:.35rem .7rem;border-radius:999px;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+  .preview-tag:hover{background:var(--coral-2)}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a> for Carmedix of FL. Not the live site yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7z"/></svg></span><span>Carmedix<small>Mobile Mechanic</small></span></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+17272385035">Call Ivan</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Clearwater, FL · Pinellas County · We come to you</span>
+      <h1>Your car's doctor <em>makes house calls.</em></h1>
+      <p class="lede">Brakes, suspension, cooling systems and the repairs that usually mean a tow, handled by Ivan of Carmedix of FL at your home, office or wherever the car stopped. The cause gets explained before anything gets replaced.</p>
+      <div class="hero-actions">
+        <a class="btn btn-coral" href="#quote">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+17272385035">(727) 238-5035</a>
+      </div>
+      <div class="trust">
+        <div><strong><span class="star">★</span> 4.8</strong>166 Google reviews</div>
+        <div><strong>7 days</strong>Open every day of the week</div>
+        <div><strong>Mobile</strong>Home, work or roadside</div>
+      </div>
+    </div>
+
+    <div class="stage" aria-label="Illustration of a car being checked in a driveway">
+      <svg viewBox="0 0 520 250" role="img" aria-labelledby="stageTitle">
+        <title id="stageTitle">A car in a driveway with a diagnostic readout and a tool bag beside it</title>
+        <!-- driveway -->
+        <rect x="0" y="200" width="520" height="50" fill="#2E0C12"/>
+        <rect x="0" y="200" width="520" height="3" fill="#FF7A45" opacity=".7"/>
+        <!-- pulse line (diagnostic readout) -->
+        <path class="pulse" d="M20 60 H120 L140 30 L160 90 L180 46 L196 60 H330 L350 36 L368 84 L384 60 H500" fill="none" stroke="#FF7A45" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- car body -->
+        <path fill="#F1E6E2" d="M80 180 L80 140 C80 132 86 126 94 126 L128 126 L160 88 C164 83 170 80 176 80 L292 80 C300 80 306 84 310 90 L340 126 L390 130 C402 132 410 140 410 150 L410 180 Z"/>
+        <!-- windows -->
+        <path fill="#24161A" d="M168 92 L222 92 L222 124 L140 124 Z"/>
+        <path fill="#24161A" d="M234 92 L288 92 L322 124 L234 124 Z"/>
+        <path fill="#FFFFFF" opacity=".16" d="M168 92 L194 92 L194 124 L140 124 Z"/>
+        <!-- coral stripe -->
+        <rect x="80" y="150" width="330" height="8" fill="#FF7A45"/>
+        <!-- lights -->
+        <rect x="402" y="140" width="10" height="12" rx="2" fill="#FFE9A8"/>
+        <rect x="78" y="142" width="8" height="12" rx="2" fill="#E04E3C"/>
+        <!-- wheels -->
+        <g>
+          <circle cx="150" cy="180" r="24" fill="#120609"/>
+          <circle cx="150" cy="180" r="12" fill="#B99AA0"/>
+          <circle cx="150" cy="180" r="4" fill="#120609"/>
+        </g>
+        <g>
+          <circle cx="340" cy="180" r="24" fill="#120609"/>
+          <circle cx="340" cy="180" r="12" fill="#B99AA0"/>
+          <circle cx="340" cy="180" r="4" fill="#120609"/>
+        </g>
+        <!-- open hood -->
+        <path d="M296 80 L352 44 L362 50 L312 90 Z" fill="#F1E6E2"/>
+        <path d="M296 80 L352 44" stroke="#24161A" stroke-width="1.5"/>
+        <!-- tool bag with cross -->
+        <rect x="436" y="162" width="64" height="38" rx="6" fill="#FF7A45"/>
+        <rect x="456" y="152" width="24" height="10" rx="3" fill="#24161A"/>
+        <path d="M464 172h8v6h6v8h-6v6h-8v-6h-6v-8h6z" fill="#24161A"/>
+        <!-- scanner cable to pulse -->
+        <path d="M20 60 C14 100 20 140 60 150" fill="none" stroke="#FF7A45" stroke-width="2" stroke-dasharray="4 4" opacity=".7"/>
+      </svg>
+      <ul class="checks">
+        <li>Root cause diagnosed first, then a clear parts-and-labor price</li>
+        <li>If it doesn't need replacing, Ivan tells you so</li>
+        <li>Open seven days, with same-day visits when the schedule allows</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>What Ivan handles on-site</h2>
+      <p>Most of what a shop puts on a lift can be done where the car sits. If a job really does need a bay, you'll hear that up front, not after.</p>
+    </div>
+    <div class="grid three">
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div><h3>Brakes</h3><p>Pads, rotors, calipers and brake lines, front and rear. Grinding, pulsing or a soft pedal sorted in your driveway.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M5 12h14"/><path d="M7 9l10 6M7 15l10-6"/></svg></div><h3>Suspension</h3><p>Shocks, struts, control arms, tie rods and the clunk over speed bumps. Replaced on the spot, often the same day you call.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h16v9H4z"/><path d="M7 8V5M17 8V5M4 12h16M9 17v3M15 17v3"/></svg></div><h3>Cooling system</h3><p>Radiators, water pumps, thermostats and fan clutches. Overheating traced to the cause, not just topped off.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h3l3-6 4 12 3-6h5"/></svg></div><h3>Diagnostics</h3><p>Scanner on, vacuum leaks and warning lights traced methodically, then explained in plain English before anything is replaced.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div><h3>Oil and fluids</h3><p>Oil changes, coolant, brake fluid and the maintenance that keeps the big repairs away. Done at your door.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0-5.3 5.3L4 17l3 3 5.2-5.2a4 4 0 0 0 5.3-5.3l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></div><h3>General repair</h3><p>Starters, alternators, belts, hoses, no-starts and the odd jobs. If it's on the car, ask and you'll get a straight answer.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Honest numbers, before the work</h2>
+        <p>Customers keep using the same words: honest, fair priced, kept his word. You'll have the full parts-and-labor price before a bolt comes off.</p>
+      </div>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Only what's needed.</b> If your brakes have life left, you'll be told to keep driving on them.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Root cause found,</b> not just the symptom you called about.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>No tow, no shuttle, no waiting room.</b> You keep your day.</p></div>
+      </div>
+    </div>
+    <div>
+      <ul class="price-list">
+        <li><div><b>Mobile diagnostic visit</b><small>Scan, inspection and a plain-English plan</small></div><span class="n"><em>Starting at</em>$79</span></li>
+        <li><div><b>Brake pads and rotors</b><small>Per axle, parts and labor</small></div><span class="n"><em>Starting at</em>$229</span></li>
+        <li><div><b>Shocks or struts</b><small>Per pair, parts and labor</small></div><span class="n"><em>Starting at</em>$349</span></li>
+        <li><div><b>Water pump or thermostat</b><small>Parts, labor and a coolant refill</small></div><span class="n"><em>Starting at</em>$249</span></li>
+        <li><div><b>Oil change at your door</b><small>Full synthetic, filter, fluid top-off</small></div><span class="n"><em>Starting at</em>$75</span></li>
+        <li><div><b>Starter or alternator</b><small>Parts and labor, most cars and light trucks</small></div><span class="n"><em>Starting at</em>$299</span></li>
+      </ul>
+      <p class="price-note"><span class="tag">Note</span><span>Example pricing — we'll put in your real numbers. Final quotes depend on the vehicle and parts.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps, one visit</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Call or text what's wrong</h3>
+        <p>Year, make, model, the symptom and where the car is parked. A short video of the noise helps.</p>
+      </div>
+      <div class="step">
+        <h3>Ivan comes to the car</h3>
+        <p>Home, office or the side of the road anywhere in Pinellas. He confirms the cause and gives you the parts-and-labor price first.</p>
+      </div>
+      <div class="step">
+        <h3>Fixed where it sits</h3>
+        <p>Most jobs are done the same visit. If a part has to be ordered, you can usually keep driving until it comes in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>What customers say</h2>
+      <p class="g-line"><span class="star" aria-hidden="true">★★★★★</span><span class="big">4.8</span><span>across 166 Google reviews</span></p>
+    </div>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Ivan took care of everything and when it got to my rear brakes, which we both thought needed to be replaced, was completely transparent and honest. He decided not to replace them after a closer inspection. Definitely coming back."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"He was extremely methodical in his troubleshooting. He took the time to properly diagnose the problem, found the root cause, and clearly explained what was happening and why it mattered."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"I needed brake lines and suspension fixed same day and he was fast, reliable, honest and fair priced. Will be using his services again in the future!"</p><cite>Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="area">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About and service area</span>
+      <h2>Based in Clearwater. On the road across Pinellas.</h2>
+      <p>Carmedix of FL is a mobile mechanic service run by Ivan out of Clearwater, FL, also known to many customers as Rapid Response Mobile Mechanic Service. People come back because the diagnosis is thorough, the price is fair and he does what he says he'll do.</p>
+      <p>A bit outside the usual area? Text anyway and you'll get a straight answer.</p>
+      <div class="towns">
+        <span>Clearwater</span><span>Largo</span><span>Dunedin</span><span>Palm Harbor</span><span>Safety Harbor</span><span>Oldsmar</span><span>Tarpon Springs</span><span>Pinellas Park</span><span>Seminole</span><span>St. Petersburg</span><span>Tampa by request</span>
+      </div>
+      <div class="facts">
+        <b>Home base</b><span>29712 US Hwy 19 N, Clearwater, FL 33761. Mobile service, we come to you.</span>
+        <b>Phone</b><span><a href="tel:+17272385035">(727) 238-5035</a>, call or <a href="sms:+17272385035">text</a></span>
+        <b>Mon–Fri</b><span>9:00 AM – 7:00 PM</span>
+        <b>Saturday</b><span>10:00 AM – 6:00 PM</span>
+        <b>Sunday</b><span>10:00 AM – 4:00 PM</span>
+        <b>Facebook</b><span><a href="https://www.facebook.com/RapidResponseMobileMechanicServiceLLC/" rel="noopener" target="_blank">Rapid Response Mobile Mechanic Service</a></span>
+      </div>
+    </div>
+    <div class="map" aria-label="Service area map">
+      <svg viewBox="0 0 400 300" role="img" aria-labelledby="mapTitle">
+        <title id="mapTitle">Stylized map of Pinellas County with Clearwater at the center of the service area</title>
+        <rect width="400" height="300" fill="#2E0C12"/>
+        <!-- Pinellas peninsula -->
+        <path d="M120 0 L300 0 C310 60 320 120 310 180 C300 240 270 290 240 300 L150 300 C120 260 105 200 100 140 C96 90 110 40 120 0 Z" fill="#5A1B24"/>
+        <!-- Tampa Bay (east) -->
+        <text x="330" y="150" font-family="Figtree, sans-serif" font-size="10" fill="#D9B8BE">Tampa Bay</text>
+        <!-- Gulf (west) -->
+        <text x="16" y="150" font-family="Figtree, sans-serif" font-size="10" fill="#D9B8BE">Gulf</text>
+        <!-- US 19 -->
+        <path d="M210 0 C214 100 212 200 206 300" stroke="#9B5F69" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+        <!-- service radius -->
+        <circle cx="190" cy="130" r="110" fill="#FF7A45" opacity=".12"/>
+        <circle cx="190" cy="130" r="110" fill="none" stroke="#FF7A45" stroke-width="2" stroke-dasharray="6 5"/>
+        <circle cx="190" cy="130" r="52" fill="#FF7A45" opacity=".14"/>
+        <!-- towns -->
+        <g font-family="Figtree, sans-serif" font-size="11" fill="#F1DEE1">
+          <circle cx="150" cy="34" r="3" fill="#F1DEE1"/><text x="158" y="38">Tarpon Springs</text>
+          <circle cx="170" cy="72" r="3" fill="#F1DEE1"/><text x="178" y="76">Palm Harbor</text>
+          <circle cx="262" cy="88" r="3" fill="#F1DEE1"/><text x="238" y="80">Oldsmar</text>
+          <circle cx="150" cy="110" r="3" fill="#F1DEE1"/><text x="104" y="114">Dunedin</text>
+          <circle cx="250" cy="128" r="3" fill="#F1DEE1"/><text x="257" y="132">Safety Harbor</text>
+          <circle cx="178" cy="194" r="3" fill="#F1DEE1"/><text x="140" y="212">Largo</text>
+          <circle cx="238" cy="206" r="3" fill="#F1DEE1"/><text x="245" y="210">Pinellas Park</text>
+          <circle cx="150" cy="236" r="3" fill="#F1DEE1"/><text x="104" y="254">Seminole</text>
+          <circle cx="228" cy="264" r="3" fill="#F1DEE1"/><text x="236" y="268">St. Petersburg</text>
+        </g>
+        <!-- Clearwater pin -->
+        <path d="M190 102 C178 102 170 111 170 122 C170 138 190 156 190 156 C190 156 210 138 210 122 C210 111 202 102 190 102 Z" fill="#FF7A45"/>
+        <circle cx="190" cy="122" r="7" fill="#24161A"/>
+        <text x="190" y="176" text-anchor="middle" font-family="Oswald, sans-serif" font-weight="700" font-size="15" fill="#FBF4F2" letter-spacing="1">CLEARWATER</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Tell Ivan what the car is doing</h2>
+      <p class="sub">Fill this in and it opens a text to Ivan with your details already typed. You'll get a price and a time back. Or just call, seven days a week.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a class="big" href="tel:+17272385035">(727) 238-5035</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg><a href="sms:+17272385035?&body=Hi%20Ivan%2C%20I%27d%20like%20a%20quote%20for%20my%20">Text (727) 238-5035</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Mobile service based in Clearwater, FL 33761</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon–Fri 9–7, Sat 10–6, Sun 10–4</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <h3>Request a quote</h3>
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(727) 555-0123" required></label>
+      <label class="f">Vehicle (year, make, model)<input name="vehicle" placeholder="2004 Chevy Silverado" required></label>
+      <label class="f">What do you need?<textarea name="need" placeholder="Grinding when I brake, car is at my house in Largo" required></textarea></label>
+      <button class="btn btn-coral" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Carmedix of FL LLC · Clearwater, FL · <a href="tel:+17272385035">(727) 238-5035</a> · <a href="https://www.facebook.com/RapidResponseMobileMechanicServiceLLC/" rel="noopener" target="_blank">Facebook</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener" target="_blank">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Ivan, this is '+f.get('name')+'. I have a '+f.get('vehicle')+' and I need: '+f.get('need');
+    msg=msg.replace(/[.\s]*$/,'')+'.';
+    if(f.get('phone'))msg+=' You can reach me at '+f.get('phone')+'.';
+    msg+=' When could you come out?';
+    window.location.href='sms:+17272385035?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

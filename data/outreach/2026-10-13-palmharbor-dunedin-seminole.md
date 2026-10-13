@@ -8,7 +8,7 @@ Opener only, no link, from Google Voice. Step 2 after a yes. Nudge on day 4 (sti
 **Contact:** +1 888-600-1644  ·  **Preview:** https://shopfrontsites.org/preview/tintexpress
 
 **Opener:**
-> Hey Dave, Kevin here in Tampa Bay — you've got 1304 five-star reviews and the current site isn't doing them justice, so I built a free replacement mockup for Tint Express. Mind if I send the link?
+> Hey Dave, Kevin here in Tampa Bay — you've got 1,300+ five-star reviews and the current site isn't doing them justice, so I built a free replacement mockup for Tint Express. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: https://shopfrontsites.org/preview/tintexpress — the quote button texts straight to your phone. Free to look, tell me what you think.
@@ -36,7 +36,7 @@ Opener only, no link, from Google Voice. Step 2 after a yes. Nudge on day 4 (sti
 **Contact:** +1 727-385-8788  ·  **Preview:** https://shopfrontsites.org/preview/precisiontintplus
 
 **Opener:**
-> Hey Kevin, Kevin here in Tampa Bay — you've got 227 reviews and the current site isn't doing them justice, so I built a free replacement mockup for Precision Window Tint+. Mind if I send the link?
+> Hey Kevin — other Kevin here, in Tampa Bay — you've got 227 reviews and the current site isn't doing them justice, so I built a free replacement mockup for Precision Window Tint+. Mind if I send the link?
 
 **Step 2 (after yes):**
 > Here you go: https://shopfrontsites.org/preview/precisiontintplus — the quote button texts straight to your phone. Free to look, tell me what you think.

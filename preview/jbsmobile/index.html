@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JB's Mobile Car Wash &amp; Detailing — Mobile car wash and detailing in Apollo Beach, FL</title>
+<meta name="description" content="JB's Mobile Car Wash &amp; Detailing comes to your driveway in Apollo Beach, Ruskin, Riverview and South Shore. 4.9 stars on Google across 141 reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF3EC; --bg-2:#FFFFFF; --ink:#2A1A30; --ink-2:#6B5A6E; --line:#EADCD2;
+    --plum:#2A1A30; --plum-2:#3D2645; --on-plum:#FBF3EC; --on-plum-2:#CDB8C9;
+    --coral:#FF7F66; --coral-2:#FF9A85; --coral-ink:#2A0F0A; --coral-deep:#C2452D; --blush:#F6E1D6;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#170E1A;--bg-2:#22152A;--ink:#FBF3EC;--ink-2:#CDB8C9;--line:#3A2842;--plum:#120A15;--plum-2:#22152A;--blush:#3A2842;--coral-deep:#FF9A85}
+  }
+  :root[data-theme="dark"]{--bg:#170E1A;--bg-2:#22152A;--ink:#FBF3EC;--ink-2:#CDB8C9;--line:#3A2842;--plum:#120A15;--plum-2:#22152A;--blush:#3A2842;--coral-deep:#FF9A85}
+  html{scroll-padding-top:4.5rem;scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{margin:0;font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.04;letter-spacing:-.025em}
+  h1{font-size:clamp(2.45rem,8vw,4.4rem);font-weight:800}
+  h1 em{font-style:normal;color:var(--coral)}
+  h2{font-size:clamp(1.85rem,5vw,2.7rem);font-weight:700}
+  h3{font-size:1.25rem;font-weight:700;letter-spacing:-.01em}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--coral-deep)}
+  .eyebrow::before{content:"";width:.9rem;height:.45rem;border-radius:0 0 .45rem .45rem;background:currentColor}
+  .hero .eyebrow,.pricing .eyebrow,.quote .eyebrow{color:var(--coral)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.9rem;font-weight:700;font-size:1.02rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+  .btn:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+  .btn-coral{background:var(--coral);color:var(--coral-ink)}
+  .btn-coral:hover{background:var(--coral-2)}
+  .btn-ghost{background:transparent;color:var(--on-plum);border-color:rgba(255,255,255,.3)}
+
+  /* header */
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--plum);color:var(--on-plum);border-bottom:1px solid rgba(255,255,255,.08)}
+  header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;min-height:3.75rem;gap:.5rem 1rem;padding-block:.4rem}
+  .logo{display:inline-flex;align-items:center;gap:.5rem;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:1.2rem;text-decoration:none;color:var(--on-plum);letter-spacing:-.02em;white-space:nowrap;min-width:0}
+  .logo .mark{width:1.7rem;height:1.7rem;flex:none}
+  .logo small{font-family:Figtree,sans-serif;font-weight:600;font-size:.72rem;color:var(--on-plum-2);letter-spacing:.08em;text-transform:uppercase}
+  @media (max-width:480px){.logo small{display:none}}
+  nav a{text-decoration:none;color:var(--on-plum-2);font-weight:600;margin-left:1.25rem;font-size:.98rem}
+  nav a:hover{color:var(--coral)}
+  @media (max-width:800px){nav{display:none}}
+  .call-pill{background:var(--coral);color:var(--coral-ink);text-decoration:none;font-weight:700;padding:.45rem .85rem;border-radius:999px;font-size:.85rem;white-space:nowrap;flex:none}
+
+  /* hero */
+  .hero{background:
+      radial-gradient(ellipse 75% 55% at 100% 0%,rgba(255,127,102,.24),transparent 60%),
+      linear-gradient(180deg,var(--plum-2),var(--plum) 75%);
+    color:var(--on-plum);padding:3rem 0 3.5rem;overflow:hidden;position:relative}
+  .hero .wrap{display:grid;gap:2.5rem}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .hero .lede{color:var(--on-plum-2);font-size:1.15rem;max-width:38ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .proof{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;margin-top:1.75rem;color:var(--on-plum-2);font-size:.95rem}
+  .proof .stars{color:var(--coral);letter-spacing:.08em;font-size:1rem}
+  .proof strong{color:var(--on-plum);font-weight:700}
+  .stage{position:relative;border-radius:1.25rem;overflow:hidden;background:
+      linear-gradient(180deg,#FF9A85 0%,#B85A6A 30%,#4A2C52 58%,#1C1120 100%);border:1px solid rgba(255,255,255,.1);aspect-ratio:5/4}
+  .stage .sun{position:absolute;left:50%;top:46%;width:34%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,#FFD3B8 0%,#FF9A85 45%,rgba(255,127,102,0) 70%)}
+  .stage .water{position:absolute;left:0;right:0;top:50%;bottom:0;background:linear-gradient(180deg,rgba(28,17,32,.35),rgba(28,17,32,.92))}
+  .stage .water::before,.stage .water::after{content:"";position:absolute;left:30%;right:30%;height:2px;border-radius:2px;background:rgba(255,211,184,.55)}
+  .stage .water::before{top:8%}
+  .stage .water::after{top:16%;left:38%;right:38%;opacity:.7}
+  .stage svg{position:absolute;left:0;right:0;bottom:5%;width:100%;height:auto}
+  .stage .badge{position:absolute;left:.9rem;top:.9rem;background:rgba(28,17,32,.7);backdrop-filter:blur(6px);color:var(--on-plum);font-size:.85rem;font-weight:600;padding:.4rem .75rem;border-radius:999px;border:1px solid rgba(255,255,255,.15)}
+  .stage .badge b{color:var(--coral)}
+  .stage-cap{color:var(--on-plum-2);font-size:.95rem;margin-top:.75rem;text-align:center}
+  @media (prefers-reduced-motion:no-preference){
+    .gleam{animation:gleam 4.5s ease-in-out infinite}
+    @keyframes gleam{0%,100%{transform:translateX(-120px);opacity:0}15%{opacity:.8}50%{transform:translateX(420px);opacity:.8}65%,99%{opacity:0}}
+    .drip{animation:drip 3s ease-in-out infinite}
+    @keyframes drip{0%,100%{transform:translateY(0);opacity:.85}50%{transform:translateY(-5px);opacity:1}}
+  }
+
+  /* sections */
+  section{padding:3.75rem 0}
+  .section-head{display:grid;gap:.6rem;max-width:56ch}
+  .section-head p{color:var(--ink-2)}
+
+  .services .grid{display:grid;gap:1rem;margin-top:1.75rem}
+  @media (min-width:700px){.services .grid{grid-template-columns:repeat(2,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:1.1rem;padding:1.3rem;display:grid;grid-template-columns:auto 1fr;gap:.9rem 1rem;align-items:start}
+  .svc .ico{width:2.75rem;height:2.75rem;border-radius:.85rem;background:var(--plum);display:grid;place-items:center;color:var(--coral)}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .svc .ico{background:rgba(255,127,102,.14)}}
+  :root[data-theme="dark"] .svc .ico{background:rgba(255,127,102,.14)}
+  .svc .ico svg{width:1.4rem;height:1.4rem}
+  .svc p{color:var(--ink-2);margin-top:.35rem;font-size:1rem}
+
+  .pricing{background:var(--plum);color:var(--on-plum);position:relative;overflow:hidden}
+  .pricing::before{content:"";position:absolute;left:-12%;bottom:-35%;width:55%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,127,102,.16),transparent 65%);pointer-events:none}
+  .pricing .section-head p{color:var(--on-plum-2)}
+  .pricing .grid{display:grid;gap:1.25rem;margin-top:1.75rem;position:relative}
+  @media (min-width:800px){.pricing .grid{grid-template-columns:repeat(3,1fr)}}
+  .pkg{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:1.1rem;padding:1.4rem;display:flex;flex-direction:column}
+  .pkg.featured{background:rgba(255,127,102,.08);border-color:var(--coral);box-shadow:0 0 0 1px var(--coral) inset}
+  .pkg .tag{align-self:flex-start;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--coral-ink);background:var(--coral);padding:.25rem .65rem;border-radius:999px;margin-bottom:.75rem}
+  .pkg .from{color:var(--on-plum-2);font-size:.9rem;margin-top:.6rem}
+  .pkg .price{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:2.4rem;font-weight:800;line-height:1;margin:.15rem 0 .25rem;color:var(--coral)}
+  .pkg .time{color:var(--on-plum-2);font-size:.95rem}
+  .pkg ul{margin:1rem 0 1.25rem;padding-left:1.1rem;color:var(--on-plum-2);font-size:1rem;display:grid;gap:.4rem}
+  .pkg ul li::marker{color:var(--coral)}
+  .pkg .btn{margin-top:auto}
+  .pricing .note{color:var(--on-plum-2);margin-top:1.25rem;font-size:.9rem;display:flex;gap:.5rem;align-items:flex-start;position:relative}
+  .pricing .note svg{flex:none;width:1.1rem;height:1.1rem;margin-top:.15rem;color:var(--coral)}
+
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:800px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:1.1rem;padding:1.3rem;position:relative}
+  .review::before{content:"\201C";position:absolute;right:1rem;top:.3rem;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:4rem;line-height:1;color:var(--blush);opacity:.95}
+  .review p{position:relative}
+  .review .stars{color:#E0A526;letter-spacing:.1em;margin-bottom:.6rem}
+  .review cite{display:block;margin-top:.9rem;font-style:normal;color:var(--ink-2);font-size:.92rem}
+  .rating-badge{display:inline-flex;align-items:center;gap:.75rem;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.5rem 1rem .5rem .6rem;margin-top:1rem;flex-wrap:wrap}
+  .rating-badge .g{width:2rem;height:2rem;border-radius:50%;background:var(--plum);color:var(--coral);display:grid;place-items:center;font-weight:800;font-family:"Bricolage Grotesque",system-ui,sans-serif}
+  .rating-badge strong{font-size:1.1rem}
+  .rating-badge span{color:var(--ink-2);font-size:.95rem}
+
+  .about{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about .wrap{display:grid;gap:2rem}
+  @media (min-width:800px){.about .wrap{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .about p{color:var(--ink-2);margin-top:.8rem}
+  .area{background:var(--bg);border:1px solid var(--line);border-radius:1.1rem;padding:1.3rem}
+  .area h3{margin-bottom:.75rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0}
+  .chips li{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .8rem;font-size:.95rem;font-weight:600}
+  .hours{margin-top:1.1rem;color:var(--ink-2);font-size:.95rem;display:grid;gap:.25rem}
+  .hours strong{color:var(--ink)}
+
+  .quote{background:var(--plum);color:var(--on-plum)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--on-plum-2);margin-top:.9rem;max-width:40ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.6rem}
+  .contact-list li{display:flex;gap:.6rem;align-items:center}
+  .contact-list svg{width:1.1rem;height:1.1rem;color:var(--coral);flex:none}
+  .contact-list a{color:var(--on-plum);text-decoration-color:var(--coral);text-underline-offset:3px}
+  form{display:grid;gap:.9rem;background:rgba(255,255,255,.05);padding:1.4rem;border-radius:1.1rem;border:1px solid rgba(255,255,255,.12)}
+  label{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-plum-2)}
+  input,select,textarea{font:inherit;color:#2A1A30;background:#fff;border:1px solid #EADCD2;border-radius:.6rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--coral);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-plum-2)}
+
+  footer{background:var(--plum);color:var(--on-plum-2);padding:1.5rem 0 3.5rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.08)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-plum);text-decoration-color:var(--coral);text-underline-offset:3px}
+
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--coral);color:var(--coral-ink);font-size:.75rem;font-weight:700;padding:.35rem .7rem;border-radius:999px;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="var(--coral)"/><path d="M16 6c3.5 4.5 6.5 8 6.5 11.5a6.5 6.5 0 0 1-13 0C9.5 14 12.5 10.5 16 6z" fill="#2A1A30"/><path d="M13 18.5a3 3 0 0 0 3 3" stroke="#FF7F66" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>
+      JB's Mobile <small>Car Wash &amp; Detailing</small>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+18133251452">Call or text</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Apollo Beach, FL · We come to you</span>
+      <h1 style="margin-top:.9rem">Better than <em>the day you bought it.</em></h1>
+      <p class="lede">JB's Mobile Car Wash &amp; Detailing brings the wash, the detail and every product to your driveway across Apollo Beach, Ruskin, Riverview and the South Shore. You stay home. Your car comes back looking, and smelling, showroom new.</p>
+      <div class="hero-actions">
+        <a class="btn btn-coral" href="#quote">Get a quote</a>
+        <a class="btn btn-ghost" href="tel:+18133251452">(813) 325-1452</a>
+      </div>
+      <div class="proof">
+        <span class="stars" aria-label="4.9 out of 5 stars">★★★★★</span>
+        <span><strong>4.9</strong> on Google · <strong>141</strong> reviews</span>
+        <span>· Mon–Sat, from 7am</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="stage" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="water"></div>
+        <span class="badge"><b>Mobile</b> · at your home or office</span>
+        <svg viewBox="0 0 520 230">
+          <defs>
+            <linearGradient id="paint" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#FFF6F0"/>
+              <stop offset=".55" stop-color="#EBD7D4"/>
+              <stop offset="1" stop-color="#A88A98"/>
+            </linearGradient>
+            <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#FF9A85" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#2A1A30" stop-opacity=".95"/>
+            </linearGradient>
+            <linearGradient id="sweep" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+              <stop offset=".5" stop-color="#fff" stop-opacity=".75"/>
+              <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+            </linearGradient>
+            <clipPath id="bodyClip">
+              <path d="M58 170 C56 142 70 124 108 118 L150 112 C180 84 218 66 262 66 C318 66 358 84 394 116 L450 124 C472 128 484 142 482 170 L472 182 L60 182 Z"/>
+            </clipPath>
+          </defs>
+          <ellipse cx="262" cy="204" rx="235" ry="12" fill="#000" opacity=".45"/>
+          <path fill="url(#paint)" d="M58 170 C56 142 70 124 108 118 L150 112 C180 84 218 66 262 66 C318 66 358 84 394 116 L450 124 C472 128 484 142 482 170 L472 182 L60 182 Z"/>
+          <path fill="url(#glass)" d="M168 114 C192 92 224 78 262 78 C300 78 334 90 366 114 Z"/>
+          <path fill="#fff" opacity=".35" d="M176 112 C198 94 226 84 258 84 L258 112 Z"/>
+          <g clip-path="url(#bodyClip)"><rect class="gleam" x="0" y="60" width="120" height="130" fill="url(#sweep)" transform="skewX(-20)"/></g>
+          <rect x="60" y="176" width="420" height="10" rx="4" fill="#1C1120"/>
+          <g fill="#1C1120"><circle cx="142" cy="180" r="30"/><circle cx="398" cy="180" r="30"/></g>
+          <g fill="#D9C6CC"><circle cx="142" cy="180" r="16"/><circle cx="398" cy="180" r="16"/></g>
+          <g fill="#1C1120"><circle cx="142" cy="180" r="6"/><circle cx="398" cy="180" r="6"/></g>
+          <rect x="456" y="140" width="22" height="9" rx="3" fill="#FFF1C2"/>
+          <rect x="60" y="142" width="18" height="8" rx="3" fill="#FF6B6B"/>
+          <g fill="#FFD3B8" class="drip">
+            <path d="M96 52c3 4 5 6.5 5 9a5 5 0 0 1-10 0c0-2.5 2-5 5-9z"/>
+            <path d="M448 40c2.4 3.2 4 5.2 4 7.2a4 4 0 0 1-8 0c0-2 1.6-4 4-7.2z"/>
+            <path d="M476 76c1.8 2.4 3 3.9 3 5.4a3 3 0 0 1-6 0c0-1.5 1.2-3 3-5.4z"/>
+          </g>
+        </svg>
+      </div>
+      <p class="stage-cap">Hand washes, interior details and full inside-and-out details, done right in your driveway.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>The car wash comes to you.</h2>
+      <p>Pick one service or combine them. Every visit is fully mobile, so there's no line, no drop-off and nowhere to wait.</p>
+    </div>
+    <div class="grid">
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3 4 6 7 6 10.5a6 6 0 0 1-12 0C6 10 9 7 12 3z"/></svg></div>
+        <div><h3>Mobile hand wash</h3><p>Hand wash and dry, wheels and tires cleaned and dressed, door jambs and glass. The quick reset for salt air, pollen and love bugs.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18M8 7V5h8v2"/></svg></div>
+        <div><h3>Interior detail</h3><p>Vacuumed and shampooed seats and carpet, leather cleaned and conditioned, vents, consoles and cup holders. It'll smell like the showroom again.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+        <div><h3>Full inside-and-out detail</h3><p>The works. Deep-cleaned interior plus a decontaminated, protected exterior. The one customers say made their car look years newer.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M12 14l1.5 1.5L16 13"/></svg></div>
+        <div><h3>Easy online booking</h3><p>Pick a time, get a confirmation, and get a heads-up before your appointment. Show up to a clean car, not a scheduling headache.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>Simple packages, quoted up front.</h2>
+      <p>Final price depends on vehicle size and condition. Text a photo and you'll get a firm number back.</p>
+    </div>
+    <div class="grid">
+      <div class="pkg">
+        <h3>Mobile wash</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$49</div>
+        <div class="time">About 45 minutes</div>
+        <ul><li>Hand wash and dry</li><li>Wheels and tires cleaned and dressed</li><li>Door jambs</li><li>Glass inside and out</li></ul>
+        <a class="btn btn-ghost" href="#quote">Book this</a>
+      </div>
+      <div class="pkg featured">
+        <span class="tag">Most popular</span>
+        <h3>Full inside and out</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$219</div>
+        <div class="time">About 3–4 hours</div>
+        <ul><li>Everything in the mobile wash</li><li>Shampooed seats and carpet</li><li>Leather cleaned and conditioned</li><li>Clay bar and paint sealant</li><li>Pet hair and stain treatment</li></ul>
+        <a class="btn btn-coral" href="#quote">Book this</a>
+      </div>
+      <div class="pkg">
+        <h3>Interior detail</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$149</div>
+        <div class="time">About 2–3 hours</div>
+        <ul><li>Full vacuum and shampoo</li><li>Leather and trim conditioned</li><li>Vents, consoles and cup holders</li><li>Odor refresh</li></ul>
+        <a class="btn btn-ghost" href="#quote">Book this</a>
+      </div>
+    </div>
+    <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span>Example pricing — we'll put in your real numbers. Trucks, large SUVs and heavily soiled vehicles are quoted individually.</span></p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>141 South Shore drivers, 4.9 stars.</h2>
+    </div>
+    <div class="rating-badge"><span class="g">G</span><strong>4.9</strong><span>on Google across 141 reviews</span></div>
+    <div class="grid">
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>Juan is extremely meticulous and takes his time to make sure my vehicle looks and smells like it came out of the showroom! My 2019 Volvo XC60 literally looked like a 2026 when he was done with it.</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>From the appointment scheduling on the website to the communication on my appointment day, everything was perfect. My car looks better than the day I bought it new!</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>Absolutely the best and only car detailing company I'll use. Juan is a hard worker who cares and the owner stands 100% behind the business.</p>
+        <cite>Google review</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About</span>
+      <h2 style="margin-top:.6rem">Pride in every car.</h2>
+      <p>JB's Mobile Car Wash &amp; Detailing is based right here in Apollo Beach. Customers keep mentioning the same things: detailers who take their time, clear communication before the appointment, and an owner who stands behind every job.</p>
+      <p>Fully mobile means you don't lose a morning at the car wash. Book it for while you're at work or at home, and walk out to a finished car.</p>
+    </div>
+    <div class="area">
+      <h3>Service area</h3>
+      <ul class="chips">
+        <li>Apollo Beach</li><li>Ruskin</li><li>Riverview</li><li>Gibsonton</li><li>Sun City Center</li><li>Wimauma</li><li>Brandon by request</li>
+      </ul>
+      <div class="hours">
+        <span><strong>Mon–Fri</strong> 7:00am – 6:00pm</span>
+        <span><strong>Saturday</strong> 9:00am – 2:00pm</span>
+        <span><strong>Sunday</strong> Closed</span>
+        <span>Based in Apollo Beach, FL 33572</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2 style="margin-top:.6rem">Tell us about the car.</h2>
+      <p class="sub">Fill this in and it opens a text to JB's with your details already typed. Or just call.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><a href="tel:+18133251452">(813) 325-1452</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-5A8 8 0 1 1 21 12z"/></svg><a href="sms:+18133251452?&body=Hi%20JB%27s%2C%20I%27d%20like%20a%20quote%20for%20a%20wash%20or%20detail%20on%20my%20">Text us a photo of the car</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Mobile service across Apollo Beach and the South Shore</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Mon–Fri 7am – 6pm · Sat 9am – 2pm</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Your phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(813) 555-0123" required></label>
+      <label>Vehicle<input name="vehicle" placeholder="2019 Volvo XC60" required></label>
+      <label>What do you need?
+        <select name="need">
+          <option>Mobile wash</option>
+          <option>Full inside and out detail</option>
+          <option>Interior detail</option>
+          <option>Not sure, help me choose</option>
+        </select>
+      </label>
+      <label>Anything else (where the car is, when works)<textarea name="notes" placeholder="Apollo Beach, Saturday morning. Beach sand in the floor mats."></textarea></label>
+      <button class="btn btn-coral" type="submit">Send as a text</button>
+      <p class="form-note">Nothing is stored on this page. Your message opens in your phone's messaging app and you send it yourself.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>JB's Mobile Car Wash &amp; Detailing · Apollo Beach, FL · <a href="tel:+18133251452">(813) 325-1452</a></span>
+    <span>Site preview by <a href="https://shopfrontsites.org" target="_blank" rel="noopener">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" target="_blank" rel="noopener">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi JB\'s, this is '+f.get('name')+' ('+f.get('phone')+'). I have a '+f.get('vehicle')+' and I\'m looking for: '+f.get('need')+'.';
+    if(f.get('notes'))msg+=' '+f.get('notes');
+    msg+=' What do you have open?';
+    window.location.href='sms:+18133251452?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

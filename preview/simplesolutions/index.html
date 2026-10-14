@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Simple Solutions Mobile Mechanic — Mobile auto repair in Valrico, Brandon and East Hillsborough</title>
+<meta name="description" content="Simple Solutions Mobile Mechanic: mobile diagnostics and auto repair at your home or work across Valrico, Brandon, Riverview, Seffner and East Tampa Bay. 4.9 stars on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F4EE; --bg-2:#FFFFFF; --ink:#24172A; --ink-2:#64566A; --line:#E3DBE0;
+    --plum:#3B2340; --plum-2:#2C1A31; --plum-3:#5A3863; --on-plum:#F8F3F9; --on-plum-2:#CDB9D2;
+    --lime:#C6E35A; --lime-2:#B2CF45; --lime-ink:#1F2A06;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1A121D;--bg-2:#241A28;--ink:#F3EEF5;--ink-2:#BCAEC2;--line:#3A2D40}}
+  :root[data-theme="dark"]{--bg:#1A121D;--bg-2:#241A28;--ink:#F3EEF5;--ink-2:#BCAEC2;--line:#3A2D40}
+  html{scroll-padding-top:calc(4.5rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;line-height:1.02;letter-spacing:-.025em}
+  h1{font-size:clamp(2.55rem,9vw,4.6rem);font-weight:800}
+  h2{font-size:clamp(1.95rem,5.5vw,2.9rem);font-weight:800}
+  h3{font-size:1.28rem;font-weight:700;letter-spacing:-.01em}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--plum-3);margin-bottom:.8rem}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .eyebrow{color:var(--lime)}}
+  :root[data-theme="dark"] .eyebrow{color:var(--lime)}
+  .eyebrow::before{content:"";width:.6rem;height:.6rem;background:var(--lime);border-radius:50%;box-shadow:0 0 0 3px rgba(198,227,90,.3)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:999px;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.08rem;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+  .btn-lime{background:var(--lime);color:var(--lime-ink)}
+  .btn-lime:hover{background:var(--lime-2)}
+  .btn-outline{background:transparent;color:var(--on-plum);border-color:rgba(255,255,255,.35)}
+  .btn-outline:hover{border-color:var(--lime)}
+
+  /* preview bar + header */
+  .preview-bar{background:var(--plum-2);color:var(--on-plum-2);font-size:.85rem;text-align:center;padding:.5rem 1rem}
+  .preview-bar a{color:var(--lime);font-weight:700}
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--plum);color:var(--on-plum);border-bottom:1px solid rgba(255,255,255,.1)}
+  header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem .75rem;min-height:3.75rem;padding:.4rem 0}
+  .logo{display:flex;align-items:center;gap:.55rem;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.2rem;text-decoration:none;color:var(--on-plum);letter-spacing:-.02em;line-height:1;min-width:0}
+  .logo .mark{width:1.9rem;height:1.9rem;border-radius:.55rem;background:var(--lime);color:var(--lime-ink);display:grid;place-items:center;font-size:1rem;font-weight:800;flex:0 0 auto}
+  .logo small{display:block;font-family:Figtree,sans-serif;font-weight:600;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-plum-2);margin-top:.2rem}
+  @media (max-width:400px){.logo small{display:none}}
+  nav a{text-decoration:none;color:var(--on-plum-2);font-weight:600;margin-left:1.25rem;font-size:.95rem}
+  nav a:hover{color:var(--lime)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--lime);color:var(--lime-ink);text-decoration:none;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:.92rem;padding:.45rem .9rem;border-radius:999px;white-space:nowrap;flex:0 0 auto}
+
+  /* hero */
+  .hero{background:var(--plum);color:var(--on-plum);padding:3rem 0 3.75rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;left:-8rem;bottom:-10rem;width:28rem;height:28rem;border-radius:50%;background:radial-gradient(circle,rgba(198,227,90,.18),transparent 65%);pointer-events:none}
+  .hero::after{content:"";position:absolute;right:-5rem;top:-7rem;width:22rem;height:22rem;border-radius:50%;border:2px dashed rgba(198,227,90,.22);pointer-events:none}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative;z-index:1}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.08fr .92fr;align-items:center}}
+  .hero .eyebrow{color:var(--on-plum-2)}
+  .hero h1 em{font-style:normal;color:var(--lime)}
+  .hero .lede{color:var(--on-plum-2);font-size:1.15rem;max-width:40ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:flex;flex-wrap:wrap;gap:1rem 2.25rem;margin-top:2.25rem;color:var(--on-plum-2);font-size:.9rem}
+  .trust strong{display:block;color:var(--on-plum);font-family:"Bricolage Grotesque",sans-serif;font-size:1.8rem;font-weight:800;line-height:1.05}
+  .trust .star{color:var(--lime)}
+
+  .stage{background:var(--plum-2);border-radius:1rem;padding:1.25rem;border:1px solid rgba(255,255,255,.1)}
+  .stage svg{width:100%;height:auto;display:block}
+  .checks{list-style:none;margin:1.1rem 0 0;padding:0;display:grid;gap:.55rem;font-size:.98rem}
+  .checks li{display:flex;gap:.65rem;align-items:flex-start;color:var(--on-plum)}
+  .checks li::before{content:"";flex:none;width:1.15rem;height:1.15rem;margin-top:.2rem;border-radius:50%;background:var(--lime) center/62% no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F2A06' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5 5L20 6.5'/%3E%3C/svg%3E")}
+  @media (prefers-reduced-motion:no-preference){
+    .wheel{transform-origin:center;animation:roll 6.5s linear infinite;transform-box:fill-box}
+    @keyframes roll{to{transform:rotate(360deg)}}
+    .pulse{animation:pulse 2.4s ease-in-out infinite}
+    @keyframes pulse{50%{opacity:.35}}
+  }
+
+  /* sections */
+  section{padding:4rem 0}
+  .sec-head{display:grid;gap:.5rem;max-width:58ch}
+  .sec-head p{color:var(--ink-2);font-size:1.05rem}
+  .grid{display:grid;gap:1.1rem;margin-top:2rem}
+  @media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:940px){.grid.three{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.35rem 1.4rem;display:grid;gap:.45rem;align-content:start}
+  .svc .ico{width:2.7rem;height:2.7rem;border-radius:.8rem;background:var(--plum);display:grid;place-items:center;margin-bottom:.45rem}
+  .svc .ico svg{width:1.45rem;height:1.45rem;stroke:var(--lime);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);font-size:1rem}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.pricing .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}.pricing .price-list{margin-top:0}}
+  .price-list{list-style:none;margin:2rem 0 0;padding:0;border:1px solid var(--line);border-radius:1rem;overflow:hidden;background:var(--bg)}
+  .price-list li{display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;align-items:center;padding:1rem 1.15rem;border-top:1px solid var(--line)}
+  .price-list li:first-child{border-top:0}
+  .price-list b{font-weight:700}
+  .price-list small{display:block;color:var(--ink-2);font-size:.92rem;font-weight:400}
+  .price-list .n{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.5rem;line-height:1;white-space:nowrap;color:var(--plum-3);text-align:right}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .price-list .n{color:var(--lime)}}
+  :root[data-theme="dark"] .price-list .n{color:var(--lime)}
+  .price-list .n em{font-style:normal;font-family:Figtree,sans-serif;font-weight:600;font-size:.7rem;color:var(--ink-2);display:block;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem}
+  .promise{margin-top:1.5rem;display:grid;gap:.9rem}
+  .promise div{display:flex;gap:.8rem;align-items:flex-start;color:var(--ink-2)}
+  .promise svg{flex:0 0 auto;width:1.35rem;height:1.35rem;margin-top:.15rem;stroke:var(--plum-3);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .promise svg{stroke:var(--lime)}}
+  :root[data-theme="dark"] .promise svg{stroke:var(--lime)}
+  .promise b{color:var(--ink)}
+  .price-note{margin-top:1rem;font-size:.92rem;color:var(--ink-2);display:flex;gap:.6rem;align-items:flex-start}
+  .price-note .tag{flex:0 0 auto;background:var(--lime);color:var(--lime-ink);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:999px;margin-top:.15rem}
+
+  .steps{display:grid;gap:1.5rem;margin-top:2rem;counter-reset:step}
+  @media (min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{position:relative;padding-left:3.6rem}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;top:0;left:0;width:2.7rem;height:2.7rem;border-radius:50%;background:var(--plum);color:var(--lime);display:grid;place-items:center;font-family:"Bricolage Grotesque",sans-serif;font-size:1.35rem;font-weight:800}
+  .step p{color:var(--ink-2);margin-top:.4rem}
+
+  .reviews{background:var(--plum);color:var(--on-plum)}
+  .reviews .eyebrow{color:var(--on-plum-2)}
+  .reviews .reviews-grid{grid-template-columns:1fr}
+  @media (min-width:780px){.reviews .reviews-grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:1rem;padding:1.35rem;display:flex;flex-direction:column}
+  .stars{color:var(--lime);letter-spacing:.12em;margin-bottom:.6rem;font-size:1.05rem}
+  .review p{font-size:1.02rem}
+  .review cite{display:block;margin-top:auto;padding-top:.9rem;font-style:normal;color:var(--on-plum-2);font-size:.92rem}
+  .g-line{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin-top:.4rem;color:var(--on-plum-2)}
+  .g-line .big{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:2rem;line-height:1;color:var(--on-plum)}
+  .g-line .star{color:var(--lime);font-size:1.2rem}
+
+  .about .wrap{display:grid;gap:2.25rem}
+  @media (min-width:860px){.about .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .about p{color:var(--ink-2);margin-top:.9rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.95rem}
+  .map{background:var(--plum-2);border-radius:1rem;padding:1rem;border:1px solid rgba(255,255,255,.1)}
+  .map svg{display:block;width:100%;height:auto}
+  .facts{margin-top:1.5rem;display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem;color:var(--ink-2);font-size:.98rem}
+  .facts b{color:var(--ink);font-weight:700}
+  .facts a{color:var(--ink);text-decoration-color:var(--lime-2)}
+
+  .quote{background:var(--bg-2);border-top:1px solid var(--line)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--ink-2);margin-top:.9rem;max-width:42ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.65rem}
+  .contact-list li{display:flex;gap:.7rem;align-items:center;color:var(--ink-2)}
+  .contact-list svg{width:1.2rem;height:1.2rem;stroke:var(--plum-3);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .contact-list svg{stroke:var(--lime)}}
+  :root[data-theme="dark"] .contact-list svg{stroke:var(--lime)}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--lime-2);font-weight:700}
+  .contact-list .big{font-family:"Bricolage Grotesque",sans-serif;font-size:1.9rem;line-height:1;text-decoration:none}
+  form{display:grid;gap:.95rem;background:var(--plum);color:var(--on-plum);padding:1.5rem;border-radius:1rem;border-top:5px solid var(--lime)}
+  form h3{color:var(--on-plum)}
+  label.f{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-plum-2)}
+  input,textarea{font:inherit;color:#24172A;background:#fff;border:1px solid #D8CEDB;border-radius:.6rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.2rem;resize:vertical}
+  input:focus-visible,textarea:focus-visible{outline:3px solid var(--lime);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-plum-2)}
+
+  footer{background:var(--plum-2);color:var(--on-plum-2);padding:1.75rem 0 4rem;font-size:.9rem;border-top:3px solid var(--lime)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-plum);text-decoration-color:var(--lime)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--lime);color:var(--lime-ink);font-size:.78rem;font-weight:700;padding:.35rem .7rem;border-radius:999px;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+  .preview-tag:hover{background:var(--lime-2)}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a> for Simple Solutions Mobile Mechanic. Not the live site yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark">S</span><span>Simple Solutions<small>Mobile Mechanic</small></span></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+18135416114">Call Jay</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Valrico, FL · Brandon · East Hillsborough</span>
+      <h1>Car trouble, <em>solved in your driveway.</em></h1>
+      <p class="lede">Won't start, check engine light, strange noise or just overdue? Jay and the Simple Solutions crew come to your home or job, find the real cause and fix it on the spot. No tow truck, no waiting room, and the price is agreed before any work starts.</p>
+      <div class="hero-actions">
+        <a class="btn btn-lime" href="#quote">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+18135416114">(813) 541-6114</a>
+      </div>
+      <div class="trust">
+        <div><strong><span class="star">★</span> 4.9</strong>266 Google reviews</div>
+        <div><strong>Same day</strong>Often out the day you call</div>
+        <div><strong>24/7</strong>Call or text any time</div>
+      </div>
+    </div>
+
+    <div class="stage" aria-label="Mobile mechanic at a driveway">
+      <svg viewBox="0 0 520 240" role="img" aria-labelledby="heroTitle">
+        <title id="heroTitle">Illustration of a mobile mechanic van parked beside a car with its hood open and a diagnostic scanner plugged in</title>
+        <defs>
+          <linearGradient id="sheen" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#fff" stop-opacity=".25"/>
+            <stop offset=".6" stop-color="#fff" stop-opacity="0"/>
+            <stop offset="1" stop-color="#000" stop-opacity=".18"/>
+          </linearGradient>
+        </defs>
+        <!-- palm + sky dots -->
+        <g opacity=".5"><circle cx="40" cy="30" r="2" fill="#CDB9D2"/><circle cx="120" cy="18" r="1.5" fill="#CDB9D2"/><circle cx="470" cy="24" r="2" fill="#CDB9D2"/></g>
+        <path d="M486 196 C484 160 482 120 476 84" stroke="#5A3863" stroke-width="7" fill="none" stroke-linecap="round"/>
+        <g fill="#5A3863"><path d="M476 84 C456 70 436 74 424 86 C444 80 460 82 476 84Z"/><path d="M476 84 C492 66 512 66 520 76 C504 74 490 78 476 84Z"/><path d="M476 84 C470 62 478 48 490 42 C482 58 480 70 476 84Z"/><path d="M476 84 C460 92 450 108 452 122 C460 106 468 94 476 84Z"/></g>
+        <!-- driveway -->
+        <rect x="0" y="196" width="520" height="44" fill="#24172A"/>
+        <rect x="0" y="196" width="520" height="3" fill="#C6E35A" opacity=".7"/>
+        <!-- van -->
+        <path fill="#F3EEF5" d="M30 176 L30 96 C30 86 38 78 48 78 L188 78 C200 78 208 82 216 90 L248 124 L248 176 Z"/>
+        <path fill="url(#sheen)" d="M30 176 L30 96 C30 86 38 78 48 78 L188 78 C200 78 208 82 216 90 L248 124 L248 176 Z"/>
+        <path fill="#2C1A31" d="M194 86 L210 86 C216 86 220 88 224 92 L242 118 L194 118 Z"/>
+        <path fill="#2C1A31" d="M48 86 L96 86 L96 118 L40 118 L40 94 C40 90 44 86 48 86 Z"/>
+        <rect x="30" y="126" width="218" height="16" fill="#C6E35A"/>
+        <text x="139" y="138" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="12" fill="#1F2A06" letter-spacing="1">SIMPLE SOLUTIONS</text>
+        <rect x="24" y="172" width="230" height="10" rx="3" fill="#3B2340"/>
+        <rect x="246" y="150" width="9" height="14" rx="2" fill="#FFF1B8"/>
+        <rect x="24" y="148" width="8" height="12" rx="2" fill="#E5566B"/>
+        <g class="wheel">
+          <circle cx="84" cy="182" r="22" fill="#170E1A"/>
+          <circle cx="84" cy="182" r="12" fill="#A797AD"/>
+          <path d="M84 170 L84 194 M72 182 L96 182 M75.5 173.5 L92.5 190.5 M92.5 173.5 L75.5 190.5" stroke="#170E1A" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="84" cy="182" r="4" fill="#170E1A"/>
+        </g>
+        <g class="wheel">
+          <circle cx="204" cy="182" r="22" fill="#170E1A"/>
+          <circle cx="204" cy="182" r="12" fill="#A797AD"/>
+          <path d="M204 170 L204 194 M192 182 L216 182 M195.5 173.5 L212.5 190.5 M212.5 173.5 L195.5 190.5" stroke="#170E1A" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="204" cy="182" r="4" fill="#170E1A"/>
+        </g>
+        <!-- customer car, hood up -->
+        <path fill="#7A5684" d="M290 180 L290 150 C290 144 294 140 300 140 L322 138 L342 112 C346 107 351 104 358 104 L404 104 C412 104 418 108 422 114 L438 140 L448 142 C454 143 458 148 458 154 L458 180 Z"/>
+        <path fill="url(#sheen)" d="M290 180 L290 150 C290 144 294 140 300 140 L322 138 L342 112 C346 107 351 104 358 104 L404 104 C412 104 418 108 422 114 L438 140 L448 142 C454 143 458 148 458 154 L458 180 Z"/>
+        <path fill="#2C1A31" d="M348 136 L360 114 L384 114 L384 136 Z"/><path fill="#2C1A31" d="M392 114 L412 114 C416 114 418 116 420 119 L430 136 L392 136 Z"/>
+        <!-- open hood -->
+        <path fill="#8E6A98" d="M290 142 L322 138 L304 102 L282 108 Z"/>
+        <rect x="286" y="176" width="176" height="8" rx="3" fill="#3B2340"/>
+        <g class="wheel">
+          <circle cx="322" cy="184" r="18" fill="#170E1A"/><circle cx="322" cy="184" r="9" fill="#A797AD"/><circle cx="322" cy="184" r="3" fill="#170E1A"/>
+        </g>
+        <g class="wheel">
+          <circle cx="428" cy="184" r="18" fill="#170E1A"/><circle cx="428" cy="184" r="9" fill="#A797AD"/><circle cx="428" cy="184" r="3" fill="#170E1A"/>
+        </g>
+        <!-- scanner with cable -->
+        <path d="M300 150 C290 170 276 176 268 172" stroke="#C6E35A" stroke-width="2.5" fill="none"/>
+        <rect x="252" y="160" width="22" height="30" rx="4" fill="#170E1A" stroke="#C6E35A" stroke-width="2"/>
+        <rect x="256" y="165" width="14" height="10" rx="1.5" fill="#C6E35A" class="pulse"/>
+        <circle cx="263" cy="182" r="2.5" fill="#C6E35A"/>
+      </svg>
+      <ul class="checks">
+        <li>Diagnosis done right where the car sits, explained in plain terms</li>
+        <li>Parts ordered and fitted, often the same day you call</li>
+        <li>Price for parts and labor agreed before the work starts</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>Mobile diagnostics and repair, at your door</h2>
+      <p>Most of what a shop puts on a lift can be done in your driveway or work lot. If a job truly needs a bay, you'll hear that up front.</p>
+    </div>
+    <div class="grid three">
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 17h16M6 17V9a6 6 0 0 1 12 0v8"/><path d="M12 7v3M10 12h4"/></svg></div><h3>Diagnostics and check engine</h3><p>Scanner on, real cause found, and the fix explained before anything gets replaced. No parts-cannon guessing.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L5 13h6l-1 9 9-12h-6l1-8z"/></svg></div><h3>No-start, starter, battery, alternator</h3><p>Clicks, cranks slow or won't turn over at all. Tested on the spot and replaced without a tow.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div><h3>Brakes</h3><p>Pads, rotors and calipers per axle. Squeal, grind or a soft pedal handled the same visit.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M4 7l16 10M4 17L20 7"/></svg></div><h3>A/C checks</h3><p>Blowing warm in Florida is not an option. Leak checks, recharges and electrical faults traced down.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div><h3>Maintenance</h3><p>Oil changes, belts, hoses, coolant and those repairs you've been putting off. Get them knocked out in one stop.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 7a5 5 0 1 0-4 8l7 7 3-3-7-7a5 5 0 0 0 1-5z"/></svg></div><h3>Cars, vans and trucks</h3><p>Daily drivers, family vans and work trucks. Broke down at home or at work, the shop comes to you.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Simple pricing, no surprises</h2>
+        <p>Reviewers keep calling the price excellent. You'll get the full number for parts and labor before a wrench comes out.</p>
+      </div>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Diagnosis first.</b> You know what's wrong and what it costs before you decide.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Quote by text</b> so the number is in writing.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>No tow bill.</b> The repair happens where the car is parked.</p></div>
+      </div>
+    </div>
+    <div>
+      <ul class="price-list">
+        <li><div><b>Mobile diagnostic visit</b><small>Scan, inspection and a clear repair plan</small></div><span class="n"><em>Starting at</em>$79</span></li>
+        <li><div><b>Starter replacement</b><small>Parts and labor, most cars and light trucks</small></div><span class="n"><em>Starting at</em>$289</span></li>
+        <li><div><b>Battery replacement</b><small>Installed, tested and charging system checked</small></div><span class="n"><em>Starting at</em>$159</span></li>
+        <li><div><b>Brake pads and rotors</b><small>Per axle, parts and labor</small></div><span class="n"><em>Starting at</em>$239</span></li>
+        <li><div><b>Alternator replacement</b><small>Parts and labor, most vehicles</small></div><span class="n"><em>Starting at</em>$319</span></li>
+        <li><div><b>Oil change at your door</b><small>Full synthetic, filter, fluid top-off</small></div><span class="n"><em>Starting at</em>$79</span></li>
+      </ul>
+      <p class="price-note"><span class="tag">Note</span><span>Example pricing — we'll put in your real numbers. Final quotes depend on the vehicle and parts.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps. One visit.</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Call or text what's wrong</h3>
+        <p>Year, make, model, the symptom and where the car is. A photo or short video of the noise helps.</p>
+      </div>
+      <div class="step">
+        <h3>Jay comes out</h3>
+        <p>Often the same day. He confirms the real problem and gives you the price before touching anything.</p>
+      </div>
+      <div class="step">
+        <h3>Fixed where it sits</h3>
+        <p>Parts ordered and fitted on site, so you're back on the road without losing your whole day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>4.9 stars from 266 drivers</h2>
+      <p class="g-line"><span class="star" aria-hidden="true">★★★★★</span><span class="big">4.9</span><span>across 266 Google reviews</span></p>
+    </div>
+    <div class="grid reviews-grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Came out the same day I called. Gave me the correct diagnosis for the issue I was having with my car and had it running like new before I left for Thanksgiving."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"They came the same day that I called with engine start problems, diagnosed the problem, ordered the new starter and fitted it the same day for an excellent price."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"I was desperate after my car broke down and gave these guys a try. Professional, flexible and did a great job getting me back on the road."</p><cite>Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="area">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About and service area</span>
+      <h2>Based in Valrico. On the road across East Hillsborough.</h2>
+      <p>Simple Solutions Mobile Mechanic is run by Jay out of Valrico, FL. The idea is in the name: find the real problem, fix it where the car sits, and charge a fair price for it. Customers keep them on speed dial for exactly that.</p>
+      <p>A bit outside the usual area? Text anyway and you'll get a straight answer.</p>
+      <div class="towns">
+        <span>Valrico</span><span>Brandon</span><span>FishHawk</span><span>Lithia</span><span>Riverview</span><span>Seffner</span><span>Dover</span><span>Plant City</span><span>Tampa by request</span>
+      </div>
+      <div class="facts">
+        <b>Home base</b><span>Valrico, FL 33594. Mobile only, we come to you.</span>
+        <b>Phone</b><span><a href="tel:+18135416114">(813) 541-6114</a>, call or <a href="sms:+18135416114">text</a></span>
+        <b>Hours</b><span>Open 24 hours, 7 days a week</span>
+      </div>
+    </div>
+    <div class="map" aria-label="Service area map">
+      <svg viewBox="0 0 400 300" role="img" aria-labelledby="mapTitle">
+        <title id="mapTitle">Stylized map of East Hillsborough with Valrico at the center of the service area</title>
+        <rect width="400" height="300" fill="#2C1A31"/>
+        <!-- bay on the west -->
+        <path d="M0 0 L46 0 C58 60 40 120 52 180 C60 230 44 270 50 300 L0 300 Z" fill="#170E1A"/>
+        <!-- I-4 and I-75 / SR-60 hints -->
+        <path d="M60 60 C160 66 260 50 400 40" stroke="#5A3863" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+        <path d="M110 0 C112 100 104 200 100 300" stroke="#5A3863" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+        <path d="M60 150 C160 146 280 152 400 148" stroke="#5A3863" stroke-width="2" stroke-dasharray="4 5" fill="none"/>
+        <!-- service radius -->
+        <circle cx="210" cy="150" r="120" fill="#C6E35A" opacity=".1"/>
+        <circle cx="210" cy="150" r="120" fill="none" stroke="#C6E35A" stroke-width="2" stroke-dasharray="6 5"/>
+        <circle cx="210" cy="150" r="58" fill="#C6E35A" opacity=".13"/>
+        <!-- towns -->
+        <g font-family="Figtree, sans-serif" font-size="11" fill="#E4D8E8">
+          <circle cx="150" cy="68" r="3"/><text x="157" y="72">Seffner</text>
+          <circle cx="146" cy="140" r="3"/><text x="88" y="132">Brandon</text>
+          <circle cx="292" cy="80" r="3"/><text x="299" y="84">Dover</text>
+          <circle cx="348" cy="52" r="3"/><text x="318" y="36">Plant City</text>
+          <circle cx="130" cy="232" r="3"/><text x="64" y="252">Riverview</text>
+          <circle cx="224" cy="230" r="3"/><text x="231" y="234">FishHawk</text>
+          <circle cx="296" cy="214" r="3"/><text x="303" y="218">Lithia</text>
+          <text x="6" y="160" fill="#A797AD" font-size="10">Tampa</text>
+        </g>
+        <!-- Valrico pin -->
+        <path d="M210 118 C198 118 190 127 190 138 C190 154 210 172 210 172 C210 172 230 154 230 138 C230 127 222 118 210 118 Z" fill="#C6E35A"/>
+        <circle cx="210" cy="138" r="7" fill="#2C1A31"/>
+        <text x="210" y="190" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="15" fill="#F8F3F9" letter-spacing=".5">VALRICO</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Tell Jay what the car is doing</h2>
+      <p class="sub">Fill this in and it opens a text to Simple Solutions with your details already typed. You'll get a price and a time back. Or just call.</p>
+      <ul class="contact-list">
+        <li><a class="big" href="tel:+18135416114">(813) 541-6114</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg><a href="sms:+18135416114?&body=Hi%20Jay%2C%20I%27d%20like%20a%20quote%20for%20my%20">Text (813) 541-6114</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Mobile service based in Valrico, FL 33594</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Open 24 hours, 7 days a week</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <h3>Request a quote</h3>
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(813) 555-0123" required></label>
+      <label class="f">Vehicle (year, make, model)<input name="vehicle" placeholder="2016 Toyota Camry" required></label>
+      <label class="f">What do you need?<textarea name="need" placeholder="Clicks but won't start, car is at my house in Brandon" required></textarea></label>
+      <button class="btn btn-lime" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Simple Solutions Mobile Mechanic · Valrico, FL · <a href="tel:+18135416114">(813) 541-6114</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener" target="_blank">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Jay, this is '+f.get('name')+'. I have a '+f.get('vehicle')+' and I need: '+f.get('need');
+    msg=msg.replace(/[.\s]*$/,'')+'.';
+    if(f.get('phone'))msg+=' You can reach me at '+f.get('phone')+'.';
+    msg+=' When could you come out?';
+    window.location.href='sms:+18135416114?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

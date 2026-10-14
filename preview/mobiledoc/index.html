@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mobile Doc Auto Repair — Mobile mechanic in Port Richey and Pasco County</title>
+<meta name="description" content="Mobile Doc Auto Repair: diagnostics, brakes, wheel hubs, fuel pumps, A/C and general repair done wherever your car or work truck is, across Port Richey and Pasco County. 4.9 stars on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F4EE; --bg-2:#FFFFFF; --ink:#1E1529; --ink-2:#5E5468; --line:#E3DDE6;
+    --plum:#2B1B3D; --plum-2:#20132F; --plum-3:#3E2A55; --on-plum:#F6F2FA; --on-plum-2:#C3B5D3;
+    --lime:#D4F05C; --lime-2:#C1E03F; --lime-ink:#1E1529; --lime-deep:#5B7A00;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#140D1C;--bg-2:#1D1428;--ink:#F3EEF8;--ink-2:#B9ADC6;--line:#352A42;--lime-deep:#D4F05C}}
+  :root[data-theme="dark"]{--bg:#140D1C;--bg-2:#1D1428;--ink:#F3EEF8;--ink-2:#B9ADC6;--line:#352A42;--lime-deep:#D4F05C}
+  html{scroll-padding-top:calc(4.5rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Instrument Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;line-height:1.02;letter-spacing:-.025em}
+  h1{font-size:clamp(2.6rem,9vw,4.9rem);font-weight:800}
+  h2{font-size:clamp(1.95rem,5.5vw,2.9rem);font-weight:700}
+  h3{font-size:1.28rem;font-weight:700;letter-spacing:-.01em}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--lime-deep);margin-bottom:.8rem}
+  .eyebrow::before{content:"";width:1.4rem;height:.35rem;border-radius:999px;background:var(--lime)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.9rem;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.1rem;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+  .btn-lime{background:var(--lime);color:var(--lime-ink)}
+  .btn-lime:hover{background:var(--lime-2)}
+  .btn-ghost{background:transparent;color:var(--on-plum);border-color:rgba(255,255,255,.35)}
+  .btn-ghost:hover{border-color:var(--lime)}
+
+  /* preview bar + header */
+  .preview-bar{background:#140D1C;color:#F6F2FA;font-size:.85rem;text-align:center;padding:.5rem 1rem}
+  .preview-bar a{color:var(--lime);font-weight:700}
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--plum-2);color:var(--on-plum);border-bottom:1px solid rgba(255,255,255,.08)}
+  header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem .75rem;min-height:3.75rem;padding:.5rem 0}
+  .logo{display:flex;align-items:center;gap:.55rem;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.3rem;text-decoration:none;color:var(--on-plum);letter-spacing:-.02em;line-height:1;min-width:0}
+  .logo .mark{width:2rem;height:2rem;border-radius:.55rem;background:var(--lime);display:grid;place-items:center;flex:0 0 auto}
+  .logo .mark svg{width:1.2rem;height:1.2rem;fill:none;stroke:var(--lime-ink);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+  .logo small{display:block;font-family:"Instrument Sans",sans-serif;font-weight:600;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-plum-2);margin-top:.2rem}
+  nav a{text-decoration:none;color:var(--on-plum-2);font-weight:600;margin-left:1.25rem;font-size:.95rem}
+  nav a:hover{color:var(--lime)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--lime);color:var(--lime-ink);text-decoration:none;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:.95rem;padding:.5rem .9rem;border-radius:999px;white-space:nowrap}
+
+  /* hero */
+  .hero{background:var(--plum);color:var(--on-plum);padding:3.25rem 0 3.75rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(circle at 90% 10%,rgba(212,240,92,.14),transparent 42%),
+    radial-gradient(circle at 0% 100%,rgba(140,90,190,.25),transparent 50%);pointer-events:none}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative;z-index:1}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .hero .eyebrow{color:var(--lime)}
+  .hero h1 em{font-style:normal;color:var(--lime)}
+  .hero .lede{color:var(--on-plum-2);font-size:1.15rem;max-width:42ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:flex;flex-wrap:wrap;gap:1rem 2.25rem;margin-top:2.25rem;color:var(--on-plum-2);font-size:.9rem}
+  .trust strong{display:block;color:var(--on-plum);font-family:"Bricolage Grotesque",sans-serif;font-size:1.85rem;font-weight:800;line-height:1}
+  .trust .star{color:var(--lime)}
+
+  .stage{background:var(--plum-2);border-radius:1.1rem;padding:1.25rem;border:1px solid rgba(255,255,255,.1)}
+  .stage svg{width:100%;height:auto;display:block}
+  .checks{list-style:none;margin:1.1rem 0 0;padding:0;display:grid;gap:.55rem;font-size:.98rem}
+  .checks li{display:flex;gap:.65rem;align-items:flex-start;color:var(--on-plum)}
+  .checks li::before{content:"";flex:none;width:1.15rem;height:1.15rem;margin-top:.2rem;border-radius:.35rem;background:var(--lime) center/60% no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231E1529' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5 5L20 6.5'/%3E%3C/svg%3E")}
+  @media (prefers-reduced-motion:no-preference){
+    .beacon{animation:blink 1.6s ease-in-out infinite}
+    @keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+  }
+
+  /* sections */
+  section{padding:4rem 0}
+  .sec-head{display:grid;gap:.5rem;max-width:58ch}
+  .sec-head p{color:var(--ink-2);font-size:1.05rem}
+  .grid{display:grid;gap:1.1rem;margin-top:2rem}
+  @media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:940px){.grid.three{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.3rem 1.4rem;display:grid;gap:.45rem;align-content:start}
+  .svc .ico{width:2.7rem;height:2.7rem;border-radius:.75rem;background:var(--plum);display:grid;place-items:center;margin-bottom:.4rem}
+  .svc .ico svg{width:1.4rem;height:1.4rem;stroke:var(--lime);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);font-size:1rem}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.pricing .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}}
+  .price-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:1rem;overflow:hidden;background:var(--bg)}
+  .price-list li{display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;align-items:center;padding:1rem 1.15rem;border-top:1px solid var(--line)}
+  .price-list li:first-child{border-top:0}
+  .price-list b{font-weight:700}
+  .price-list small{display:block;color:var(--ink-2);font-size:.92rem;font-weight:400}
+  .price-list .n{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.5rem;line-height:1;white-space:nowrap;color:var(--plum);text-align:right}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .price-list .n{color:var(--lime)}}
+  :root[data-theme="dark"] .price-list .n{color:var(--lime)}
+  .price-list .n em{font-style:normal;font-family:"Instrument Sans",sans-serif;font-weight:600;font-size:.72rem;color:var(--ink-2);display:block;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem}
+  .promise{margin-top:1.5rem;display:grid;gap:.9rem}
+  .promise div{display:flex;gap:.8rem;align-items:flex-start;color:var(--ink-2)}
+  .promise svg{flex:0 0 auto;width:1.35rem;height:1.35rem;margin-top:.15rem;stroke:var(--lime-deep);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  .promise b{color:var(--ink)}
+  .price-note{margin-top:1rem;font-size:.92rem;color:var(--ink-2);display:flex;gap:.6rem;align-items:flex-start}
+  .price-note .tag{flex:0 0 auto;background:var(--lime);color:var(--lime-ink);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:999px;margin-top:.15rem}
+
+  .steps{display:grid;gap:1.5rem;margin-top:2rem;counter-reset:step}
+  @media (min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{position:relative;padding-left:3.6rem}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;top:0;left:0;width:2.7rem;height:2.7rem;border-radius:.75rem;background:var(--plum);color:var(--lime);display:grid;place-items:center;font-family:"Bricolage Grotesque",sans-serif;font-size:1.45rem;font-weight:800}
+  .step p{color:var(--ink-2);margin-top:.4rem}
+
+  .reviews{background:var(--plum);color:var(--on-plum)}
+  .reviews .eyebrow{color:var(--lime)}
+  .reviews .grid{grid-template-columns:1fr}
+  @media (min-width:780px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:1rem;padding:1.35rem;display:flex;flex-direction:column}
+  .stars{color:var(--lime);letter-spacing:.12em;margin-bottom:.6rem;font-size:1.05rem}
+  .review p{font-size:1.02rem}
+  .review cite{display:block;margin-top:auto;padding-top:.9rem;font-style:normal;color:var(--on-plum-2);font-size:.92rem}
+  .g-line{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin-top:.4rem;color:var(--on-plum-2)}
+  .g-line .big{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:2rem;line-height:1;color:var(--on-plum)}
+  .g-line .star{color:var(--lime);font-size:1.25rem}
+
+  .about .wrap{display:grid;gap:2.25rem}
+  @media (min-width:860px){.about .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .about p{color:var(--ink-2);margin-top:.9rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.95rem}
+  .map{background:var(--plum-2);border-radius:1.1rem;padding:1rem;border:1px solid rgba(255,255,255,.1)}
+  .map svg{display:block;width:100%;height:auto}
+  .facts{margin-top:1.5rem;display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem;color:var(--ink-2);font-size:.98rem}
+  .facts b{color:var(--ink);font-weight:700}
+  .facts a{color:var(--ink);text-decoration-color:var(--lime-deep)}
+
+  .quote{background:var(--bg-2);border-top:1px solid var(--line)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--ink-2);margin-top:.9rem;max-width:42ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.65rem}
+  .contact-list li{display:flex;gap:.7rem;align-items:center;color:var(--ink-2)}
+  .contact-list svg{width:1.2rem;height:1.2rem;stroke:var(--lime-deep);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--lime-deep);font-weight:700}
+  .contact-list .big{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.9rem;line-height:1;text-decoration:none}
+  form{display:grid;gap:.95rem;background:var(--plum);color:var(--on-plum);padding:1.5rem;border-radius:1.1rem;border-top:5px solid var(--lime)}
+  form h3{color:var(--on-plum)}
+  label.f{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-plum-2)}
+  input,textarea{font:inherit;color:#1E1529;background:#fff;border:1px solid #D6CEDD;border-radius:.6rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.2rem;resize:vertical}
+  input:focus-visible,textarea:focus-visible{outline:3px solid var(--lime);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-plum-2)}
+
+  footer{background:var(--plum-2);color:var(--on-plum-2);padding:1.75rem 0 4rem;font-size:.9rem;border-top:3px solid var(--lime)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-plum);text-decoration-color:var(--lime)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--lime);color:var(--lime-ink);font-size:.78rem;font-weight:700;padding:.35rem .7rem;border-radius:999px;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+  .preview-tag:hover{background:var(--lime-2)}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a> for Mobile Doc Auto Repair. Not the live site yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span><span>Mobile Doc<small>Auto Repair</small></span></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+17272677011">Call Jack</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Port Richey, FL · Pasco County · We come to you</span>
+      <h1>Broke down? <em>Jack comes to you.</em></h1>
+      <p class="lede">Diagnostics, brakes, wheel hubs, fuel pumps, A/C and the repairs that usually mean a tow, handled by Jack of Mobile Doc Auto Repair in your driveway, your parking lot or wherever the work truck quit.</p>
+      <div class="hero-actions">
+        <a class="btn btn-lime" href="#quote">Get a quote</a>
+        <a class="btn btn-ghost" href="tel:+17272677011">(727) 267-7011</a>
+      </div>
+      <div class="trust">
+        <div><strong><span class="star">★</span> 4.9</strong>86 Google reviews</div>
+        <div><strong>24/7</strong>Open 24 hours, every day</div>
+        <div><strong>Mobile</strong>Cars and work trucks</div>
+      </div>
+    </div>
+
+    <div class="stage" aria-label="Illustration of a mobile mechanic's truck beside a broken-down car">
+      <svg viewBox="0 0 520 250" role="img" aria-labelledby="stageTitle">
+        <title id="stageTitle">A service pickup with a flashing beacon parked behind a car with its hood up</title>
+        <!-- night sky stars -->
+        <g fill="#C3B5D3" opacity=".5"><circle cx="40" cy="30" r="1.5"/><circle cx="120" cy="18" r="1.2"/><circle cx="210" cy="40" r="1.5"/><circle cx="300" cy="22" r="1.2"/><circle cx="470" cy="34" r="1.5"/><circle cx="400" cy="14" r="1.2"/></g>
+        <circle cx="460" cy="62" r="18" fill="#F6F2FA" opacity=".85"/>
+        <circle cx="468" cy="56" r="16" fill="#20132F"/>
+        <!-- road -->
+        <rect x="0" y="200" width="520" height="50" fill="#140D1C"/>
+        <g fill="#D4F05C" opacity=".75"><rect x="20" y="223" width="40" height="4" rx="2"/><rect x="110" y="223" width="40" height="4" rx="2"/><rect x="200" y="223" width="40" height="4" rx="2"/><rect x="290" y="223" width="40" height="4" rx="2"/><rect x="380" y="223" width="40" height="4" rx="2"/><rect x="470" y="223" width="40" height="4" rx="2"/></g>
+        <!-- service pickup (left) -->
+        <path fill="#D4F05C" d="M20 186 L20 140 L120 140 L120 112 C120 106 124 102 130 102 L168 102 C174 102 178 104 182 110 L204 140 L222 144 C228 146 232 150 232 156 L232 186 Z"/>
+        <path fill="#20132F" d="M130 110 L166 110 L188 138 L130 138 Z"/>
+        <rect x="20" y="154" width="212" height="6" fill="#1E1529" opacity=".85"/>
+        <path d="M44 170 l6 -12 6 12 6 -18 6 18 6 -8 h10" fill="none" stroke="#1E1529" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="140" y="94" width="24" height="8" rx="3" fill="#1E1529"/>
+        <rect class="beacon" x="144" y="88" width="16" height="8" rx="3" fill="#FFB547"/>
+        <rect x="226" y="160" width="8" height="10" rx="2" fill="#FFF4C2"/>
+        <g><circle cx="64" cy="188" r="20" fill="#0C0712"/><circle cx="64" cy="188" r="9" fill="#9F92AE"/></g>
+        <g><circle cx="190" cy="188" r="20" fill="#0C0712"/><circle cx="190" cy="188" r="9" fill="#9F92AE"/></g>
+        <!-- car with hood up (right) -->
+        <path fill="#E9E3F0" d="M290 186 L290 152 C290 146 294 142 300 142 L326 142 L350 114 C353 110 358 108 363 108 L438 108 C444 108 448 110 451 115 L470 142 L494 145 C502 147 506 152 506 160 L506 186 Z"/>
+        <path fill="#20132F" d="M356 118 L396 118 L396 140 L336 140 Z"/>
+        <path fill="#20132F" d="M404 118 L440 118 L460 140 L404 140 Z"/>
+        <path d="M470 142 L504 104 L512 110 L484 146 Z" fill="#E9E3F0"/>
+        <rect x="498" y="150" width="8" height="10" rx="2" fill="#FFF4C2"/>
+        <g><circle cx="334" cy="188" r="20" fill="#0C0712"/><circle cx="334" cy="188" r="9" fill="#9F92AE"/></g>
+        <g><circle cx="466" cy="188" r="20" fill="#0C0712"/><circle cx="466" cy="188" r="9" fill="#9F92AE"/></g>
+        <!-- hazard triangle -->
+        <path d="M262 200 L272 180 L282 200 Z" fill="none" stroke="#FFB547" stroke-width="3" stroke-linejoin="round"/>
+      </svg>
+      <ul class="checks">
+        <li>Cause found first, then a straight price for parts and labor</li>
+        <li>Company trucks and fleets back on the road fast</li>
+        <li>Listed open 24 hours, seven days a week</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>What Jack fixes on-site</h2>
+      <p>Most of what a shop puts on a lift can be done right where the vehicle sits. If a job truly needs a bay, you'll hear that up front.</p>
+    </div>
+    <div class="grid three">
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></div><h3>Diagnostics</h3><p>Check engine light or a code you already pulled? Jack traces it to the actual cause before anything gets replaced.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div><h3>Brakes and wheel hubs</h3><p>Pads, rotors, calipers and wheel hub bearings. Grinding, humming or a pulsing pedal handled where you're parked.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16"/><path d="M3 21h14M8 8h4"/><path d="M15 9h2a2 2 0 0 1 2 2v5a1.5 1.5 0 0 0 3 0V8l-3-3"/></svg></div><h3>Fuel pumps and no-starts</h3><p>Cranks but won't fire, dies at the light, won't crank at all. Fuel pumps, starters, alternators and batteries.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M4 7l16 10M4 17L20 7"/></svg></div><h3>A/C repair</h3><p>Blowing warm in Pasco heat. Codes and symptoms checked, then leaks, compressors and electrical faults sorted.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 16V7h11v9"/><path d="M13 10h4l4 4v2h-8"/><circle cx="6.5" cy="17.5" r="2"/><circle cx="17.5" cy="17.5" r="2"/></svg></div><h3>Work trucks and fleets</h3><p>When a company truck goes down mid-route, Jack comes out so your crew can keep serving customers.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0-5.3 5.3L4 17l3 3 5.2-5.2a4 4 0 0 0 5.3-5.3l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></div><h3>General repair</h3><p>Belts, hoses, cooling, suspension and the odd jobs that pile up. If it's on the vehicle, ask.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Fair numbers, before the work</h2>
+        <p>Reviewers keep saying it: much better pricing than the shops around here. You'll have the full parts-and-labor price before a wrench turns.</p>
+      </div>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Advice over the phone.</b> Tell Jack the symptoms or codes and he'll often point you in the right direction on the call.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Only what's needed,</b> explained in plain English.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>No tow, no waiting room.</b> In and out, and you keep your day.</p></div>
+      </div>
+    </div>
+    <div>
+      <ul class="price-list">
+        <li><div><b>Mobile diagnostic visit</b><small>Scan, inspection and a clear plan</small></div><span class="n"><em>Starting at</em>$85</span></li>
+        <li><div><b>Brake pads and rotors</b><small>Per axle, parts and labor</small></div><span class="n"><em>Starting at</em>$219</span></li>
+        <li><div><b>Wheel hub bearing</b><small>Per side, parts and labor</small></div><span class="n"><em>Starting at</em>$249</span></li>
+        <li><div><b>Fuel pump replacement</b><small>Parts and labor, most cars</small></div><span class="n"><em>Starting at</em>$399</span></li>
+        <li><div><b>A/C diagnosis</b><small>Pressure check, codes and leak search</small></div><span class="n"><em>Starting at</em>$99</span></li>
+        <li><div><b>Starter or alternator</b><small>Parts and labor, cars and light trucks</small></div><span class="n"><em>Starting at</em>$279</span></li>
+      </ul>
+      <p class="price-note"><span class="tag">Note</span><span>Example pricing — we'll put in your real numbers. Final quotes depend on the vehicle and parts.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps, one visit</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Call or text what's wrong</h3>
+        <p>Year, make, model, the symptom, any codes you've pulled and where the vehicle is sitting.</p>
+      </div>
+      <div class="step">
+        <h3>Jack comes out</h3>
+        <p>Home, job site or roadside in Port Richey and around Pasco. He confirms the cause and quotes parts and labor first.</p>
+      </div>
+      <div class="step">
+        <h3>Fixed where it sits</h3>
+        <p>Most jobs are done the same visit, so you, or your crew, are back on the road fast.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>What customers say</h2>
+      <p class="g-line"><span class="star" aria-hidden="true">★★★★★</span><span class="big">4.9</span><span>across 86 Google reviews</span></p>
+    </div>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Jack was on time, professional, and knowledgeable. He fixed my car issue quickly and at a very fair price."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Great mobile mechanic in the Port Richey and Pasco County area. Much better pricing than the shops around here. In and out service. Fast."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Our company truck went down while making deliveries, Jack was able to come right out and replace our wheel hub, rotors, pads so that way we could continue providing service to our community."</p><cite>Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="area">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About and service area</span>
+      <h2>Based in Port Richey. On call across Pasco.</h2>
+      <p>Mobile Doc Auto Repair is a mobile mechanic service run by Jack out of Port Richey, FL. Drivers and local businesses call back because he shows up, finds the real problem and charges a fair price for fixing it.</p>
+      <p>Just outside the usual area? Call or text anyway and you'll get a straight answer.</p>
+      <div class="towns">
+        <span>Port Richey</span><span>New Port Richey</span><span>Hudson</span><span>Holiday</span><span>Trinity</span><span>Bayonet Point</span><span>Elfers</span><span>Tarpon Springs</span><span>Odessa by request</span>
+      </div>
+      <div class="facts">
+        <b>Home base</b><span>Port Richey, FL 34668. Mobile service, we come to you.</span>
+        <b>Phone</b><span><a href="tel:+17272677011">(727) 267-7011</a>, call or <a href="sms:+17272677011">text</a></span>
+        <b>Hours</b><span>Open 24 hours, 7 days a week</span>
+        <b>Facebook</b><span><a href="https://www.facebook.com/mobiledocautorepair/" rel="noopener" target="_blank">Mobile Doc Auto Repair</a></span>
+      </div>
+    </div>
+    <div class="map" aria-label="Service area map">
+      <svg viewBox="0 0 400 300" role="img" aria-labelledby="mapTitle">
+        <title id="mapTitle">Stylized map of west Pasco County with Port Richey at the center of the service area</title>
+        <rect width="400" height="300" fill="#140D1C"/>
+        <!-- land (coast on the west) -->
+        <path d="M110 0 L400 0 L400 300 L118 300 C110 260 96 230 104 196 C112 160 92 130 100 96 C106 64 96 30 110 0 Z" fill="#3E2A55"/>
+        <text x="20" y="150" font-family="Instrument Sans, sans-serif" font-size="11" fill="#C3B5D3">Gulf</text>
+        <!-- US 19 -->
+        <path d="M150 0 C156 100 150 200 156 300" stroke="#8C77A6" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+        <text x="160" y="16" font-family="Instrument Sans, sans-serif" font-size="10" fill="#C3B5D3">US 19</text>
+        <!-- service radius -->
+        <circle cx="170" cy="140" r="112" fill="#D4F05C" opacity=".1"/>
+        <circle cx="170" cy="140" r="112" fill="none" stroke="#D4F05C" stroke-width="2" stroke-dasharray="6 5"/>
+        <circle cx="170" cy="140" r="54" fill="#D4F05C" opacity=".12"/>
+        <g font-family="Instrument Sans, sans-serif" font-size="11" fill="#EDE6F5">
+          <circle cx="160" cy="40" r="3" fill="#EDE6F5"/><text x="168" y="44">Hudson</text>
+          <circle cx="166" cy="78" r="3" fill="#EDE6F5"/><text x="174" y="82">Bayonet Point</text>
+          <circle cx="182" cy="190" r="3" fill="#EDE6F5"/><text x="190" y="194">New Port Richey</text>
+          <circle cx="220" cy="214" r="3" fill="#EDE6F5"/><text x="228" y="218">Elfers</text>
+          <circle cx="168" cy="244" r="3" fill="#EDE6F5"/><text x="176" y="248">Holiday</text>
+          <circle cx="270" cy="236" r="3" fill="#EDE6F5"/><text x="278" y="240">Trinity</text>
+          <circle cx="164" cy="284" r="3" fill="#EDE6F5"/><text x="172" y="288">Tarpon Springs</text>
+          <circle cx="330" cy="268" r="3" fill="#EDE6F5"/><text x="300" y="260">Odessa</text>
+        </g>
+        <!-- Port Richey pin -->
+        <path d="M170 112 C158 112 150 121 150 132 C150 148 170 166 170 166 C170 166 190 148 190 132 C190 121 182 112 170 112 Z" fill="#D4F05C"/>
+        <circle cx="170" cy="132" r="7" fill="#1E1529"/>
+        <text x="250" y="146" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="15" fill="#F6F2FA" letter-spacing=".5">PORT RICHEY</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Tell Jack what it's doing</h2>
+      <p class="sub">Fill this in and it opens a text to Jack with your details already typed. You'll get a price and a time back. Or just call, any hour.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a class="big" href="tel:+17272677011">(727) 267-7011</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg><a href="sms:+17272677011?&body=Hi%20Jack%2C%20I%27d%20like%20a%20quote%20for%20my%20">Text (727) 267-7011</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Mobile service based in Port Richey, FL 34668</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Open 24 hours, 7 days a week</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h-3a4 4 0 0 0-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><a href="https://www.facebook.com/mobiledocautorepair/" rel="noopener" target="_blank">Find us on Facebook</a></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <h3>Request a quote</h3>
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(727) 555-0123" required></label>
+      <label class="f">Vehicle (year, make, model)<input name="vehicle" placeholder="2004 Hyundai Tiburon" required></label>
+      <label class="f">What do you need?<textarea name="need" placeholder="A/C blowing warm, car is at my house in New Port Richey" required></textarea></label>
+      <button class="btn btn-lime" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Mobile Doc Auto Repair · Port Richey, FL · <a href="tel:+17272677011">(727) 267-7011</a> · <a href="https://www.facebook.com/mobiledocautorepair/" rel="noopener" target="_blank">Facebook</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener" target="_blank">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Jack, this is '+f.get('name')+'. I have a '+f.get('vehicle')+' and I need: '+f.get('need');
+    msg=msg.replace(/[.\s]*$/,'')+'.';
+    if(f.get('phone'))msg+=' You can reach me at '+f.get('phone')+'.';
+    msg+=' When could you come out?';
+    window.location.href='sms:+17272677011?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

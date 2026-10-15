@@ -5,3 +5,8 @@
   for = "/preview/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/shots/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

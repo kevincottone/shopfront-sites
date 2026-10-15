@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AJ's Mobile Window Tinting — Mobile window tint in Clermont, FL</title>
+<meta name="description" content="Mobile automotive window tinting in Clermont, FL and the west Orlando area. AJ comes to your driveway or office. Rated 4.9 on Google across 168 reviews. Call or text (407) 595-2924.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF; --bg-2:#F3F6FD; --ink:#0F1A3A; --ink-2:#55608A; --line:#DCE2F2;
+    --cobalt:#1E3FB3; --cobalt-2:#2B55D6; --cobalt-deep:#132A7A; --on-cobalt:#FFFFFF; --on-cobalt-2:#B9C6F2;
+    --sun:#FFC72C; --sun-2:#FFD65C; --on-sun:#0F1A3A;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#0B1230;--bg-2:#121B3F;--ink:#EEF1FB;--ink-2:#AEB8DC;--line:#27335F;--cobalt:#152C80;--cobalt-2:#2B55D6;--cobalt-deep:#0A1650}
+  }
+  :root[data-theme="dark"]{--bg:#0B1230;--bg-2:#121B3F;--ink:#EEF1FB;--ink-2:#AEB8DC;--line:#27335F;--cobalt:#152C80;--cobalt-2:#2B55D6;--cobalt-deep:#0A1650}
+  html{scroll-padding-top:calc(3.9rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Sora",system-ui,sans-serif;margin:0;line-height:1.06;letter-spacing:-.03em;font-weight:800}
+  h1{font-size:clamp(2.3rem,8.6vw,4.3rem)}
+  h2{font-size:clamp(1.8rem,5.2vw,2.6rem)}
+  h3{font-size:1.2rem;font-weight:700;letter-spacing:-.015em}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1060px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cobalt-2);margin-bottom:.9rem}
+  .eyebrow::before{content:"";width:1.4rem;height:.3rem;border-radius:999px;background:var(--sun)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.75rem;font-weight:700;font-size:1.02rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:"Sora",system-ui,sans-serif;letter-spacing:-.01em}
+  .btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+  .btn-sun{background:var(--sun);color:var(--on-sun)}
+  .btn-sun:hover{background:var(--sun-2)}
+  .btn-cobalt{background:var(--cobalt);color:var(--on-cobalt)}
+  .btn-cobalt:hover{background:var(--cobalt-2)}
+  .btn-outline{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn-outline:hover{border-color:var(--cobalt-2);color:var(--cobalt-2)}
+
+  .preview-bar{background:var(--sun);color:var(--on-sun);font-size:.9rem;text-align:center;padding:.5rem 1rem;font-weight:500}
+  .preview-bar a{color:inherit;font-weight:700}
+
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);color:var(--ink);border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;min-height:3.9rem;gap:.5rem 1rem;padding:.4rem 0}
+  .logo{font-family:"Sora",system-ui,sans-serif;font-weight:800;font-size:1.15rem;text-decoration:none;display:flex;align-items:center;gap:.55rem;white-space:nowrap;color:var(--ink);letter-spacing:-.03em}
+  .logo i{width:1.6rem;height:1.6rem;flex:none;border-radius:.45rem;background:var(--cobalt-2);position:relative}
+  .logo i::after{content:"";position:absolute;left:.3rem;top:.3rem;width:1rem;height:1rem;border-radius:50%;background:var(--sun);clip-path:polygon(0 0,100% 0,100% 55%,0 100%)}
+  .logo em{font-style:normal;color:var(--cobalt-2)}
+  nav a{text-decoration:none;color:var(--ink-2);font-weight:500;margin-left:1.2rem;font-size:.95rem}
+  nav a:hover{color:var(--cobalt-2)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--cobalt);color:#fff;text-decoration:none;font-weight:700;font-size:.86rem;padding:.45rem .9rem;border-radius:.6rem;white-space:nowrap;font-family:"Sora",sans-serif}
+  .call-pill:hover{background:var(--cobalt-2)}
+  @media (max-width:480px){
+    header .wrap{gap:.4rem .6rem}
+    .logo{font-size:1.02rem}
+    .call-pill{font-size:.78rem;padding:.4rem .7rem}
+  }
+
+  .hero{position:relative;background:var(--bg);padding:3rem 0 3.5rem;overflow:hidden}
+  .hero::before{content:"";position:absolute;left:-10vw;top:-10rem;width:60vw;max-width:620px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(255,199,44,.28),transparent 65%);pointer-events:none}
+  .hero .wrap{position:relative;z-index:1;display:grid;gap:2.5rem}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .hero h1 em{font-style:normal;color:var(--cobalt-2);position:relative}
+  .hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.05em;height:.18em;background:var(--sun);z-index:-1;border-radius:.1em}
+  .hero .lede{color:var(--ink-2);font-size:1.15rem;max-width:40ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;margin-top:1.75rem;color:var(--ink-2);font-size:.95rem}
+  .trust b{color:var(--ink);font-weight:600}
+  .trust .stars{color:var(--sun);letter-spacing:.08em;text-shadow:0 0 0 #c99400}
+
+  .demo{background:var(--cobalt);color:var(--on-cobalt);border-radius:1.2rem;padding:1.25rem;box-shadow:0 20px 50px -24px rgba(30,63,179,.55)}
+  .demo-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.75rem}
+  .demo-head span{color:var(--on-cobalt-2);font-size:.95rem}
+  .demo-head output{font-family:"Sora",sans-serif;font-size:1.35rem;font-weight:800;color:var(--sun)}
+  .demo svg{width:100%;height:auto;display:block;border-radius:.7rem}
+  .shades{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-top:.9rem}
+  .shades button{font:inherit;font-weight:600;font-size:.92rem;padding:.55rem .25rem;border-radius:.6rem;border:1px solid rgba(255,255,255,.28);background:transparent;color:var(--on-cobalt-2);cursor:pointer}
+  .shades button[aria-pressed="true"]{background:var(--sun);border-color:var(--sun);color:var(--on-sun)}
+  .shades button:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+  .demo-note{margin-top:.7rem;font-size:.9rem;color:var(--on-cobalt-2);display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem}
+  .demo-note b{color:#fff;font-weight:600}
+  @media (prefers-reduced-motion:no-preference){#tintRect{transition:opacity .2s linear}}
+
+  section{padding:4rem 0}
+  .sub{color:var(--ink-2);margin-top:.8rem;max-width:54ch}
+
+  .steps{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:2.5rem 0}
+  .steps .wrap{display:grid;gap:1.25rem}
+  @media (min-width:760px){.steps .wrap{grid-template-columns:repeat(3,1fr)}}
+  .step{display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:start}
+  .step .n{font-family:"Sora",sans-serif;font-weight:800;font-size:1.1rem;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--sun);color:var(--on-sun);display:grid;place-items:center}
+  .step p{color:var(--ink-2);font-size:.97rem;margin-top:.2rem}
+
+  .services .grid{display:grid;gap:1.1rem;margin-top:2rem}
+  @media (min-width:700px){.services .grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:1000px){.services .grid{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.35rem;display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
+  .svc .ic{width:2.75rem;height:2.75rem;border-radius:.8rem;background:var(--cobalt);display:grid;place-items:center;flex:none}
+  .svc .ic svg{width:1.35rem;height:1.35rem;stroke:var(--sun);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);margin-top:.4rem;font-size:.98rem}
+  .callout{margin-top:1.5rem;display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:center;background:var(--bg-2);border:1px solid var(--line);border-left:4px solid var(--sun);border-radius:.8rem;padding:1.1rem 1.25rem;color:var(--ink-2)}
+  .callout svg{width:2.4rem;height:2.4rem;stroke:var(--cobalt-2);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .callout b{color:var(--ink)}
+
+  .pricing{background:var(--cobalt);color:var(--on-cobalt)}
+  .pricing .sub{color:var(--on-cobalt-2)}
+  .pricing .eyebrow{color:var(--sun)}
+  .tiers{display:grid;gap:1.1rem;margin-top:2rem}
+  @media (min-width:800px){.tiers{grid-template-columns:repeat(3,1fr)}}
+  .tier{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:1.1rem;padding:1.5rem;display:flex;flex-direction:column}
+  .tier.feat{border-color:var(--sun);box-shadow:inset 0 4px 0 var(--sun)}
+  .tier .tag{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--on-cobalt-2);font-weight:600}
+  .tier.feat .tag{color:var(--sun)}
+  .tier h3{margin-top:.4rem;font-size:1.4rem}
+  .tier .desc{color:var(--on-cobalt-2);margin-top:.5rem;font-size:.98rem;flex:1}
+  .tier .price{margin-top:1.25rem;font-family:"Sora",sans-serif;font-size:1.85rem;font-weight:800;line-height:1;letter-spacing:-.03em}
+  .tier .price small{display:block;font-family:"DM Sans",sans-serif;font-weight:400;font-size:.85rem;color:var(--on-cobalt-2);margin-top:.4rem;letter-spacing:0}
+  .tier ul{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.45rem;color:var(--on-cobalt-2);font-size:.95rem}
+  .tier li::before{content:"";display:inline-block;width:.5rem;height:.5rem;border-radius:2px;background:var(--sun);margin-right:.6rem;vertical-align:middle}
+  .addons{margin-top:2rem;display:grid;gap:.3rem}
+  @media (min-width:700px){.addons{grid-template-columns:repeat(2,1fr);column-gap:2.5rem}}
+  .addon{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid rgba(255,255,255,.16);padding:.7rem 0;color:var(--on-cobalt-2)}
+  .addon b{color:#fff;font-weight:600;white-space:nowrap}
+  .pricing .note{margin-top:1.5rem;font-size:.9rem;color:var(--on-cobalt-2);border:1px dashed rgba(255,199,44,.6);border-radius:.6rem;padding:.7rem 1rem;display:inline-block}
+
+  .reviews .grid{display:grid;gap:1.1rem;margin-top:2rem}
+  @media (min-width:800px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.4rem;display:flex;flex-direction:column;position:relative}
+  .review::before{content:"\201C";position:absolute;top:.2rem;right:1rem;font-family:"Sora",sans-serif;font-size:4rem;line-height:1;color:var(--sun);opacity:.6}
+  .review .stars{color:#D9A400;letter-spacing:.1em;margin-bottom:.6rem}
+  .review p{flex:1}
+  .review cite{display:block;margin-top:.9rem;font-style:normal;color:var(--ink-2);font-size:.95rem}
+  .rating-badge{display:inline-flex;align-items:center;gap:.75rem;margin-top:1.25rem;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.5rem 1rem .5rem .6rem;max-width:100%}
+  .rating-badge .num{font-family:"Sora",sans-serif;font-weight:800;font-size:1.4rem;background:var(--cobalt);color:var(--sun);border-radius:999px;padding:.25rem .75rem}
+  .rating-badge span{color:var(--ink-2);font-size:.95rem}
+
+  .about{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.about .wrap{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .about p{color:var(--ink-2);margin-top:.9rem}
+  .area{background:var(--bg);border:1px solid var(--line);border-radius:1rem;padding:1.4rem}
+  .area h3{margin-bottom:.75rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.5rem}
+  .chips span{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.3rem .85rem;font-size:.92rem}
+  .area .meta{margin-top:1.1rem;font-size:.95rem;color:var(--ink-2);display:grid;gap:.4rem}
+  .area .meta a{color:var(--cobalt-2);font-weight:600;text-decoration-color:var(--sun);text-underline-offset:3px;overflow-wrap:anywhere}
+
+  .quote{background:var(--cobalt-deep);color:var(--on-cobalt)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr}}
+  .quote .sub{color:var(--on-cobalt-2)}
+  .quote .eyebrow{color:var(--sun)}
+  .contact-list{list-style:none;padding:0;margin:1.75rem 0 0;display:grid;gap:.6rem;font-size:1.05rem;color:var(--on-cobalt-2)}
+  .contact-list a{color:#fff;text-decoration-color:var(--sun);text-underline-offset:3px;overflow-wrap:anywhere}
+  .contact-list .big{font-family:"Sora",sans-serif;font-size:1.8rem;font-weight:800;text-decoration:none;letter-spacing:-.03em}
+  form{display:grid;gap:.9rem;background:rgba(255,255,255,.06);padding:1.4rem;border-radius:1.1rem;border:1px solid rgba(255,255,255,.14)}
+  label.f{display:grid;gap:.35rem;font-weight:500;font-size:.95rem;color:var(--on-cobalt-2)}
+  input,select,textarea{font:inherit;color:#0F1A3A;background:#fff;border:1px solid #C7D0EA;border-radius:.55rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--sun);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-cobalt-2)}
+
+  footer{background:#0A1650;color:var(--on-cobalt-2);padding:1.5rem 0 4rem;font-size:.9rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  footer a{color:#fff;text-decoration-color:var(--sun)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--sun);color:var(--on-sun);font-size:.75rem;font-weight:700;padding:.3rem .6rem;border-radius:999px;z-index:20;text-decoration:none}
+  .preview-tag:hover{background:var(--sun-2)}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Website preview built for AJ's Mobile Window Tinting by <a href="https://shopfrontsites.org">Shopfront Sites</a>. Not live yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><i aria-hidden="true"></i>AJ's <em>Mobile Tint</em></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">Area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+14075952924">Call AJ</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Mobile window tinting · Clermont, FL</span>
+      <h1>Tint that comes <em>to your driveway.</em></h1>
+      <p class="lede">AJ brings the shop to you. Cars, trucks, SUVs, RVs, boats, and the windows on your house or office, tinted where they sit, in Clermont and across west Orlando. Pick a shade, pick a day, and keep your plans.</p>
+      <div class="hero-actions">
+        <a class="btn btn-sun" href="#quote">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+14075952924">(407) 595-2924</a>
+      </div>
+      <div class="trust">
+        <span><span class="stars" aria-hidden="true">★★★★★</span> <b>4.9</b> on Google</span>
+        <span><b>168</b> reviews</span>
+        <span>We come to you</span>
+      </div>
+    </div>
+
+    <div class="demo">
+      <div class="demo-head">
+        <span>Pick a shade to see how it looks</span>
+        <output id="shadeOut">20% VLT</output>
+      </div>
+      <svg viewBox="0 0 520 240" role="img" aria-labelledby="demoTitle">
+        <title id="demoTitle">A car parked in a driveway in front of a house, its side windows darken as you choose a tint shade</title>
+        <defs>
+          <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#DCEBFF"/><stop offset="1" stop-color="#A9C8FF"/>
+          </linearGradient>
+          <linearGradient id="body" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9D3E6"/>
+          </linearGradient>
+          <clipPath id="winClip">
+            <path d="M150 122 L176 84 L238 84 L238 122 Z"/>
+            <path d="M246 84 L300 84 L300 122 L246 122 Z"/>
+          </clipPath>
+        </defs>
+        <rect width="520" height="240" rx="10" fill="url(#sky)"/>
+        <circle cx="440" cy="52" r="30" fill="#FFC72C"/>
+        <circle cx="440" cy="52" r="46" fill="#FFC72C" opacity=".22"/>
+        <g fill="#2B55D6" opacity=".92">
+          <path d="M28 70 L110 28 L192 70 Z"/>
+          <rect x="40" y="70" width="140" height="84"/>
+        </g>
+        <g fill="#132A7A" opacity=".9">
+          <rect x="60" y="88" width="26" height="26" rx="2"/>
+          <rect x="134" y="88" width="26" height="26" rx="2"/>
+          <rect x="96" y="112" width="28" height="42" rx="2"/>
+        </g>
+        <rect x="0" y="154" width="520" height="86" fill="#8FA7D9"/>
+        <path d="M0 160 L520 160 L520 240 L0 240 Z" fill="#6E86B8"/>
+        <path d="M20 158 L500 158 L470 240 L50 240 Z" fill="#C5D1EA"/>
+        <ellipse cx="260" cy="212" rx="228" ry="9" fill="#132A7A" opacity=".3"/>
+        <path fill="url(#body)" d="M48 186 L48 146 C48 136 56 130 68 128 L136 124 L168 80 C172 76 176 74 182 74 L304 74 C310 74 312 78 312 84 L312 130 L470 130 C478 130 482 136 482 144 L482 186 L472 194 L56 194 Z"/>
+        <g clip-path="url(#winClip)">
+          <rect x="140" y="76" width="170" height="50" fill="#CFE3FF"/>
+          <rect x="140" y="76" width="170" height="50" fill="#FFC72C" opacity=".2"/>
+          <rect id="tintRect" x="140" y="76" width="170" height="50" fill="#07102E" opacity=".74"/>
+        </g>
+        <path fill="none" stroke="#0F1A3A" stroke-width="3" d="M148 124 L174 82 L304 82 L304 124"/>
+        <line x1="242" y1="82" x2="242" y2="124" stroke="#0F1A3A" stroke-width="3"/>
+        <line x1="312" y1="130" x2="312" y2="186" stroke="#0F1A3A" stroke-width="2" opacity=".35"/>
+        <rect x="48" y="188" width="434" height="10" rx="4" fill="#0F1A3A"/>
+        <g fill="#0F1A3A"><circle cx="128" cy="190" r="31"/><circle cx="404" cy="190" r="31"/></g>
+        <g fill="#8E97B3"><circle cx="128" cy="190" r="15"/><circle cx="404" cy="190" r="15"/></g>
+        <g fill="#0F1A3A"><circle cx="128" cy="190" r="5"/><circle cx="404" cy="190" r="5"/></g>
+        <rect x="52" y="148" width="14" height="10" rx="3" fill="#FFF6D6"/>
+        <rect x="470" y="140" width="10" height="16" rx="3" fill="#E04848"/>
+      </svg>
+      <div class="shades" role="group" aria-label="Tint shade">
+        <button type="button" data-vlt="50" aria-pressed="false">50%</button>
+        <button type="button" data-vlt="35" aria-pressed="false">35%</button>
+        <button type="button" data-vlt="20" aria-pressed="true">20%</button>
+        <button type="button" data-vlt="5" aria-pressed="false">5%</button>
+      </div>
+      <p class="demo-note"><span><b>VLT</b> = how much light gets through</span><span id="legalNote"><b>Florida legal</b> on back windows</span></p>
+    </div>
+  </div>
+</section>
+
+<div class="steps" aria-label="How it works">
+  <div class="wrap">
+    <div class="step"><span class="n">1</span><div><h3>Text or call AJ</h3><p>Tell him what you drive, the shade you want, and where the vehicle will be.</p></div></div>
+    <div class="step"><span class="n">2</span><div><h3>He comes to you</h3><p>Home, office or job site. No drop-off, no waiting room, no ride back.</p></div></div>
+    <div class="step"><span class="n">3</span><div><h3>Done where it sits</h3><p>Film cut and installed on the spot. You keep your day; your car gets cooler.</p></div></div>
+  </div>
+</div>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <span class="eyebrow">What we do</span>
+    <h2>Window tint for everything with glass.</h2>
+    <p class="sub">Most jobs are cars and trucks, but AJ also tints RVs, boats, homes and storefronts. Tell him what you have and what you want out of it, less heat, more privacy, or a cleaner look, and he'll walk you through the options.</p>
+    <div class="grid">
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 13l2-5a3 3 0 0 1 3-2h8a3 3 0 0 1 3 2l2 5v5H3z"/><circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/></svg></div>
+        <div>
+          <h3>Mobile automotive tint</h3>
+          <p>Sedans, coupes, SUVs, trucks and vans, tinted in your driveway or parking lot. All sides and rear, or just the two fronts to match factory glass.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18"/><path d="M3 12h18"/></svg></div>
+        <div>
+          <h3>Nano ceramic film</h3>
+          <p>Blocks infrared heat instead of just light, so the cabin stays cooler even at a lighter, Florida-legal shade. No metal, no signal interference.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 8c6-3 12-3 18 0"/><path d="M4 11c5-2 11-2 16 0"/><path d="M6 17h12"/></svg></div>
+        <div>
+          <h3>Windshield tint</h3>
+          <p>A clear or light heat film across the windshield, or a visor strip along the top, to cut the glare on Highway 50 and the Turnpike.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 8-8h8v16h-8a8 8 0 0 1-8-8z"/><path d="M12 8v8M8 12h8"/></svg></div>
+        <div>
+          <h3>Headlight and tail light tint</h3>
+          <p>A smoked or light tint on the lenses for a sharper, more uniform look. Ask AJ about shades that keep the lights fully visible.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 10l9-6 9 6v10H3z"/><path d="M9 20v-6h6v6"/></svg></div>
+        <div>
+          <h3>Home and office windows</h3>
+          <p>Residential and commercial film for sliders, big west-facing windows and storefronts. Lower AC bills, less fading, and more privacy in the daytime.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 15l2-8h14l2 8"/><path d="M2 15h20l-2 4H4z"/><path d="M8 7V4h8v3"/></svg></div>
+        <div>
+          <h3>RV and boat tint</h3>
+          <p>Motorhomes, travel trailers and boat cabins get hot fast on a Florida lake or campground. Tinted at the storage lot, the marina or your driveway.</p>
+        </div>
+      </div>
+    </div>
+    <div class="callout">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17V7h11l3 3h4v7"/><path d="M3 17h18"/><circle cx="7" cy="18.5" r="1.8"/><circle cx="17" cy="18.5" r="1.8"/></svg>
+      <p><b>No shop visit needed.</b> AJ works out of a fully equipped van, so the job gets done at your place, on your schedule.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <span class="eyebrow">Pricing</span>
+    <h2>Mobile service, honest starting prices</h2>
+    <p class="sub">Final price depends on the film, the vehicle and how much glass it has. Here is where each option starts for a standard sedan, with the trip to you included.</p>
+    <div class="tiers">
+      <div class="tier">
+        <span class="tag">Quick job</span>
+        <h3>Two front windows</h3>
+        <p class="desc">Match the factory privacy glass on the back half of a truck or SUV. The fastest way to make a new vehicle look finished.</p>
+        <div class="price">Starting at $119<small>driver and passenger doors</small></div>
+        <ul><li>About 45 minutes</li><li>Shade matched to the rear</li></ul>
+      </div>
+      <div class="tier feat">
+        <span class="tag">Most popular</span>
+        <h3>Full car, carbon film</h3>
+        <p class="desc">A clean, true-black look with solid heat and glare reduction, done in your driveway while you get on with your day.</p>
+        <div class="price">Starting at $229<small>full sedan, all sides and rear</small></div>
+        <ul><li>Won't fade to purple</li><li>UV protection</li><li>Glare reduction</li></ul>
+      </div>
+      <div class="tier">
+        <span class="tag">Max heat cut</span>
+        <h3>Full car, nano ceramic</h3>
+        <p class="desc">Blocks infrared heat, not just light, so the cabin stays cooler even at a lighter shade on the fronts.</p>
+        <div class="price">Starting at $349<small>sedan · trucks and SUVs from $399</small></div>
+        <ul><li>Highest heat rejection</li><li>Clear view at night</li><li>No signal interference</li></ul>
+      </div>
+    </div>
+    <div class="addons">
+      <div class="addon"><span>Windshield visor strip</span><b>From $59</b></div>
+      <div class="addon"><span>Full windshield heat film</span><b>From $199</b></div>
+      <div class="addon"><span>Headlight or tail light tint (pair)</span><b>From $149</b></div>
+      <div class="addon"><span>Old tint removal</span><b>From $85</b></div>
+      <div class="addon"><span>Home or office windows</span><b>From $7 / sq ft</b></div>
+      <div class="addon"><span>RV and boat</span><b>Quoted on site</b></div>
+    </div>
+    <p class="note">Example pricing — we'll put in your real numbers. Travel outside the regular service area may add a small trip fee.</p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <span class="eyebrow">Reviews</span>
+    <h2>4.9 stars from 168 drivers around Clermont</h2>
+    <div class="rating-badge"><span class="num">4.9</span><span>on Google across 168 reviews</span></div>
+    <div class="grid">
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Affordable prices, quick response customer service, super nice man with a lot of knowledge of cars and tinting."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"AJ provided an excellent service! He was professional, conscientious and efficient."</p>
+        <cite>Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Fast, efficient and looks great."</p>
+        <cite>Google review</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About AJ</span>
+      <h2>One installer. Your driveway. Done right.</h2>
+      <p>AJ's Mobile Window Tinting is based in Clermont and covers the west side of the Orlando area. The person you text is the person who shows up and does the work, which is why the reviews keep saying the same things: quick to respond, fair prices, and a job that looks clean when he pulls away.</p>
+      <p>Most customers book a car first, then call back for the truck, the boat, or the sliding doors at the house. Not sure what shade or film you want? Ask. AJ would rather talk it through than have you guess.</p>
+    </div>
+    <div class="area">
+      <h3>Service area</h3>
+      <div class="chips">
+        <span>Clermont</span><span>Minneola</span><span>Groveland</span><span>Winter Garden</span><span>Ocoee</span><span>Windermere</span><span>Horizon West</span><span>Four Corners</span><span>Orlando</span>
+      </div>
+      <div class="meta">
+        <span>Mobile only, no storefront. AJ comes to your home, office or job site.</span>
+        <span>Call or text <a href="tel:+14075952924">(407) 595-2924</a></span>
+        <span>Email <a href="mailto:info@ajsmobilewindowtinting.com">info@ajsmobilewindowtinting.com</a></span>
+        <span>Follow on <a href="https://www.facebook.com/ajsmobilewindowtinting/" rel="noopener">Facebook</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Text AJ your vehicle</h2>
+      <p class="sub">Fill this in and it opens a text to AJ with your details already typed. Or just call. Either way, tell him where the vehicle is and he'll give you a price and a day.</p>
+      <ul class="contact-list">
+        <li><a class="big" href="tel:+14075952924">(407) 595-2924</a></li>
+        <li><a href="mailto:info@ajsmobilewindowtinting.com">info@ajsmobilewindowtinting.com</a></li>
+        <li>Serving Clermont and west Orlando</li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(407) 555-0100" required></label>
+      <label class="f">Vehicle (year, make, model)<input name="vehicle" placeholder="2023 Toyota Tacoma" required></label>
+      <label class="f">What do you need?
+        <select name="job">
+          <option>Full vehicle tint</option>
+          <option>Full vehicle tint, nano ceramic</option>
+          <option>Two front windows to match factory</option>
+          <option>Windshield strip or heat film</option>
+          <option>Headlight or tail light tint</option>
+          <option>Home or office windows</option>
+          <option>RV or boat tint</option>
+          <option>Not sure, help me choose</option>
+        </select>
+      </label>
+      <label class="f">Anything else (optional)<textarea name="notes" placeholder="Where the vehicle will be, shade you're thinking, days that work..."></textarea></label>
+      <button class="btn btn-sun" type="submit">Send as a text</button>
+      <p class="form-note">Nothing is stored on this page. Your message opens in your phone's messaging app and you send it yourself.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>AJ's Mobile Window Tinting · Clermont, FL · <a href="tel:+14075952924">(407) 595-2924</a> · <a href="https://www.facebook.com/ajsmobilewindowtinting/" rel="noopener">Facebook</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener">Shopfront Sites</a></span>
+  </div>
+</footer>
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener">Website preview by Shopfront Sites</a>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('.shades button'),o=document.getElementById('shadeOut'),r=document.getElementById('tintRect'),n=document.getElementById('legalNote');
+  function setShade(v){
+    o.textContent=v+'% VLT';
+    r.setAttribute('opacity',(1-v/100)*0.92);
+    n.innerHTML=v>=28?'<b>Florida legal</b> on front windows':(v>=15?'<b>Florida legal</b> on back windows':'<b>Limo</b>, rear glass on most trucks/SUVs');
+    for(var i=0;i<btns.length;i++)btns[i].setAttribute('aria-pressed',btns[i].getAttribute('data-vlt')==v?'true':'false');
+  }
+  for(var i=0;i<btns.length;i++)btns[i].addEventListener('click',function(){setShade(+this.getAttribute('data-vlt'))});
+  setShade(20);
+
+  var f=document.getElementById('quoteForm');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var dd=new FormData(f);
+    var m='Hi AJ, this is '+dd.get('name')+' ('+dd.get('phone')+'). I have a '+dd.get('vehicle')+' and I\'m looking for: '+dd.get('job')+'.';
+    if(dd.get('notes'))m+=' '+dd.get('notes');
+    m+=' When could you come out?';
+    window.location.href='sms:+14075952924?&body='+encodeURIComponent(m);
+  });
+})();
+</script>
+</body>
+</html>

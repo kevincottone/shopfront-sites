@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bless Auto Detailing — Mobile detailing, polishing and headlight restoration in Orlando, FL</title>
+<meta name="description" content="Bless Auto Detailing, LLC comes to your driveway across Orlando: full details, interior deep cleaning, paint enhancement and polishing, headlight restoration and RV wash and wax. A perfect 5.0 on Google across 35 reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800&family=Chivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF; --bg-2:#F2F7FC; --ink:#0E2A47; --ink-2:#4C6478; --line:#D6E3EF;
+    --ocean:#0B5FA5; --ocean-2:#08497F; --ocean-3:#2F7FC4; --on-ocean:#FFFFFF; --on-ocean-2:#BBD4EA;
+    --sun:#FFC83D; --sun-2:#FFD766; --sun-ink:#0E2A47; --foam:#E3F0FA;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#0A1725;--bg-2:#112236;--ink:#EEF4FA;--ink-2:#A9BDD0;--line:#223850;--ocean:#0A3D6B;--ocean-2:#062A4B;--foam:#1A3350}
+  }
+  :root[data-theme="dark"]{--bg:#0A1725;--bg-2:#112236;--ink:#EEF4FA;--ink-2:#A9BDD0;--line:#223850;--ocean:#0A3D6B;--ocean-2:#062A4B;--foam:#1A3350}
+  html{scroll-padding-top:4.5rem;scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Chivo,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{margin:0;font-family:Epilogue,system-ui,sans-serif;line-height:1.05;letter-spacing:-.02em}
+  h1{font-size:clamp(2.4rem,7.5vw,4.3rem);font-weight:800}
+  h1 em{font-style:normal;color:var(--sun)}
+  h2{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:700}
+  h3{font-size:1.25rem;font-weight:700}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ocean-3)}
+  .eyebrow::before{content:"";width:1.3rem;height:.35rem;flex:none;border-radius:999px;background:var(--sun)}
+  .hero .eyebrow,.pricing .eyebrow,.quote .eyebrow,.rating .eyebrow{color:var(--on-ocean-2)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.6rem;font-weight:700;font-size:1.02rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+  .btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+  .btn-sun{background:var(--sun);color:var(--sun-ink)}
+  .btn-sun:hover{background:var(--sun-2)}
+  .btn-ghost{background:transparent;color:var(--on-ocean);border-color:rgba(255,255,255,.35)}
+  .btn-ghost:hover{border-color:var(--sun)}
+
+  /* header */
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--ocean-2);color:var(--on-ocean);border-bottom:3px solid var(--sun)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem;gap:1rem}
+  .logo{display:inline-flex;align-items:center;gap:.6rem;font-family:Epilogue,system-ui,sans-serif;font-weight:800;font-size:1.15rem;text-decoration:none;color:var(--on-ocean);letter-spacing:-.01em;white-space:nowrap;min-width:0}
+  .logo .mark{width:1.8rem;height:1.8rem;flex:none}
+  .logo small{font-family:Chivo,sans-serif;font-weight:600;font-size:.72rem;color:var(--on-ocean-2);letter-spacing:.1em;text-transform:uppercase}
+  @media (max-width:460px){.logo small{display:none}}
+  nav a{text-decoration:none;color:var(--on-ocean-2);font-weight:600;margin-left:1.25rem;font-size:.98rem}
+  nav a:hover{color:var(--sun)}
+  @media (max-width:780px){nav{display:none}}
+  .call-pill{background:var(--sun);color:var(--sun-ink);text-decoration:none;font-weight:700;padding:.5rem .95rem;border-radius:.5rem;font-size:.92rem;white-space:nowrap;flex:none}
+  .call-pill:hover{background:var(--sun-2)}
+
+  /* hero */
+  .hero{background:
+      radial-gradient(ellipse 60% 50% at 92% 8%,rgba(255,200,61,.28),transparent 60%),
+      linear-gradient(180deg,var(--ocean-3),var(--ocean) 45%,var(--ocean-2) 100%);
+    color:var(--on-ocean);padding:3rem 0 3.5rem;overflow:hidden;position:relative}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:28px;background:var(--bg);clip-path:polygon(0 100%,0 60%,4% 40%,8% 60%,12% 40%,16% 60%,20% 40%,24% 60%,28% 40%,32% 60%,36% 40%,40% 60%,44% 40%,48% 60%,52% 40%,56% 60%,60% 40%,64% 60%,68% 40%,72% 60%,76% 40%,80% 60%,84% 40%,88% 60%,92% 40%,96% 60%,100% 40%,100% 100%)}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative;z-index:1}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .hero .lede{color:var(--on-ocean-2);font-size:1.15rem;max-width:40ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .proof{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;margin-top:1.75rem;color:var(--on-ocean-2);font-size:.95rem}
+  .proof .stars{color:var(--sun);letter-spacing:.08em;font-size:1rem}
+  .proof strong{color:var(--on-ocean);font-weight:700}
+  .stage{position:relative;border-radius:1rem;overflow:hidden;background:
+      linear-gradient(180deg,#5FB3F0 0%,#0B5FA5 55%,#063A66 100%);border:1px solid rgba(255,255,255,.18);aspect-ratio:5/4}
+  .stage .sun{position:absolute;right:10%;top:9%;width:24%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#FFE48A 0 42%,rgba(255,200,61,.45) 56%,transparent 72%)}
+  .stage .ground{position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(180deg,transparent,rgba(255,255,255,.1))}
+  .stage svg{position:absolute;left:0;right:0;bottom:7%;width:100%;height:auto}
+  .stage .badge{position:absolute;left:.9rem;top:.9rem;background:rgba(6,42,75,.72);backdrop-filter:blur(6px);color:var(--on-ocean);font-size:.85rem;font-weight:600;padding:.4rem .8rem;border-radius:.5rem;border:1px solid rgba(255,255,255,.18)}
+  .stage .badge b{color:var(--sun)}
+  .stage-cap{color:var(--on-ocean-2);font-size:.95rem;margin-top:.75rem;text-align:center}
+  @media (prefers-reduced-motion:no-preference){
+    .gleam{animation:gleam 5s ease-in-out infinite}
+    @keyframes gleam{0%,100%{transform:translateX(-120px);opacity:0}15%{opacity:.85}50%{transform:translateX(420px);opacity:.85}65%,99%{opacity:0}}
+    .bubble{animation:bubble 3.2s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+    .bubble:nth-child(2){animation-delay:1s}.bubble:nth-child(3){animation-delay:2s}
+    @keyframes bubble{0%{opacity:0;transform:translateY(0) scale(.6)}30%{opacity:.9}100%{opacity:0;transform:translateY(-26px) scale(1)}}
+  }
+
+  /* sections */
+  section{padding:3.75rem 0}
+  .section-head{display:grid;gap:.6rem;max-width:56ch}
+  .section-head p{color:var(--ink-2)}
+
+  .services .grid{display:grid;gap:1rem;margin-top:1.75rem}
+  @media (min-width:700px){.services .grid{grid-template-columns:repeat(2,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.3rem;display:grid;grid-template-columns:auto 1fr;gap:.9rem 1rem;align-items:start}
+  .svc .ico{width:2.75rem;height:2.75rem;border-radius:.7rem;background:var(--ocean);display:grid;place-items:center;color:var(--sun)}
+  .svc .ico svg{width:1.4rem;height:1.4rem}
+  .svc p{color:var(--ink-2);margin-top:.35rem;font-size:1rem}
+
+  .rating{background:var(--ocean);color:var(--on-ocean);position:relative;overflow:hidden}
+  .rating::before{content:"";position:absolute;right:-8rem;top:-8rem;width:26rem;height:26rem;border-radius:50%;background:radial-gradient(circle,rgba(255,200,61,.22),transparent 65%);pointer-events:none}
+  .rating .wrap{display:grid;gap:2rem;position:relative}
+  @media (min-width:800px){.rating .wrap{grid-template-columns:1fr 1fr;align-items:center}}
+  .rating p{color:var(--on-ocean-2);margin-top:.9rem;max-width:44ch}
+  .score{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:1rem;padding:1.6rem;display:grid;gap:.5rem;justify-items:center;text-align:center}
+  .score .num{font-family:Epilogue,system-ui,sans-serif;font-size:clamp(4rem,14vw,6rem);font-weight:800;line-height:.95;color:var(--sun)}
+  .score .stars{color:var(--sun);font-size:1.6rem;letter-spacing:.14em}
+  .score .count{font-size:1.05rem;color:var(--on-ocean)}
+  .score .count b{color:var(--sun)}
+  .score .src{display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;color:var(--on-ocean-2);margin-top:.4rem}
+  .score .src .g{width:1.6rem;height:1.6rem;border-radius:50%;background:#fff;color:var(--ocean);display:grid;place-items:center;font-weight:800;font-family:Epilogue,sans-serif;font-size:.9rem}
+  .pillars{list-style:none;margin:1.25rem 0 0;padding:0;display:grid;gap:.6rem}
+  .pillars li{display:flex;gap:.65rem;align-items:flex-start;color:var(--on-ocean)}
+  .pillars li::before{content:"";flex:none;width:1.15rem;height:1.15rem;margin-top:.2rem;border-radius:50%;background:var(--sun) center/60% no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230E2A47' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5 5L20 6.5'/%3E%3C/svg%3E")}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:800px){.pricing .grid{grid-template-columns:repeat(3,1fr)}}
+  .pricing .eyebrow{color:var(--ocean-3)}
+  .pkg{background:var(--bg);border:1px solid var(--line);border-radius:1rem;padding:1.4rem;display:flex;flex-direction:column}
+  .pkg.featured{border-color:var(--ocean-3);box-shadow:0 0 0 1px var(--ocean-3) inset;background:var(--foam)}
+  .pkg .tag{align-self:flex-start;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sun-ink);background:var(--sun);padding:.25rem .65rem;border-radius:.4rem;margin-bottom:.75rem}
+  .pkg .from{color:var(--ink-2);font-size:.9rem;margin-top:.6rem}
+  .pkg .price{font-family:Epilogue,system-ui,sans-serif;font-size:2.5rem;font-weight:800;line-height:1;margin:.15rem 0 .25rem;color:var(--ocean-3)}
+  .pkg .time{color:var(--ink-2);font-size:.95rem}
+  .pkg ul{margin:1rem 0 1.25rem;padding-left:1.1rem;color:var(--ink-2);font-size:1rem;display:grid;gap:.4rem}
+  .pkg ul li::marker{color:var(--sun)}
+  .pkg .btn{margin-top:auto}
+  .btn-ocean{background:var(--ocean);color:var(--on-ocean)}
+  .btn-ocean:hover{background:var(--ocean-3)}
+  .btn-line{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn-line:hover{border-color:var(--ocean-3)}
+  .addon{margin-top:1.25rem;background:var(--foam);border:1px dashed var(--ocean-3);border-radius:1rem;padding:1rem 1.25rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:space-between}
+  .addon strong{font-family:Epilogue,system-ui,sans-serif}
+  .addon .p{color:var(--ocean-3);font-weight:700;white-space:nowrap}
+  .pricing .note{color:var(--ink-2);margin-top:1.25rem;font-size:.9rem;display:flex;gap:.5rem;align-items:flex-start}
+  .pricing .note svg{flex:none;width:1.1rem;height:1.1rem;margin-top:.15rem;color:var(--ocean-3)}
+
+  .about .wrap{display:grid;gap:2rem}
+  @media (min-width:800px){.about .wrap{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .about p{color:var(--ink-2);margin-top:.8rem}
+  .socials{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+  .socials a{display:inline-flex;align-items:center;gap:.45rem;border:1px solid var(--line);border-radius:.6rem;padding:.4rem .9rem;font-size:.92rem;font-weight:600;text-decoration:none;background:var(--bg-2)}
+  .socials a:hover{border-color:var(--ocean-3)}
+  .socials svg{width:1rem;height:1rem;color:var(--ocean-3)}
+  .area{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.3rem}
+  .area h3{margin-bottom:.75rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0}
+  .chips li{background:var(--bg);border:1px solid var(--line);border-radius:.5rem;padding:.35rem .8rem;font-size:.95rem;font-weight:600}
+  .hours{margin-top:1.1rem;color:var(--ink-2);font-size:.95rem;display:grid;gap:.25rem}
+  .hours strong{color:var(--ink)}
+
+  .quote{background:var(--ocean-2);color:var(--on-ocean)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--on-ocean-2);margin-top:.9rem;max-width:40ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.6rem}
+  .contact-list li{display:flex;gap:.6rem;align-items:center}
+  .contact-list svg{width:1.1rem;height:1.1rem;color:var(--sun);flex:none}
+  .contact-list a{color:var(--on-ocean);text-decoration-color:var(--sun);text-underline-offset:3px}
+  form{display:grid;gap:.9rem;background:rgba(255,255,255,.06);padding:1.4rem;border-radius:1rem;border:1px solid rgba(255,255,255,.14);border-top:4px solid var(--sun)}
+  label{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-ocean-2)}
+  input,select,textarea{font:inherit;color:#0E2A47;background:#fff;border:1px solid #D6E3EF;border-radius:.6rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--sun);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-ocean-2)}
+
+  footer{background:var(--ocean-2);color:var(--on-ocean-2);padding:1.5rem 0 4rem;font-size:.9rem;border-top:1px solid rgba(255,255,255,.1)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-ocean);text-decoration-color:var(--sun);text-underline-offset:3px}
+
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--sun);color:var(--sun-ink);font-size:.75rem;font-weight:700;padding:.35rem .7rem;border-radius:.5rem;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+  .preview-bar{background:#062A4B;color:#FFFFFF;font-size:.85rem;text-align:center;padding:.5rem 1rem}
+  .preview-bar a{color:var(--sun);font-weight:700}
+
+  @media (max-width:480px){header .wrap{flex-wrap:wrap;gap:.4rem .75rem;padding-block:.5rem}header .wrap>*{min-width:0}.logo{font-size:1.05rem;max-width:62%;overflow:hidden;text-overflow:ellipsis}.call-pill{font-size:.84rem;padding:.4rem .75rem;margin-left:auto}}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a> for Bless Auto Detailing. Not the live site yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="var(--sun)"/><path d="M6 20c4-6 8-6 12 0s8 6 10 0" stroke="#0B5FA5" stroke-width="3" stroke-linecap="round" fill="none"/><circle cx="23" cy="10" r="3" fill="#0B5FA5"/></svg>
+      Bless Auto <small>Detailing</small>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+14075907318">Call or text</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Orlando, FL · We come to you</span>
+      <h1 style="margin-top:.9rem">Spotless inside and out. <em>Right in your driveway.</em></h1>
+      <p class="lede">Bless Auto Detailing, LLC brings full details, interior deep cleaning, polishing and headlight restoration to your home or office anywhere in Orlando. Luis shows up with everything on board, and your car, truck or RV looks new again before you've finished your coffee.</p>
+      <div class="hero-actions">
+        <a class="btn btn-sun" href="#quote">Get a quote</a>
+        <a class="btn btn-ghost" href="tel:+14075907318">(407) 590-7318</a>
+      </div>
+      <div class="proof">
+        <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <span><strong>5.0</strong> on Google · <strong>35</strong> reviews</span>
+        <span>· Cars, trucks and RVs</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="stage" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="ground"></div>
+        <span class="badge"><b>Mobile</b> · at your home or office</span>
+        <svg viewBox="0 0 520 230">
+          <defs>
+            <linearGradient id="paint" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#FFFFFF"/>
+              <stop offset=".5" stop-color="#DCE8F2"/>
+              <stop offset="1" stop-color="#9FB6CB"/>
+            </linearGradient>
+            <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#FFE48A" stop-opacity=".7"/>
+              <stop offset="1" stop-color="#062A4B" stop-opacity=".95"/>
+            </linearGradient>
+            <linearGradient id="sweep" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+              <stop offset=".5" stop-color="#fff" stop-opacity=".75"/>
+              <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+            </linearGradient>
+            <clipPath id="bodyClip">
+              <path d="M58 170 C56 142 70 124 108 118 L150 112 C180 84 218 66 262 66 C318 66 358 84 394 116 L450 124 C472 128 484 142 482 170 L472 182 L60 182 Z"/>
+            </clipPath>
+          </defs>
+          <!-- palm -->
+          <rect x="482" y="60" width="5" height="130" rx="2" fill="#063A66"/>
+          <g fill="#063A66">
+            <path d="M484 62 C500 42 518 44 520 70 C508 56 494 58 484 62 Z"/>
+            <path d="M484 62 C466 40 450 46 446 72 C460 58 474 60 484 62 Z"/>
+            <path d="M484 60 C480 40 486 30 500 26 C490 38 488 50 484 60 Z"/>
+          </g>
+          <ellipse cx="262" cy="204" rx="235" ry="12" fill="#042038" opacity=".5"/>
+          <path fill="url(#paint)" d="M58 170 C56 142 70 124 108 118 L150 112 C180 84 218 66 262 66 C318 66 358 84 394 116 L450 124 C472 128 484 142 482 170 L472 182 L60 182 Z"/>
+          <path fill="url(#glass)" d="M168 114 C192 92 224 78 262 78 C300 78 334 90 366 114 Z"/>
+          <path fill="#fff" opacity=".3" d="M176 112 C198 94 226 84 258 84 L258 112 Z"/>
+          <path d="M100 124 C150 118 370 118 440 128" stroke="#FFC83D" stroke-width="1.5" fill="none" opacity=".9"/>
+          <g clip-path="url(#bodyClip)"><rect class="gleam" x="0" y="60" width="120" height="130" fill="url(#sweep)" transform="skewX(-20)"/></g>
+          <rect x="60" y="176" width="420" height="10" rx="4" fill="#042038"/>
+          <g fill="#042038"><circle cx="142" cy="180" r="30"/><circle cx="398" cy="180" r="30"/></g>
+          <g fill="#C9D8E6"><circle cx="142" cy="180" r="16"/><circle cx="398" cy="180" r="16"/></g>
+          <g fill="#042038"><circle cx="142" cy="180" r="6"/><circle cx="398" cy="180" r="6"/></g>
+          <rect x="456" y="140" width="22" height="9" rx="3" fill="#FFF6D0"/>
+          <rect x="60" y="142" width="18" height="8" rx="3" fill="#FF7A7A"/>
+          <!-- bucket and suds -->
+          <path d="M24 148 L30 186 L60 186 L66 148 Z" fill="#FFC83D"/>
+          <rect x="22" y="144" width="48" height="6" rx="2" fill="#FFD766"/>
+          <path d="M36 144 C36 128 54 128 54 144" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <g fill="#fff" opacity=".9">
+            <circle class="bubble" cx="40" cy="138" r="4"/>
+            <circle class="bubble" cx="52" cy="134" r="3"/>
+            <circle class="bubble" cx="46" cy="128" r="2.5"/>
+          </g>
+        </svg>
+      </div>
+      <p class="stage-cap">Full details, deep interiors, polishing, headlights and RVs, all done where the vehicle is parked.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>Everything from a deep clean to a fresh shine.</h2>
+      <p>Book one service or stack them. Every visit is fully mobile, so you never drop the vehicle off or sit in a waiting room.</p>
+    </div>
+    <div class="grid">
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3 4 6 7 6 10.5a6 6 0 0 1-12 0C6 10 9 7 12 3z"/></svg></div>
+        <div><h3>Full detailing</h3><p>Hand wash, wheels and tires dressed, door jambs, glass, and a complete interior, inside and out in one visit. The whole car, not just the shiny parts.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18M8 7V5h8v2"/></svg></div>
+        <div><h3>Interior deep cleaning</h3><p>Shampooed seats and carpet, leather cleaned and conditioned, vents, cup holders, pet hair and stains. Work trucks and family SUVs welcome.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+        <div><h3>Paint enhancement and polishing</h3><p>Machine polishing to lift swirls, haze and light scratches so the paint looks deep again, then protected so it stays that way under Florida sun.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 16 0v4H4z"/><path d="M8 16v3M16 16v3M4 12h16"/></svg></div>
+        <div><h3>Headlight restoration</h3><p>Yellowed, hazy lenses sanded, polished and sealed so they look brand new and you can actually see at night.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 16V9a2 2 0 0 1 2-2h10l4 4h2v5"/><path d="M3 16h18"/><circle cx="7.5" cy="18" r="1.5"/><circle cx="17.5" cy="18" r="1.5"/><path d="M7 7v4h6"/></svg></div>
+        <div><h3>RV wash and wax</h3><p>Motorhomes and travel trailers washed, oxidation knocked back and waxed by hand, at your home or storage lot. Ready for the next trip.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></div>
+        <div><h3>Mobile, at your home or office</h3><p>Luis brings the water, power and every product. Book it for while you're at work or at home, and walk out to a finished vehicle.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rating" id="reviews">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Reviews</span>
+      <h2 style="margin-top:.6rem">A perfect 5.0 on Google.</h2>
+      <p>Thirty-five Orlando customers have rated Luis's work, and every single one gave five stars. That doesn't happen by accident. It comes from showing up on time, doing the whole job, and treating every vehicle like it's your own.</p>
+      <ul class="pillars">
+        <li>Every one of the 35 reviews is five stars</li>
+        <li>Cars, trucks, SUVs and RVs</li>
+        <li>Fully mobile across the Orlando area</li>
+      </ul>
+    </div>
+    <div class="score" aria-label="5.0 out of 5 stars on Google across 35 reviews">
+      <div class="num">5.0</div>
+      <div class="stars" aria-hidden="true">★★★★★</div>
+      <div class="count"><b>35</b> reviews, all five stars</div>
+      <div class="src"><span class="g">G</span>Google rating</div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>Straight packages, quoted up front.</h2>
+      <p>Final price depends on vehicle size and condition. Text a photo and Luis will send back a firm number.</p>
+    </div>
+    <div class="grid">
+      <div class="pkg">
+        <h3>Express detail</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$89</div>
+        <div class="time">About 1.5 hours</div>
+        <ul><li>Hand wash and dry</li><li>Wheels, tires and jambs</li><li>Interior vacuum and wipe-down</li><li>Glass inside and out</li></ul>
+        <a class="btn btn-line" href="#quote">Book this</a>
+      </div>
+      <div class="pkg featured">
+        <span class="tag">Most popular</span>
+        <h3>Full detail</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$199</div>
+        <div class="time">About 2–3 hours</div>
+        <ul><li>Everything in the express detail</li><li>Interior deep cleaning</li><li>Shampooed seats and carpet</li><li>Leather cleaned and conditioned</li><li>Clay bar and paint sealant</li></ul>
+        <a class="btn btn-ocean" href="#quote">Book this</a>
+      </div>
+      <div class="pkg">
+        <h3>Paint enhancement</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$349</div>
+        <div class="time">About half a day</div>
+        <ul><li>Wash, decontamination and clay</li><li>One-step machine polish</li><li>Swirl and haze reduction</li><li>Paint sealant for protection</li></ul>
+        <a class="btn btn-line" href="#quote">Get a quote</a>
+      </div>
+    </div>
+    <div class="addon">
+      <div><strong>Also:</strong> Headlight restoration from $75 · RV wash and wax quoted by length</div>
+      <span class="p">Text for a price</span>
+    </div>
+    <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span>Example pricing — we'll put in your real numbers. Trucks, large SUVs, RVs and heavily soiled vehicles are quoted individually.</span></p>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About</span>
+      <h2 style="margin-top:.6rem">Owner-operated, based in Orlando.</h2>
+      <p>Bless Auto Detailing, LLC is run by Luis out of Orlando, FL. He's the one who answers the phone, shows up with the gear, and does the work himself. Thirty-five customers have rated the results on Google and every one of them gave five stars.</p>
+      <p>Fully mobile means you don't lose a morning. Book it for while you're at work or at home, and walk out to a finished car, truck or RV.</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/blessautodetailing/" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>@blessautodetailing</a>
+      </div>
+    </div>
+    <div class="area">
+      <h3>Service area</h3>
+      <ul class="chips">
+        <li>Orlando</li><li>Kissimmee</li><li>Winter Park</li><li>Lake Nona</li><li>Dr. Phillips</li><li>Altamonte Springs</li><li>Apopka</li><li>Oviedo</li><li>Winter Garden</li><li>Sanford by request</li>
+      </ul>
+      <div class="hours">
+        <span><strong>Booking</strong> Call or text for the next open slot</span>
+        <span>Based in Orlando, FL</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2 style="margin-top:.6rem">Tell Luis about the vehicle.</h2>
+      <p class="sub">Fill this in and it opens a text to Bless Auto Detailing with your details already typed. Or just call.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><a href="tel:+14075907318">(407) 590-7318</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-5A8 8 0 1 1 21 12z"/></svg><a href="sms:+14075907318?&body=Hi%20Luis%2C%20I%27d%20like%20a%20quote%20for%20a%20detail%20on%20my%20">Text a photo of the vehicle</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:blessautodetailing@hotmail.com">blessautodetailing@hotmail.com</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Mobile service across the Orlando area</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Your phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(407) 555-0123" required></label>
+      <label>Vehicle<input name="vehicle" placeholder="2020 Honda Pilot, or a 32 ft travel trailer" required></label>
+      <label>What do you need?
+        <select name="need">
+          <option>Express detail</option>
+          <option>Full detail</option>
+          <option>Interior deep cleaning</option>
+          <option>Paint enhancement and polishing</option>
+          <option>Headlight restoration</option>
+          <option>RV wash and wax</option>
+          <option>Not sure, help me choose</option>
+        </select>
+      </label>
+      <label>Anything else (where the vehicle is, when works)<textarea name="notes" placeholder="Lake Nona, weekday mornings. Dog hair in the back seat."></textarea></label>
+      <button class="btn btn-sun" type="submit">Send as a text</button>
+      <p class="form-note">Nothing is stored on this page. Your message opens in your phone's messaging app and you send it yourself.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Bless Auto Detailing, LLC · Orlando, FL · <a href="tel:+14075907318">(407) 590-7318</a> · <a href="https://www.instagram.com/blessautodetailing/" rel="noopener" target="_blank">Instagram</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" target="_blank" rel="noopener">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" target="_blank" rel="noopener">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Luis, this is '+f.get('name')+' ('+f.get('phone')+'). I have a '+f.get('vehicle')+' and I\'m looking for: '+f.get('need')+'.';
+    if(f.get('notes'))msg+=' '+f.get('notes');
+    msg+=' What do you have open?';
+    window.location.href='sms:+14075907318?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

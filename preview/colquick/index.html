@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Colquick Mobile Mechanics — Mobile mechanic in Orlando, FL · Se habla español</title>
+<meta name="description" content="Colquick Mobile Mechanics LLC comes to your home or work across Orlando, Kissimmee, Winter Park and Sanford. Mobile diagnostics, brakes, A/C, alternators, starters and oil changes. 4.9 stars on Google across 104 reviews. English and Spanish.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@110,700;110,800;110,900&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF; --bg-2:#F5F5F2; --ink:#111111; --ink-2:#55554F; --line:#E2E2DC;
+    --black:#111111; --black-2:#1E1E1E; --on-black:#FFFFFF; --on-black-2:#B9B9B3;
+    --yellow:#FFD400; --yellow-2:#F2C600; --yellow-ink:#111111;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141414;--bg-2:#1C1C1C;--ink:#F4F4F0;--ink-2:#B5B5AF;--line:#2E2E2C;--black:#0A0A0A;--black-2:#161616}}
+  :root[data-theme="dark"]{--bg:#141414;--bg-2:#1C1C1C;--ink:#F4F4F0;--ink-2:#B5B5AF;--line:#2E2E2C;--black:#0A0A0A;--black-2:#161616}
+  html{scroll-padding-top:calc(4.5rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Rubik,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:Archivo,system-ui,sans-serif;font-stretch:110%;margin:0;line-height:1;letter-spacing:-.01em;text-transform:uppercase}
+  h1{font-size:clamp(2.6rem,9vw,5rem);font-weight:900}
+  h2{font-size:clamp(1.85rem,5.5vw,2.8rem);font-weight:800}
+  h3{font-size:1.2rem;font-weight:800;letter-spacing:.01em}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin-bottom:.8rem}
+  .eyebrow::before{content:"";width:1.4rem;height:.55rem;flex:none;background:repeating-linear-gradient(-45deg,var(--yellow) 0 4px,var(--black) 4px 8px)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.35rem;font-family:Archivo,sans-serif;font-stretch:110%;font-weight:800;font-size:1.05rem;letter-spacing:.03em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+  .btn-black{background:var(--black);color:var(--on-black)}
+  .btn-black:hover{background:var(--black-2)}
+  .btn-yellow{background:var(--yellow);color:var(--yellow-ink)}
+  .btn-yellow:hover{background:var(--yellow-2)}
+  .btn-outline{background:transparent;color:var(--yellow-ink);border-color:rgba(17,17,17,.45)}
+  .btn-outline:hover{border-color:var(--black)}
+
+  /* preview bar + header */
+  .preview-bar{background:#0A0A0A;color:#FFFFFF;font-size:.85rem;text-align:center;padding:.5rem 1rem}
+  .preview-bar a{color:var(--yellow);font-weight:700}
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--black);color:var(--on-black);border-bottom:4px solid var(--yellow)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:3.9rem}
+  .logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--on-black);white-space:nowrap;min-width:0}
+  .logo .mark{width:2.1rem;height:2.1rem;border-radius:.3rem;background:var(--yellow);color:var(--yellow-ink);display:grid;place-items:center;font-family:Archivo,sans-serif;font-stretch:110%;font-weight:900;font-size:1.15rem;flex:0 0 auto}
+  .logo b{display:block;font-family:Archivo,sans-serif;font-stretch:110%;font-weight:900;font-size:1.3rem;letter-spacing:.01em;text-transform:uppercase;line-height:1}
+  .logo small{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-black-2);line-height:1.1;font-weight:600;margin-top:.2rem}
+  nav a{text-decoration:none;color:var(--on-black-2);font-weight:600;margin-left:1.25rem;font-size:.95rem}
+  nav a:hover{color:var(--yellow)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--yellow);color:var(--yellow-ink);text-decoration:none;font-family:Archivo,sans-serif;font-stretch:110%;font-weight:800;font-size:.95rem;letter-spacing:.03em;text-transform:uppercase;padding:.5rem .95rem;border-radius:.3rem;white-space:nowrap;flex:none}
+  .call-pill:hover{background:var(--yellow-2)}
+
+  /* hero (safety yellow) */
+  .hero{background:var(--yellow);color:var(--yellow-ink);padding:3rem 0 3.75rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;left:0;right:0;bottom:0;height:16px;background:repeating-linear-gradient(-45deg,var(--black) 0 20px,transparent 20px 40px);opacity:.9;pointer-events:none}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .hero .eyebrow{color:rgba(17,17,17,.7)}
+  .hero .eyebrow::before{background:repeating-linear-gradient(-45deg,var(--black) 0 4px,transparent 4px 8px)}
+  .hero h1 em{font-style:normal;background:var(--black);color:var(--yellow);padding:0 .15em;display:inline-block;line-height:1.1}
+  .hero .lede{color:rgba(17,17,17,.78);font-size:1.15rem;max-width:40ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:flex;flex-wrap:wrap;gap:1rem 2rem;margin-top:2.1rem;color:rgba(17,17,17,.7);font-size:.9rem}
+  .trust strong{display:block;color:var(--yellow-ink);font-family:Archivo,sans-serif;font-stretch:110%;font-size:1.7rem;font-weight:900;line-height:1.05}
+  .trust .star{color:var(--black)}
+
+  .stage{background:var(--black);color:var(--on-black);border-radius:.5rem;padding:1.25rem;border:3px solid var(--black);box-shadow:8px 8px 0 rgba(17,17,17,.25)}
+  .stage svg{width:100%;height:auto;display:block}
+  .checks{list-style:none;margin:1.1rem 0 0;padding:0;display:grid;gap:.55rem;font-size:.97rem}
+  .checks li{display:flex;gap:.6rem;align-items:flex-start;color:var(--on-black)}
+  .checks li::before{content:"";flex:none;width:1.15rem;height:1.15rem;margin-top:.2rem;border-radius:.2rem;background:var(--yellow) center/60% no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111111' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5 5L20 6.5'/%3E%3C/svg%3E")}
+  @media (prefers-reduced-motion:no-preference){
+    .wheel{transform-origin:center;transform-box:fill-box;animation:roll 5s linear infinite}
+    @keyframes roll{to{transform:rotate(360deg)}}
+    .road{animation:road 1.2s linear infinite}
+    @keyframes road{to{stroke-dashoffset:-60}}
+    .beacon{animation:beacon 1.4s ease-in-out infinite}
+    @keyframes beacon{0%,100%{opacity:.35}50%{opacity:1}}
+  }
+
+  /* sections */
+  section{padding:4rem 0}
+  .sec-head{display:grid;gap:.5rem;max-width:58ch}
+  .sec-head p{color:var(--ink-2);font-size:1.05rem}
+  .grid{display:grid;gap:1.1rem;margin-top:2rem}
+  @media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:940px){.grid.three{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-top:5px solid var(--yellow);padding:1.25rem 1.3rem;border-radius:.4rem}
+  .svc .ico{width:2.5rem;height:2.5rem;border-radius:.3rem;background:var(--black);display:grid;place-items:center;margin-bottom:.85rem}
+  .svc .ico svg{width:1.4rem;height:1.4rem;stroke:var(--yellow);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);margin-top:.45rem;font-size:1rem}
+  .svc .es{display:block;margin-top:.5rem;font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+
+  .bilingual{background:var(--black);color:var(--on-black);padding:1.5rem 0}
+  .bilingual .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 2rem;justify-content:space-between}
+  .bilingual strong{font-family:Archivo,sans-serif;font-stretch:110%;font-weight:900;font-size:1.5rem;text-transform:uppercase;color:var(--yellow);line-height:1}
+  .bilingual p{color:var(--on-black-2);max-width:60ch}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.pricing .wrap{grid-template-columns:.85fr 1.15fr;align-items:start}}
+  .price-list{list-style:none;margin:0;padding:0;border:2px solid var(--black);border-radius:.4rem;overflow:hidden;background:var(--bg)}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .price-list{border-color:var(--line)}}
+  :root[data-theme="dark"] .price-list{border-color:var(--line)}
+  .price-list li{display:grid;grid-template-columns:1fr auto;gap:.25rem 1rem;align-items:center;padding:1rem 1.15rem;border-top:1px solid var(--line)}
+  .price-list li:first-child{border-top:0}
+  .price-list b{font-weight:600;font-size:1.05rem}
+  .price-list small{display:block;color:var(--ink-2);font-size:.92rem;font-weight:400;margin-top:.1rem}
+  .price-list .n{font-family:Archivo,sans-serif;font-stretch:110%;font-weight:900;font-size:1.6rem;white-space:nowrap;text-align:right;line-height:1}
+  .price-list .n em{font-style:normal;font-family:Rubik,sans-serif;font-stretch:100%;font-weight:600;font-size:.7rem;color:var(--ink-2);display:block;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.15rem}
+  .promise{margin-top:1.5rem;display:grid;gap:.9rem}
+  .promise div{display:flex;gap:.8rem;align-items:flex-start;color:var(--ink-2)}
+  .promise svg{flex:0 0 auto;width:1.35rem;height:1.35rem;margin-top:.15rem;stroke:var(--ink);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;background:var(--yellow);border-radius:.2rem;padding:.15rem}
+  .promise b{color:var(--ink)}
+  .price-note{margin-top:1rem;font-size:.92rem;color:var(--ink-2);display:flex;gap:.6rem;align-items:flex-start}
+  .price-note .tag{flex:0 0 auto;background:var(--yellow);color:var(--yellow-ink);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:.2rem;margin-top:.15rem}
+
+  .steps{display:grid;gap:1.5rem;margin-top:2rem;counter-reset:step}
+  @media (min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{position:relative;padding-left:3.5rem}
+  .step::before{counter-increment:step;content:counter(step,decimal-leading-zero);position:absolute;top:0;left:0;width:2.6rem;height:2.6rem;border-radius:.3rem;background:var(--yellow);color:var(--yellow-ink);display:grid;place-items:center;font-family:Archivo,sans-serif;font-stretch:110%;font-size:1.2rem;font-weight:900}
+  .step p{color:var(--ink-2);margin-top:.4rem}
+
+  .reviews{background:var(--black);color:var(--on-black)}
+  .reviews .eyebrow{color:var(--on-black-2)}
+  .reviews .sec-head p{color:var(--on-black-2)}
+  .reviews .grid{grid-template-columns:1fr}
+  @media (min-width:760px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:.4rem;padding:1.3rem;display:flex;flex-direction:column}
+  .stars{color:var(--yellow);letter-spacing:.12em;margin-bottom:.6rem;font-size:1.05rem}
+  .review p{font-size:1.05rem}
+  .review cite{display:block;margin-top:auto;padding-top:.9rem;font-style:normal;color:var(--on-black-2);font-size:.92rem}
+  .g-line{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin-top:.4rem;color:var(--on-black-2)}
+  .g-line .big{font-family:Archivo,sans-serif;font-stretch:110%;font-weight:900;font-size:1.9rem;color:var(--on-black);line-height:1}
+  .g-line .star{color:var(--yellow);font-size:1.3rem}
+
+  .area .wrap{display:grid;gap:2.25rem}
+  @media (min-width:860px){.area .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .area p{color:var(--ink-2);margin-top:.9rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:.3rem;padding:.35rem .85rem;font-size:.95rem;font-weight:500}
+  .facts{margin-top:1.5rem;display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem;color:var(--ink-2);font-size:.98rem}
+  .facts b{color:var(--ink);font-weight:700}
+  .facts a{color:var(--ink);text-decoration-color:var(--yellow);text-decoration-thickness:2px}
+  .map{background:var(--black);border-radius:.5rem;padding:1rem;border:3px solid var(--black);box-shadow:8px 8px 0 var(--yellow)}
+  .map svg{display:block;width:100%;height:auto}
+
+  .quote{background:var(--bg-2);border-top:1px solid var(--line)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--ink-2);margin-top:.9rem;max-width:42ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.65rem}
+  .contact-list li{display:flex;gap:.7rem;align-items:center;color:var(--ink-2)}
+  .contact-list svg{width:1.2rem;height:1.2rem;stroke:var(--ink);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--yellow);text-decoration-thickness:2px;font-weight:600}
+  .contact-list .big{font-family:Archivo,sans-serif;font-stretch:110%;font-weight:900;font-size:1.9rem;text-decoration:none;line-height:1}
+  form{display:grid;gap:.95rem;background:var(--black);color:var(--on-black);padding:1.5rem;border-radius:.5rem;border-top:6px solid var(--yellow)}
+  form h3{color:var(--on-black)}
+  form .es{color:var(--on-black-2);font-size:.9rem;margin-top:-.4rem}
+  label{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-black-2)}
+  input,textarea{font:inherit;color:#111111;background:#fff;border:1px solid #CFCFC8;border-radius:.35rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.2rem;resize:vertical}
+  input:focus-visible,textarea:focus-visible{outline:3px solid var(--yellow);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-black-2)}
+
+  footer{background:var(--black);color:var(--on-black-2);padding:1.75rem 0 4rem;font-size:.9rem;border-top:4px solid var(--yellow)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-black);text-decoration-color:var(--yellow)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--yellow);color:var(--yellow-ink);font-size:.78rem;font-weight:700;padding:.35rem .7rem;border-radius:.3rem;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+  .preview-tag:hover{background:var(--yellow-2)}
+
+  @media (max-width:480px){header .wrap{flex-wrap:wrap;gap:.4rem .75rem;padding-block:.5rem}header .wrap>*{min-width:0}.logo{max-width:62%;overflow:hidden}.logo b{font-size:1.1rem;overflow:hidden;text-overflow:ellipsis}.call-pill{font-size:.82rem;padding:.4rem .7rem;margin-left:auto}}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a> for Colquick Mobile Mechanics. Not the live site yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark">C</span><span><b>Colquick</b><small>Mobile Mechanics · Orlando</small></span></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+14078211677">Call Javier</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Orlando, FL · Mobile · Se habla español</span>
+      <h1>Stuck? Javier comes <em>to you.</em></h1>
+      <p class="lede">Colquick Mobile Mechanics LLC drives to your home, job or parking lot anywhere in the Orlando area, finds the real problem and fixes it on the spot. Brakes, A/C, alternators, starters, batteries and oil changes, with an honest estimate before any work starts. English and Spanish.</p>
+      <div class="hero-actions">
+        <a class="btn btn-black" href="#quote">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+14078211677">(407) 821-1677</a>
+      </div>
+      <div class="trust">
+        <div><strong><span class="star">★</span> 4.9</strong>104 Google reviews</div>
+        <div><strong>Mobile</strong>Home, work or roadside</div>
+        <div><strong>Español</strong>Bilingual service</div>
+      </div>
+    </div>
+
+    <div class="stage" aria-label="Mobile mechanic service van">
+      <svg viewBox="0 0 520 250" role="img" aria-labelledby="vanTitle">
+        <title id="vanTitle">Illustration of a yellow and black service van on the road, on the way to a customer in Orlando</title>
+        <defs>
+          <linearGradient id="vanSheen" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#fff" stop-opacity=".22"/>
+            <stop offset=".7" stop-color="#fff" stop-opacity="0"/>
+            <stop offset="1" stop-color="#000" stop-opacity=".2"/>
+          </linearGradient>
+        </defs>
+        <!-- sun -->
+        <circle cx="440" cy="58" r="30" fill="#FFD400"/>
+        <circle cx="440" cy="58" r="44" fill="#FFD400" opacity=".14"/>
+        <!-- palms -->
+        <g fill="#2C2C2C">
+          <rect x="356" y="120" width="6" height="70" rx="2"/>
+          <path d="M359 122 C340 112 328 112 318 120 C332 114 346 118 359 124 Z"/>
+          <path d="M359 122 C378 110 392 112 402 120 C388 114 372 118 359 124 Z"/>
+          <path d="M359 120 C352 100 356 92 366 86 C360 96 362 108 361 122 Z"/>
+          <rect x="482" y="130" width="5" height="60" rx="2"/>
+          <path d="M484 132 C468 124 458 124 450 130 C462 126 474 128 484 134 Z"/>
+          <path d="M484 132 C500 122 512 124 520 130 C508 126 496 128 484 134 Z"/>
+        </g>
+        <!-- skyline hint -->
+        <g fill="#2C2C2C"><rect x="300" y="140" width="22" height="50"/><rect x="326" y="150" width="16" height="40"/><rect x="408" y="146" width="28" height="44"/><rect x="440" y="156" width="18" height="34"/></g>
+        <g fill="#FFD400" opacity=".55"><rect x="305" y="148" width="5" height="5"/><rect x="313" y="158" width="5" height="5"/><rect x="414" y="154" width="5" height="5"/><rect x="424" y="164" width="5" height="5"/></g>
+        <!-- road -->
+        <rect x="0" y="190" width="520" height="60" fill="#0A0A0A"/>
+        <line class="road" x1="0" y1="222" x2="520" y2="222" stroke="#FFD400" stroke-width="4" stroke-dasharray="30 30"/>
+        <!-- van body -->
+        <path fill="#F4F4F0" d="M40 176 L40 104 C40 96 46 90 54 90 L220 90 C234 90 244 94 252 104 L292 150 L292 176 Z"/>
+        <path fill="url(#vanSheen)" d="M40 176 L40 104 C40 96 46 90 54 90 L220 90 C234 90 244 94 252 104 L292 150 L292 176 Z"/>
+        <!-- windows -->
+        <path fill="#0A0A0A" d="M226 98 C236 98 242 102 246 108 L278 148 L224 148 L224 98 Z"/>
+        <path fill="#9FA3AA" opacity=".3" d="M226 98 C236 98 242 102 246 108 L258 124 L224 124 L224 98 Z"/>
+        <rect x="172" y="100" width="42" height="40" rx="3" fill="#0A0A0A"/>
+        <!-- hazard stripe -->
+        <rect x="40" y="148" width="252" height="16" fill="#FFD400"/>
+        <g fill="#111111"><rect x="52" y="148" width="10" height="16" transform="skewX(-30)"/><rect x="76" y="148" width="10" height="16" transform="skewX(-30)"/><rect x="100" y="148" width="10" height="16" transform="skewX(-30)"/></g>
+        <text x="130" y="160" font-family="Archivo, sans-serif" font-weight="900" font-size="11.5" fill="#111111" letter-spacing="1.5">COLQUICK MOBILE</text>
+        <!-- side panel text -->
+        <text x="56" y="128" font-family="Archivo, sans-serif" font-weight="900" font-size="15" fill="#111111" letter-spacing="1">MECÁNICO MÓVIL</text>
+        <!-- beacon on roof -->
+        <rect x="120" y="82" width="36" height="9" rx="2" fill="#2C2C2C"/>
+        <rect class="beacon" x="124" y="78" width="28" height="6" rx="2" fill="#FFD400"/>
+        <!-- bumper, lights -->
+        <rect x="34" y="172" width="266" height="10" rx="3" fill="#2C2C2C"/>
+        <rect x="288" y="154" width="10" height="16" rx="2" fill="#FFF4C2"/>
+        <rect x="34" y="152" width="8" height="12" rx="2" fill="#E8503A"/>
+        <!-- motion lines -->
+        <g stroke="#FFD400" stroke-width="3" stroke-linecap="round" opacity=".8"><line x1="4" y1="118" x2="28" y2="118"/><line x1="0" y1="138" x2="22" y2="138"/><line x1="8" y1="158" x2="26" y2="158"/></g>
+        <!-- wheels -->
+        <g class="wheel">
+          <circle cx="96" cy="182" r="22" fill="#0A0A0A"/>
+          <circle cx="96" cy="182" r="12" fill="#B9B9B3"/>
+          <path d="M96 170 L96 194 M84 182 L108 182 M87.5 173.5 L104.5 190.5 M104.5 173.5 L87.5 190.5" stroke="#0A0A0A" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="96" cy="182" r="4" fill="#0A0A0A"/>
+        </g>
+        <g class="wheel">
+          <circle cx="244" cy="182" r="22" fill="#0A0A0A"/>
+          <circle cx="244" cy="182" r="12" fill="#B9B9B3"/>
+          <path d="M244 170 L244 194 M232 182 L256 182 M235.5 173.5 L252.5 190.5 M252.5 173.5 L235.5 190.5" stroke="#0A0A0A" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="244" cy="182" r="4" fill="#0A0A0A"/>
+        </g>
+      </svg>
+      <ul class="checks">
+        <li>Honest estimate and a clear explanation before any work starts</li>
+        <li>Fast response, including emergency brake and no-start calls</li>
+        <li>Service in English or Spanish, whichever you prefer</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services · Servicios</span>
+      <h2>What Javier fixes in your driveway</h2>
+      <p>The van carries the scanner, tools and common parts, so most jobs are finished the same visit. If a repair truly needs a lift, you'll hear that straight, not after.</p>
+    </div>
+    <div class="grid three">
+      <div class="svc">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M8 11l2 2 4-4"/></svg></div>
+        <h3>Mobile diagnostics</h3>
+        <p>Check engine light, stalling, rough idle or a car that just died. Scanned and tested where it sits, with the cause explained before anything is replaced.</p>
+        <span class="es">Diagnóstico a domicilio</span>
+      </div>
+      <div class="svc">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div>
+        <h3>Brakes</h3>
+        <p>Pads, rotors and calipers. Grinding, squealing or a pedal that goes soft. Emergency brake failures get a fast response.</p>
+        <span class="es">Frenos</span>
+      </div>
+      <div class="svc">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+        <h3>A/C service</h3>
+        <p>Blowing warm in Orlando heat is not an option. Leak check, recharge and component repair so it runs cold again.</p>
+        <span class="es">Aire acondicionado</span>
+      </div>
+      <div class="svc">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L5 13h6l-1 9 9-12h-6l1-8z"/></svg></div>
+        <h3>Alternators and starters</h3>
+        <p>Dimming lights, a click and nothing, or a battery that keeps dying. Charging system tested and the part swapped on site.</p>
+        <span class="es">Alternadores y arranques</span>
+      </div>
+      <div class="svc">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M7 11v4M17 13h-4M15 11v4M9 11h-4"/></svg></div>
+        <h3>Battery and charging</h3>
+        <p>No crank, slow crank or a warning on the dash. Battery, alternator and cables tested so you only pay for the part that is actually bad.</p>
+        <span class="es">Batería y sistema de carga</span>
+      </div>
+      <div class="svc">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div>
+        <h3>Oil changes and maintenance</h3>
+        <p>Oil and filter, belts, hoses, fluids and the preventive work that keeps a car out of the shop. Done while you're at home or at work.</p>
+        <span class="es">Cambio de aceite y mantenimiento</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="bilingual">
+  <div class="wrap">
+    <strong>Se habla español</strong>
+    <p>Call or text in English or Spanish. Javier explains the problem, the price and the fix in whichever language you prefer. Llame o envíe un mensaje de texto, en inglés o en español.</p>
+  </div>
+</div>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>An honest estimate before the work</h2>
+        <p>Customers keep writing the same thing in their reviews: fair on price, honest estimate, clear explanation. You'll have the number for parts and labor before a wrench is picked up.</p>
+      </div>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Quote by text</b> so the number is in writing, in English or Spanish.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Only what's actually broken</b> gets replaced. Guesswork isn't on the invoice.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>No tow, no shuttle, no waiting room.</b> You keep your day.</p></div>
+      </div>
+    </div>
+    <div>
+      <ul class="price-list">
+        <li><div><b>Mobile diagnostic visit</b><small>Scan, test and a plain-language answer</small></div><span class="n"><em>Starting at</em>$89</span></li>
+        <li><div><b>Oil change at your door</b><small>Full synthetic, filter and a quick look underneath</small></div><span class="n"><em>Starting at</em>$79</span></li>
+        <li><div><b>Brake pads and rotors</b><small>Per axle, parts and labor</small></div><span class="n"><em>Starting at</em>$249</span></li>
+        <li><div><b>A/C diagnosis and recharge</b><small>Leak check and recharge; component repairs quoted on site</small></div><span class="n"><em>Starting at</em>$149</span></li>
+        <li><div><b>Battery replacement</b><small>Installed and tested, charging system checked</small></div><span class="n"><em>Starting at</em>$169</span></li>
+        <li><div><b>Alternator or starter</b><small>Parts and labor, most cars and light trucks</small></div><span class="n"><em>Starting at</em>$299</span></li>
+      </ul>
+      <p class="price-note"><span class="tag">Note</span><span>Example pricing — we'll put in your real numbers. Final quotes depend on the vehicle and parts.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps and you're back on the road</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Call or text the symptoms</h3>
+        <p>Year, make, model, what it's doing and where it's parked. English or Spanish. A quick video of the noise helps.</p>
+      </div>
+      <div class="step">
+        <h3>Javier pulls up</h3>
+        <p>Home, office, job site or the side of the road. He confirms the cause and gives you the parts-and-labor price before touching anything.</p>
+      </div>
+      <div class="step">
+        <h3>Fixed where it sits</h3>
+        <p>Most repairs are done the same visit. You keep your day, skip the tow and never hand over the keys.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>What Orlando drivers say</h2>
+      <p class="g-line"><span class="star" aria-hidden="true">★★★★★</span><span class="big">4.9</span><span>across 104 Google reviews</span></p>
+    </div>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Arrived in 15 min after an emergency brake failure and was fair on price."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Had our A/C running like new in no time, with an honest estimate and clear explanation of the problem."</p><cite>Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Very reliable and fast."</p><cite>Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About and service area</span>
+      <h2>Based in Orlando. On the road across Central Florida.</h2>
+      <p>Colquick Mobile Mechanics LLC is run by Javier out of Orlando, FL. Customers keep passing his number along because he shows up fast, explains the problem clearly and charges a fair price. Service is bilingual, so you can talk through the repair in English or Spanish.</p>
+      <p>A little outside the usual area? Text anyway and you'll get a straight answer.</p>
+      <div class="towns">
+        <span>Orlando</span><span>Kissimmee</span><span>Winter Park</span><span>Altamonte Springs</span><span>Apopka</span><span>Sanford</span><span>Oviedo</span><span>Lake Nona</span><span>Winter Garden</span><span>Ocoee</span>
+      </div>
+      <div class="facts">
+        <b>Home base</b><span>Orlando, FL. Mobile only, we come to you.</span>
+        <b>Phone</b><span><a href="tel:+14078211677">(407) 821-1677</a>, call or <a href="sms:+14078211677">text</a></span>
+        <b>Instagram</b><span><a href="https://www.instagram.com/colquickmobilemechanics/" rel="noopener" target="_blank">@colquickmobilemechanics</a></span>
+        <b>Hours</b><span>Call or text for same-day or next-day availability</span>
+      </div>
+    </div>
+    <div class="map" aria-label="Service area map">
+      <svg viewBox="0 0 400 300" role="img" aria-labelledby="mapTitle">
+        <title id="mapTitle">Stylized map of the Orlando metro with Orlando at the center of the service area</title>
+        <rect width="400" height="300" fill="#1E1E1E"/>
+        <!-- lakes -->
+        <ellipse cx="60" cy="200" rx="44" ry="26" fill="#0A0A0A"/>
+        <ellipse cx="300" cy="258" rx="54" ry="22" fill="#0A0A0A"/>
+        <ellipse cx="330" cy="70" rx="26" ry="14" fill="#0A0A0A"/>
+        <circle cx="206" cy="150" r="9" fill="#0A0A0A"/>
+        <!-- I-4 -->
+        <path d="M40 300 C110 240 160 200 200 160 C240 120 280 70 330 0" stroke="#7A7A74" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+        <!-- 408 / 417 hints -->
+        <path d="M0 158 L400 150" stroke="#7A7A74" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+        <path d="M250 300 C270 220 300 160 330 100 C340 80 330 40 300 20" stroke="#7A7A74" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+        <!-- service radius -->
+        <circle cx="200" cy="150" r="118" fill="#FFD400" opacity=".1"/>
+        <circle cx="200" cy="150" r="118" fill="none" stroke="#FFD400" stroke-width="2" stroke-dasharray="6 5"/>
+        <circle cx="200" cy="150" r="56" fill="#FFD400" opacity=".14"/>
+        <!-- towns -->
+        <g font-family="Rubik, sans-serif" font-size="11" fill="#E6E6E0">
+          <circle cx="130" cy="60" r="3" fill="#E6E6E0"/><text x="92" y="52">Apopka</text>
+          <circle cx="250" cy="40" r="3" fill="#E6E6E0"/><text x="258" y="44">Sanford</text>
+          <circle cx="196" cy="84" r="3" fill="#E6E6E0"/><text x="112" y="88">Altamonte Springs</text>
+          <circle cx="248" cy="112" r="3" fill="#E6E6E0"/><text x="256" y="116">Winter Park</text>
+          <circle cx="320" cy="120" r="3" fill="#E6E6E0"/><text x="328" y="124">Oviedo</text>
+          <circle cx="80" cy="150" r="3" fill="#E6E6E0"/><text x="22" y="140">Winter Garden</text>
+          <circle cx="110" cy="124" r="3" fill="#E6E6E0"/><text x="116" y="120">Ocoee</text>
+          <circle cx="290" cy="208" r="3" fill="#E6E6E0"/><text x="298" y="212">Lake Nona</text>
+          <circle cx="160" cy="250" r="3" fill="#E6E6E0"/><text x="104" y="254">Kissimmee</text>
+        </g>
+        <!-- Orlando pin -->
+        <path d="M200 120 C188 120 180 129 180 140 C180 156 200 174 200 174 C200 174 220 156 220 140 C220 129 212 120 200 120 Z" fill="#FFD400"/>
+        <circle cx="200" cy="140" r="7" fill="#111111"/>
+        <text x="200" y="196" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="900" font-size="16" letter-spacing="1.5" fill="#FFFFFF">ORLANDO</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote · Cotización</span>
+      <h2>Tell Javier what the car is doing</h2>
+      <p class="sub">Fill this in and it opens a text to Colquick with your details already typed. You'll get a price and a time back. Or just call. English or Spanish.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a class="big" href="tel:+14078211677">(407) 821-1677</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg><a href="sms:+14078211677?&body=Hi%20Javier%2C%20I%27d%20like%20a%20quote%20for%20my%20">Text (407) 821-1677</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:colquickmobilemechanics@gmail.com">colquickmobilemechanics@gmail.com</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Mobile service based in Orlando, FL</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M12 4c3 3 3 13 0 16M12 4c-3 3-3 13 0 16"/><circle cx="12" cy="12" r="8"/></svg><span>English · Español</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <h3>Request a quote</h3>
+      <p class="es">Pida su cotización. Puede escribir en español.</p>
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(407) 555-0123" required></label>
+      <label>Vehicle (year, make, model)<input name="vehicle" placeholder="2017 Toyota Camry" required></label>
+      <label>What do you need?<textarea name="need" placeholder="A/C blowing warm, car is at my apartment in Kissimmee" required></textarea></label>
+      <button class="btn btn-yellow" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Colquick Mobile Mechanics LLC · Orlando, FL · <a href="tel:+14078211677">(407) 821-1677</a> · <a href="https://www.instagram.com/colquickmobilemechanics/" rel="noopener" target="_blank">Instagram</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener" target="_blank">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Javier, this is '+f.get('name')+'. I have a '+f.get('vehicle')+' and I need: '+f.get('need');
+    msg=msg.replace(/[.\s]*$/,'')+'.';
+    if(f.get('phone'))msg+=' You can reach me at '+f.get('phone')+'.';
+    msg+=' When could you come out?';
+    window.location.href='sms:+14078211677?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

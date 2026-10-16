@@ -28,7 +28,7 @@ HTML body: same text, with the screenshot embedded above the link:
 Always include the plain-text version too.
 
 Rules:
-- Max 20/day in week 1, 40/day week 2, 60/day week 3, 100/day after. Never more.
+- Daily cap by date (follow-ups count toward it): Oct 15–16: 20 · Mon Oct 19: 40 · Tue Oct 20: 60 · Wed Oct 21: 80 · Thu Oct 22 onward: 100. Never more than 100/day — that's the Resend plan's daily limit.
 - Never email anyone with status not_interested or who replied "no".
 - One follow-up after 5 days if no reply ("Did the mockup link come through?"), then stop.
 - Log every send to data/email_log.csv.

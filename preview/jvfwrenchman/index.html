@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JVF Mobile Mechanics — 24/7 mobile mechanic in St. Augustine and St. Johns County</title>
+<meta name="description" content="JVF Mobile Mechanics, also known as Wrenchman Mobile Mechanic: engine diagnostics, brakes, suspension, CV axles, engine and transmission replacement and used-car inspections done at your home, work or roadside across St. Augustine. 4.9 stars on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F2F1EC; --bg-2:#FFFFFF; --ink:#172230; --ink-2:#5B6873; --line:#DCDCD4;
+    --steel:#2F4858; --steel-2:#213441; --steel-3:#3F5F75; --on-steel:#F4F6F7; --on-steel-2:#B9C6CF;
+    --rust:#C65A2B; --rust-2:#A9481F; --rust-3:#E07A4A; --rust-ink:#FFF7F2;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#121A21;--bg-2:#1A242D;--ink:#EEF2F4;--ink-2:#AAB8C2;--line:#2C3942;--steel:#1A2832;--steel-2:#111B23;--steel-3:#2F4858}
+  }
+  :root[data-theme="dark"]{--bg:#121A21;--bg-2:#1A242D;--ink:#EEF2F4;--ink-2:#AAB8C2;--line:#2C3942;--steel:#1A2832;--steel-2:#111B23;--steel-3:#2F4858}
+  html{scroll-padding-top:calc(4.5rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Barlow",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Big Shoulders Display",system-ui,sans-serif;margin:0;line-height:.98;letter-spacing:.005em;text-transform:uppercase}
+  h1{font-size:clamp(3rem,11vw,6rem);font-weight:800}
+  h2{font-size:clamp(2.2rem,6.5vw,3.4rem);font-weight:800}
+  h3{font-size:1.45rem;font-weight:700;letter-spacing:.02em}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rust);margin-bottom:.8rem}
+  .eyebrow::before{content:"";width:1.4rem;height:.3rem;background:var(--rust);border-radius:2px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.4rem;font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:1.25rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--rust-3);outline-offset:3px}
+  .btn-rust{background:var(--rust);color:var(--rust-ink)}
+  .btn-rust:hover{background:var(--rust-2)}
+  .btn-outline{background:transparent;color:var(--on-steel);border-color:rgba(255,255,255,.35)}
+  .btn-outline:hover{border-color:var(--rust-3)}
+
+  /* preview bar + header */
+  .preview-bar{background:#172230;color:#F4F6F7;font-size:.85rem;text-align:center;padding:.5rem 1rem}
+  .preview-bar a{color:var(--rust-3);font-weight:700}
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--steel-2);color:var(--on-steel);border-bottom:3px solid var(--rust)}
+  header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem .75rem;min-height:3.9rem;padding:.5rem 0}
+  .logo{display:flex;align-items:center;gap:.6rem;font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:1.5rem;text-transform:uppercase;text-decoration:none;color:var(--on-steel);letter-spacing:.04em;line-height:1;min-width:0}
+  .logo .mark{width:2.1rem;height:2.1rem;border-radius:.35rem;background:var(--rust);display:grid;place-items:center;flex:0 0 auto;transform:rotate(-8deg)}
+  .logo .mark svg{width:1.3rem;height:1.3rem;fill:none;stroke:var(--rust-ink);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  .logo small{display:block;font-family:"Barlow",sans-serif;font-weight:600;font-size:.64rem;letter-spacing:.16em;color:var(--on-steel-2);margin-top:.25rem}
+  nav a{text-decoration:none;color:var(--on-steel-2);font-weight:600;margin-left:1.25rem;font-size:.95rem}
+  nav a:hover{color:var(--rust-3)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--rust);color:var(--rust-ink);text-decoration:none;font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:1.1rem;letter-spacing:.06em;text-transform:uppercase;padding:.5rem .95rem;border-radius:.4rem;white-space:nowrap}
+  .call-pill:hover{background:var(--rust-2)}
+  @media (max-width:480px){
+    header .wrap{flex-wrap:wrap;gap:.5rem .75rem;padding:.45rem 0}
+    .logo{font-size:1.25rem}
+    .call-pill{font-size:.95rem;padding:.45rem .8rem;white-space:nowrap}
+  }
+
+  /* hero */
+  .hero{background:var(--steel);color:var(--on-steel);padding:3.25rem 0 3.75rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(circle at 88% 10%,rgba(224,122,74,.22),transparent 42%),
+    repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 14px);pointer-events:none}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:.55rem;background:repeating-linear-gradient(90deg,var(--rust) 0 36px,transparent 36px 48px)}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative;z-index:1}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .hero .eyebrow{color:var(--rust-3)}
+  .hero h1 em{font-style:normal;color:var(--rust-3)}
+  .hero .lede{color:var(--on-steel-2);font-size:1.15rem;max-width:44ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:flex;flex-wrap:wrap;gap:1rem 2.25rem;margin-top:2.25rem;color:var(--on-steel-2);font-size:.9rem}
+  .trust strong{display:block;color:var(--on-steel);font-family:"Big Shoulders Display",sans-serif;font-size:2rem;font-weight:800;line-height:1}
+  .trust .star{color:var(--rust-3)}
+
+  .stage{background:var(--steel-2);border-radius:.6rem;padding:1.25rem;border:1px solid rgba(255,255,255,.1);border-left:5px solid var(--rust)}
+  .stage svg{width:100%;height:auto;display:block}
+  .checks{list-style:none;margin:1.1rem 0 0;padding:0;display:grid;gap:.55rem;font-size:.98rem}
+  .checks li{display:flex;gap:.65rem;align-items:flex-start;color:var(--on-steel)}
+  .checks li::before{content:"";flex:none;width:1.15rem;height:1.15rem;margin-top:.2rem;border-radius:.2rem;background:var(--rust) center/60% no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FFF7F2' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5 5L20 6.5'/%3E%3C/svg%3E")}
+  @media (prefers-reduced-motion:no-preference){
+    .wrench{transform-origin:392px 70px;animation:turn 4s ease-in-out infinite}
+    @keyframes turn{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(14deg)}}
+    .blink{animation:blink 2.4s steps(1) infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+  }
+
+  /* sections */
+  section{padding:4rem 0}
+  .sec-head{display:grid;gap:.5rem;max-width:58ch}
+  .sec-head p{color:var(--ink-2);font-size:1.05rem}
+  .grid{display:grid;gap:1.1rem;margin-top:2rem}
+  @media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:940px){.grid.three{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-left:5px solid var(--rust);border-radius:.4rem;padding:1.3rem 1.4rem;display:grid;gap:.45rem;align-content:start}
+  .svc .ico{width:2.6rem;height:2.6rem;border-radius:.4rem;background:var(--steel);display:grid;place-items:center;margin-bottom:.4rem}
+  .svc .ico svg{width:1.4rem;height:1.4rem;stroke:var(--rust-3);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);font-size:1rem}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.pricing .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}.pricing .price-list{margin-top:0}}
+  .price-list{list-style:none;margin:2rem 0 0;padding:0;border:1px solid var(--line);border-radius:.5rem;overflow:hidden;background:var(--bg)}
+  .price-list li{display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;align-items:center;padding:1rem 1.15rem;border-top:1px solid var(--line)}
+  .price-list li:first-child{border-top:0}
+  .price-list b{font-weight:700}
+  .price-list small{display:block;color:var(--ink-2);font-size:.92rem;font-weight:400}
+  .price-list .n{font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:1.7rem;line-height:1;white-space:nowrap;color:var(--steel);text-align:right}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .price-list .n{color:var(--rust-3)}}
+  :root[data-theme="dark"] .price-list .n{color:var(--rust-3)}
+  .price-list .n em{font-style:normal;font-family:"Barlow",sans-serif;font-weight:600;font-size:.72rem;color:var(--ink-2);display:block;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem}
+  .promise{margin-top:1.5rem;display:grid;gap:.9rem}
+  .promise div{display:flex;gap:.8rem;align-items:flex-start;color:var(--ink-2)}
+  .promise svg{flex:0 0 auto;width:1.35rem;height:1.35rem;margin-top:.15rem;stroke:var(--rust);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  .promise b{color:var(--ink)}
+  .price-note{margin-top:1rem;font-size:.92rem;color:var(--ink-2);display:flex;gap:.6rem;align-items:flex-start}
+  .price-note .tag{flex:0 0 auto;background:var(--rust);color:var(--rust-ink);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:.25rem;margin-top:.15rem}
+
+  .steps{display:grid;gap:1.5rem;margin-top:2rem;counter-reset:step}
+  @media (min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{position:relative;padding-left:3.6rem}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;top:0;left:0;width:2.7rem;height:2.7rem;border-radius:.4rem;background:var(--steel);color:var(--rust-3);display:grid;place-items:center;font-family:"Big Shoulders Display",sans-serif;font-size:1.7rem;font-weight:800}
+  .step p{color:var(--ink-2);margin-top:.4rem}
+
+  .reviews{background:var(--steel);color:var(--on-steel)}
+  .reviews .eyebrow{color:var(--rust-3)}
+  .reviews .sec-head p{color:var(--on-steel-2)}
+  .reviews .grid{grid-template-columns:1fr}
+  @media (min-width:780px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:.5rem;padding:1.35rem;display:flex;flex-direction:column}
+  .stars{color:var(--rust-3);letter-spacing:.12em;margin-bottom:.6rem;font-size:1.05rem}
+  .review p{font-size:1.02rem}
+  .review cite{display:block;margin-top:auto;padding-top:.9rem;font-style:normal;color:var(--on-steel-2);font-size:.92rem}
+  .g-line{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin-top:.4rem;color:var(--on-steel-2)}
+  .g-line .big{font-family:"Big Shoulders Display",sans-serif;font-weight:800;font-size:2.2rem;line-height:1;color:var(--on-steel)}
+  .g-line .star{color:var(--rust-3);font-size:1.25rem}
+
+  .about .wrap{display:grid;gap:2.25rem}
+  @media (min-width:860px){.about .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .about p{color:var(--ink-2);margin-top:.9rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:.3rem;padding:.35rem .85rem;font-size:.95rem;font-weight:500}
+  .map{background:var(--steel-2);border-radius:.6rem;padding:1rem;border:1px solid rgba(255,255,255,.1)}
+  .map svg{display:block;width:100%;height:auto}
+  .facts{margin-top:1.5rem;display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem;color:var(--ink-2);font-size:.98rem}
+  .facts b{color:var(--ink);font-weight:700}
+  .facts a{color:var(--ink);text-decoration-color:var(--rust);overflow-wrap:anywhere}
+
+  .quote{background:var(--bg-2);border-top:1px solid var(--line)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--ink-2);margin-top:.9rem;max-width:42ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.65rem}
+  .contact-list li{display:flex;gap:.7rem;align-items:center;color:var(--ink-2);min-width:0}
+  .contact-list svg{width:1.2rem;height:1.2rem;stroke:var(--rust);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--rust);font-weight:700;overflow-wrap:anywhere}
+  .contact-list .big{font-family:"Big Shoulders Display",sans-serif;font-size:2.1rem;line-height:1;text-decoration:none;font-weight:800}
+  form{display:grid;gap:.95rem;background:var(--steel-2);color:var(--on-steel);padding:1.5rem;border-radius:.6rem;border-top:5px solid var(--rust)}
+  form h3{color:var(--on-steel)}
+  label.f{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-steel-2)}
+  input,textarea{font:inherit;color:#172230;background:#fff;border:1px solid #C9CFD3;border-radius:.4rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.2rem;resize:vertical}
+  input:focus-visible,textarea:focus-visible{outline:3px solid var(--rust-3);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-steel-2)}
+
+  footer{background:var(--steel-2);color:var(--on-steel-2);padding:1.75rem 0 4rem;font-size:.9rem;border-top:3px solid var(--rust)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-steel);text-decoration-color:var(--rust-3)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--rust);color:var(--rust-ink);font-size:.78rem;font-weight:700;padding:.35rem .7rem;border-radius:.3rem;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+  .preview-tag:hover{background:var(--rust-2)}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a> for JVF Mobile Mechanics. Not the live site yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.7 2.7-2.3-.7-.7-2.3z"/></svg></span><span>JVF<small>Mobile Mechanics</small></span></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+19043258442">Call Ian</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">St. Augustine, FL · St. Johns County · 24/7</span>
+      <h1>Broke down? <em>The wrench comes to you.</em></h1>
+      <p class="lede">JVF Mobile Mechanics, the crew St. Augustine knows as Wrenchman Mobile Mechanic, fixes cars where they sit: your driveway, your office lot or the shoulder of US-1. Ian diagnoses on the spot, quotes before he starts and gets it right the first time.</p>
+      <div class="hero-actions">
+        <a class="btn btn-rust" href="#quote">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+19043258442">(904) 325-8442</a>
+      </div>
+      <div class="trust">
+        <div><strong><span class="star">★</span> 4.9</strong>472 Google reviews</div>
+        <div><strong>24/7</strong>Nights and weekends too</div>
+        <div><strong>3 days</strong>Engine or transmission swaps</div>
+      </div>
+    </div>
+
+    <div class="stage" aria-label="Illustration of a truck being repaired at the roadside">
+      <svg viewBox="0 0 520 250" role="img" aria-labelledby="stageTitle">
+        <title id="stageTitle">A pickup truck with the hood up at the roadside, a wrench turning beside it and a diagnostic light blinking</title>
+        <rect x="0" y="200" width="520" height="50" fill="#111B23"/>
+        <path d="M0 212 H520" stroke="#E07A4A" stroke-width="3" stroke-dasharray="34 22" opacity=".8"/>
+        <!-- truck body -->
+        <path fill="#DDE3E7" d="M60 182 L60 134 C60 128 65 124 70 124 L130 124 L160 84 C164 80 168 78 174 78 L256 78 C262 78 266 82 266 88 L266 124 L370 124 C382 124 390 132 390 144 L390 182 Z"/>
+        <path fill="#C65A2B" d="M60 150 H390 V160 H60 Z"/>
+        <path fill="#172230" d="M168 90 L250 90 L250 122 L142 122 Z"/>
+        <path fill="#FFFFFF" opacity=".15" d="M168 90 L198 90 L198 122 L142 122 Z"/>
+        <!-- bed -->
+        <rect x="270" y="100" width="118" height="24" rx="3" fill="#BFC8CE"/>
+        <!-- hood up -->
+        <path d="M60 134 L26 70 L36 66 L72 124 Z" fill="#DDE3E7"/>
+        <path d="M60 134 L26 70" stroke="#172230" stroke-width="1.5"/>
+        <!-- engine glow -->
+        <rect x="70" y="128" width="54" height="20" rx="3" fill="#2F4858"/>
+        <circle class="blink" cx="97" cy="138" r="5" fill="#E07A4A"/>
+        <!-- lights -->
+        <rect x="56" y="140" width="8" height="12" rx="2" fill="#FFE9A8"/>
+        <rect x="386" y="140" width="8" height="12" rx="2" fill="#E04E3C"/>
+        <!-- wheels -->
+        <g><circle cx="130" cy="182" r="26" fill="#0B1218"/><circle cx="130" cy="182" r="13" fill="#9AABB6"/><circle cx="130" cy="182" r="4" fill="#0B1218"/></g>
+        <g><circle cx="330" cy="182" r="26" fill="#0B1218"/><circle cx="330" cy="182" r="13" fill="#9AABB6"/><circle cx="330" cy="182" r="4" fill="#0B1218"/></g>
+        <!-- wrench -->
+        <g class="wrench">
+          <path d="M392 70 L470 148" stroke="#E07A4A" stroke-width="12" stroke-linecap="round"/>
+          <circle cx="392" cy="70" r="20" fill="#E07A4A"/>
+          <path d="M378 56 L406 84" stroke="#213441" stroke-width="12" stroke-linecap="square"/>
+          <circle cx="468" cy="146" r="14" fill="#E07A4A"/>
+          <circle cx="468" cy="146" r="5" fill="#213441"/>
+        </g>
+        <!-- toolbox -->
+        <rect x="420" y="168" width="78" height="34" rx="4" fill="#2F4858" stroke="#E07A4A" stroke-width="2"/>
+        <rect x="446" y="160" width="26" height="10" rx="3" fill="#E07A4A"/>
+        <path d="M420 184 H498" stroke="#E07A4A" stroke-width="2"/>
+      </svg>
+      <ul class="checks">
+        <li>Diagnosed on the spot, then a clear parts-and-labor price</li>
+        <li>Shows up when he says he will, keeps you posted along the way</li>
+        <li>Around the clock: late-night no-starts and Sunday breakdowns included</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>Shop-grade work, done at your curb</h2>
+      <p>From a check-engine light to a full engine swap, most of it happens right where the vehicle is parked. If a job truly needs a lift, you'll hear that before anything comes apart.</p>
+    </div>
+    <div class="grid three">
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h3l3-6 4 12 3-6h5"/></svg></div><h3>Engine diagnostics &amp; repair</h3><p>Scanner on, codes read, the actual cause traced and explained in plain English. Misfires, stalls, overheating and warning lights fixed where they happened.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="11" rx="2"/><path d="M8 7V4M16 7V4M4 12h16M9 18v3M15 18v3"/></svg></div><h3>Engine &amp; transmission replacement</h3><p>Yes, mobile. Full engine and transmission swaps with a three-day turnaround, so the vehicle is back on the road without a tow or a month at a shop.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div><h3>Brakes &amp; rotors</h3><p>Pads, rotors, calipers and hubs, front and rear. Grinding, pulsing or a soft pedal handled in your driveway, usually in one visit.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M5 12h14"/><path d="M7 9l10 6M7 15l10-6"/></svg></div><h3>Steering &amp; suspension</h3><p>Ball joints, U-joints, CV axles and rack-and-pinion replacements. The clunk, the wobble and the wandering steering sorted at the source.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.7 2.7-2.3-.7-.7-2.3z"/></svg></div><h3>Tune-ups &amp; tires</h3><p>Plugs, coils, filters, belts and fluids to keep the big repairs away, plus tire swaps and flats handled on site.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Used vehicle inspections</h3><p>Buying a car off Marketplace or a lot? Ian meets you there, goes through it top to bottom and tells you what it's really worth before you hand over cash.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Straight numbers, before the work</h2>
+        <p>Customers say it in review after review: reasonable, honest, reliable. You get the full parts-and-labor price before a single bolt comes off.</p>
+      </div>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Only what's needed.</b> If a part still has life in it, you'll be told to leave it alone.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>No tow bill.</b> The shop drives to you, so the repair doesn't start with a $150 hook fee.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Fixed right the first time.</b> Diagnosed properly so you're not paying twice.</p></div>
+      </div>
+    </div>
+    <div>
+      <ul class="price-list">
+        <li><div><b>Mobile diagnostic visit</b><small>Scan, inspection and a plain-English plan</small></div><span class="n"><em>Starting at</em>$89</span></li>
+        <li><div><b>Brake pads and rotors</b><small>Per axle, parts and labor</small></div><span class="n"><em>Starting at</em>$249</span></li>
+        <li><div><b>CV axle</b><small>Per side, parts and labor</small></div><span class="n"><em>Starting at</em>$279</span></li>
+        <li><div><b>Ball joints or U-joints</b><small>Per pair, parts and labor</small></div><span class="n"><em>Starting at</em>$329</span></li>
+        <li><div><b>Tune-up</b><small>Plugs, filters and inspection, most cars and light trucks</small></div><span class="n"><em>Starting at</em>$189</span></li>
+        <li><div><b>Used vehicle inspection</b><small>On-site, before you buy</small></div><span class="n"><em>Starting at</em>$119</span></li>
+        <li><div><b>Engine or transmission replacement</b><small>Labor, three-day turnaround, unit quoted separately</small></div><span class="n"><em>Starting at</em>$1,500</span></li>
+      </ul>
+      <p class="price-note"><span class="tag">Note</span><span>Example pricing — we'll put in your real numbers. Final quotes depend on the vehicle and parts.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps, one visit</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Call or text, any hour</h3>
+        <p>Year, make, model, the symptom and where the vehicle is. A quick video of the noise helps Ian bring the right parts.</p>
+      </div>
+      <div class="step">
+        <h3>Ian comes to the vehicle</h3>
+        <p>Home, work or roadside anywhere around St. Augustine. He confirms the cause and gives you the parts-and-labor price before starting.</p>
+      </div>
+      <div class="step">
+        <h3>Fixed where it sits</h3>
+        <p>Most jobs finish the same visit. Bigger work like an engine or transmission swap is back to you in about three days.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>What St. Augustine says</h2>
+      <p class="g-line"><span class="star" aria-hidden="true">★★★★★</span><span class="big">4.9</span><span>across 472 Google reviews</span></p>
+    </div>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"This mechanic came out quickly, diagnosed the problem on the spot, and got it fixed fast and right the first time."</p><cite>— Ty, Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Ian was fantastic!! A reliable and honest mechanic, something rare to find these days."</p><cite>— Shawn, Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"He came by when he said he was going to, was very communicative and the price was very reasonable."</p><cite>— Caitlin, Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="area">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About and service area</span>
+      <h2>Based in St. Augustine. Rolling across St. Johns County.</h2>
+      <p>JVF Mobile Mechanics is Ian's mobile repair business, known to many customers as Wrenchman Mobile Mechanic. He answers the phone himself, shows up when he says he will and explains what's wrong before he fixes it, which is why the reviews keep using the same two words: honest and reliable.</p>
+      <p>A bit outside the usual area? Text anyway and you'll get a straight answer.</p>
+      <div class="towns">
+        <span>St. Augustine</span><span>St. Augustine Beach</span><span>Vilano Beach</span><span>World Golf Village</span><span>Palencia</span><span>Nocatee</span><span>Ponte Vedra</span><span>Julington Creek</span><span>Elkton</span><span>Hastings</span><span>Palm Coast by request</span>
+      </div>
+      <div class="facts">
+        <b>Home base</b><span>St. Augustine, FL. Mobile service, we come to you.</span>
+        <b>Phone</b><span><a href="tel:+19043258442">(904) 325-8442</a>, call or <a href="sms:+19043258442">text</a></span>
+        <b>Hours</b><span>24/7, nights and weekends included</span>
+        <b>Email</b><span><a href="mailto:help@jvfmobilemechanics.com">help@jvfmobilemechanics.com</a></span>
+        <b>Facebook</b><span><a href="https://www.facebook.com/Ian.nelson29/" rel="noopener" target="_blank">JVF Mobile Mechanics on Facebook</a></span>
+      </div>
+    </div>
+    <div class="map" aria-label="Service area map">
+      <svg viewBox="0 0 400 300" role="img" aria-labelledby="mapTitle">
+        <title id="mapTitle">Stylized map of St. Johns County with St. Augustine at the center of the service area</title>
+        <rect width="400" height="300" fill="#111B23"/>
+        <!-- land (west) and Atlantic (east) -->
+        <path d="M0 0 L250 0 C262 50 270 100 268 150 C266 200 272 250 282 300 L0 300 Z" fill="#2F4858"/>
+        <!-- barrier island -->
+        <path d="M258 60 C272 110 274 170 268 240 L280 244 C290 180 288 110 272 56 Z" fill="#3F5F75"/>
+        <text x="318" y="150" font-family="Barlow, sans-serif" font-size="10" fill="#B9C6CF">Atlantic</text>
+        <text x="30" y="40" font-family="Barlow, sans-serif" font-size="10" fill="#B9C6CF">St. Johns River</text>
+        <!-- I-95 -->
+        <path d="M110 0 C120 100 124 200 130 300" stroke="#6E8696" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+        <!-- US-1 -->
+        <path d="M190 0 C200 100 206 200 212 300" stroke="#6E8696" stroke-width="2" stroke-dasharray="4 5" fill="none"/>
+        <!-- service radius -->
+        <circle cx="205" cy="160" r="112" fill="#E07A4A" opacity=".12"/>
+        <circle cx="205" cy="160" r="112" fill="none" stroke="#E07A4A" stroke-width="2" stroke-dasharray="6 5"/>
+        <circle cx="205" cy="160" r="50" fill="#E07A4A" opacity=".14"/>
+        <!-- towns -->
+        <g font-family="Barlow, sans-serif" font-size="11" fill="#E6ECF0">
+          <circle cx="150" cy="40" r="3" fill="#E6ECF0"/><text x="158" y="44">Julington Creek</text>
+          <circle cx="220" cy="62" r="3" fill="#E6ECF0"/><text x="228" y="66">Nocatee</text>
+          <circle cx="262" cy="36" r="3" fill="#E6ECF0"/><text x="206" y="30">Ponte Vedra</text>
+          <circle cx="140" cy="118" r="3" fill="#E6ECF0"/><text x="52" y="122">World Golf Village</text>
+          <circle cx="226" cy="118" r="3" fill="#E6ECF0"/><text x="234" y="122">Palencia</text>
+          <circle cx="266" cy="150" r="3" fill="#E6ECF0"/><text x="274" y="140">Vilano Beach</text>
+          <circle cx="268" cy="200" r="3" fill="#E6ECF0"/><text x="238" y="222">St. Aug. Beach</text>
+          <circle cx="150" cy="212" r="3" fill="#E6ECF0"/><text x="112" y="230">Elkton</text>
+          <circle cx="120" cy="262" r="3" fill="#E6ECF0"/><text x="128" y="266">Hastings</text>
+          <circle cx="250" cy="282" r="3" fill="#E6ECF0"/><text x="258" y="286">Palm Coast</text>
+        </g>
+        <!-- St. Augustine pin -->
+        <path d="M205 132 C193 132 185 141 185 152 C185 168 205 186 205 186 C205 186 225 168 225 152 C225 141 217 132 205 132 Z" fill="#E07A4A"/>
+        <circle cx="205" cy="152" r="7" fill="#172230"/>
+        <text x="205" y="204" text-anchor="middle" font-family="Big Shoulders Display, sans-serif" font-weight="800" font-size="16" fill="#F4F6F7" letter-spacing="1">ST. AUGUSTINE</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Tell Ian what the vehicle is doing</h2>
+      <p class="sub">Fill this in and it opens a text to Ian with your details already typed. You'll get a price and a time back. Or just call, any hour.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a class="big" href="tel:+19043258442">(904) 325-8442</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg><a href="sms:+19043258442?&body=Hi%20Ian%2C%20I%27d%20like%20a%20quote%20for%20my%20">Text (904) 325-8442</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 8l8 5 8-5"/></svg><a href="mailto:help@jvfmobilemechanics.com">help@jvfmobilemechanics.com</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Mobile service based in St. Augustine, FL</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Available 24/7</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <h3>Request a quote</h3>
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(904) 555-0123" required></label>
+      <label class="f">Vehicle (year, make, model)<input name="vehicle" placeholder="2011 Ford F-150" required></label>
+      <label class="f">What do you need?<textarea name="need" placeholder="Won't start, clicking when I turn the key. Truck is at my house in St. Augustine Beach." required></textarea></label>
+      <button class="btn btn-rust" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>JVF Mobile Mechanics · St. Augustine, FL · <a href="tel:+19043258442">(904) 325-8442</a> · <a href="https://www.facebook.com/Ian.nelson29/" rel="noopener" target="_blank">Facebook</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener" target="_blank">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Ian, this is '+f.get('name')+'. I have a '+f.get('vehicle')+' and I need: '+f.get('need');
+    msg=msg.replace(/[.\s]*$/,'')+'.';
+    if(f.get('phone'))msg+=' You can reach me at '+f.get('phone')+'.';
+    msg+=' When could you come out?';
+    window.location.href='sms:+19043258442?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

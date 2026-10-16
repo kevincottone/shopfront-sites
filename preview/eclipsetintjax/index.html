@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eclipse Window Tinting — Window tint in Jacksonville, FL</title>
+<meta name="description" content="Automotive, residential and commercial window tint, clear bra paint protection and security film in Jacksonville, FL. Rated 4.6 on Google across 59 reviews. Call or text Bryan at (904) 880-4442.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F6F1E8; --bg-2:#FFFFFF; --ink:#13241D; --ink-2:#55665E; --line:#E4DACB;
+    --forest:#12332A; --forest-2:#1C4A3C; --on-forest:#F6F1E8; --on-forest-2:#B9C9BF;
+    --sand:#E6CFA3; --sand-2:#F0DDBB; --sand-ink:#2A1F0E; --sand-text:#8A6A2E;
+    --glass:#CFE2DC;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#0C1A15;--bg-2:#13241D;--ink:#EFEADF;--ink-2:#AEBDB4;--line:#24392F;--forest:#071511;--forest-2:#10261F;--sand-text:#E6CFA3}
+  }
+  :root[data-theme="dark"]{--bg:#0C1A15;--bg-2:#13241D;--ink:#EFEADF;--ink-2:#AEBDB4;--line:#24392F;--forest:#071511;--forest-2:#10261F;--sand-text:#E6CFA3}
+  html{scroll-padding-top:calc(4.25rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Figtree",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;line-height:1.04;letter-spacing:-.02em}
+  h1{font-size:clamp(2.3rem,8.2vw,4.4rem);font-weight:800}
+  h2{font-size:clamp(1.85rem,5.4vw,2.8rem);font-weight:800}
+  h3{font-size:1.25rem;font-weight:700}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1060px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-block;font-weight:700;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sand);margin-bottom:.9rem}
+  .light .eyebrow{color:var(--sand-text)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.6rem;border-radius:.75rem;font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--sand);outline-offset:3px}
+  .btn-sand{background:var(--sand);color:var(--sand-ink)}
+  .btn-sand:hover{background:var(--sand-2)}
+  .btn-ghost{background:transparent;color:var(--on-forest);border-color:rgba(255,255,255,.3)}
+  .btn-ghost:hover{border-color:var(--sand)}
+
+  .preview-bar{background:var(--sand);color:var(--sand-ink);font-size:.9rem;text-align:center;padding:.5rem 1rem;font-weight:600}
+  .preview-bar a{color:inherit;font-weight:700}
+
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--forest);color:var(--on-forest);border-bottom:1px solid rgba(255,255,255,.08)}
+  header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;min-height:3.75rem;gap:.5rem .75rem;padding:.4rem 0}
+  .logo{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.2rem;text-decoration:none;display:flex;align-items:center;gap:.55rem;line-height:1;min-width:0;letter-spacing:-.01em}
+  .logo svg{width:1.7rem;height:1.7rem;flex:none}
+  .logo small{display:block;font-family:"Figtree",sans-serif;font-weight:600;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-forest-2);margin-top:.3rem}
+  nav a{text-decoration:none;color:var(--on-forest-2);font-weight:600;margin-left:1.2rem;font-size:.95rem}
+  nav a:hover{color:var(--sand)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--sand);color:var(--sand-ink);text-decoration:none;font-weight:700;font-size:.88rem;padding:.45rem .9rem;border-radius:.6rem;white-space:nowrap;flex:none}
+  .call-pill:hover{background:var(--sand-2)}
+  @media (max-width:480px){header .wrap{gap:.4rem .5rem}.logo{font-size:1.05rem}.call-pill{font-size:.8rem;padding:.4rem .7rem}}
+
+  .hero{position:relative;background:var(--forest);color:var(--on-forest);padding:3rem 0 3.5rem;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+      radial-gradient(circle at 88% 10%,rgba(230,207,163,.28),transparent 42%),
+      radial-gradient(ellipse at 0% 100%,rgba(28,74,60,.9),transparent 50%);pointer-events:none}
+  .hero .wrap{position:relative;display:grid;gap:2.5rem}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .hero h1 em{font-style:normal;color:var(--sand)}
+  .hero .lede{color:var(--on-forest-2);font-size:1.2rem;max-width:40ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;margin-top:1.75rem;color:var(--on-forest-2);font-size:.95rem}
+  .trust b{color:var(--on-forest);font-weight:700}
+  .trust .stars{color:var(--sand);letter-spacing:.08em}
+
+  .demo{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:1.1rem;padding:1.25rem}
+  .demo svg{width:100%;height:auto;display:block}
+  .demo-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.75rem}
+  .demo-head span{color:var(--on-forest-2);font-size:.95rem}
+  .demo-head output{font-family:"Bricolage Grotesque",sans-serif;font-size:1.4rem;font-weight:800;color:var(--sand)}
+  .shades{display:grid;grid-template-columns:repeat(5,1fr);gap:.35rem;margin-top:1rem}
+  .shades button{font:inherit;font-weight:700;font-size:.9rem;padding:.55rem 0;border-radius:.6rem;border:1px solid rgba(255,255,255,.2);background:transparent;color:var(--on-forest-2);cursor:pointer;min-width:0}
+  .shades button[aria-pressed="true"]{background:var(--sand);color:var(--sand-ink);border-color:var(--sand)}
+  .shades button:focus-visible{outline:3px solid var(--sand);outline-offset:2px}
+  .legal{margin-top:.85rem;display:flex;gap:.6rem;align-items:flex-start;font-size:.9rem;color:var(--on-forest-2);min-height:2.8em}
+  .legal .dot{flex:none;width:.7rem;height:.7rem;border-radius:50%;margin-top:.35rem;background:#8BE0A4}
+  .legal .dot.warn{background:var(--sand)}
+  @media (prefers-reduced-motion:no-preference){.glass{transition:opacity .25s linear}}
+
+  section{padding:4rem 0}
+  .sub{color:var(--ink-2);margin-top:.8rem;max-width:54ch}
+
+  .services .grid{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:700px){.services .grid{grid-template-columns:repeat(2,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:1.1rem;padding:1.4rem;display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
+  .svc .ic{width:2.75rem;height:2.75rem;border-radius:.8rem;background:var(--forest);display:grid;place-items:center;flex:none}
+  .svc .ic svg{width:1.4rem;height:1.4rem;stroke:var(--sand);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);margin-top:.4rem}
+  .also{margin-top:1.5rem;background:var(--bg-2);border:1px solid var(--line);border-left:4px solid var(--sand);padding:1.1rem 1.25rem;border-radius:0 1rem 1rem 0;display:grid;gap:.3rem}
+  .also h3{font-size:1.1rem}
+  .also p{color:var(--ink-2)}
+
+  .pricing{background:var(--forest);color:var(--on-forest)}
+  .pricing .sub{color:var(--on-forest-2)}
+  .tiers{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:800px){.tiers{grid-template-columns:repeat(3,1fr)}}
+  .tier{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:1.1rem;padding:1.5rem;display:flex;flex-direction:column}
+  .tier.feat{border-color:var(--sand);background:rgba(230,207,163,.1)}
+  .tier .tag{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sand);font-weight:700}
+  .tier h3{margin-top:.4rem;font-size:1.5rem}
+  .tier .desc{color:var(--on-forest-2);margin-top:.5rem;font-size:.98rem;flex:1}
+  .tier .price{margin-top:1.25rem;font-family:"Bricolage Grotesque",sans-serif;font-size:2rem;font-weight:800;line-height:1}
+  .tier .price small{display:block;font-family:"Figtree",sans-serif;font-weight:500;font-size:.85rem;color:var(--on-forest-2);margin-top:.35rem}
+  .tier ul{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.45rem;color:var(--on-forest-2);font-size:.95rem}
+  .tier li::before{content:"";display:inline-block;width:.5rem;height:.5rem;border-radius:50%;background:var(--sand);margin-right:.6rem;vertical-align:middle}
+  .addons{margin-top:2rem;display:grid;gap:.6rem}
+  @media (min-width:700px){.addons{grid-template-columns:repeat(3,1fr)}}
+  .addon{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid rgba(255,255,255,.12);padding:.7rem 0;color:var(--on-forest-2)}
+  .addon b{color:var(--on-forest);font-weight:700;white-space:nowrap}
+  .pricing .note{margin-top:1.5rem;font-size:.9rem;color:var(--on-forest-2);border:1px dashed rgba(255,255,255,.3);border-radius:.6rem;padding:.7rem 1rem;display:inline-block}
+
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:2rem}
+  @media (min-width:800px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:1.1rem;padding:1.4rem;display:flex;flex-direction:column}
+  .review .stars{color:var(--sand-text);letter-spacing:.1em;margin-bottom:.6rem}
+  .review p{flex:1}
+  .review cite{display:block;margin-top:.9rem;font-style:normal;color:var(--ink-2);font-size:.95rem}
+  .rating-badge{display:inline-flex;align-items:center;gap:.75rem;margin-top:1.25rem;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.5rem 1rem .5rem .6rem}
+  .rating-badge .num{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.5rem;background:var(--forest);color:var(--sand);border-radius:999px;padding:.2rem .7rem}
+  .rating-badge span{color:var(--ink-2);font-size:.95rem}
+
+  .about{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.about .wrap{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .about p{color:var(--ink-2);margin-top:.9rem}
+  .area{background:var(--bg);border:1px solid var(--line);border-radius:1.1rem;padding:1.4rem}
+  .area h3{margin-bottom:.75rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.5rem}
+  .chips span{background:var(--bg-2);border:1px solid var(--line);border-radius:.5rem;padding:.3rem .8rem;font-size:.92rem}
+  .social{list-style:none;padding:0;margin:1.25rem 0 0;display:grid;gap:.5rem;font-size:.95rem;color:var(--ink-2)}
+  .social a{color:var(--ink);text-decoration-color:var(--sand);text-underline-offset:3px;overflow-wrap:anywhere}
+
+  .quote{background:var(--forest);color:var(--on-forest)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr}}
+  .quote .sub{color:var(--on-forest-2)}
+  .contact-list{list-style:none;padding:0;margin:1.75rem 0 0;display:grid;gap:.6rem;font-size:1.05rem}
+  .contact-list a{color:var(--on-forest);text-decoration-color:var(--sand);text-underline-offset:3px;overflow-wrap:anywhere}
+  .contact-list .big{font-family:"Bricolage Grotesque",sans-serif;font-size:1.9rem;font-weight:800;text-decoration:none}
+  form{display:grid;gap:.9rem;background:rgba(255,255,255,.05);padding:1.4rem;border-radius:1.1rem;border:1px solid rgba(255,255,255,.12)}
+  label.f{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-forest-2)}
+  input,select,textarea{font:inherit;color:#13241D;background:#fff;border:1px solid #CFC6B6;border-radius:.6rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--sand);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-forest-2)}
+
+  footer{background:#071511;color:var(--on-forest-2);padding:1.5rem 0 4rem;font-size:.9rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  footer a{color:var(--on-forest);text-decoration-color:var(--sand)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--sand);color:var(--sand-ink);font-size:.75rem;font-weight:700;padding:.3rem .6rem;border-radius:999px;z-index:20;text-decoration:none}
+  .preview-tag:hover{background:var(--sand-2)}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Website preview built for Eclipse Window Tinting by <a href="https://shopfrontsites.org">Shopfront Sites</a>. Not live yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#E6CFA3"/><circle cx="19" cy="14" r="12" fill="#12332A"/><circle cx="22" cy="12" r="7" fill="#1C4A3C"/></svg>
+      <span>Eclipse Tint<small>Jacksonville</small></span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">Area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+19048804442">Call Bryan</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Window tinting · Jacksonville, FL</span>
+      <h1>Block the sun. <em>Keep the view.</em> Cars, homes and storefronts.</h1>
+      <p class="lede">Eclipse Window Tinting handles automotive, residential and commercial film across Jacksonville, plus clear bra paint protection and security film. Bryan quotes it straight, shows up when he says, and doesn't sell you what you don't need.</p>
+      <div class="hero-actions">
+        <a class="btn btn-sand" href="#quote">Get a quote</a>
+        <a class="btn btn-ghost" href="tel:+19048804442">(904) 880-4442</a>
+      </div>
+      <div class="trust">
+        <span><span class="stars" aria-hidden="true">★★★★★</span> <b>4.6</b> on Google</span>
+        <span><b>59</b> reviews</span>
+        <span>Call or text Bryan</span>
+      </div>
+    </div>
+
+    <div class="demo">
+      <div class="demo-head">
+        <span>Pick a shade</span>
+        <output id="shadeOut">35%</output>
+      </div>
+      <svg viewBox="0 0 520 210" role="img" aria-labelledby="demoTitle">
+        <title id="demoTitle">Side view of a sedan; the windows darken as you pick a lower shade percentage</title>
+        <defs>
+          <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#2A5A4A"/><stop offset="1" stop-color="#12332A"/>
+          </linearGradient>
+          <linearGradient id="sun" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#F6E7C8"/><stop offset="1" stop-color="#E6CFA3"/>
+          </linearGradient>
+          <linearGradient id="body" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#F3EEE4"/><stop offset="1" stop-color="#B8B3A6"/>
+          </linearGradient>
+          <clipPath id="winClip">
+            <path d="M170 104 C196 82 228 70 262 70 L262 104 Z"/>
+            <path d="M270 70 C306 70 336 80 362 104 L270 104 Z"/>
+          </clipPath>
+        </defs>
+        <rect width="520" height="210" rx="14" fill="url(#sky)"/>
+        <circle cx="420" cy="60" r="34" fill="url(#sun)"/>
+        <circle cx="432" cy="52" r="30" fill="#12332A" opacity=".55"/>
+        <g fill="#0B2019" opacity=".9">
+          <path d="M30 150 L34 92 L38 150 Z"/><path d="M18 100 C26 86 42 86 50 100 C40 96 28 96 18 100 Z"/><path d="M14 110 C22 96 46 96 54 110 C44 106 24 106 14 110 Z"/>
+          <path d="M478 150 L482 98 L486 150 Z"/><path d="M466 106 C474 92 490 92 498 106 C488 102 476 102 466 106 Z"/><path d="M462 116 C470 102 494 102 502 116 C492 112 472 112 462 116 Z"/>
+        </g>
+        <rect x="0" y="182" width="520" height="28" fill="#0B2019"/>
+        <ellipse cx="260" cy="182" rx="224" ry="8" fill="#000" opacity=".45"/>
+        <path fill="url(#body)" d="M64 166 C62 142 74 126 110 120 L152 114 C180 90 216 74 262 74 C318 74 356 92 390 120 L446 128 C468 132 480 146 478 166 L468 176 L60 176 Z"/>
+        <g clip-path="url(#winClip)">
+          <rect x="160" y="60" width="220" height="50" fill="var(--glass)"/>
+          <rect x="160" y="60" width="220" height="50" fill="url(#sun)" opacity=".25"/>
+          <rect class="glass" id="glassShade" x="160" y="60" width="220" height="50" fill="#04110D" style="opacity:.6"/>
+        </g>
+        <path fill="none" stroke="#13241D" stroke-width="3" d="M170 104 C194 84 226 68 262 68 C298 68 330 80 360 104"/>
+        <line x1="266" y1="68" x2="266" y2="104" stroke="#13241D" stroke-width="3"/>
+        <rect x="60" y="172" width="420" height="10" rx="4" fill="#13241D"/>
+        <g fill="#13241D"><circle cx="142" cy="174" r="29"/><circle cx="398" cy="174" r="29"/></g>
+        <g fill="#8E8E84"><circle cx="142" cy="174" r="14"/><circle cx="398" cy="174" r="14"/></g>
+        <g fill="#13241D"><circle cx="142" cy="174" r="5"/><circle cx="398" cy="174" r="5"/></g>
+        <rect x="452" y="142" width="22" height="9" rx="3" fill="#F6E7C8"/>
+        <rect x="64" y="144" width="18" height="8" rx="3" fill="#C8553D"/>
+      </svg>
+      <div class="shades" role="group" aria-label="Tint shade (visible light let through)">
+        <button type="button" data-v="70" aria-pressed="false">70%</button>
+        <button type="button" data-v="50" aria-pressed="false">50%</button>
+        <button type="button" data-v="35" aria-pressed="true">35%</button>
+        <button type="button" data-v="20" aria-pressed="false">20%</button>
+        <button type="button" data-v="5" aria-pressed="false">5%</button>
+      </div>
+      <p class="legal" aria-live="polite"><span class="dot" id="legalDot"></span><span id="legalNote"></span></p>
+    </div>
+  </div>
+</section>
+
+<section class="services light" id="services">
+  <div class="wrap">
+    <span class="eyebrow">What we do</span>
+    <h2>One shop for every pane of glass</h2>
+    <p class="sub">Eclipse Window Tinting covers the car in the driveway, the windows behind it and the storefront downtown. Tell Bryan what you've got and he'll recommend a film for how you actually use it.</p>
+    <div class="grid">
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 13l2-5a3 3 0 0 1 3-2h8a3 3 0 0 1 3 2l2 5v5H3z"/><circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/></svg></div>
+        <div>
+          <h3>Automotive window tint</h3>
+          <p>All side windows plus the rear glass on cars, trucks and SUVs. Carbon for a clean black look, ceramic when you want the Jacksonville heat out of the cabin. Fronts kept Florida-legal.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+        <div>
+          <h3>Residential tint</h3>
+          <p>Cut the heat and glare on west-facing rooms, sliders and lanai doors, protect floors and furniture from fading, and keep the view out.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-5h6v5"/><path d="M9 10h2M13 10h2M9 14h2M13 14h2"/></svg></div>
+        <div>
+          <h3>Commercial tint</h3>
+          <p>Storefronts, offices and conference rooms. Lower cooling bills, less glare on screens, and a more even look from the street.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.5 8-8 9-4.5-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div>
+          <h3>Security film</h3>
+          <p>Thick, clear film that holds shattered glass together through a break-in attempt or a storm, on homes and businesses.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12c4-6 12-6 16 0"/><path d="M4 12c4 6 12 6 16 0"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+        <div>
+          <h3>Clear bra paint protection</h3>
+          <p>Clear film on the hood, bumper and mirrors so the gravel on I-95 and I-295 doesn't leave its mark on your paint.</p>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg></div>
+        <div>
+          <h3>Tint removal &amp; replacement</h3>
+          <p>Purple, bubbling film stripped clean, adhesive off, glass prepped, then new film laid right.</p>
+        </div>
+      </div>
+    </div>
+    <div class="also">
+      <h3>Quoted straight, no upsell</h3>
+      <p>Reviews mention it more than once: Bryan tells you what the job needs and doesn't push extras. Text your car or your window count and get a real number back.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <span class="eyebrow">Pricing</span>
+    <h2>Know the price before you book</h2>
+    <p class="sub">Automotive pricing depends on the film and how much glass the vehicle has. Here's where each option starts for a standard sedan. Home and business film is priced by the square foot.</p>
+    <div class="tiers">
+      <div class="tier">
+        <span class="tag">Good</span>
+        <h3>Carbon</h3>
+        <p class="desc">A true-black look that won't turn purple, solid glare and heat reduction, and no metal to interfere with your phone or GPS.</p>
+        <div class="price">Starting at $189<small>full sedan, all sides and rear</small></div>
+        <ul><li>Color-stable</li><li>UV protection</li><li>Budget-friendly</li></ul>
+      </div>
+      <div class="tier feat">
+        <span class="tag">Most popular</span>
+        <h3>Ceramic</h3>
+        <p class="desc">Blocks infrared heat, not just light. The cabin stays noticeably cooler parked at the Town Center in August.</p>
+        <div class="price">Starting at $289<small>full sedan, all sides and rear</small></div>
+        <ul><li>High heat rejection</li><li>Clear view at night</li><li>No signal interference</li></ul>
+      </div>
+      <div class="tier">
+        <span class="tag">Home &amp; business</span>
+        <h3>Residential &amp; commercial</h3>
+        <p class="desc">Solar film for homes, offices and storefronts, measured on site and priced by the square foot of glass.</p>
+        <div class="price">Starting at $8/sq ft<small>installed · security film from $14/sq ft</small></div>
+        <ul><li>Free on-site measurement</li><li>Heat, glare and UV control</li></ul>
+      </div>
+    </div>
+    <div class="addons">
+      <div class="addon"><span>Two front windows to match</span><b>From $89</b></div>
+      <div class="addon"><span>Windshield sun strip</span><b>From $49</b></div>
+      <div class="addon"><span>Clear bra, partial front</span><b>From $599</b></div>
+      <div class="addon"><span>Old tint removal</span><b>From $75</b></div>
+      <div class="addon"><span>Trucks, SUVs and vans</span><b>Quoted by text</b></div>
+      <div class="addon"><span>Security film</span><b>Quoted per window</b></div>
+    </div>
+    <p class="note">Example pricing — we'll put in your real numbers.</p>
+  </div>
+</section>
+
+<section class="reviews light" id="reviews">
+  <div class="wrap">
+    <span class="eyebrow">Reviews</span>
+    <h2>What Jacksonville customers say</h2>
+    <div class="rating-badge"><span class="num">4.6</span><span>on Google across 59 reviews</span></div>
+    <div class="grid">
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Second time using this company and both experiences have been great."</p>
+        <cite>— Linda, Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"Solid work at a fair price. They did not try to upsell me on things I did not need."</p>
+        <cite>— Tom, Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>"They responded quickly, arrived when promised, and knocked out the job efficiently."</p>
+        <cite>— Steve, Google review</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about light" id="about">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">The shop</span>
+      <h2>Bryan's tint shop, Jacksonville</h2>
+      <p>Eclipse Window Tinting, Inc. is Bryan's company. The person you text is the person who quotes the job and makes sure it's done right, which is why the Google reviews keep landing on the same things: fast replies, showing up when promised, and fair prices with no upsell.</p>
+      <p>Cars and trucks are the daily work, with homes, offices and storefronts right alongside. Serving Jacksonville and the surrounding Northeast Florida area.</p>
+    </div>
+    <div class="area">
+      <h3>Service area</h3>
+      <div class="chips">
+        <span>Jacksonville</span><span>Southside</span><span>Mandarin</span><span>Arlington</span><span>Riverside</span><span>Orange Park</span><span>Jacksonville Beach</span><span>Ponte Vedra</span><span>St. Johns</span><span>Fleming Island</span>
+      </div>
+      <ul class="social" aria-label="Find us online">
+        <li>Facebook: <a href="https://www.facebook.com/windowtintingjacksonville/" rel="noopener">facebook.com/windowtintingjacksonville</a></li>
+        <li>Email: <a href="mailto:eclipsetinting@gmail.com">eclipsetinting@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Text Bryan your car</h2>
+      <p class="sub">Fill this in and it opens a text to the shop with your details already typed. Or just call. Doing a house or a business? Put that in the vehicle box.</p>
+      <ul class="contact-list">
+        <li><a class="big" href="tel:+19048804442">(904) 880-4442</a></li>
+        <li>Jacksonville, FL</li>
+        <li><a href="mailto:eclipsetinting@gmail.com">eclipsetinting@gmail.com</a></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label class="f">Your name<input name="name" autocomplete="name" required></label>
+      <label class="f">Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(904) 555-0100" required></label>
+      <label class="f">Vehicle (year, make, model) or property<input name="vehicle" placeholder="2022 Toyota Camry" required></label>
+      <label class="f">What do you need?
+        <select name="job">
+          <option>Full vehicle tint, ceramic</option>
+          <option>Full vehicle tint, carbon</option>
+          <option>Two front windows to match</option>
+          <option>Home window film</option>
+          <option>Office or storefront film</option>
+          <option>Security film</option>
+          <option>Clear bra / paint protection</option>
+          <option>Tint removal and replacement</option>
+          <option>Not sure, help me choose</option>
+        </select>
+      </label>
+      <label class="f">Anything else (optional)<textarea name="notes" placeholder="Shade you're thinking, how many windows, days that work..."></textarea></label>
+      <button class="btn btn-sand" type="submit">Send as a text</button>
+      <p class="form-note">Nothing is stored on this page. Your message opens in your phone's messaging app and you send it yourself.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Eclipse Window Tinting, Inc. · Jacksonville, FL · <a href="tel:+19048804442">(904) 880-4442</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener">Shopfront Sites</a></span>
+  </div>
+</footer>
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener">Website preview by Shopfront Sites</a>
+
+<script>
+(function(){
+  var out=document.getElementById('shadeOut'),glass=document.getElementById('glassShade'),dot=document.getElementById('legalDot'),note=document.getElementById('legalNote');
+  var btns=document.querySelectorAll('.shades button');
+  var notes={
+    70:'Barely-there shade. Great as a clear heat film on the fronts or a windshield.',
+    50:'Light and classy. Legal all around on cars, trucks and SUVs.',
+    35:'The most requested look. Legal on the fronts of any vehicle in Florida.',
+    20:'Darker privacy look. Fine on the rear; too dark for the fronts in Florida.',
+    5:'Limo dark. Below Florida\'s limit on any window, so ask Bryan about the darkest legal option.'
+  };
+  function show(v){
+    out.textContent=v+'%';
+    glass.style.opacity=(0.9-(v/100)*0.85).toFixed(2);
+    note.textContent=notes[v];
+    dot.className='dot'+(v<28?' warn':'');
+    btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.v==String(v)?'true':'false')});
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){show(+b.dataset.v)})});
+  show(35);
+
+  var f=document.getElementById('quoteForm');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f);
+    var m='Hi Bryan, this is '+d.get('name')+' ('+d.get('phone')+'). I have a '+d.get('vehicle')+' and I\'m looking for: '+d.get('job')+'.';
+    if(d.get('notes'))m+=' '+d.get('notes');
+    m+=' When could you fit me in?';
+    window.location.href='sms:+19048804442?&body='+encodeURIComponent(m);
+  });
+})();
+</script>
+</body>
+</html>

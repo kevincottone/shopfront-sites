@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adam's Auto Aid — Mobile mechanic in Jacksonville, FL · On-site repair at your home or work</title>
+<meta name="description" content="Adam's Auto Aid is a mobile mechanic serving Jacksonville, FL. On-site diagnostics, brakes, spark plugs and ignition coils, tune-ups, shocks and struts, suspension and steering, and used-car pre-purchase inspections. 4.9 stars across 82 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF9F3; --bg-2:#FFFFFF; --ink:#1F2226; --ink-2:#5E6269; --line:#E3E1D8;
+    --char:#22262B; --char-2:#2E3339; --char-3:#17191D; --on-char:#F7F6F0; --on-char-2:#B3B7BE;
+    --yellow:#F4E31A; --yellow-2:#E2D20E; --yellow-ink:#1F2226;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#17191D;--bg-2:#1F2226;--ink:#F3F2EC;--ink-2:#AEB1B8;--line:#30343A}}
+  :root[data-theme="dark"]{--bg:#17191D;--bg-2:#1F2226;--ink:#F3F2EC;--ink-2:#AEB1B8;--line:#30343A}
+  html{scroll-padding-top:calc(4.5rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:Syne,system-ui,sans-serif;margin:0;line-height:1.02;font-weight:800;letter-spacing:-.025em}
+  h1{font-size:clamp(2.5rem,8.6vw,4.6rem)}
+  h2{font-size:clamp(1.9rem,5.6vw,2.9rem)}
+  h3{font-size:1.2rem;font-weight:700;letter-spacing:-.01em}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin-bottom:.8rem}
+  .eyebrow::before{content:"";width:.75rem;height:.75rem;flex:none;border-radius:50%;background:var(--yellow);box-shadow:inset 0 0 0 2px var(--char)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:999px;font-family:Syne,sans-serif;font-weight:700;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+  .btn-yellow{background:var(--yellow);color:var(--yellow-ink)}
+  .btn-yellow:hover{background:var(--yellow-2)}
+  .btn-char{background:var(--char);color:var(--on-char)}
+  .btn-char:hover{background:var(--char-2)}
+  .btn-outline{background:transparent;color:var(--on-char);border-color:rgba(255,255,255,.3)}
+  .btn-outline:hover{border-color:var(--yellow)}
+
+  /* preview bar + header */
+  .preview-bar{background:#17191D;color:#F7F6F0;font-size:.85rem;text-align:center;padding:.5rem 1rem}
+  .preview-bar a{color:var(--yellow);font-weight:700}
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--char);color:var(--on-char);border-bottom:3px solid var(--yellow)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:3.9rem}
+  .logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--on-char);white-space:nowrap;min-width:0}
+  .logo .mark{width:2.2rem;height:2.2rem;border-radius:50%;background:var(--yellow);display:grid;place-items:center;flex:0 0 auto}
+  .logo .mark svg{width:1.3rem;height:1.3rem;stroke:var(--yellow-ink);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+  .logo b{display:block;font-family:Syne,sans-serif;font-weight:800;font-size:1.25rem;letter-spacing:-.02em;line-height:1}
+  .logo small{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-char-2);line-height:1.1;font-weight:600;margin-top:.2rem}
+  nav a{text-decoration:none;color:var(--on-char-2);font-weight:500;margin-left:1.25rem;font-size:.95rem}
+  nav a:hover{color:var(--yellow)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--yellow);color:var(--yellow-ink);text-decoration:none;font-family:Syne,sans-serif;font-weight:700;font-size:.95rem;padding:.5rem 1rem;border-radius:999px;white-space:nowrap;flex:none}
+  .call-pill:hover{background:var(--yellow-2)}
+
+  /* hero */
+  .hero{background:var(--char);color:var(--on-char);padding:3rem 0 3.75rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:22px 22px;pointer-events:none}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:12px;background:repeating-linear-gradient(90deg,var(--yellow) 0 36px,var(--char-3) 36px 72px);pointer-events:none}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .hero .eyebrow{color:var(--on-char-2)}
+  .hero h1 em{font-style:normal;color:var(--yellow)}
+  .hero .lede{color:var(--on-char-2);font-size:1.15rem;max-width:42ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:1.25rem 2rem;margin-top:2.25rem;color:var(--on-char-2);font-size:.9rem}
+  .trust strong{display:block;color:var(--on-char);font-family:Syne,sans-serif;font-size:1.6rem;font-weight:800;line-height:1.05;letter-spacing:-.02em}
+  .trust .star{color:var(--yellow)}
+  @media (max-width:420px){.trust{grid-template-columns:repeat(2,auto)}}
+
+  .stage{background:var(--char-2);border:1px solid rgba(255,255,255,.08);border-radius:1rem;padding:1.2rem}
+  .stage svg{width:100%;height:auto;display:block;border-radius:.6rem}
+  .checks{list-style:none;margin:1.1rem 0 0;padding:0;display:grid;gap:.55rem;font-size:.97rem}
+  .checks li{display:flex;gap:.65rem;align-items:flex-start;color:var(--on-char)}
+  .checks li::before{content:"";flex:none;width:1.15rem;height:1.15rem;margin-top:.2rem;border-radius:50%;background:var(--yellow) center/60% no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F2226' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5 5L20 6.5'/%3E%3C/svg%3E")}
+  @media (prefers-reduced-motion:no-preference){
+    .lamp{animation:lamp 2.4s ease-in-out infinite}
+    @keyframes lamp{0%,100%{opacity:.5}50%{opacity:1}}
+    .wrench{transform-origin:70% 30%;transform-box:fill-box;animation:turn 2.2s ease-in-out infinite}
+    @keyframes turn{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(12deg)}}
+  }
+
+  /* sections */
+  section{padding:4rem 0}
+  .sec-head{display:grid;gap:.6rem;max-width:58ch}
+  .sec-head p{color:var(--ink-2);font-size:1.05rem}
+  .grid{display:grid;gap:1.1rem;margin-top:2rem}
+  @media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:940px){.grid.three{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:1rem;padding:1.3rem;display:grid;gap:.45rem;align-content:start}
+  .svc .ico{width:2.7rem;height:2.7rem;border-radius:50%;background:var(--yellow);display:grid;place-items:center;margin-bottom:.4rem}
+  .svc .ico svg{width:1.4rem;height:1.4rem;stroke:var(--yellow-ink);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);font-size:1rem}
+
+  .noupsell{background:var(--yellow);color:var(--yellow-ink);padding:1.6rem 0}
+  .noupsell .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 2rem;justify-content:space-between}
+  .noupsell strong{font-family:Syne,sans-serif;font-weight:800;font-size:1.6rem;line-height:1.05;letter-spacing:-.02em}
+  .noupsell p{max-width:62ch;color:rgba(31,34,38,.85)}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.pricing .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}}
+  .price-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:1rem;overflow:hidden;background:var(--bg)}
+  .price-list li{display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;align-items:center;padding:1rem 1.15rem;border-top:1px solid var(--line)}
+  .price-list li:first-child{border-top:0}
+  .price-list b{font-weight:600;font-size:1.05rem}
+  .price-list small{display:block;color:var(--ink-2);font-size:.92rem;font-weight:400;margin-top:.1rem}
+  .price-list .n{font-family:Syne,sans-serif;font-weight:800;font-size:1.5rem;white-space:nowrap;text-align:right;line-height:1;letter-spacing:-.02em}
+  .price-list .n em{font-style:normal;font-family:"DM Sans",sans-serif;font-weight:600;font-size:.7rem;color:var(--ink-2);display:block;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.15rem}
+  .promise{margin-top:1.5rem;display:grid;gap:.9rem}
+  .promise div{display:flex;gap:.8rem;align-items:flex-start;color:var(--ink-2)}
+  .promise svg{flex:0 0 auto;width:1.35rem;height:1.35rem;margin-top:.15rem;stroke:var(--yellow-ink);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;background:var(--yellow);border-radius:50%;padding:.18rem}
+  .promise b{color:var(--ink)}
+  .price-note{margin-top:1rem;font-size:.92rem;color:var(--ink-2);display:flex;gap:.6rem;align-items:flex-start}
+  .price-note .tag{flex:0 0 auto;background:var(--char);color:var(--on-char);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .55rem;border-radius:999px;margin-top:.15rem}
+
+  .steps{display:grid;gap:1.5rem;margin-top:2rem;counter-reset:step}
+  @media (min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{position:relative;padding-left:3.5rem}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;top:0;left:0;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--char);color:var(--yellow);display:grid;place-items:center;font-family:Syne,sans-serif;font-size:1.25rem;font-weight:800}
+  .step p{color:var(--ink-2);margin-top:.4rem}
+
+  .reviews{background:var(--char);color:var(--on-char)}
+  .reviews .eyebrow{color:var(--on-char-2)}
+  .reviews .sec-head p{color:var(--on-char-2)}
+  .reviews .grid{grid-template-columns:1fr}
+  @media (min-width:760px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:1rem;padding:1.3rem;display:flex;flex-direction:column}
+  .stars{color:var(--yellow);letter-spacing:.12em;margin-bottom:.6rem;font-size:1.05rem}
+  .review p{font-size:1.02rem}
+  .review cite{display:block;margin-top:auto;padding-top:.9rem;font-style:normal;color:var(--on-char-2);font-size:.92rem}
+  .g-line{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin-top:.4rem;color:var(--on-char-2)}
+  .g-line .big{font-family:Syne,sans-serif;font-weight:800;font-size:1.9rem;color:var(--on-char);line-height:1}
+  .g-line .star{color:var(--yellow);font-size:1.2rem;letter-spacing:.08em}
+
+  .area .wrap{display:grid;gap:2.25rem}
+  @media (min-width:860px){.area .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .area p{color:var(--ink-2);margin-top:.9rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.95rem;font-weight:500}
+  .facts{margin-top:1.5rem;display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem;color:var(--ink-2);font-size:.98rem}
+  .facts b{color:var(--ink);font-weight:700}
+  .facts a{color:var(--ink);text-decoration-color:var(--yellow);text-decoration-thickness:2px;overflow-wrap:anywhere}
+  .map{background:var(--char);border-radius:1rem;padding:1rem;border:1px solid rgba(255,255,255,.08)}
+  .map svg{display:block;width:100%;height:auto}
+
+  .quote{background:var(--bg-2);border-top:1px solid var(--line)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--ink-2);margin-top:.9rem;max-width:42ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.7rem}
+  .contact-list li{display:flex;gap:.7rem;align-items:center;color:var(--ink-2);min-width:0}
+  .contact-list svg{width:1.2rem;height:1.2rem;stroke:var(--ink);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--yellow);text-decoration-thickness:2px;font-weight:600;overflow-wrap:anywhere}
+  .contact-list .big{font-family:Syne,sans-serif;font-weight:800;font-size:1.8rem;text-decoration:none;line-height:1;letter-spacing:-.02em}
+  form{display:grid;gap:.95rem;background:var(--char);color:var(--on-char);padding:1.5rem;border-radius:1rem;border-top:6px solid var(--yellow)}
+  form h3{color:var(--on-char)}
+  label{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-char-2)}
+  input,textarea{font:inherit;color:#1F2226;background:#fff;border:1px solid #CFCEC6;border-radius:.6rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.2rem;resize:vertical}
+  input:focus-visible,textarea:focus-visible{outline:3px solid var(--yellow);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-char-2)}
+
+  footer{background:var(--char-3);color:var(--on-char-2);padding:1.75rem 0 4.5rem;font-size:.9rem;border-top:3px solid var(--yellow)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-char);text-decoration-color:var(--yellow)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--yellow);color:var(--yellow-ink);font-size:.78rem;font-weight:700;padding:.35rem .7rem;border-radius:999px;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+  .preview-tag:hover{background:var(--yellow-2)}
+
+  @media (max-width:480px){header .wrap{flex-wrap:wrap;gap:.4rem .75rem;padding-block:.5rem}header .wrap>*{min-width:0}.logo{max-width:62%;overflow:hidden}.logo b{font-size:1.1rem;overflow:hidden;text-overflow:ellipsis}.call-pill{font-size:.85rem;padding:.4rem .75rem;margin-left:auto;white-space:nowrap}}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a> for Adam's Auto Aid. Not the live site yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 7a5 5 0 1 0-4 8l7 7 3-3-7-7a5 5 0 0 0 1-5z"/></svg></span><span><b>Adam's Auto Aid</b><small>Mobile mechanic · Jax</small></span></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+19049514460">Call Adam</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Jacksonville, FL · Mobile mechanic · We come to you</span>
+      <h1>The mechanic who shows up <em>at your door.</em></h1>
+      <p class="lede">Adam's Auto Aid brings the tools, the scanner and the parts to your driveway or office lot anywhere in Jacksonville. Adam finds the problem, explains it in plain English, and fixes it on the spot, with no upsell and no unnecessary work.</p>
+      <div class="hero-actions">
+        <a class="btn btn-yellow" href="#quote">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+19049514460">(904) 951-4460</a>
+      </div>
+      <div class="trust">
+        <div><strong><span class="star">★</span> 4.9</strong>82 Google reviews</div>
+        <div><strong>On time</strong>Shows up when he says</div>
+        <div><strong>On-site</strong>Home, work or wherever it sits</div>
+      </div>
+    </div>
+
+    <div class="stage" aria-label="Mobile mechanic working in a driveway">
+      <svg viewBox="0 0 520 250" role="img" aria-labelledby="driveTitle">
+        <title id="driveTitle">Illustration of a mobile mechanic's van parked in a Jacksonville driveway beside a car with its hood up</title>
+        <defs>
+          <linearGradient id="dusk" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#2E3339"/>
+            <stop offset="1" stop-color="#22262B"/>
+          </linearGradient>
+        </defs>
+        <rect width="520" height="250" fill="url(#dusk)"/>
+        <!-- house -->
+        <path d="M300 150 L300 90 L380 50 L460 90 L460 150 Z" fill="#17191D"/>
+        <path d="M290 92 L380 44 L470 92" fill="none" stroke="#B3B7BE" stroke-width="5" stroke-linecap="round"/>
+        <rect x="318" y="104" width="24" height="22" rx="2" fill="#F4E31A" opacity=".9"/>
+        <rect x="418" y="104" width="24" height="22" rx="2" fill="#F4E31A" opacity=".75"/>
+        <rect x="368" y="112" width="26" height="38" rx="2" fill="#2E3339"/>
+        <!-- porch lamp -->
+        <circle class="lamp" cx="356" cy="108" r="14" fill="#F4E31A" opacity=".16"/>
+        <circle cx="356" cy="108" r="3" fill="#F4E31A"/>
+        <!-- palm -->
+        <g fill="#17191D">
+          <rect x="488" y="110" width="6" height="80" rx="2"/>
+          <path d="M491 112 C472 102 460 104 450 112 C464 106 478 110 491 116 Z"/>
+          <path d="M491 112 C508 100 518 104 520 112 C512 108 500 110 491 116 Z"/>
+          <path d="M491 110 C484 90 488 82 498 76 C492 86 494 98 493 112 Z"/>
+        </g>
+        <!-- lawn + driveway -->
+        <rect x="0" y="150" width="520" height="100" fill="#1B1E22"/>
+        <path d="M0 250 L60 150 L250 150 L290 250 Z" fill="#2E3339"/>
+        <path d="M60 150 L250 150" stroke="#B3B7BE" stroke-width="1.5" opacity=".4"/>
+        <!-- van -->
+        <path fill="#F4E31A" d="M34 176 L34 108 C34 100 40 94 48 94 L158 94 C170 94 178 98 184 106 L214 146 L214 176 Z"/>
+        <path fill="#22262B" d="M160 102 C168 102 172 104 176 110 L204 146 L160 146 L160 102 Z"/>
+        <rect x="112" y="102" width="40" height="38" rx="3" fill="#22262B"/>
+        <rect x="34" y="150" width="180" height="12" fill="#22262B"/>
+        <text x="46" y="160" font-family="Syne, sans-serif" font-weight="800" font-size="9.5" fill="#F4E31A" letter-spacing="1.2">ADAM'S AUTO AID</text>
+        <rect x="28" y="172" width="192" height="10" rx="3" fill="#17191D"/>
+        <rect x="210" y="152" width="8" height="14" rx="2" fill="#FFF7B0"/>
+        <g><circle cx="80" cy="182" r="20" fill="#0E1013"/><circle cx="80" cy="182" r="9" fill="#B3B7BE"/></g>
+        <g><circle cx="180" cy="182" r="20" fill="#0E1013"/><circle cx="180" cy="182" r="9" fill="#B3B7BE"/></g>
+        <!-- customer car with hood up -->
+        <path fill="#B3B7BE" d="M250 196 L250 170 C250 165 254 162 258 162 L280 162 L296 142 L348 142 L368 162 L398 162 C404 162 408 166 408 172 L408 196 Z"/>
+        <path fill="#2E3339" d="M284 162 L298 148 L346 148 L360 162 Z"/>
+        <rect x="246" y="192" width="166" height="8" rx="2" fill="#17191D"/>
+        <circle cx="280" cy="200" r="15" fill="#0E1013"/><circle cx="280" cy="200" r="6" fill="#B3B7BE"/>
+        <circle cx="378" cy="200" r="15" fill="#0E1013"/><circle cx="378" cy="200" r="6" fill="#B3B7BE"/>
+        <path d="M258 162 L270 134 L312 136" fill="none" stroke="#B3B7BE" stroke-width="6" stroke-linecap="round"/>
+        <!-- toolbox + wrench -->
+        <rect x="222" y="178" width="26" height="18" rx="3" fill="#F4E31A"/>
+        <rect x="229" y="173" width="12" height="6" rx="2" fill="#22262B"/>
+        <g class="wrench" fill="none" stroke="#F4E31A" stroke-width="5" stroke-linecap="round"><path d="M268 150 L286 132"/><circle cx="289" cy="129" r="5" fill="#22262B"/></g>
+      </svg>
+      <ul class="checks">
+        <li>Clear explanation and a price you approve before any work starts</li>
+        <li>No upsell: only what the car actually needs</li>
+        <li>Most repairs finished the same visit, right where it's parked</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>Fixed on site, wherever the car is parked</h2>
+      <p>From a check-engine light to a full brake job, most repairs can be done in your driveway. If something truly needs a lift, you'll hear that up front, not after.</p>
+    </div>
+    <div class="grid three">
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M8 11l2 2 4-4"/></svg></div><h3>Diagnostics</h3><p>Check engine light, rough running, stalling or a no-start. Scanned and tested where it sits, with the cause explained before anything gets replaced.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div><h3>Brake replacement and repair</h3><p>Pads, rotors, calipers and brake lines. Grinding, squealing or a soft pedal handled at your home or work.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L5 13h6l-1 9 9-12h-6l1-8z"/></svg></div><h3>Spark plugs and ignition coils</h3><p>Misfires, hesitation and rough idle. Plugs and coils replaced on site so the engine runs smooth again.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.5"/></svg></div><h3>Engine tune-ups</h3><p>Plugs, filters, fluids and a thorough once-over. The work that keeps an older car dependable and a newer one out of the shop.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div><h3>Regular maintenance</h3><p>Oil changes, belts, hoses, filters and fluid services done on your schedule, in your driveway, while you get on with your day.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M6 7l2 2M16 15l2 2M3 12h4M17 12h4M6 17l2-2M16 9l2-2"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Shocks and struts</h3><p>Bouncing, nose-diving under braking or a rough ride on I-295. Shocks and struts replaced on site.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2"/><path d="M12 3v7M5.5 16.5l4.5-3M18.5 16.5l-4.5-3"/></svg></div><h3>Suspension and steering</h3><p>Control arms, tie rods, ball joints and bushings. Clunks, wandering and uneven tire wear sorted without a trip to a shop.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Used car pre-purchase inspection</h3><p>Adam meets you at the seller's, scans it, checks it over and tells you straight what it needs before you hand over money.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 7a5 5 0 1 0-4 8l7 7 3-3-7-7a5 5 0 0 0 1-5z"/></svg></div><h3>On-site vehicle repair</h3><p>Mirrors, sensors, belts, coolant leaks and the odd jobs that keep getting put off. Ask about anything and get a straight answer.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="noupsell">
+  <div class="wrap">
+    <strong>No upsell. No unnecessary work.</strong>
+    <p>Reviewers keep saying the same thing: Adam fixes what's wrong, explains why, and doesn't pad the bill. You approve the price before a tool comes out.</p>
+  </div>
+</div>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>You'll know the number before the work</h2>
+        <p>Diagnosis first, then a clear parts-and-labor price you okay before anything comes apart. No shop markup, no waiting room, no surprise line items.</p>
+      </div>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Quote by text</b> so the number is in writing before Adam heads over.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Only what's actually needed</b> gets recommended. Nothing extra tacked on.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>No tow, no shuttle, no lost afternoon.</b> You keep your day.</p></div>
+      </div>
+    </div>
+    <div>
+      <ul class="price-list">
+        <li><div><b>Mobile diagnostic visit</b><small>Scan, test and a plain-language answer</small></div><span class="n"><em>Starting at</em>$95</span></li>
+        <li><div><b>Oil change at your door</b><small>Full synthetic, filter and a quick look underneath</small></div><span class="n"><em>Starting at</em>$85</span></li>
+        <li><div><b>Brake pads and rotors</b><small>Per axle, parts and labor</small></div><span class="n"><em>Starting at</em>$259</span></li>
+        <li><div><b>Spark plugs and coils</b><small>4-cylinder; 6 and 8-cylinder quoted on the vehicle</small></div><span class="n"><em>Starting at</em>$189</span></li>
+        <li><div><b>Shocks or struts</b><small>Per pair, parts and labor</small></div><span class="n"><em>Starting at</em>$349</span></li>
+        <li><div><b>Tune-up</b><small>Plugs, filters, fluids and a full inspection</small></div><span class="n"><em>Starting at</em>$229</span></li>
+        <li><div><b>Pre-purchase inspection</b><small>Scan, check-over and a straight rundown at the seller's</small></div><span class="n"><em>Starting at</em>$129</span></li>
+      </ul>
+      <p class="price-note"><span class="tag">Note</span><span>Example pricing — we'll put in your real numbers. Final quotes depend on the vehicle and parts.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps and you're back on the road</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Tell Adam what's going on</h3>
+        <p>Year, make, model, what it's doing and where it's parked. Call, text or use the form below.</p>
+      </div>
+      <div class="step">
+        <h3>He shows up on time</h3>
+        <p>Home, office or apartment lot. Adam confirms the cause and gives you the price before touching anything.</p>
+      </div>
+      <div class="step">
+        <h3>Fixed where it sits</h3>
+        <p>Most repairs are done the same visit. You never hand over your keys or lose a day to a waiting room.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>What Jacksonville drivers say</h2>
+      <p class="g-line"><span class="star" aria-hidden="true">★★★★★</span><span class="big">4.9</span><span>across 82 Google reviews</span></p>
+    </div>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Adam was efficient, on time, and understood my concerns."</p><cite>— Janette, Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"I had taken out my sideview mirror. He replaced it so quickly and perfectly. I was amazed!"</p><cite>— Christina, Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"These guys were fantastic from start to finish. They didn't try to upsell me or recommend unnecessary work."</p><cite>— Crux, Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About and service area</span>
+      <h2>Based in Jacksonville. In driveways all over Duval.</h2>
+      <p>Adam's Auto Aid is run by Adam out of Jacksonville, FL. Customers keep recommending him for the same reasons: he's on time, he listens to what you've noticed, and he doesn't recommend work you don't need. Appointments are easy to get and the whole thing happens at your place.</p>
+      <p>A little outside the usual area? Text anyway and you'll get a straight answer.</p>
+      <div class="towns">
+        <span>Jacksonville</span><span>Southside</span><span>Mandarin</span><span>Arlington</span><span>Riverside</span><span>San Marco</span><span>Baymeadows</span><span>Northside</span><span>Orange Park</span><span>Jacksonville Beach</span><span>Atlantic Beach</span><span>Ponte Vedra</span>
+      </div>
+      <div class="facts">
+        <b>Home base</b><span>Jacksonville, FL. Mobile only, we come to you.</span>
+        <b>Phone</b><span><a href="tel:+19049514460">(904) 951-4460</a>, call or <a href="sms:+19049514460">text</a></span>
+        <b>Email</b><span><a href="mailto:adam@adamsautoaid.com">adam@adamsautoaid.com</a></span>
+        <b>Facebook</b><span><a href="https://www.facebook.com/AdamsAutoAid/" rel="noopener" target="_blank">facebook.com/AdamsAutoAid</a></span>
+        <b>Hours</b><span>Call or text for same-day or next-day availability</span>
+      </div>
+    </div>
+    <div class="map" aria-label="Service area map">
+      <svg viewBox="0 0 400 300" role="img" aria-labelledby="mapTitle">
+        <title id="mapTitle">Stylized map of the Jacksonville area with Jacksonville at the center of the service area</title>
+        <rect width="400" height="300" fill="#22262B"/>
+        <!-- land -->
+        <path d="M0 0 L330 0 C322 60 336 120 330 180 C326 230 338 270 334 300 L0 300 Z" fill="#2E3339"/>
+        <!-- ocean -->
+        <path d="M330 0 L400 0 L400 300 L334 300 C338 270 326 230 330 180 C336 120 322 60 330 0 Z" fill="#17191D"/>
+        <!-- St. Johns River -->
+        <path d="M150 300 C160 250 190 230 200 200 C212 170 196 150 206 128 C214 110 250 108 262 96 C280 80 300 60 304 20" fill="none" stroke="#17191D" stroke-width="16" stroke-linecap="round"/>
+        <!-- I-95 / I-10 / I-295 hints -->
+        <path d="M180 0 C186 60 190 120 186 170 C182 220 172 260 176 300" stroke="#6B7077" stroke-width="2.5" stroke-dasharray="7 5" fill="none"/>
+        <path d="M0 140 L186 148" stroke="#6B7077" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+        <path d="M110 40 C80 120 90 200 130 270" stroke="#6B7077" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+        <path d="M250 30 C300 110 300 190 250 270" stroke="#6B7077" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+        <!-- radius -->
+        <circle cx="196" cy="140" r="122" fill="#F4E31A" opacity=".1"/>
+        <circle cx="196" cy="140" r="122" fill="none" stroke="#F4E31A" stroke-width="2" stroke-dasharray="6 5"/>
+        <circle cx="196" cy="140" r="56" fill="#F4E31A" opacity=".14"/>
+        <!-- towns -->
+        <g font-family="DM Sans, sans-serif" font-size="11" fill="#DADCE0">
+          <circle cx="200" cy="60" r="3" fill="#DADCE0"/><text x="207" y="64">Northside</text>
+          <circle cx="146" cy="150" r="3" fill="#DADCE0"/><text x="92" y="146">Riverside</text>
+          <circle cx="250" cy="130" r="3" fill="#DADCE0"/><text x="257" y="124">Arlington</text>
+          <circle cx="262" cy="190" r="3" fill="#DADCE0"/><text x="269" y="194">Southside</text>
+          <circle cx="330" cy="150" r="3" fill="#DADCE0"/><text x="300" y="168">Jax Beach</text>
+          <circle cx="178" cy="226" r="3" fill="#DADCE0"/><text x="185" y="230">Mandarin</text>
+          <circle cx="120" cy="222" r="3" fill="#DADCE0"/><text x="46" y="226">Orange Park</text>
+          <circle cx="226" cy="244" r="3" fill="#DADCE0"/><text x="156" y="260">Baymeadows</text>
+          <circle cx="310" cy="250" r="3" fill="#DADCE0"/><text x="240" y="276">Ponte Vedra</text>
+        </g>
+        <!-- Jacksonville pin -->
+        <path d="M196 108 C184 108 176 117 176 128 C176 144 196 162 196 162 C196 162 216 144 216 128 C216 117 208 108 196 108 Z" fill="#F4E31A"/>
+        <circle cx="196" cy="128" r="7" fill="#1F2226"/>
+        <text x="196" y="184" text-anchor="middle" font-family="Syne, sans-serif" font-weight="800" font-size="15" letter-spacing="1" fill="#F7F6F0">JACKSONVILLE</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Tell Adam what the car is doing</h2>
+      <p class="sub">Fill this in and it opens a text to Adam's Auto Aid with your details already typed. You'll get a price and a time back. Or just call.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a class="big" href="tel:+19049514460">(904) 951-4460</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg><a href="sms:+19049514460?&body=Hi%20Adam%2C%20I%27d%20like%20a%20quote%20for%20my%20">Text (904) 951-4460</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:adam@adamsautoaid.com">adam@adamsautoaid.com</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Mobile service based in Jacksonville, FL</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <h3>Request a quote</h3>
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(904) 555-0123" required></label>
+      <label>Vehicle (year, make, model)<input name="vehicle" placeholder="2015 Honda Accord" required></label>
+      <label>What do you need?<textarea name="need" placeholder="Brakes grinding when I stop. Car is at my house in Arlington" required></textarea></label>
+      <button class="btn btn-yellow" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Adam's Auto Aid · Jacksonville, FL · <a href="tel:+19049514460">(904) 951-4460</a> · <a href="https://www.facebook.com/AdamsAutoAid/" rel="noopener" target="_blank">Facebook</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener" target="_blank">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Adam, this is '+f.get('name')+'. I have a '+f.get('vehicle')+' and I need: '+f.get('need');
+    msg=msg.replace(/[.\s]*$/,'')+'.';
+    if(f.get('phone'))msg+=' You can reach me at '+f.get('phone')+'.';
+    msg+=' When could you come out?';
+    window.location.href='sms:+19049514460?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

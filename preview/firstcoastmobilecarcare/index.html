@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>First Coast Mobile Car Care — Mobile mechanic in Jacksonville, FL · Cars, trucks, diesel and fleets</title>
+<meta name="description" content="First Coast Mobile Car Care, LLC brings auto repair to your home, office or job site across Jacksonville, FL. Diagnostics, brakes, battery and electrical, A/C, diesel and engine repair, transmissions, 4x4 and fleet service. 4.4 stars across 65 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F1E6; --bg-2:#FBF9F2; --ink:#1F2419; --ink-2:#5B604F; --line:#DDD8C6;
+    --olive:#4F5E2F; --olive-2:#5E6F39; --olive-3:#2E3A1C; --on-olive:#F4F1E6; --on-olive-2:#C3C9AE;
+    --khaki:#C8B98A; --khaki-2:#B8A672; --khaki-ink:#1F2419;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#171A12;--bg-2:#1F2419;--ink:#F1EEE2;--ink-2:#B2B6A4;--line:#333A28}}
+  :root[data-theme="dark"]{--bg:#171A12;--bg-2:#1F2419;--ink:#F1EEE2;--ink-2:#B2B6A4;--line:#333A28}
+  html{scroll-padding-top:calc(4.5rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Karla,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:"Zilla Slab",Georgia,serif;margin:0;line-height:1.02;font-weight:700;letter-spacing:-.01em}
+  h1{font-size:clamp(2.6rem,8.8vw,4.8rem)}
+  h2{font-size:clamp(2rem,5.8vw,3rem)}
+  h3{font-size:1.3rem;font-weight:700}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--olive-2);margin-bottom:.8rem}
+  .eyebrow::before{content:"";width:1.5rem;height:3px;flex:none;background:var(--khaki)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.5rem;border-radius:.25rem;font-family:Karla,sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:.02em;text-decoration:none;border:2px solid transparent;cursor:pointer}
+  .btn:focus-visible{outline:3px solid var(--khaki);outline-offset:3px}
+  .btn-khaki{background:var(--khaki);color:var(--khaki-ink)}
+  .btn-khaki:hover{background:var(--khaki-2)}
+  .btn-olive{background:var(--olive);color:var(--on-olive)}
+  .btn-olive:hover{background:var(--olive-2)}
+  .btn-outline{background:transparent;color:var(--on-olive);border-color:rgba(244,241,230,.35)}
+  .btn-outline:hover{border-color:var(--khaki)}
+
+  /* preview bar + header */
+  .preview-bar{background:#1F2419;color:#F4F1E6;font-size:.85rem;text-align:center;padding:.5rem 1rem}
+  .preview-bar a{color:var(--khaki);font-weight:700}
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--olive-3);color:var(--on-olive);border-bottom:3px solid var(--khaki)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:3.9rem}
+  .logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--on-olive);white-space:nowrap;min-width:0}
+  .logo .mark{width:2.2rem;height:2.2rem;border-radius:.25rem;background:var(--khaki);display:grid;place-items:center;flex:0 0 auto;font-family:"Zilla Slab",serif;font-weight:700;font-size:1.05rem;color:var(--khaki-ink);letter-spacing:-.04em}
+  .logo b{display:block;font-family:"Zilla Slab",serif;font-weight:700;font-size:1.3rem;line-height:1}
+  .logo small{display:block;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-olive-2);line-height:1.1;font-weight:600;margin-top:.2rem}
+  nav a{text-decoration:none;color:var(--on-olive-2);font-weight:500;margin-left:1.25rem;font-size:.95rem}
+  nav a:hover{color:var(--khaki)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--khaki);color:var(--khaki-ink);text-decoration:none;font-weight:700;font-size:.95rem;letter-spacing:.02em;padding:.5rem 1rem;border-radius:.25rem;white-space:nowrap;flex:none}
+  .call-pill:hover{background:var(--khaki-2)}
+
+  /* hero */
+  .hero{background:var(--olive);color:var(--on-olive);padding:3rem 0 3.75rem;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 30px,rgba(0,0,0,.05) 30px 31px);pointer-events:none}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:12px;background:repeating-linear-gradient(90deg,var(--khaki) 0 60px,var(--olive-3) 60px 120px);pointer-events:none}
+  .hero .wrap{display:grid;gap:2.5rem;position:relative}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .hero .eyebrow{color:var(--on-olive-2)}
+  .hero h1 em{font-style:italic;color:var(--khaki)}
+  .hero .lede{color:var(--on-olive-2);font-size:1.15rem;max-width:42ch;margin-top:1.1rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .trust{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:1.25rem 2rem;margin-top:2.25rem;color:var(--on-olive-2);font-size:.9rem}
+  .trust strong{display:block;color:var(--on-olive);font-family:"Zilla Slab",serif;font-size:1.7rem;font-weight:700;line-height:1.05}
+  .trust .star{color:var(--khaki)}
+  @media (max-width:420px){.trust{grid-template-columns:repeat(2,auto)}}
+
+  .stage{background:var(--olive-3);border:1px solid rgba(244,241,230,.1);border-radius:.4rem;padding:1.2rem;box-shadow:6px 6px 0 var(--khaki)}
+  .stage svg{width:100%;height:auto;display:block;border-radius:.25rem}
+  .checks{list-style:none;margin:1.1rem 0 0;padding:0;display:grid;gap:.55rem;font-size:.97rem}
+  .checks li{display:flex;gap:.65rem;align-items:flex-start;color:var(--on-olive)}
+  .checks li::before{content:"";flex:none;width:1.1rem;height:1.1rem;margin-top:.22rem;border-radius:.15rem;background:var(--khaki) center/60% no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F2419' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12.5l5 5L20 6.5'/%3E%3C/svg%3E")}
+  @media (prefers-reduced-motion:no-preference){
+    .wheel{transform-origin:center;transform-box:fill-box;animation:roll 4s linear infinite}
+    @keyframes roll{to{transform:rotate(360deg)}}
+    .road{animation:road 1.3s linear infinite}
+    @keyframes road{to{stroke-dashoffset:-60}}
+    .exhaust{animation:puff 1.6s ease-out infinite}
+    @keyframes puff{0%{opacity:.5;transform:translate(0,0) scale(.8)}100%{opacity:0;transform:translate(-14px,-10px) scale(1.4)}}
+  }
+
+  /* sections */
+  section{padding:4rem 0}
+  .sec-head{display:grid;gap:.6rem;max-width:58ch}
+  .sec-head p{color:var(--ink-2);font-size:1.05rem}
+  .grid{display:grid;gap:1.1rem;margin-top:2rem}
+  @media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:940px){.grid.three{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-bottom:4px solid var(--olive);border-radius:.4rem;padding:1.3rem;display:grid;gap:.45rem;align-content:start}
+  .svc .ico{width:2.6rem;height:2.6rem;border-radius:.3rem;background:var(--olive);display:grid;place-items:center;margin-bottom:.4rem}
+  .svc .ico svg{width:1.45rem;height:1.45rem;stroke:var(--khaki);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .svc p{color:var(--ink-2);font-size:1rem}
+
+  .fleet{background:var(--olive-3);color:var(--on-olive);padding:1.6rem 0}
+  .fleet .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 2rem;justify-content:space-between}
+  .fleet strong{font-family:"Zilla Slab",serif;font-weight:700;font-size:1.7rem;line-height:1.05;color:var(--khaki)}
+  .fleet p{max-width:62ch;color:var(--on-olive-2)}
+
+  .pricing{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pricing .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.pricing .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}}
+  .price-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:.4rem;overflow:hidden;background:var(--bg)}
+  .price-list li{display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;align-items:center;padding:1rem 1.15rem;border-top:1px solid var(--line)}
+  .price-list li:first-child{border-top:0}
+  .price-list b{font-weight:600;font-size:1.05rem}
+  .price-list small{display:block;color:var(--ink-2);font-size:.92rem;font-weight:400;margin-top:.1rem}
+  .price-list .n{font-family:"Zilla Slab",serif;font-weight:700;font-size:1.6rem;white-space:nowrap;text-align:right;line-height:1}
+  .price-list .n em{font-style:normal;font-family:Karla,sans-serif;font-weight:600;font-size:.7rem;color:var(--ink-2);display:block;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.15rem}
+  .promise{margin-top:1.5rem;display:grid;gap:.9rem}
+  .promise div{display:flex;gap:.8rem;align-items:flex-start;color:var(--ink-2)}
+  .promise svg{flex:0 0 auto;width:1.35rem;height:1.35rem;margin-top:.15rem;stroke:var(--olive-2);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  .promise b{color:var(--ink)}
+  .price-note{margin-top:1rem;font-size:.92rem;color:var(--ink-2);display:flex;gap:.6rem;align-items:flex-start}
+  .price-note .tag{flex:0 0 auto;background:var(--khaki);color:var(--khaki-ink);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .5rem;border-radius:.2rem;margin-top:.15rem}
+
+  .steps{display:grid;gap:1.5rem;margin-top:2rem;counter-reset:step}
+  @media (min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{position:relative;padding-left:3.5rem}
+  .step::before{counter-increment:step;content:counter(step,decimal-leading-zero);position:absolute;top:0;left:0;width:2.6rem;height:2.6rem;border-radius:.3rem;background:var(--olive);color:var(--khaki);display:grid;place-items:center;font-family:"Zilla Slab",serif;font-size:1.25rem;font-weight:700}
+  .step p{color:var(--ink-2);margin-top:.4rem}
+
+  .reviews{background:var(--olive-3);color:var(--on-olive)}
+  .reviews .eyebrow{color:var(--on-olive-2)}
+  .reviews .sec-head p{color:var(--on-olive-2)}
+  .reviews .grid{grid-template-columns:1fr}
+  @media (min-width:760px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:rgba(244,241,230,.06);border:1px solid rgba(244,241,230,.12);border-radius:.4rem;padding:1.3rem;display:flex;flex-direction:column}
+  .stars{color:var(--khaki);letter-spacing:.12em;margin-bottom:.6rem;font-size:1.05rem}
+  .review p{font-size:1.02rem;font-family:"Zilla Slab",serif;font-size:1.15rem;line-height:1.4}
+  .review cite{display:block;margin-top:auto;padding-top:.9rem;font-style:normal;color:var(--on-olive-2);font-size:.92rem}
+  .g-line{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin-top:.4rem;color:var(--on-olive-2)}
+  .g-line .big{font-family:"Zilla Slab",serif;font-weight:700;font-size:2rem;color:var(--on-olive);line-height:1}
+  .g-line .star{color:var(--khaki);font-size:1.2rem;letter-spacing:.08em}
+
+  .area .wrap{display:grid;gap:2.25rem}
+  @media (min-width:860px){.area .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .area p{color:var(--ink-2);margin-top:.9rem}
+  .towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+  .towns span{background:var(--bg-2);border:1px solid var(--line);border-radius:.25rem;padding:.35rem .85rem;font-size:.95rem;font-weight:500}
+  .facts{margin-top:1.5rem;display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem;color:var(--ink-2);font-size:.98rem}
+  .facts b{color:var(--ink);font-weight:700}
+  .facts a{color:var(--ink);text-decoration-color:var(--khaki);text-decoration-thickness:2px;overflow-wrap:anywhere}
+  .map{background:var(--olive-3);border-radius:.4rem;padding:1rem;border:1px solid rgba(244,241,230,.1);box-shadow:6px 6px 0 var(--khaki)}
+  .map svg{display:block;width:100%;height:auto}
+
+  .quote{background:var(--bg-2);border-top:1px solid var(--line)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .sub{color:var(--ink-2);margin-top:.9rem;max-width:42ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.7rem}
+  .contact-list li{display:flex;gap:.7rem;align-items:center;color:var(--ink-2);min-width:0}
+  .contact-list svg{width:1.2rem;height:1.2rem;stroke:var(--olive-2);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+  .contact-list a{color:var(--ink);text-decoration-color:var(--khaki);text-decoration-thickness:2px;font-weight:600;overflow-wrap:anywhere}
+  .contact-list .big{font-family:"Zilla Slab",serif;font-weight:700;font-size:1.9rem;text-decoration:none;line-height:1}
+  form{display:grid;gap:.95rem;background:var(--olive-3);color:var(--on-olive);padding:1.5rem;border-radius:.4rem;border-top:6px solid var(--khaki)}
+  form h3{color:var(--on-olive)}
+  label{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-olive-2)}
+  input,textarea{font:inherit;color:#1F2419;background:#FBF9F2;border:1px solid #C9C3AE;border-radius:.3rem;padding:.7rem .85rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5.2rem;resize:vertical}
+  input:focus-visible,textarea:focus-visible{outline:3px solid var(--khaki);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-olive-2)}
+
+  footer{background:var(--olive-3);color:var(--on-olive-2);padding:1.75rem 0 4.5rem;font-size:.9rem;border-top:3px solid var(--khaki)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-olive);text-decoration-color:var(--khaki)}
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--khaki);color:var(--khaki-ink);font-size:.78rem;font-weight:700;padding:.35rem .7rem;border-radius:.25rem;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+  .preview-tag:hover{background:var(--khaki-2)}
+
+  @media (max-width:480px){header .wrap{flex-wrap:wrap;gap:.4rem .75rem;padding-block:.5rem}header .wrap>*{min-width:0}.logo{max-width:62%;overflow:hidden}.logo b{font-size:1.1rem;overflow:hidden;text-overflow:ellipsis}.call-pill{font-size:.85rem;padding:.4rem .75rem;margin-left:auto;white-space:nowrap}}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a> for First Coast Mobile Car Care, LLC. Not the live site yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark" aria-hidden="true">FC</span><span><b>First Coast</b><small>Mobile Car Care · Jax</small></span></a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+19046253460">Call now</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Jacksonville, FL · Mobile and shop · Cars, trucks and diesel</span>
+      <h1>Car, truck or diesel. <em>We come to you.</em></h1>
+      <p class="lede">First Coast Mobile Car Care brings the repair to your driveway, office or job site across Jacksonville, and takes the big jobs into the shop when they need a lift. Diagnostics, brakes, electrical, A/C, engines, transmissions, 4x4 and fleet work, with a straight answer about what's wrong and what it'll cost.</p>
+      <div class="hero-actions">
+        <a class="btn btn-khaki" href="#quote">Get a quote</a>
+        <a class="btn btn-outline" href="tel:+19046253460">(904) 625-3460</a>
+      </div>
+      <div class="trust">
+        <div><strong><span class="star">★</span> 4.4</strong>65 Google reviews</div>
+        <div><strong>Diesel</strong>Light and medium duty</div>
+        <div><strong>Fleets</strong>Work vans and trucks</div>
+      </div>
+    </div>
+
+    <div class="stage" aria-label="Mobile service truck on the road">
+      <svg viewBox="0 0 520 250" role="img" aria-labelledby="rigTitle">
+        <title id="rigTitle">Illustration of an olive-green mobile service truck driving past pines and a work truck on a Jacksonville road</title>
+        <defs>
+          <linearGradient id="skyO" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#5E6F39"/>
+            <stop offset="1" stop-color="#4F5E2F"/>
+          </linearGradient>
+        </defs>
+        <rect width="520" height="250" fill="url(#skyO)"/>
+        <!-- sun -->
+        <circle cx="430" cy="56" r="26" fill="#C8B98A"/>
+        <circle cx="430" cy="56" r="40" fill="#C8B98A" opacity=".14"/>
+        <!-- pines -->
+        <g fill="#2E3A1C">
+          <path d="M330 190 L330 150 L318 150 L346 100 L374 150 L362 150 L362 190 Z"/>
+          <path d="M346 100 L336 118 L356 118 Z"/>
+          <path d="M470 190 L470 158 L460 158 L484 112 L508 158 L498 158 L498 190 Z"/>
+          <path d="M484 112 L476 128 L492 128 Z"/>
+          <path d="M296 190 L296 164 L290 164 L306 134 L322 164 L316 164 L316 190 Z"/>
+        </g>
+        <!-- customer work truck (pickup) -->
+        <path fill="#C3C9AE" d="M380 186 L380 160 C380 156 384 152 388 152 L420 152 L432 134 L470 134 L478 152 L504 152 C508 152 512 156 512 160 L512 186 Z"/>
+        <path fill="#2E3A1C" d="M424 152 L436 140 L466 140 L472 152 Z"/>
+        <rect x="376" y="182" width="140" height="8" rx="2" fill="#1F2419"/>
+        <circle cx="404" cy="190" r="14" fill="#141810"/><circle cx="404" cy="190" r="6" fill="#C3C9AE"/>
+        <circle cx="488" cy="190" r="14" fill="#141810"/><circle cx="488" cy="190" r="6" fill="#C3C9AE"/>
+        <path d="M388 152 L398 128 L430 130" fill="none" stroke="#C3C9AE" stroke-width="5" stroke-linecap="round"/>
+        <!-- road -->
+        <rect x="0" y="194" width="520" height="56" fill="#1F2419"/>
+        <line class="road" x1="0" y1="224" x2="520" y2="224" stroke="#C8B98A" stroke-width="4" stroke-dasharray="30 30"/>
+        <!-- service truck: box body -->
+        <path fill="#2E3A1C" d="M40 180 L40 100 C40 94 44 90 50 90 L170 90 L170 180 Z"/>
+        <rect x="52" y="100" width="106" height="46" rx="2" fill="#1F2419"/>
+        <g fill="#C8B98A"><rect x="60" y="108" width="90" height="4" rx="1"/><rect x="60" y="120" width="90" height="4" rx="1"/><rect x="60" y="132" width="90" height="4" rx="1"/></g>
+        <!-- cab -->
+        <path fill="#F4F1E6" d="M170 180 L170 108 C170 102 174 98 180 98 L222 98 C232 98 240 102 246 110 L272 148 L272 180 Z"/>
+        <path fill="#1F2419" d="M226 106 C234 106 238 108 242 114 L262 146 L224 146 L224 106 Z"/>
+        <rect x="178" y="106" width="40" height="40" rx="3" fill="#1F2419"/>
+        <rect x="40" y="150" width="232" height="12" fill="#C8B98A"/>
+        <text x="48" y="159.5" font-family="Zilla Slab, serif" font-weight="700" font-size="9" fill="#1F2419" letter-spacing="1.2">FIRST COAST MOBILE CAR CARE</text>
+        <rect x="34" y="176" width="246" height="10" rx="3" fill="#141810"/>
+        <rect x="268" y="156" width="9" height="14" rx="2" fill="#FFF3CF"/>
+        <rect x="34" y="150" width="8" height="12" rx="2" fill="#C94B2E"/>
+        <!-- exhaust puffs -->
+        <g fill="#C3C9AE" opacity=".5"><circle class="exhaust" cx="28" cy="170" r="6"/></g>
+        <!-- wheels -->
+        <g class="wheel">
+          <circle cx="92" cy="188" r="22" fill="#141810"/>
+          <circle cx="92" cy="188" r="11" fill="#C3C9AE"/>
+          <path d="M92 177 L92 199 M81 188 L103 188 M84.5 180.5 L99.5 195.5 M99.5 180.5 L84.5 195.5" stroke="#141810" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="92" cy="188" r="4" fill="#141810"/>
+        </g>
+        <g class="wheel">
+          <circle cx="226" cy="188" r="22" fill="#141810"/>
+          <circle cx="226" cy="188" r="11" fill="#C3C9AE"/>
+          <path d="M226 177 L226 199 M215 188 L237 188 M218.5 180.5 L233.5 195.5 M233.5 180.5 L218.5 195.5" stroke="#141810" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="226" cy="188" r="4" fill="#141810"/>
+        </g>
+      </svg>
+      <ul class="checks">
+        <li>Straight talk about what's wrong and what it'll cost, before the work</li>
+        <li>Gas, diesel, 4x4 and fleet vehicles, mobile or in the shop</li>
+        <li>Engines, transmissions and the heavy jobs, not just the quick ones</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>Most jobs in your driveway. The rest in our shop.</h2>
+      <p>The truck carries the scanner, tools and common parts, so brakes, batteries, tune-ups and most diagnostics are finished on site. When a job genuinely needs a lift, we'll say so first and handle it in the shop.</p>
+    </div>
+    <div class="grid three">
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M8 11l2 2 4-4"/></svg></div><h3>Diagnostics</h3><p>Check engine, ABS and warning lights, rough running, stalling or a no-start. Scanned and tested where it sits, cause explained before anything is replaced.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div><h3>Brakes</h3><p>Pads, rotors, calipers and lines on cars, trucks and work vans. Grinding, squealing or a soft pedal handled at your place.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M7 11v4M17 13h-4M15 11v4M9 11h-4"/></svg></div><h3>Battery and electrical</h3><p>No crank, slow crank, dimming lights or a battery that keeps dying. Battery, alternator, starter and wiring tested so you only pay for what's actually bad.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 17h2l2-6h10l2 6h2M7 11V7h8l2 4M6 20v-3M18 20v-3"/></svg></div><h3>Diesel repair</h3><p>Light and medium-duty diesel pickups and vans. Glow plugs, injectors, fuel system, turbo and emissions issues, with the know-how reviewers mention by name.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.5"/></svg></div><h3>Heating and A/C</h3><p>Blowing warm in August or cold in January. Leak check, recharge, blower motors and component repair so the cabin is right again.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 6V4M16 6V4M8 20v-2M16 20v-2M4 10H2M4 14H2M22 10h-2M22 14h-2"/></svg></div><h3>Engine and transmission</h3><p>Repairs, rebuilds and replacements, including remanufactured engines and transmissions. The heavy work goes into the shop; you get a straight quote first.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div><h3>Oil changes and maintenance</h3><p>Oil and filter, fluids, belts, hoses and tune-ups on your schedule. Preventive work that keeps a daily driver or a work truck out of trouble.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M6 7l2 2M16 15l2 2M3 12h4M17 12h4M6 17l2-2M16 9l2-2"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Suspension and 4x4</h3><p>Shocks, struts, control arms, ball joints, hubs and transfer cases. Lifted trucks and off-road rigs welcome.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="8" width="13" height="9" rx="1"/><path d="M15 11h4l3 3v3h-7M5 20a2 2 0 1 0 0-.1M17 20a2 2 0 1 0 0-.1"/></svg></div><h3>Fleet services</h3><p>Keep work vans and trucks on the road. Scheduled maintenance and repairs at your yard so a down vehicle doesn't become a down crew.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="fleet">
+  <div class="wrap">
+    <strong>Run a fleet in Jacksonville?</strong>
+    <p>We service work vans, pickups and light trucks at your lot, on a schedule that fits your crews. Call <a href="tel:+19046253460" style="color:var(--khaki);font-weight:700;white-space:nowrap">(904) 625-3460</a> to set up fleet maintenance.</p>
+  </div>
+</div>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Straight answers, straight prices</h2>
+        <p>Customers say the same thing in their reviews: this shop shoots it straight about what's going on and what you need. You'll have the parts-and-labor number before the work begins.</p>
+      </div>
+      <div class="promise">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Quote by text</b> so the number is in writing before the truck rolls.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>Only what's actually needed</b> gets recommended, on your car or your fleet.</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><p><b>No tow for most jobs.</b> If it does need the shop, you'll hear that first.</p></div>
+      </div>
+    </div>
+    <div>
+      <ul class="price-list">
+        <li><div><b>Mobile diagnostic visit</b><small>Scan, test and a plain-language answer</small></div><span class="n"><em>Starting at</em>$99</span></li>
+        <li><div><b>Oil change at your door</b><small>Full synthetic, filter and a quick look underneath</small></div><span class="n"><em>Starting at</em>$85</span></li>
+        <li><div><b>Diesel oil and filter service</b><small>Light-duty diesel pickups and vans</small></div><span class="n"><em>Starting at</em>$189</span></li>
+        <li><div><b>Brake pads and rotors</b><small>Per axle, parts and labor</small></div><span class="n"><em>Starting at</em>$259</span></li>
+        <li><div><b>Battery replacement</b><small>Installed and tested, charging system checked</small></div><span class="n"><em>Starting at</em>$179</span></li>
+        <li><div><b>A/C diagnosis and recharge</b><small>Leak check and recharge; component repairs quoted on site</small></div><span class="n"><em>Starting at</em>$159</span></li>
+        <li><div><b>Fleet maintenance visit</b><small>Per vehicle, at your yard; multi-vehicle rates available</small></div><span class="n"><em>Starting at</em>$119</span></li>
+      </ul>
+      <p class="price-note"><span class="tag">Note</span><span>Example pricing — we'll put in your real numbers. Final quotes depend on the vehicle and parts.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps and you're back on the road</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Call or text the symptoms</h3>
+        <p>Year, make, model, gas or diesel, what it's doing and where it's parked. A quick video of the noise helps.</p>
+      </div>
+      <div class="step">
+        <h3>The truck pulls up</h3>
+        <p>Home, office, job site or your fleet yard. We confirm the cause and give you the price before touching anything.</p>
+      </div>
+      <div class="step">
+        <h3>Fixed on site, or in the shop</h3>
+        <p>Most repairs are done the same visit. Bigger jobs come to our shop with a clear quote first and a straight timeline.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>What Jacksonville drivers say</h2>
+      <p class="g-line"><span class="star" aria-hidden="true">★★★★☆</span><span class="big">4.4</span><span>across 65 Google reviews</span></p>
+    </div>
+    <div class="grid">
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"They've always shoot it straight with me on what's going on and what I need."</p><cite>— Stephanie, Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Knowledgeable on diesels. Transmission working awesome, ABS light off."</p><cite>— Kenn, Google review</cite></div>
+      <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Victoria was very professional, courteous, and understanding."</p><cite>— Frederick, Google review</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About and service area</span>
+      <h2>Based in Jacksonville. On the road across the First Coast.</h2>
+      <p>First Coast Mobile Car Care, LLC is a Jacksonville shop that comes to you. Cars, pickups, work vans, diesels and 4x4s get the same treatment: a clear explanation, a fair quote and the repair done right the first time, in your driveway when it can be and in the shop when it has to be.</p>
+      <p>A little outside the usual area? Text anyway and you'll get a straight answer.</p>
+      <div class="towns">
+        <span>Jacksonville</span><span>Westside</span><span>Northside</span><span>Arlington</span><span>Southside</span><span>Mandarin</span><span>Orange Park</span><span>Middleburg</span><span>Fleming Island</span><span>Oakleaf</span><span>Jacksonville Beach</span><span>Yulee</span>
+      </div>
+      <div class="facts">
+        <b>Home base</b><span>Jacksonville, FL. Mobile service, plus shop work for the big jobs.</span>
+        <b>Phone</b><span><a href="tel:+19046253460">(904) 625-3460</a>, call or <a href="sms:+19046253460">text</a></span>
+        <b>Email</b><span><a href="mailto:service@fcmcc.net">service@fcmcc.net</a></span>
+        <b>Facebook</b><span><a href="https://www.facebook.com/p/First-Coast-Mobile-Car-Care-100057390463092/" rel="noopener" target="_blank">First Coast Mobile Car Care on Facebook</a></span>
+        <b>Hours</b><span>Call or text for availability</span>
+      </div>
+    </div>
+    <div class="map" aria-label="Service area map">
+      <svg viewBox="0 0 400 300" role="img" aria-labelledby="mapTitle">
+        <title id="mapTitle">Stylized map of the Jacksonville area with Jacksonville at the center of the service area</title>
+        <rect width="400" height="300" fill="#2E3A1C"/>
+        <!-- land -->
+        <path d="M0 0 L330 0 C322 60 336 120 330 180 C326 230 338 270 334 300 L0 300 Z" fill="#4F5E2F"/>
+        <!-- ocean -->
+        <path d="M330 0 L400 0 L400 300 L334 300 C338 270 326 230 330 180 C336 120 322 60 330 0 Z" fill="#1F2419"/>
+        <!-- St. Johns River -->
+        <path d="M150 300 C160 250 190 230 200 200 C212 170 196 150 206 128 C214 110 250 108 262 96 C280 80 300 60 304 20" fill="none" stroke="#1F2419" stroke-width="16" stroke-linecap="round"/>
+        <!-- interstates -->
+        <path d="M180 0 C186 60 190 120 186 170 C182 220 172 260 176 300" stroke="#8A9470" stroke-width="2.5" stroke-dasharray="7 5" fill="none"/>
+        <path d="M0 140 L186 148" stroke="#8A9470" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+        <path d="M110 40 C80 120 90 200 130 270" stroke="#8A9470" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+        <!-- radius -->
+        <circle cx="196" cy="140" r="122" fill="#C8B98A" opacity=".12"/>
+        <circle cx="196" cy="140" r="122" fill="none" stroke="#C8B98A" stroke-width="2" stroke-dasharray="6 5"/>
+        <circle cx="196" cy="140" r="56" fill="#C8B98A" opacity=".16"/>
+        <!-- towns -->
+        <g font-family="Karla, sans-serif" font-size="11" fill="#EDEADC">
+          <circle cx="200" cy="60" r="3" fill="#EDEADC"/><text x="207" y="64">Northside</text>
+          <circle cx="236" cy="22" r="3" fill="#EDEADC"/><text x="243" y="26">Yulee</text>
+          <circle cx="110" cy="130" r="3" fill="#EDEADC"/><text x="60" y="126">Westside</text>
+          <circle cx="250" cy="130" r="3" fill="#EDEADC"/><text x="257" y="124">Arlington</text>
+          <circle cx="262" cy="190" r="3" fill="#EDEADC"/><text x="269" y="194">Southside</text>
+          <circle cx="330" cy="150" r="3" fill="#EDEADC"/><text x="300" y="168">Jax Beach</text>
+          <circle cx="178" cy="226" r="3" fill="#EDEADC"/><text x="185" y="230">Mandarin</text>
+          <circle cx="120" cy="222" r="3" fill="#EDEADC"/><text x="46" y="226">Orange Park</text>
+          <circle cx="90" cy="192" r="3" fill="#EDEADC"/><text x="52" y="186">Oakleaf</text>
+          <circle cx="80" cy="268" r="3" fill="#EDEADC"/><text x="18" y="284">Middleburg</text>
+          <circle cx="130" cy="272" r="3" fill="#EDEADC"/><text x="137" y="276">Fleming Island</text>
+        </g>
+        <!-- Jacksonville pin -->
+        <path d="M196 108 C184 108 176 117 176 128 C176 144 196 162 196 162 C196 162 216 144 216 128 C216 117 208 108 196 108 Z" fill="#C8B98A"/>
+        <circle cx="196" cy="128" r="7" fill="#1F2419"/>
+        <text x="196" y="184" text-anchor="middle" font-family="Zilla Slab, serif" font-weight="700" font-size="16" letter-spacing="1" fill="#F4F1E6">JACKSONVILLE</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2>Tell us what the vehicle is doing</h2>
+      <p class="sub">Fill this in and it opens a text to First Coast Mobile Car Care with your details already typed. You'll get a price and a time back. Or just call.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a class="big" href="tel:+19046253460">(904) 625-3460</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/></svg><a href="sms:+19046253460?&body=Hi%2C%20I%27d%20like%20a%20quote%20for%20my%20">Text (904) 625-3460</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:service@fcmcc.net">service@fcmcc.net</a></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Mobile service across Jacksonville, FL</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="8" width="13" height="9" rx="1"/><path d="M15 11h4l3 3v3h-7M5 20a2 2 0 1 0 0-.1M17 20a2 2 0 1 0 0-.1"/></svg><span>Fleet accounts welcome</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <h3>Request a quote</h3>
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(904) 555-0123" required></label>
+      <label>Vehicle (year, make, model)<input name="vehicle" placeholder="2014 Ram 2500 diesel" required></label>
+      <label>What do you need?<textarea name="need" placeholder="Check engine light and rough idle. Truck is at my shop on the Westside" required></textarea></label>
+      <button class="btn btn-khaki" type="submit">Send as a text</button>
+      <p class="form-note">Opens a text in your messaging app. Nothing is stored on this page.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>First Coast Mobile Car Care, LLC · Jacksonville, FL · <a href="tel:+19046253460">(904) 625-3460</a> · <a href="https://www.facebook.com/p/First-Coast-Mobile-Car-Care-100057390463092/" rel="noopener" target="_blank">Facebook</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" rel="noopener" target="_blank">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi, this is '+f.get('name')+'. I have a '+f.get('vehicle')+' and I need: '+f.get('need');
+    msg=msg.replace(/[.\s]*$/,'')+'.';
+    if(f.get('phone'))msg+=' You can reach me at '+f.get('phone')+'.';
+    msg+=' When could you come out?';
+    window.location.href='sms:+19046253460?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

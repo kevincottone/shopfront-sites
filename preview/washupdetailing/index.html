@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WashUp Auto Detailing — Mobile detailing in Fernandina Beach and Amelia Island</title>
+<meta name="description" content="WashUp Auto Detailing comes to your driveway across Fernandina Beach, Amelia Island and Yulee. Level 1–3 detail packages, interior and exterior details, seat and carpet shampoo, engine bay detail and decal removal by Juan. 5.0 stars across 52 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F8FB; --bg-2:#FFFFFF; --ink:#0F1A2B; --ink-2:#55627A; --line:#E1E5EE;
+    --deep:#0F1A2B; --deep-2:#17253B; --on-deep:#F7F8FB; --on-deep-2:#AAB6CB;
+    --sun:#F7A823; --sun-2:#E0901A; --sun-3:#FFC24A; --sun-ink:#0F1A2B;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){--bg:#0B1322;--bg-2:#121D30;--ink:#F3F5FA;--ink-2:#AAB6CB;--line:#24314A;--deep:#060C17;--deep-2:#0F1A2B}
+  }
+  :root[data-theme="dark"]{--bg:#0B1322;--bg-2:#121D30;--ink:#F3F5FA;--ink-2:#AAB6CB;--line:#24314A;--deep:#060C17;--deep-2:#0F1A2B}
+  html{scroll-padding-top:4.5rem;scroll-behavior:smooth}
+  *,*::before,*::after{box-sizing:inherit}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{margin:0;font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.02;letter-spacing:-.025em}
+  h1{font-size:clamp(2.5rem,8vw,4.6rem);font-weight:800}
+  h1 em{font-style:normal;color:var(--sun)}
+  h2{font-size:clamp(1.9rem,5.2vw,2.8rem);font-weight:800}
+  h3{font-size:1.25rem;font-weight:700}
+  p{margin:0}
+  a{color:inherit}
+  svg{max-width:100%}
+  .wrap{width:min(1040px,100% - 2rem);margin-inline:auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sun-2)}
+  .eyebrow::before{content:"";width:.75rem;height:.75rem;border-radius:50%;background:var(--sun);box-shadow:0 0 0 3px rgba(247,168,35,.25)}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .eyebrow{color:var(--sun-3)}}
+  :root[data-theme="dark"] .eyebrow{color:var(--sun-3)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3.25rem;padding:.75rem 1.6rem;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+  .btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+  .btn-sun{background:var(--sun);color:var(--sun-ink)}
+  .btn-sun:hover{background:var(--sun-3)}
+  .btn-ghost{background:transparent;color:var(--on-deep);border-color:rgba(247,248,251,.3)}
+  .btn-ghost:hover{border-color:var(--sun)}
+
+  /* preview bar + header */
+  .preview-bar{background:#0F1A2B;color:#F7F8FB;font-size:.85rem;text-align:center;padding:.5rem 1rem;border-bottom:1px solid rgba(247,168,35,.3)}
+  .preview-bar a{color:var(--sun-3);font-weight:700}
+  header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--deep);color:var(--on-deep);border-bottom:3px solid var(--sun)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:3.8rem;gap:1rem}
+  .logo{display:inline-flex;align-items:center;gap:.6rem;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:1.3rem;text-decoration:none;color:var(--on-deep);white-space:nowrap;line-height:1;letter-spacing:-.02em}
+  .logo .mark{width:1.9rem;height:1.9rem;flex:none}
+  .logo small{display:block;font-family:"DM Sans",sans-serif;font-weight:600;font-size:.64rem;color:var(--sun-3);letter-spacing:.16em;text-transform:uppercase;margin-top:.3rem}
+  nav a{text-decoration:none;color:var(--on-deep-2);font-weight:600;margin-left:1.25rem;font-size:.95rem}
+  nav a:hover{color:var(--sun-3)}
+  @media (max-width:760px){nav{display:none}}
+  .call-pill{background:var(--sun);color:var(--sun-ink);text-decoration:none;font-weight:700;padding:.5rem 1rem;border-radius:999px;font-size:.92rem;white-space:nowrap}
+  .call-pill:hover{background:var(--sun-3)}
+  @media (max-width:480px){
+    header .wrap{flex-wrap:wrap;gap:.5rem .75rem;padding:.45rem 0}
+    .logo{font-size:1.15rem}
+    .call-pill{font-size:.82rem;padding:.45rem .8rem;white-space:nowrap}
+  }
+
+  /* hero */
+  .hero{background:
+      radial-gradient(ellipse 60% 50% at 95% 0%,rgba(247,168,35,.28),transparent 60%),
+      linear-gradient(180deg,var(--deep-2),var(--deep) 75%);
+    color:var(--on-deep);padding:3.25rem 0 3.75rem;overflow:hidden;position:relative}
+  .hero .wrap{display:grid;gap:2.5rem}
+  @media (min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;align-items:center}}
+  .hero .eyebrow{color:var(--sun-3)}
+  .hero .lede{color:var(--on-deep-2);font-size:1.15rem;max-width:42ch;margin-top:1.2rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+  .proof{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem;margin-top:1.75rem;color:var(--on-deep-2);font-size:.95rem}
+  .proof .stars{color:var(--sun);letter-spacing:.08em;font-size:1rem}
+  .proof strong{color:var(--on-deep);font-weight:700}
+  .stage{position:relative;border-radius:1.25rem;overflow:hidden;background:
+      radial-gradient(ellipse 90% 60% at 50% 110%,rgba(247,168,35,.35),transparent 70%),
+      linear-gradient(180deg,#1E3050 0%,#0F1A2B 100%);border:1px solid rgba(247,168,35,.35);aspect-ratio:5/4}
+  .stage .sunball{position:absolute;right:-12%;top:-18%;width:60%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 40% 40%,#FFD57A,#F7A823 55%,rgba(247,168,35,0) 72%);opacity:.95}
+  .stage svg{position:absolute;left:0;right:0;bottom:6%;width:100%;height:auto}
+  .stage .badge{position:absolute;left:.9rem;top:.9rem;background:rgba(15,26,43,.78);backdrop-filter:blur(6px);color:var(--on-deep);font-size:.82rem;font-weight:600;padding:.4rem .75rem;border-radius:999px;border:1px solid rgba(247,168,35,.5);max-width:calc(100% - 1.8rem)}
+  .stage .badge b{color:var(--sun-3)}
+  .stage-cap{color:var(--on-deep-2);font-size:.95rem;margin-top:.75rem;text-align:center}
+  @media (prefers-reduced-motion:no-preference){
+    .gleam{animation:gleam 5s ease-in-out infinite}
+    @keyframes gleam{0%,100%{transform:translateX(-140px);opacity:0}15%{opacity:.9}55%{transform:translateX(460px);opacity:.9}70%,99%{opacity:0}}
+    .bub{animation:bub 3.6s ease-in-out infinite}
+    .bub:nth-child(2){animation-delay:.6s}.bub:nth-child(3){animation-delay:1.2s}.bub:nth-child(4){animation-delay:1.8s}
+    @keyframes bub{0%,100%{transform:translateY(0);opacity:.9}50%{transform:translateY(-10px);opacity:.5}}
+    .wave{animation:wave 4s ease-in-out infinite}
+    @keyframes wave{0%,100%{transform:translateX(0)}50%{transform:translateX(-14px)}}
+  }
+
+  /* sections */
+  section{padding:3.9rem 0}
+  .section-head{display:grid;gap:.65rem;max-width:58ch}
+  .section-head p{color:var(--ink-2)}
+
+  .services .grid{display:grid;gap:1rem;margin-top:1.75rem}
+  @media (min-width:700px){.services .grid{grid-template-columns:repeat(2,1fr)}}
+  .svc{background:var(--bg-2);border:1px solid var(--line);border-radius:1.1rem;padding:1.35rem;display:grid;grid-template-columns:auto 1fr;gap:.9rem 1rem;align-items:start;box-shadow:0 1px 0 rgba(15,26,43,.03)}
+  .svc .ico{width:2.75rem;height:2.75rem;border-radius:50%;background:var(--deep);display:grid;place-items:center;color:var(--sun-3)}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .svc .ico{background:rgba(247,168,35,.16)}}
+  :root[data-theme="dark"] .svc .ico{background:rgba(247,168,35,.16)}
+  .svc .ico svg{width:1.4rem;height:1.4rem}
+  .svc p{color:var(--ink-2);margin-top:.35rem;font-size:1rem}
+
+  .pricing{background:var(--deep);color:var(--on-deep)}
+  .pricing .section-head p{color:var(--on-deep-2)}
+  .pricing .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:800px){.pricing .grid{grid-template-columns:repeat(3,1fr)}}
+  @media (min-width:600px) and (max-width:799px){.pricing .grid{grid-template-columns:repeat(2,1fr)}}
+  .pkg{background:rgba(247,248,251,.04);border:1px solid rgba(247,248,251,.1);border-radius:1.1rem;padding:1.4rem;display:flex;flex-direction:column}
+  .pkg.featured{border-color:var(--sun);background:rgba(247,168,35,.1)}
+  .pkg .tag{align-self:flex-start;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sun-ink);background:var(--sun);padding:.25rem .65rem;border-radius:999px;margin-bottom:.75rem}
+  .pkg .from{color:var(--on-deep-2);font-size:.88rem;margin-top:.6rem;letter-spacing:.06em;text-transform:uppercase}
+  .pkg .price{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:2.5rem;font-weight:800;line-height:1;margin:.2rem 0 .25rem;color:var(--sun-3);letter-spacing:-.03em}
+  .pkg .time{color:var(--on-deep-2);font-size:.95rem}
+  .pkg ul{margin:1rem 0 1.25rem;padding-left:1.1rem;color:var(--on-deep-2);font-size:.98rem;display:grid;gap:.4rem}
+  .pkg ul li::marker{color:var(--sun)}
+  .pkg .btn{margin-top:auto}
+  .addons{margin-top:1.5rem;display:grid;gap:.6rem}
+  @media (min-width:700px){.addons{grid-template-columns:repeat(2,1fr)}}
+  .addon{display:flex;justify-content:space-between;gap:1rem;align-items:center;background:rgba(247,248,251,.04);border:1px solid rgba(247,248,251,.1);border-radius:.8rem;padding:.8rem 1rem}
+  .addon small{display:block;color:var(--on-deep-2);font-size:.88rem}
+  .addon .n{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:1.3rem;color:var(--sun-3);white-space:nowrap}
+  .addon .n em{font-style:normal;font-family:"DM Sans",sans-serif;font-weight:600;font-size:.68rem;color:var(--on-deep-2);display:block;letter-spacing:.08em;text-transform:uppercase}
+  .pricing .note{color:var(--on-deep-2);margin-top:1.25rem;font-size:.9rem;display:flex;gap:.5rem;align-items:flex-start}
+  .pricing .note svg{flex:none;width:1.1rem;height:1.1rem;margin-top:.15rem;color:var(--sun-3)}
+
+  .reviews .grid{display:grid;gap:1.25rem;margin-top:1.75rem}
+  @media (min-width:800px){.reviews .grid{grid-template-columns:repeat(3,1fr)}}
+  .review{background:var(--bg-2);border:1px solid var(--line);border-radius:1.1rem;padding:1.35rem;position:relative}
+  .review::before{content:"\201C";position:absolute;right:1rem;top:.2rem;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:4.5rem;line-height:1;color:var(--sun);opacity:.35}
+  .review p{position:relative}
+  .review .stars{color:var(--sun);letter-spacing:.1em;margin-bottom:.6rem}
+  .review cite{display:block;margin-top:.9rem;font-style:normal;color:var(--ink-2);font-size:.92rem}
+  .rating-badge{display:inline-flex;align-items:center;gap:.75rem;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.5rem 1rem .5rem .6rem;margin-top:1rem}
+  .rating-badge .g{width:2rem;height:2rem;border-radius:50%;background:var(--deep);color:var(--sun-3);display:grid;place-items:center;font-weight:800;font-family:"Bricolage Grotesque",system-ui,sans-serif}
+  .rating-badge strong{font-size:1.1rem}
+  .rating-badge span{color:var(--ink-2);font-size:.95rem}
+
+  .about{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .about .wrap{display:grid;gap:2rem}
+  @media (min-width:800px){.about .wrap{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .about p{color:var(--ink-2);margin-top:.8rem}
+  .area{background:var(--bg);border:1px solid var(--line);border-radius:1.1rem;padding:1.3rem}
+  .area h3{margin-bottom:.75rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0}
+  .chips li{background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;font-size:.95rem;font-weight:600}
+  .hours{margin-top:1.1rem;color:var(--ink-2);font-size:.95rem;display:grid;gap:.3rem}
+  .hours strong{color:var(--ink)}
+  .hours a{text-decoration-color:var(--sun);text-underline-offset:3px;overflow-wrap:anywhere}
+
+  .quote{background:var(--deep);color:var(--on-deep)}
+  .quote .wrap{display:grid;gap:2rem}
+  @media (min-width:900px){.quote .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+  .quote .eyebrow{color:var(--sun-3)}
+  .quote .sub{color:var(--on-deep-2);margin-top:.9rem;max-width:40ch}
+  .contact-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.65rem}
+  .contact-list li{display:flex;gap:.6rem;align-items:center;min-width:0}
+  .contact-list svg{width:1.1rem;height:1.1rem;color:var(--sun-3);flex:none}
+  .contact-list a{color:var(--on-deep);text-decoration-color:var(--sun);text-underline-offset:3px;overflow-wrap:anywhere}
+  form{display:grid;gap:.9rem;background:rgba(247,248,251,.04);padding:1.4rem;border-radius:1.1rem;border:1px solid rgba(247,168,35,.35)}
+  label{display:grid;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--on-deep-2)}
+  input,select,textarea{font:inherit;color:#0F1A2B;background:#fff;border:1px solid #CCD3E0;border-radius:.6rem;padding:.7rem .8rem;min-height:2.9rem;width:100%}
+  textarea{min-height:5rem;resize:vertical}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--sun);outline-offset:1px}
+  .form-note{font-size:.9rem;color:var(--on-deep-2)}
+
+  footer{background:var(--deep);color:var(--on-deep-2);padding:1.5rem 0 4rem;font-size:.9rem;border-top:1px solid rgba(247,168,35,.3)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
+  footer a{color:var(--on-deep);text-decoration-color:var(--sun);text-underline-offset:3px}
+
+  .preview-tag{position:fixed;left:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom,0px));background:var(--sun);color:var(--sun-ink);font-size:.75rem;font-weight:700;padding:.35rem .7rem;border-radius:999px;z-index:20;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+</style>
+</head>
+<body>
+<div class="preview-bar">Website preview built by <a href="https://shopfrontsites.org" rel="noopener" target="_blank">Shopfront Sites</a> for WashUp Auto Detailing. Not the live site yet.</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#F7A823"/><path d="M8 19c3-3 5-3 8 0s5 3 8 0" stroke="#0F1A2B" stroke-width="2.4" stroke-linecap="round" fill="none"/><path d="M8 24c3-3 5-3 8 0s5 3 8 0" stroke="#0F1A2B" stroke-width="2.4" stroke-linecap="round" fill="none"/><circle cx="16" cy="11" r="3.2" fill="#0F1A2B"/></svg>
+      <span>WashUp<small>Auto Detailing</small></span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Packages</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">Service area</a>
+      <a href="#quote">Get a quote</a>
+    </nav>
+    <a class="call-pill" href="tel:+17722788519">Call or text</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Fernandina Beach · Amelia Island · We come to you</span>
+      <h1 style="margin-top:.9rem">The Island's cleanest cars <em>never left the driveway.</em></h1>
+      <p class="lede">WashUp Auto Detailing brings the whole setup to your home or office across Fernandina Beach, Amelia Island and Yulee. Juan shows up on time, works through every seat, vent and wheel well, and hands back a car that looks like it just left the lot.</p>
+      <div class="hero-actions">
+        <a class="btn btn-sun" href="#quote">Get a quote</a>
+        <a class="btn btn-ghost" href="tel:+17722788519">(772) 278-8519</a>
+      </div>
+      <div class="proof">
+        <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <span><strong>5.0</strong> on Google · <strong>52</strong> reviews</span>
+        <span>· Fully mobile</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="stage" aria-hidden="true">
+        <div class="sunball"></div>
+        <span class="badge"><b>Levels 1–3</b> · interior · exterior · engine bay</span>
+        <svg viewBox="0 0 520 230">
+          <defs>
+            <linearGradient id="paint" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#FFFFFF"/>
+              <stop offset=".55" stop-color="#DCE3EE"/>
+              <stop offset="1" stop-color="#9AA8BE"/>
+            </linearGradient>
+            <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#FFC24A" stop-opacity=".6"/>
+              <stop offset="1" stop-color="#0F1A2B" stop-opacity=".95"/>
+            </linearGradient>
+            <linearGradient id="sweep" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+              <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".85"/>
+              <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+            </linearGradient>
+            <clipPath id="bodyClip">
+              <path d="M52 170 C50 140 66 122 106 116 L146 110 C178 80 220 62 262 62 C320 62 362 82 398 114 L452 122 C476 126 488 142 486 170 L476 182 L56 182 Z"/>
+            </clipPath>
+          </defs>
+          <!-- water -->
+          <g class="wave"><path d="M-20 212 C20 200 60 224 100 212 S180 200 220 212 S300 224 340 212 S420 200 460 212 S540 224 580 212 L580 230 L-20 230 Z" fill="#F7A823" opacity=".35"/></g>
+          <ellipse cx="262" cy="206" rx="240" ry="12" fill="#000" opacity=".45"/>
+          <path fill="url(#paint)" d="M52 170 C50 140 66 122 106 116 L146 110 C178 80 220 62 262 62 C320 62 362 82 398 114 L452 122 C476 126 488 142 486 170 L476 182 L56 182 Z"/>
+          <path fill="url(#glass)" d="M164 112 C190 88 224 74 262 74 C302 74 338 88 372 112 Z"/>
+          <path fill="#fff" opacity=".3" d="M172 110 C196 92 226 80 258 80 L258 110 Z"/>
+          <g clip-path="url(#bodyClip)">
+            <rect class="gleam" x="0" y="56" width="110" height="140" fill="url(#sweep)" transform="skewX(-20)"/>
+          </g>
+          <rect x="54" y="176" width="424" height="10" rx="4" fill="#0F1A2B"/>
+          <g fill="#0F1A2B"><circle cx="140" cy="180" r="31"/><circle cx="400" cy="180" r="31"/></g>
+          <g fill="#2C3A52"><circle cx="140" cy="180" r="17"/><circle cx="400" cy="180" r="17"/></g>
+          <g fill="none" stroke="#FFC24A" stroke-width="1.5"><circle cx="140" cy="180" r="11"/><circle cx="400" cy="180" r="11"/></g>
+          <g fill="#0F1A2B"><circle cx="140" cy="180" r="5"/><circle cx="400" cy="180" r="5"/></g>
+          <rect x="460" y="138" width="22" height="9" rx="3" fill="#FFF3CC"/>
+          <rect x="54" y="140" width="18" height="8" rx="3" fill="#E04848"/>
+          <!-- soap bubbles -->
+          <g fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".9">
+            <circle class="bub" cx="300" cy="50" r="7"/>
+            <circle class="bub" cx="330" cy="36" r="4"/>
+            <circle class="bub" cx="120" cy="70" r="5"/>
+            <circle class="bub" cx="96" cy="52" r="8"/>
+          </g>
+          <circle cx="302" cy="47" r="2" fill="#fff"/>
+          <circle cx="93" cy="49" r="2.4" fill="#fff"/>
+        </svg>
+      </div>
+      <p class="stage-cap">Washed, clayed, shampooed and dressed on your own driveway. Salt air and sand don't stand a chance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>Everything a detail shop does, minus the shop.</h2>
+      <p>Pick a level or mix and match. Juan walks the car first so you only pay for what it actually needs, and nothing leaves your driveway.</p>
+    </div>
+    <div class="grid">
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3 4 6 7 6 10.5a6 6 0 0 1-12 0C6 10 9 7 12 3z"/></svg></div>
+        <div><h3>Detail packages, Levels 1–3</h3><p>Level 1 is a thorough wash and vacuum. Level 2 adds the deep interior. Level 3 is the full reset: clay, polish, shampoo and protection on every surface.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 12h18M8 6v12"/></svg></div>
+        <div><h3>Interior-only detail</h3><p>Seats, carpets, mats, door panels, vents, cup holders and glass. Crumbs, sand and the dog's contribution all gone, with the cabin wiped and conditioned.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.4 5.6L20 9l-4.5 3.9L17 19l-5-3-5 3 1.5-6.1L4 9l5.6-1.4z"/></svg></div>
+        <div><h3>Exterior-only detail</h3><p>Hand wash, wheels and tires, door jambs, bugs and tar off the front, then a sealant so the Island salt air has something to beat on besides your paint.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20c4-6 6-9 8-9s4 3 8 9"/><path d="M12 11V4M9 7l3-3 3 3"/></svg></div>
+        <div><h3>Seat &amp; carpet shampoo</h3><p>Hot-water extraction on cloth seats, carpets and mats. Spills, stains and that smell you've stopped noticing, pulled out instead of covered up.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="7" width="16" height="11" rx="2"/><path d="M8 7V4M16 7V4M4 12h16M9 18v3M15 18v3"/></svg></div>
+        <div><h3>Engine bay detail</h3><p>Degreased, rinsed carefully and dressed so the bay looks like the car is for sale. Great before a trade-in or when a mechanic has to go looking for a leak.</p></div>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20L20 4"/><path d="M14 4h6v6"/><path d="M4 14l6 6"/></svg></div>
+        <div><h3>Decal removal &amp; mobile wash</h3><p>Old business lettering, dealer badges and stickers lifted without ghosting. Or just a proper mobile wash between details to keep the car looking fresh.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Packages</span>
+      <h2>Three levels. Pick one, Juan brings the rest.</h2>
+      <p>Final price depends on the size and condition of the vehicle. Text a photo with the year, make and model and you'll get a real number back fast.</p>
+    </div>
+    <div class="grid">
+      <div class="pkg">
+        <h3>Level 1</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$89</div>
+        <div class="time">About 1.5 hours</div>
+        <ul><li>Hand wash and dry</li><li>Wheels, tires and jambs</li><li>Interior vacuum and wipe-down</li><li>Glass inside and out</li></ul>
+        <a class="btn btn-ghost" href="#quote">Book Level 1</a>
+      </div>
+      <div class="pkg featured">
+        <span class="tag">Most popular</span>
+        <h3>Level 2</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$169</div>
+        <div class="time">About 3 hours</div>
+        <ul><li>Everything in Level 1</li><li>Seats and carpet shampooed</li><li>Leather cleaned and conditioned</li><li>Spray sealant on the paint</li></ul>
+        <a class="btn btn-sun" href="#quote">Book Level 2</a>
+      </div>
+      <div class="pkg">
+        <h3>Level 3</h3>
+        <div class="from">Starting at</div>
+        <div class="price">$279</div>
+        <div class="time">4–5 hours</div>
+        <ul><li>Everything in Level 2</li><li>Clay bar and one-step polish</li><li>Engine bay detail included</li><li>Longer-lasting paint protection</li></ul>
+        <a class="btn btn-ghost" href="#quote">Book Level 3</a>
+      </div>
+    </div>
+    <div class="addons">
+      <div class="addon"><div><b>Interior-only detail</b><small>Full cabin, no exterior</small></div><span class="n"><em>Starting at</em>$129</span></div>
+      <div class="addon"><div><b>Exterior-only detail</b><small>Wash, wheels, sealant</small></div><span class="n"><em>Starting at</em>$99</span></div>
+      <div class="addon"><div><b>Engine bay detail</b><small>Add to any level</small></div><span class="n"><em>Starting at</em>$59</span></div>
+      <div class="addon"><div><b>Decal removal</b><small>Quoted by size and age</small></div><span class="n"><em>Starting at</em>$75</span></div>
+    </div>
+    <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span>Example pricing — we'll put in your real numbers. Trucks, large SUVs, pet hair and heavily soiled vehicles are quoted individually.</span></p>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>52 Island drivers. Five stars from every one.</h2>
+    </div>
+    <div class="rating-badge"><span class="g">G</span><strong>5.0</strong><span>on Google across 52 reviews</span></div>
+    <div class="grid">
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>When they were done, my Navigator looked brand new.</p>
+        <cite>— Dawn, Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>Professional, punctual, and did an excellent job detailing my car.</p>
+        <cite>— Laura, Google review</cite>
+      </div>
+      <div class="review">
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+        <p>Wash Up Detail is without a doubt, the best mobile detailing on the Island.</p>
+        <cite>— Jason, Google review</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">About</span>
+      <h2 style="margin-top:.6rem">Run by Juan, based in Fernandina Beach.</h2>
+      <p>WashUp Auto Detailing is Juan's mobile detailing business, working out of Fernandina Beach and driving to wherever your car is parked on Amelia Island and the mainland. He brings his own water and power, walks the car with you and quotes what it actually needs rather than the biggest package on the list.</p>
+      <p>The reviews say the same things over and over: professional, punctual, looks brand new. Book it for while you're at work or at the beach and come back to a finished car.</p>
+    </div>
+    <div class="area">
+      <h3>Service area</h3>
+      <ul class="chips">
+        <li>Fernandina Beach</li><li>Amelia Island</li><li>American Beach</li><li>Yulee</li><li>Nassauville</li><li>O'Neil</li><li>Callahan</li><li>Hilliard</li><li>Oceanway</li><li>Jacksonville Northside by request</li>
+      </ul>
+      <div class="hours">
+        <span><strong>Call or text</strong> for this week's openings</span>
+        <span>Based in Fernandina Beach, FL</span>
+        <span><a href="https://www.instagram.com/washup_autodetailing/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/100095259315310/" target="_blank" rel="noopener">Facebook</a> · <a href="mailto:Washupautodetailing@gmail.com">Email</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Get a quote</span>
+      <h2 style="margin-top:.6rem">Tell Juan about the car.</h2>
+      <p class="sub">Fill this in and it opens a text to WashUp with your details already typed. Or just call.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><a href="tel:+17722788519">(772) 278-8519</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-5A8 8 0 1 1 21 12z"/></svg><a href="sms:+17722788519?&body=Hi%20Juan%2C%20I%27d%20like%20a%20quote%20for%20my%20">Text us a photo of the car</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 8l8 5 8-5"/></svg><a href="mailto:Washupautodetailing@gmail.com">Washupautodetailing@gmail.com</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Mobile service across Amelia Island and Nassau County</span></li>
+      </ul>
+    </div>
+    <form id="quoteForm">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Your phone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(904) 555-0123" required></label>
+      <label>Vehicle<input name="vehicle" placeholder="2021 Lincoln Navigator" required></label>
+      <label>What do you need?
+        <select name="need">
+          <option>Level 1 detail</option>
+          <option>Level 2 detail</option>
+          <option>Level 3 detail</option>
+          <option>Interior-only detail</option>
+          <option>Exterior-only detail</option>
+          <option>Seat and carpet shampoo</option>
+          <option>Engine bay detail</option>
+          <option>Decal removal</option>
+          <option>Not sure, help me choose</option>
+        </select>
+      </label>
+      <label>Anything else (color, condition, where the car is, when works)<textarea name="notes" placeholder="Fernandina Beach, Saturday morning. Beach sand everywhere, two kids' car seats."></textarea></label>
+      <button class="btn btn-sun" type="submit">Send as a text</button>
+      <p class="form-note">Nothing is stored on this page. Your message opens in your phone's messaging app and you send it yourself.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>WashUp Auto Detailing · Fernandina Beach, FL · <a href="tel:+17722788519">(772) 278-8519</a> · <a href="https://www.instagram.com/washup_autodetailing/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/100095259315310/" target="_blank" rel="noopener">Facebook</a></span>
+    <span>Website preview by <a href="https://shopfrontsites.org" target="_blank" rel="noopener">Shopfront Sites</a></span>
+  </div>
+</footer>
+
+<a class="preview-tag" href="https://shopfrontsites.org" target="_blank" rel="noopener">Website preview · Shopfront Sites</a>
+
+<script>
+(function(){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=new FormData(form);
+    var msg='Hi Juan, this is '+f.get('name')+' ('+f.get('phone')+'). I have a '+f.get('vehicle')+' and I\'m looking for: '+f.get('need')+'.';
+    if(f.get('notes'))msg+=' '+f.get('notes');
+    msg+=' What do you have open?';
+    window.location.href='sms:+17722788519?&body='+encodeURIComponent(msg);
+  });
+})();
+</script>
+</body>
+</html>

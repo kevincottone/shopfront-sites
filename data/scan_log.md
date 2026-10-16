@@ -7,3 +7,4 @@
 | 2026-10-13 | Palm Harbor, Dunedin, Seminole, Oldsmar, Safety Harbor | 18 | 8 | 8 (all leads) |
 | 2026-10-14 | New Port Richey, Hudson, Port Richey, Plant City, Apollo Beach, Ruskin | 24 | 19 | 19 (all leads) |
 | 2026-10-15 | Orlando metro (email) — Orlando, Kissimmee, Sanford, Winter Park, Altamonte Springs, Longwood, Oviedo, Clermont | 106 checked | 21 with email + weak site | 21 | 20 (cap 20; pomdetailing held for tomorrow) |
+| 2026-10-16 | Jacksonville metro (email) — Jacksonville, Orange Park, St. Augustine, Ponte Vedra, Fernandina Beach, St. Johns | 152 checked | 21 with email + weak site | 21 | 20 (cap 20; jaxwindowtinting + vistatintjax held for tomorrow) |
